@@ -8,6 +8,7 @@ import { routing } from '@/i18n/routing';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieConsent from '@/components/CookieConsent';
+import ScrollProgress from '@/components/interactive/ScrollProgress';
 
 const serif = Cormorant_Garamond({
   subsets: ['latin'],
@@ -108,6 +109,7 @@ export default async function LocaleLayout({
           Skip to content
         </a>
         <NextIntlClientProvider locale={locale} messages={messages}>
+          <ScrollProgress />
           <Header />
           <main id="main">{children}</main>
           <Footer />
