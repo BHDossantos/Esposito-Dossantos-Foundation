@@ -7,13 +7,24 @@ const interests = ['donor', 'volunteer', 'artist', 'student', 'school', 'sponsor
 
 export default function NewsletterForm() {
   const t = useTranslations('newsletter');
-  const [status, setStatus] = useState<'idle' | 'loading' | 'success'>('idle');
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
-  function onSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setStatus('loading');
-    // Placeholder submission. Wire to /api/newsletter -> CRM (HubSpot/Supabase).
-    setTimeout(() => setStatus('success'), 700);
+    const form = e.currentTarget;
+    const payload = Object.fromEntries(new FormData(form).entries());
+    try {
+      const res = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      if (!res.ok) throw new Error('request failed');
+      setStatus('success');
+    } catch {
+      setStatus('error');
+    }
   }
 
   if (status === 'success') {
@@ -85,6 +96,11 @@ export default function NewsletterForm() {
         <button type="submit" disabled={status === 'loading'} className="btn-primary w-full sm:w-auto">
           {status === 'loading' ? t('submitting') : t('submit')}
         </button>
+        {status === 'error' ? (
+          <p className="mt-3 text-sm font-medium text-red-700" role="alert">
+            {t('error')}
+          </p>
+        ) : null}
         <p className="mt-3 text-xs text-softgray">{t('consent')}</p>
       </div>
     </form>

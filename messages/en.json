@@ -17,6 +17,7 @@
     "partners": "Partners",
     "about": "About",
     "contact": "Contact",
+    "blog": "News",
     "donate": "Donate",
     "foundationLabel": "Foundation"
   },
@@ -637,6 +638,19 @@
       }
     }
   },
+  "blog": {
+    "hero": {
+      "eyebrow": "News & Stories",
+      "title": "News & insights",
+      "intro": "Stories of impact, updates from our programs, and reflections on education, music, technology, and opportunity."
+    },
+    "readMore": "Read article",
+    "backToBlog": "All news",
+    "published": "Published",
+    "minuteRead": "min read",
+    "related": "More stories",
+    "empty": "No stories yet — please check back soon."
+  },
   "about": {
     "hero": {
       "eyebrow": "About Us",
@@ -742,7 +756,8 @@
       "submitting": "Sending…",
       "privacyNote": "By submitting, you agree to our Privacy Policy. We will never share your information.",
       "successTitle": "Thank you — your message is on its way.",
-      "successBody": "A member of our team will be in touch with you shortly."
+      "successBody": "A member of our team will be in touch with you shortly.",
+      "error": "Something went wrong. Please try again."
     }
   },
   "newsletter": {
@@ -766,7 +781,8 @@
     "submitting": "Subscribing…",
     "consent": "We respect your privacy. Unsubscribe at any time.",
     "successTitle": "Welcome to the movement!",
-    "successBody": "Thank you for subscribing. Look out for our next update."
+    "successBody": "Thank you for subscribing. Look out for our next update.",
+    "error": "Something went wrong. Please try again."
   },
   "cookieConsent": {
     "message": "We use cookies to enhance your experience and analyze site traffic.",
@@ -823,6 +839,10 @@
     "cookies": {
       "title": "Cookie Policy",
       "description": "How the Esposito–Dossantos Foundation uses cookies and similar technologies."
+    },
+    "blog": {
+      "title": "News",
+      "description": "News, stories, and insights from the Esposito–Dossantos Foundation on education, music, technology, and opportunity."
     }
   },
   "legal": {

@@ -7,13 +7,24 @@ const inquiryTypes = ['general', 'donation', 'partnership', 'volunteer', 'media'
 
 export default function ContactForm() {
   const t = useTranslations('contact.form');
-  const [status, setStatus] = useState<'idle' | 'loading' | 'success'>('idle');
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
-  function onSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setStatus('loading');
-    // Placeholder. Wire to /api/contact -> CRM with lead category routing.
-    setTimeout(() => setStatus('success'), 700);
+    const form = e.currentTarget;
+    const payload = Object.fromEntries(new FormData(form).entries());
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      if (!res.ok) throw new Error('request failed');
+      setStatus('success');
+    } catch {
+      setStatus('error');
+    }
   }
 
   if (status === 'success') {
@@ -66,10 +77,20 @@ export default function ContactForm() {
         </label>
         <textarea id="c-message" name="message" rows={5} required className={inputClass} />
       </div>
+      {/* Honeypot — hidden from users, catches bots. */}
+      <div className="hidden" aria-hidden="true">
+        <label htmlFor="c-company">Company</label>
+        <input id="c-company" name="company" tabIndex={-1} autoComplete="off" />
+      </div>
       <div className="sm:col-span-2">
         <button type="submit" disabled={status === 'loading'} className="btn-primary">
           {status === 'loading' ? t('submitting') : t('submit')}
         </button>
+        {status === 'error' ? (
+          <p className="mt-3 text-sm font-medium text-red-700" role="alert">
+            {t('error')}
+          </p>
+        ) : null}
         <p className="mt-3 text-xs text-softgray">{t('privacyNote')}</p>
       </div>
     </form>

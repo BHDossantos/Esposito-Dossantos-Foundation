@@ -17,6 +17,7 @@
     "partners": "Partner",
     "about": "Chi siamo",
     "contact": "Contatti",
+    "blog": "Notizie",
     "donate": "Dona",
     "foundationLabel": "Fondazione"
   },
@@ -637,6 +638,19 @@
       }
     }
   },
+  "blog": {
+    "hero": {
+      "eyebrow": "Notizie e Storie",
+      "title": "Notizie e approfondimenti",
+      "intro": "Storie di impatto, aggiornamenti dai nostri programmi e riflessioni su istruzione, musica, tecnologia e opportunità."
+    },
+    "readMore": "Leggi l'articolo",
+    "backToBlog": "Tutte le notizie",
+    "published": "Pubblicato",
+    "minuteRead": "min di lettura",
+    "related": "Altre storie",
+    "empty": "Ancora nessuna storia — torna presto."
+  },
   "about": {
     "hero": {
       "eyebrow": "Chi siamo",
@@ -742,7 +756,8 @@
       "submitting": "Invio in corso…",
       "privacyNote": "Inviando, accetti la nostra Informativa sulla privacy. Non condivideremo mai le tue informazioni.",
       "successTitle": "Grazie: il tuo messaggio è in arrivo.",
-      "successBody": "Un membro del nostro team ti contatterà a breve."
+      "successBody": "Un membro del nostro team ti contatterà a breve.",
+      "error": "Qualcosa è andato storto. Riprova."
     }
   },
   "newsletter": {
@@ -766,7 +781,8 @@
     "submitting": "Iscrizione in corso…",
     "consent": "Rispettiamo la tua privacy. Puoi annullare l'iscrizione in qualsiasi momento.",
     "successTitle": "Benvenuto nel movimento!",
-    "successBody": "Grazie per esserti iscritto. Resta in attesa del nostro prossimo aggiornamento."
+    "successBody": "Grazie per esserti iscritto. Resta in attesa del nostro prossimo aggiornamento.",
+    "error": "Qualcosa è andato storto. Riprova."
   },
   "cookieConsent": {
     "message": "Utilizziamo i cookie per migliorare la tua esperienza e analizzare il traffico del sito.",
@@ -823,6 +839,10 @@
     "cookies": {
       "title": "Informativa sui cookie",
       "description": "Come la Esposito–Dossantos Foundation utilizza i cookie e tecnologie simili."
+    },
+    "blog": {
+      "title": "Notizie",
+      "description": "Notizie, storie e approfondimenti della Esposito–Dossantos Foundation su istruzione, musica, tecnologia e opportunità."
     }
   },
   "legal": {
