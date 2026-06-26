@@ -1,0 +1,931 @@
+{
+  "meta": {
+    "siteName": "Esposito–Dossantos Foundation",
+    "defaultTitle": "Esposito–Dossantos Foundation — Dare forza alle persone. Ispirare il futuro.",
+    "defaultDescription": "Una fondazione no-profit globale che dà forza a individui e comunità attraverso istruzione, musica, tecnologia, cultura, mentorship e opportunità."
+  },
+  "organization": {
+    "alternateName": "EDF",
+    "description": "La Esposito–Dossantos Foundation dà forza a individui e comunità attraverso istruzione, musica, tecnologia e opportunità, abbattendo le barriere al successo in tutto il mondo."
+  },
+  "nav": {
+    "home": "Home",
+    "mission": "Missione",
+    "programs": "Programmi",
+    "impact": "Impatto",
+    "events": "Eventi",
+    "partners": "Partner",
+    "about": "Chi siamo",
+    "contact": "Contatti",
+    "donate": "Dona",
+    "foundationLabel": "Fondazione"
+  },
+  "footer": {
+    "exploreTitle": "Esplora",
+    "getInvolvedTitle": "Partecipa",
+    "legalTitle": "Note legali",
+    "volunteer": "Volontariato",
+    "privacy": "Informativa sulla privacy",
+    "terms": "Termini di utilizzo",
+    "cookies": "Informativa sui cookie",
+    "tagline": "Diamo forza alle vite e ispiriamo il futuro attraverso istruzione, musica, tecnologia, cultura e opportunità, in tutto il mondo.",
+    "address": "Fondazione no-profit registrata · Operante a livello globale",
+    "newsletterTitle": "Newsletter",
+    "newsletterCopy": "Unisciti al movimento e ricevi aggiornamenti sui nostri programmi, eventi e risultati.",
+    "joinCta": "Unisciti al movimento",
+    "rights": "Tutti i diritti riservati.",
+    "registration": "Organizzazione no-profit registrata · Governance e trasparenza garantite."
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Fondazione no-profit globale",
+      "title": "Dare forza alle persone. Ispirare il futuro.",
+      "subtitle": "La Esposito–Dossantos Foundation crea opportunità attraverso istruzione, musica, tecnologia, cultura e impatto sulla comunità.",
+      "donateCta": "Dona ora",
+      "partnerCta": "Diventa partner",
+      "missionCta": "Scopri la nostra missione",
+      "scroll": "Scorri"
+    },
+    "trust": {
+      "label": "Una fondazione fondata su uno scopo",
+      "global": "Missione globale",
+      "scholarships": "Borse di studio",
+      "music": "Musica e arti",
+      "education": "Istruzione",
+      "technology": "Tecnologia",
+      "community": "Impatto sulla comunità"
+    },
+    "mission": {
+      "eyebrow": "La nostra missione",
+      "headline": "L'opportunità non dovrebbe mai essere limitata da origini, reddito o geografia.",
+      "body1": "La Esposito–Dossantos Foundation dà forza a individui e comunità attraverso istruzione, musica, tecnologia e opportunità. Abbattiamo le barriere al successo offrendo borse di studio, mentorship, programmi culturali e iniziative innovative.",
+      "body2": "Crediamo che il talento esista ovunque, ma l'opportunità no. Il nostro impegno è colmare questo divario e ispirare apprendimento permanente, creatività, leadership e un impatto sociale positivo in tutto il mondo.",
+      "cta": "Leggi la nostra missione"
+    },
+    "pillars": {
+      "eyebrow": "Cosa facciamo",
+      "title": "Cinque pilastri, uno scopo condiviso",
+      "intro": "Anziché cercare di sostenere ogni causa, concentriamo le nostre energie su pochi pilastri chiari, dove possiamo creare un cambiamento duraturo e misurabile.",
+      "learnMore": "Scopri di più",
+      "ctaCardTitle": "Il tuo sostegno alimenta ogni pilastro",
+      "ctaCardCopy": "Ogni donazione amplia l'accesso a istruzione, musica, tecnologia e opportunità per chi ne ha più bisogno.",
+      "ctaCardButton": "Sostieni il nostro lavoro"
+    },
+    "impact": {
+      "eyebrow": "I nostri obiettivi di impatto a 5 anni",
+      "title": "Obiettivi ambiziosi. Cambiamento misurabile.",
+      "intro": "Ci riteniamo responsabili di traguardi chiari e pubblici. Man mano che cresceremo, questi obiettivi saranno sostituiti da risultati verificati.",
+      "metrics": {
+        "students": "Studenti sostenuti",
+        "scholarships": "Borse di studio finanziate",
+        "programs": "Programmi per la comunità",
+        "partners": "Partner globali",
+        "countries": "Paesi serviti"
+      },
+      "disclaimer": "Le cifre rappresentano obiettivi a cinque anni, non risultati attuali."
+    },
+    "founders": {
+      "eyebrow": "La nostra storia",
+      "headline": "Nata dalla convinzione che il talento esista ovunque, ma l'opportunità no.",
+      "body1": "La fondazione è stata creata da Bruno Dossantos e dalla famiglia Esposito, mossi da un impegno condiviso e di lunga data verso musica, istruzione, servizio e cultura.",
+      "body2": "Avendo constatato come una singola opportunità possa cambiare il corso di una vita, i fondatori si sono proposti di costruire una piattaforma globale che apra le porte alla prossima generazione di leader, artisti e promotori del cambiamento.",
+      "cta": "Conosci i fondatori",
+      "founderRole": "Fondatore e Presidente"
+    },
+    "programs": {
+      "eyebrow": "Programmi in evidenza",
+      "title": "Programmi che cambiano le vite",
+      "intro": "Dalle borse di studio alla mentorship fino al palcoscenico, i nostri programmi trasformano il potenziale in opportunità.",
+      "servesLabel": "A chi si rivolge",
+      "details": "Vedi i dettagli"
+    },
+    "donate": {
+      "eyebrow": "Dona",
+      "title": "Il tuo sostegno crea opportunità.",
+      "intro": "Ogni contributo, una tantum o mensile, amplia direttamente l'accesso a istruzione, musica e mentorship per chi ne ha più bisogno.",
+      "points": {
+        "materials": "€25 forniscono materiali didattici a uno studente",
+        "mentorship": "€50 sostengono una sessione di mentorship",
+        "music": "€100 finanziano educazione musicale e strumenti",
+        "student": "€250 favoriscono lo sviluppo di uno studente"
+      }
+    },
+    "events": {
+      "eyebrow": "Eventi",
+      "title": "Dove la nostra comunità si incontra",
+      "intro": "Concerti di beneficenza, gala, serate dedicate alle borse di studio e masterclass che celebrano il talento e raccolgono sostegno per la nostra missione.",
+      "cta": "Vedi tutti gli eventi"
+    },
+    "finalCta": {
+      "eyebrow": "Unisciti a noi",
+      "title": "Aiutaci a formare la prossima generazione di leader, artisti e promotori del cambiamento.",
+      "subtitle": "Che tu doni, collabori come partner o faccia volontariato, il tuo coinvolgimento trasforma il potenziale in opportunità.",
+      "donate": "Dona ora",
+      "partner": "Collabora con noi",
+      "contact": "Contattaci"
+    }
+  },
+  "mission": {
+    "hero": {
+      "eyebrow": "Missione, Visione e Valori",
+      "title": "Perché esistiamo",
+      "intro": "L’opportunità non dovrebbe mai essere limitata da origini, reddito o geografia. Tutto ciò che facciamo nasce da questa convinzione."
+    },
+    "statement": {
+      "missionLabel": "La Nostra Missione",
+      "mission": "La Esposito–Dossantos Foundation dà forza a persone e comunità attraverso l’istruzione, la musica, la tecnologia e l’opportunità. Rimuoviamo le barriere al successo offrendo borse di studio, mentorship, programmi culturali e iniziative innovative che ispirano l’apprendimento permanente, la creatività, la leadership e un impatto sociale positivo in tutto il mondo.",
+      "visionLabel": "La Nostra Visione",
+      "vision": "Diventare una delle principali fondazioni non profit al mondo, dedicata a dare forza alle comunità attraverso l’istruzione, la musica, la tecnologia e l’arricchimento culturale — creando opportunità che ispirano le generazioni a imparare, guidare e servire."
+    },
+    "belief": "Nata dalla convinzione che il talento esiste ovunque, ma l’opportunità no.",
+    "purpose": "Esistiamo per dare forza a persone di ogni età e provenienza, ampliando l’accesso all’istruzione, alla musica, alla tecnologia, alla mentorship e a opportunità capaci di cambiare la vita — aiutando le comunità a prosperare e formando la prossima generazione di leader, innovatori, artisti e promotori del cambiamento.",
+    "values": {
+      "eyebrow": "Ciò Che Ci Guida",
+      "title": "I nostri valori fondamentali",
+      "intro": "Dieci principi guidano ogni decisione che prendiamo e ogni vita che tocchiamo.",
+      "items": {
+        "integrity": {
+          "title": "Integrità",
+          "body": "Agiamo con onestà, responsabilità e trasparenza."
+        },
+        "compassion": {
+          "title": "Compassione",
+          "body": "Serviamo con empatia e rispetto per ogni persona."
+        },
+        "excellence": {
+          "title": "Eccellenza",
+          "body": "Puntiamo ai più alti standard in tutto ciò che facciamo."
+        },
+        "innovation": {
+          "title": "Innovazione",
+          "body": "Abbracciamo soluzioni creative che ampliano le opportunità."
+        },
+        "education": {
+          "title": "Istruzione",
+          "body": "Crediamo che l’apprendimento cambi la vita."
+        },
+        "culture": {
+          "title": "Musica e Cultura",
+          "body": "Celebriamo la creatività come forza di connessione e speranza."
+        },
+        "collaboration": {
+          "title": "Collaborazione",
+          "body": "Costruiamo partnership durature per massimizzare l’impatto."
+        },
+        "service": {
+          "title": "Servizio",
+          "body": "Misuriamo il successo dalle vite che miglioriamo."
+        },
+        "inclusion": {
+          "title": "Inclusione",
+          "body": "Creiamo opportunità per persone di ogni provenienza."
+        },
+        "sustainability": {
+          "title": "Sostenibilità",
+          "body": "Investiamo in soluzioni che generano un impatto duraturo e misurabile."
+        }
+      }
+    }
+  },
+  "pillars": {
+    "education": {
+      "title": "Istruzione e borse di studio",
+      "summary": "Borse di studio accademiche, sviluppo professionale, educazione STEM e tecnologica e programmi di leadership che aprono le porte all'apprendimento.",
+      "offerings": {
+        "a": {
+          "title": "Borse di studio accademiche",
+          "body": "Borse di studio basate sul bisogno e sul merito che eliminano le barriere economiche all'istruzione."
+        },
+        "b": {
+          "title": "Sviluppo professionale",
+          "body": "Percorsi, coaching e risorse che collegano l'apprendimento alle opportunità."
+        },
+        "c": {
+          "title": "STEM e tecnologia",
+          "body": "Programmi pratici che costruiscono le competenze della forza lavoro di domani."
+        },
+        "d": {
+          "title": "Programmi di leadership",
+          "body": "Formiamo leader sicuri e capaci, pronti a servire le proprie comunità."
+        }
+      }
+    },
+    "music": {
+      "title": "Musica e arti",
+      "summary": "Borse di studio per strumenti, educazione musicale, mentorship per artisti, salvaguardia della cultura e occasioni di esibizione.",
+      "offerings": {
+        "a": {
+          "title": "Borse di studio per strumenti",
+          "body": "Mettiamo gli strumenti nelle mani di giovani musicisti di talento."
+        },
+        "b": {
+          "title": "Educazione musicale",
+          "body": "Lezioni, ensemble e teoria per studenti di ogni provenienza."
+        },
+        "c": {
+          "title": "Mentorship per artisti",
+          "body": "La guida di artisti affermati per coltivare i talenti emergenti."
+        },
+        "d": {
+          "title": "Occasioni di esibizione",
+          "body": "Palcoscenici, recital e concerti che permettono agli artisti di brillare."
+        }
+      }
+    },
+    "technology": {
+      "title": "Tecnologia e innovazione",
+      "summary": "Alfabetizzazione digitale, educazione all'IA, programmi di coding, accesso alla tecnologia e formazione all'imprenditorialità.",
+      "offerings": {
+        "a": {
+          "title": "Alfabetizzazione digitale",
+          "body": "Competenze digitali essenziali per studenti di tutte le età."
+        },
+        "b": {
+          "title": "IA e coding",
+          "body": "Programmi moderni di intelligenza artificiale e sviluppo software."
+        },
+        "c": {
+          "title": "Accesso alla tecnologia",
+          "body": "Colmiamo il divario digitale con dispositivi e connettività."
+        },
+        "d": {
+          "title": "Imprenditorialità",
+          "body": "Formazione che trasforma le idee in attività sostenibili."
+        }
+      }
+    },
+    "community": {
+      "title": "Sviluppo della comunità",
+      "summary": "Partnership locali, mentorship per i giovani, iniziative di volontariato e progetti culturali che rafforzano le comunità.",
+      "offerings": {
+        "a": {
+          "title": "Partnership con la comunità",
+          "body": "Collaboriamo con le organizzazioni locali per massimizzare l'impatto."
+        },
+        "b": {
+          "title": "Mentorship per i giovani",
+          "body": "Mentori affidabili che guidano i giovani verso il loro potenziale."
+        },
+        "c": {
+          "title": "Iniziative di volontariato",
+          "body": "Trasformiamo tempo e talento in un servizio significativo."
+        },
+        "d": {
+          "title": "Progetti culturali",
+          "body": "Celebriamo il patrimonio e la creatività a livello locale."
+        }
+      }
+    },
+    "leadership": {
+      "title": "Leadership e opportunità",
+      "summary": "Mentorship professionale, preparazione alla carriera, networking, formazione per piccole imprese e sviluppo della forza lavoro.",
+      "offerings": {
+        "a": {
+          "title": "Mentorship professionale",
+          "body": "Mentori internazionali che aprono porte e condividono saggezza maturata sul campo."
+        },
+        "b": {
+          "title": "Preparazione alla carriera",
+          "body": "Competenze, colloqui e fiducia per il mondo del lavoro."
+        },
+        "c": {
+          "title": "Networking",
+          "body": "Connessioni che trasformano l'ambizione in successo."
+        },
+        "d": {
+          "title": "Sviluppo della forza lavoro",
+          "body": "Formazione allineata a opportunità reali e settori in crescita."
+        }
+      }
+    }
+  },
+  "programs": {
+    "hero": {
+      "eyebrow": "Programmi",
+      "title": "Trasformare il potenziale in opportunità",
+      "intro": "I nostri programmi sono organizzati attorno a cinque pilastri, ciascuno pensato per abbattere le barriere e creare un cambiamento duraturo nella vita delle persone.",
+      "donateCta": "Sostieni un programma",
+      "applyCta": "Richiedi sostegno"
+    },
+    "pillarLabel": "Pilastro {n}",
+    "supportThis": "Sostieni questo pilastro",
+    "featured": {
+      "musicScholarship": {
+        "tag": "Musica e arti",
+        "status": "Candidature aperte",
+        "title": "Fondo borse di studio per la musica",
+        "description": "Borse di studio e strumenti per giovani musicisti di talento che non hanno i mezzi per coltivare la propria arte.",
+        "serves": "Studenti dagli 8 ai 24 anni"
+      },
+      "youthLeadership": {
+        "tag": "Leadership",
+        "status": "Iscrizioni aperte",
+        "title": "Programma di leadership giovanile",
+        "description": "Un programma immersivo che sviluppa fiducia, comunicazione e leadership nella prossima generazione.",
+        "serves": "Giovani dai 14 ai 22 anni"
+      },
+      "technologyAccess": {
+        "tag": "Tecnologia",
+        "status": "In arrivo",
+        "title": "Programma di accesso alla tecnologia",
+        "description": "Dispositivi, connettività e formazione alle competenze digitali per colmare il divario delle opportunità.",
+        "serves": "Studenti e famiglie"
+      },
+      "globalMentorship": {
+        "tag": "Mentorship",
+        "status": "Aperto",
+        "title": "Rete globale di mentorship",
+        "description": "Mettiamo in contatto i talenti emergenti con mentori esperti di diversi settori e continenti.",
+        "serves": "Studenti e professionisti a inizio carriera"
+      },
+      "communityConcert": {
+        "tag": "Comunità",
+        "status": "Stagionale",
+        "title": "Rassegna di concerti per la comunità",
+        "description": "Concerti gratuiti che uniscono le persone e raccolgono sostegno per l'educazione musicale.",
+        "serves": "Comunità di tutto il mondo"
+      },
+      "artistDevelopment": {
+        "tag": "Musica e arti",
+        "status": "Su candidatura",
+        "title": "Programma di sviluppo per artisti",
+        "description": "Mentorship, esibizioni e risorse per aiutare gli artisti emergenti a costruire carriere sostenibili.",
+        "serves": "Artisti emergenti"
+      }
+    }
+  },
+  "donate": {
+    "hero": {
+      "eyebrow": "Dona",
+      "title": "La tua generosità apre le porte",
+      "intro": "Ogni donazione finanzia direttamente borse di studio, educazione musicale, accesso alla tecnologia e mentorship per chi ne ha più bisogno."
+    },
+    "give": {
+      "title": "Fai una donazione",
+      "intro": "Scegli l'importo e la frequenza che preferisci. Il cento per cento della tua generosità sostiene la nostra missione."
+    },
+    "form": {
+      "frequency": "Frequenza",
+      "frequencies": {
+        "oneTime": "Una tantum",
+        "monthly": "Mensile",
+        "annual": "Annuale"
+      },
+      "chooseAmount": "Scegli un importo",
+      "amountLabel": "Importo",
+      "tiers": {
+        "25": "Materiali didattici",
+        "50": "Programmi di mentorship",
+        "100": "Educazione musicale",
+        "250": "Sviluppo degli studenti",
+        "1000": "Donatore di borse di studio"
+      },
+      "custom": "Personalizzato",
+      "processing": "Elaborazione in corso…",
+      "give": "Dona €{amount} {frequency}",
+      "methods": "Pagamento sicuro tramite Stripe, PayPal, Apple Pay, Google Pay e bonifico bancario.",
+      "secure": "Le donazioni sono elaborate in modo sicuro. Riceverai una ricevuta per i tuoi archivi. La deducibilità fiscale dipende dal tuo Paese di residenza.",
+      "demoNotice": "Questo è un modulo di donazione dimostrativo. Collega un fornitore di pagamenti per elaborare donazioni reali."
+    },
+    "ways": {
+      "title": "Altri modi per donare",
+      "items": {
+        "monthly": {
+          "title": "Donazione mensile",
+          "body": "Un sostegno continuativo che ci permette di pianificare il futuro e raggiungere più persone."
+        },
+        "corporate": {
+          "title": "Donazione aziendale",
+          "body": "Collabora con noi attraverso sponsorizzazioni e programmi di donazione corrispondente."
+        },
+        "legacy": {
+          "title": "Lasciti",
+          "body": "Lascia un'eredità duratura includendo la fondazione nella tua pianificazione patrimoniale."
+        },
+        "bank": {
+          "title": "Bonifico bancario",
+          "body": "Preferisci un bonifico diretto? Contattaci per le coordinate bancarie e le istruzioni."
+        }
+      }
+    },
+    "taxNote": "La Esposito–Dossantos Foundation è un'organizzazione no-profit. La deducibilità fiscale delle donazioni dipende dal tuo Paese di residenza. Ti invitiamo a consultare il tuo consulente fiscale; per ogni donazione viene rilasciata una ricevuta ufficiale.",
+    "faq": {
+      "eyebrow": "FAQ per i donatori",
+      "title": "Le risposte alle tue domande",
+      "items": {
+        "secure": {
+          "q": "La mia donazione è sicura?",
+          "a": "Sì. Tutti i pagamenti sono elaborati tramite fornitori crittografati e conformi allo standard PCI. Non conserviamo mai i dati della tua carta."
+        },
+        "recurring": {
+          "q": "Posso donare mensilmente?",
+          "a": "Assolutamente. Le donazioni mensili ricorrenti offrono il sostegno costante che ci aiuta a pianificare e crescere. Puoi modificarle o annullarle in qualsiasi momento."
+        },
+        "receipt": {
+          "q": "Riceverò una ricevuta?",
+          "a": "Sì. Una ricevuta ufficiale ti viene inviata via email subito dopo ogni donazione."
+        },
+        "allocation": {
+          "q": "Come viene utilizzata la mia donazione?",
+          "a": "La grande maggioranza di ogni donazione va direttamente ai programmi. Pubblichiamo la nostra ripartizione nella pagina Impatto."
+        },
+        "cancel": {
+          "q": "Posso annullare una donazione ricorrente?",
+          "a": "Certamente. Puoi gestire o annullare la tua donazione ricorrente in qualsiasi momento: contattaci o utilizza il tuo account donatore."
+        }
+      }
+    }
+  },
+  "impact": {
+    "hero": {
+      "eyebrow": "Impatto e trasparenza",
+      "title": "Una responsabilità che puoi vedere",
+      "intro": "Crediamo che la fiducia si conquisti attraverso la trasparenza. Ecco ciò che intendiamo realizzare e come amministriamo ogni donazione."
+    },
+    "goals": {
+      "eyebrow": "I nostri obiettivi di impatto a 5 anni",
+      "title": "Dove siamo diretti",
+      "intro": "Traguardi chiari e pubblici ci mantengono concentrati e responsabili. Queste cifre rappresentano obiettivi, non risultati attuali.",
+      "metrics": {
+        "students": "Studenti sostenuti",
+        "scholarships": "Borse di studio finanziate",
+        "programs": "Programmi per la comunità",
+        "partners": "Partner globali",
+        "countries": "Paesi serviti"
+      }
+    },
+    "allocation": {
+      "title": "Dove va la tua donazione",
+      "intro": "Ci impegniamo a destinare la grande maggioranza di ogni donazione ai programmi che cambiano le vite.",
+      "items": {
+        "programs": "Programmi e borse di studio",
+        "operations": "Operazioni e governance",
+        "fundraising": "Raccolta fondi"
+      }
+    },
+    "transparency": {
+      "title": "Il nostro impegno per la trasparenza",
+      "items": {
+        "reports": {
+          "title": "Report annuali",
+          "body": "Pubblicati ogni anno, descrivono le nostre attività, i risultati e la situazione finanziaria."
+        },
+        "governance": {
+          "title": "Governance chiara",
+          "body": "Un consiglio responsabile e un comitato consultivo guidano ogni decisione."
+        },
+        "receipts": {
+          "title": "Ricevute per i donatori",
+          "body": "Ogni donazione è riconosciuta con una ricevuta ufficiale e dettagliata."
+        },
+        "audits": {
+          "title": "Responsabilità finanziaria",
+          "body": "Una supervisione indipendente garantisce un utilizzo responsabile dei fondi."
+        }
+      }
+    },
+    "stories": {
+      "eyebrow": "Storie di impatto",
+      "title": "L'opportunità, nelle loro parole",
+      "items": {
+        "a": {
+          "quote": "Una sola borsa di studio ha cambiato completamente la direzione della mia vita e il futuro della mia famiglia.",
+          "name": "Futura borsista",
+          "role": "Programma di istruzione"
+        },
+        "b": {
+          "quote": "Non avrei mai pensato che una persona come me potesse imbracciare uno strumento, tanto meno esibirsi su un vero palco.",
+          "name": "Futuro musicista",
+          "role": "Programma musica e arti"
+        },
+        "c": {
+          "quote": "Il mio mentore mi ha aperto porte di cui non conoscevo nemmeno l'esistenza. Ora faccio lo stesso per gli altri.",
+          "name": "Futuro leader",
+          "role": "Programma di mentorship"
+        }
+      }
+    }
+  },
+  "partners": {
+    "hero": {
+      "eyebrow": "Partner",
+      "title": "Un impatto maggiore, insieme",
+      "intro": "Collaboriamo con aziende, scuole, università, istituzioni culturali e organizzazioni erogatrici di sovvenzioni per moltiplicare la nostra portata e il nostro impatto.",
+      "cta": "Diventa partner"
+    },
+    "types": {
+      "eyebrow": "Tipologie di partnership",
+      "title": "Modi per collaborare con noi",
+      "intro": "Qualunque sia la missione della tua organizzazione, esiste un modo significativo per collaborare.",
+      "items": {
+        "corporate": {
+          "title": "Partnership aziendali",
+          "body": "Sponsorizzazioni e donazioni corrispondenti che fanno progredire i tuoi obiettivi di impatto sociale trasformando al contempo le vite delle persone."
+        },
+        "schools": {
+          "title": "Partnership con le scuole",
+          "body": "Porta borse di studio e programmi di musica e tecnologia direttamente ai tuoi studenti."
+        },
+        "universities": {
+          "title": "Partnership con le università",
+          "body": "Collabora su borse di studio, ricerca, mentorship e percorsi verso l'istruzione superiore."
+        },
+        "cultural": {
+          "title": "Partnership culturali",
+          "body": "Crea insieme a noi concerti, festival e programmi che celebrano la creatività e il patrimonio culturale."
+        },
+        "government": {
+          "title": "Enti pubblici e sovvenzioni",
+          "body": "Collabora a iniziative finanziate da sovvenzioni che ampliano le opportunità su larga scala."
+        }
+      }
+    },
+    "sponsorship": {
+      "eyebrow": "Sponsorizzazione aziendale",
+      "title": "Livelli di sponsorizzazione",
+      "intro": "Allinea il tuo marchio a un impatto globale. Ogni livello include riconoscimento, reportistica e un briefing privato per i donatori.",
+      "popular": "Il più scelto",
+      "tiers": {
+        "bronze": "Partner Bronzo",
+        "silver": "Partner Argento",
+        "gold": "Partner Oro",
+        "platinum": "Partner Platino",
+        "legacy": "Partner Legacy"
+      },
+      "descriptions": {
+        "bronze": "Un punto di ingresso d'impatto nella nostra missione, con un riconoscimento significativo.",
+        "silver": "Maggiore visibilità e un coinvolgimento più profondo nei nostri programmi.",
+        "gold": "Riconoscimento di prim'ordine sulla nostra piattaforma, agli eventi e nei report.",
+        "platinum": "Partnership a livello di leadership con una collaborazione su misura.",
+        "legacy": "Una partnership trasformativa che plasma il futuro della fondazione."
+      },
+      "benefitsTitle": "Ogni partner riceve",
+      "benefits": {
+        "website": "Riconoscimento sul sito web",
+        "event": "Riconoscimento agli eventi",
+        "report": "Report annuale sull'impatto",
+        "social": "Riconoscimento sui social media",
+        "certificate": "Certificato di sponsor",
+        "briefing": "Briefing privato per i donatori"
+      },
+      "cta": "Diventa partner aziendale"
+    }
+  },
+  "events": {
+    "hero": {
+      "eyebrow": "Eventi",
+      "title": "Celebra. Connetti. Contribuisci.",
+      "intro": "Dai concerti di beneficenza ai gala e alle masterclass, i nostri eventi uniscono la nostra comunità e raccolgono sostegno per la nostra missione."
+    },
+    "upcoming": {
+      "eyebrow": "Calendario",
+      "title": "Prossimi eventi",
+      "intro": "Prenota il tuo posto, sponsorizza un evento o offri il tuo volontariato per contribuire a realizzarlo."
+    },
+    "rsvp": "Conferma la partecipazione",
+    "list": {
+      "gala": {
+        "date": "Prossimamente",
+        "location": "Evento di punta",
+        "title": "Gala annuale di raccolta fondi",
+        "summary": "Una serata elegante di musica, ispirazione e generosità a sostegno della nostra missione globale."
+      },
+      "concert": {
+        "date": "Stagionale",
+        "location": "Diverse città",
+        "title": "Rassegna di concerti di beneficenza",
+        "summary": "Esibizioni di livello mondiale che celebrano il talento e finanziano l'educazione musicale."
+      },
+      "scholarshipNight": {
+        "date": "Annuale",
+        "location": "Da annunciare",
+        "title": "Serata delle borse di studio",
+        "summary": "Un omaggio ai nostri borsisti e ai donatori che rendono possibile il loro percorso."
+      },
+      "masterclass": {
+        "date": "Trimestrale",
+        "location": "In presenza e online",
+        "title": "Masterclass musicali",
+        "summary": "Sessioni intime in cui artisti di alto livello guidano la prossima generazione."
+      },
+      "workshop": {
+        "date": "In corso",
+        "location": "Spazi comunitari",
+        "title": "Workshop per la comunità",
+        "summary": "Apprendimento pratico in tecnologia, leadership e arti per tutte le età."
+      },
+      "cultural": {
+        "date": "Tutto l'anno",
+        "location": "Globale",
+        "title": "Eventi culturali",
+        "summary": "Festival e incontri che celebrano il patrimonio, la creatività e la connessione."
+      }
+    },
+    "getInvolved": {
+      "cta": "Mettiti in contatto",
+      "sponsor": {
+        "title": "Sponsorizza un evento",
+        "body": "Poni il tuo marchio al centro di una serata indimenticabile per una causa che conta."
+      },
+      "volunteer": {
+        "title": "Volontariato",
+        "body": "Offri il tuo tempo e il tuo talento per far risplendere i nostri eventi."
+      },
+      "host": {
+        "title": "Ospita un evento",
+        "body": "Collabora con noi per portare un concerto, un gala o un workshop nella tua comunità."
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "Chi siamo",
+      "title": "Chi siamo",
+      "intro": "La Esposito–Dossantos Foundation è un'organizzazione no-profit globale fondata sulla convinzione che l'opportunità debba raggiungere tutti, ovunque."
+    },
+    "story": {
+      "eyebrow": "La nostra storia",
+      "title": "Una fondazione nata da uno scopo",
+      "founderRole": "Fondatore e Presidente",
+      "body1": "La fondazione è stata creata da Bruno Dossantos e dalla famiglia Esposito, uniti da un amore di lunga data per la musica, l'istruzione, la tecnologia e il servizio.",
+      "body2": "Nel corso di anni di lavoro con studenti, artisti e comunità, i fondatori hanno constatato la stessa verità più e più volte: il talento è ovunque, ma l'opportunità no.",
+      "body3": "La Esposito–Dossantos Foundation esiste per colmare questo divario, offrendo borse di studio, mentorship, programmi culturali e iniziative innovative che danno alle persone la forza di realizzare appieno il proprio potenziale."
+    },
+    "board": {
+      "eyebrow": "Leadership",
+      "title": "Consiglio e comitato consultivo",
+      "intro": "Il nostro lavoro è guidato da leader esperti, impegnati nell'integrità, nella trasparenza e nell'impatto.",
+      "members": {
+        "founder": {
+          "name": "Bruno Dossantos",
+          "role": "Fondatore e Presidente"
+        },
+        "cofounder": {
+          "name": "Famiglia Esposito",
+          "role": "Co-fondatore"
+        },
+        "director": {
+          "name": "Direttore dei programmi",
+          "role": "Programmi e impatto"
+        },
+        "treasurer": {
+          "name": "Tesoriere",
+          "role": "Finanza e governance"
+        }
+      }
+    },
+    "governance": {
+      "eyebrow": "Governance",
+      "title": "Come operiamo",
+      "intro": "Una solida governance e la trasparenza sono al centro di tutto ciò che facciamo.",
+      "items": {
+        "structure": {
+          "title": "Struttura organizzativa",
+          "body": "Una struttura chiara con ruoli definiti tra leadership, programmi, finanza e operazioni."
+        },
+        "legal": {
+          "title": "Status giuridico",
+          "body": "Una fondazione no-profit registrata, operante nel rispetto delle leggi applicabili."
+        },
+        "accountability": {
+          "title": "Responsabilità finanziaria",
+          "body": "Supervisione indipendente e reportistica trasparente sul modo in cui i fondi vengono raccolti e utilizzati."
+        },
+        "ethics": {
+          "title": "Etica e integrità",
+          "body": "Agiamo con onestà, responsabilità e rispetto verso ogni persona che serviamo."
+        }
+      }
+    }
+  },
+  "contact": {
+    "hero": {
+      "eyebrow": "Contatti",
+      "title": "Iniziamo una conversazione",
+      "intro": "Che tu voglia donare, collaborare, fare volontariato o saperne di più, saremmo lieti di sentirti."
+    },
+    "reach": {
+      "title": "Contattaci direttamente",
+      "intro": "Scegli il canale più adatto alla tua richiesta, oppure usa il modulo e indirizzeremo il tuo messaggio al team giusto.",
+      "officeLabel": "Sede",
+      "office": "Operante a livello globale · Su appuntamento",
+      "channels": {
+        "general": {
+          "label": "Generale",
+          "email": "info@esposito-dossantos.org"
+        },
+        "partnership": {
+          "label": "Partnership",
+          "email": "partners@esposito-dossantos.org"
+        },
+        "media": {
+          "label": "Media",
+          "email": "media@esposito-dossantos.org"
+        }
+      }
+    },
+    "form": {
+      "name": "Nome completo",
+      "email": "Email",
+      "country": "Paese",
+      "inquiryType": "Tipo di richiesta",
+      "types": {
+        "general": "Richiesta generale",
+        "donation": "Richiesta su donazioni",
+        "partnership": "Richiesta di partnership",
+        "volunteer": "Richiesta di volontariato",
+        "media": "Richiesta media",
+        "grant": "Richiesta di sovvenzione"
+      },
+      "message": "Messaggio",
+      "submit": "Invia messaggio",
+      "submitting": "Invio in corso…",
+      "privacyNote": "Inviando, accetti la nostra Informativa sulla privacy. Non condivideremo mai le tue informazioni.",
+      "successTitle": "Grazie: il tuo messaggio è in arrivo.",
+      "successBody": "Un membro del nostro team ti contatterà a breve."
+    }
+  },
+  "newsletter": {
+    "eyebrow": "Resta in contatto",
+    "title": "Unisciti al movimento.",
+    "intro": "Sii il primo a conoscere nuovi programmi, eventi, borse di studio e l'impatto che contribuisci a creare.",
+    "name": "Nome",
+    "email": "Email",
+    "country": "Paese",
+    "interest": "Sono un/una…",
+    "interests": {
+      "donor": "Donatore",
+      "volunteer": "Volontario",
+      "artist": "Artista",
+      "student": "Studente",
+      "school": "Scuola partner",
+      "sponsor": "Sponsor aziendale",
+      "media": "Media"
+    },
+    "submit": "Iscriviti",
+    "submitting": "Iscrizione in corso…",
+    "consent": "Rispettiamo la tua privacy. Puoi annullare l'iscrizione in qualsiasi momento.",
+    "successTitle": "Benvenuto nel movimento!",
+    "successBody": "Grazie per esserti iscritto. Resta in attesa del nostro prossimo aggiornamento."
+  },
+  "cookieConsent": {
+    "message": "Utilizziamo i cookie per migliorare la tua esperienza e analizzare il traffico del sito.",
+    "learnMore": "Scopri di più",
+    "accept": "Accetta",
+    "reject": "Rifiuta"
+  },
+  "notFound": {
+    "title": "Pagina non trovata",
+    "body": "La pagina che stai cercando potrebbe essere stata spostata o non esistere più.",
+    "cta": "Torna alla home"
+  },
+  "pageMeta": {
+    "mission": {
+      "title": "Missione, visione e valori",
+      "description": "Scopri la missione, la visione e i valori fondamentali della Esposito–Dossantos Foundation: dare forza alle vite attraverso istruzione, musica, tecnologia e opportunità."
+    },
+    "programs": {
+      "title": "Programmi",
+      "description": "Esplora i nostri programmi in istruzione, musica, tecnologia, comunità e leadership, pensati per trasformare il potenziale in opportunità."
+    },
+    "impact": {
+      "title": "Impatto e trasparenza",
+      "description": "Scopri i nostri obiettivi di impatto a cinque anni, la trasparenza sulle donazioni e l'impegno verso la responsabilità della Esposito–Dossantos Foundation."
+    },
+    "donate": {
+      "title": "Dona",
+      "description": "Sostieni istruzione, musica, tecnologia e mentorship. Fai una donazione sicura, una tantum o mensile, alla Esposito–Dossantos Foundation."
+    },
+    "partners": {
+      "title": "Partner e sponsorizzazioni",
+      "description": "Collabora con la Esposito–Dossantos Foundation attraverso sponsorizzazioni aziendali e partnership con scuole, università, istituzioni culturali ed enti erogatori di sovvenzioni."
+    },
+    "events": {
+      "title": "Eventi",
+      "description": "Concerti di beneficenza, gala, serate dedicate alle borse di studio e masterclass che uniscono la nostra comunità e sostengono la nostra missione."
+    },
+    "about": {
+      "title": "Chi siamo",
+      "description": "Scopri i fondatori, il consiglio, la governance e la trasparenza della Esposito–Dossantos Foundation."
+    },
+    "contact": {
+      "title": "Contatti",
+      "description": "Mettiti in contatto con la Esposito–Dossantos Foundation per donazioni, partnership, volontariato, media e richieste di sovvenzioni."
+    },
+    "privacy": {
+      "title": "Informativa sulla privacy",
+      "description": "Come la Esposito–Dossantos Foundation raccoglie, utilizza e protegge le tue informazioni personali."
+    },
+    "terms": {
+      "title": "Termini di utilizzo",
+      "description": "I termini che regolano l'utilizzo del sito web della Esposito–Dossantos Foundation."
+    },
+    "cookies": {
+      "title": "Informativa sui cookie",
+      "description": "Come la Esposito–Dossantos Foundation utilizza i cookie e tecnologie simili."
+    }
+  },
+  "legal": {
+    "privacy": {
+      "eyebrow": "Note legali",
+      "title": "Informativa sulla privacy",
+      "updated": "Ultimo aggiornamento: giugno 2026",
+      "sections": [
+        {
+          "heading": "Introduzione",
+          "body": "La Esposito–Dossantos Foundation (\"noi\") si impegna a proteggere la tua privacy. La presente informativa spiega come raccogliamo, utilizziamo e tuteliamo le tue informazioni personali in conformità con il GDPR e le leggi applicabili in materia di protezione dei dati."
+        },
+        {
+          "heading": "Informazioni che raccogliamo",
+          "body": "Raccogliamo le informazioni che ci fornisci direttamente, come nome, email, Paese e messaggio, quando doni, ti iscrivi, fai volontariato o ci contatti. Raccogliamo inoltre dati tecnici limitati, come informazioni sul dispositivo e sull'utilizzo, per migliorare il nostro sito web."
+        },
+        {
+          "heading": "Come utilizziamo le tue informazioni",
+          "body": "Utilizziamo le tue informazioni per elaborare le donazioni, rispondere alle richieste, inviare gli aggiornamenti che hai richiesto e migliorare i nostri programmi e servizi. Non vendiamo mai i tuoi dati personali."
+        },
+        {
+          "heading": "Base giuridica",
+          "body": "Trattiamo i dati personali sulla base del tuo consenso, dei nostri legittimi interessi nella gestione della fondazione e, ove necessario, per adempiere a obblighi di legge."
+        },
+        {
+          "heading": "Condivisione dei dati",
+          "body": "Condividiamo i dati esclusivamente con fornitori di servizi affidabili (come i fornitori di pagamenti ed email) che li trattano per nostro conto in stretta riservatezza, e ove richiesto dalla legge."
+        },
+        {
+          "heading": "Sicurezza dei dati",
+          "body": "Adottiamo misure tecniche e organizzative adeguate, tra cui crittografia e controlli degli accessi, per proteggere le tue informazioni."
+        },
+        {
+          "heading": "I tuoi diritti",
+          "body": "Hai il diritto di accedere ai tuoi dati personali, rettificarli, cancellarli o limitarne il trattamento, nonché di revocare il consenso in qualsiasi momento. Per esercitare questi diritti, contatta privacy@esposito-dossantos.org."
+        },
+        {
+          "heading": "Contatti",
+          "body": "Per qualsiasi domanda su questa informativa, contattaci all'indirizzo privacy@esposito-dossantos.org."
+        }
+      ]
+    },
+    "terms": {
+      "eyebrow": "Note legali",
+      "title": "Termini di utilizzo",
+      "updated": "Ultimo aggiornamento: giugno 2026",
+      "sections": [
+        {
+          "heading": "Accettazione dei termini",
+          "body": "Accedendo a questo sito web, accetti i presenti Termini di utilizzo. Se non li accetti, ti preghiamo di non utilizzare il sito."
+        },
+        {
+          "heading": "Utilizzo del sito web",
+          "body": "Accetti di utilizzare questo sito web in modo lecito e di non farne un uso improprio, di non comprometterne il funzionamento e di non tentare di accedere senza autorizzazione a una qualsiasi sua parte."
+        },
+        {
+          "heading": "Donazioni",
+          "body": "Le donazioni sono volontarie ed elaborate in modo sicuro tramite fornitori terzi. La deducibilità fiscale dipende dal tuo Paese di residenza."
+        },
+        {
+          "heading": "Proprietà intellettuale",
+          "body": "Tutti i contenuti di questo sito web, inclusi testi, immagini e loghi, sono di proprietà della Esposito–Dossantos Foundation o dei suoi licenzianti e sono tutelati dalla legge."
+        },
+        {
+          "heading": "Limitazione di responsabilità",
+          "body": "Il sito web è fornito \"così com'è\". Non rilasciamo alcuna garanzia e non siamo responsabili per eventuali danni derivanti dal suo utilizzo, nella misura massima consentita dalla legge."
+        },
+        {
+          "heading": "Modifiche ai presenti termini",
+          "body": "Possiamo aggiornare questi termini di volta in volta. L'uso continuato del sito web costituisce accettazione dei termini modificati."
+        },
+        {
+          "heading": "Contatti",
+          "body": "Le domande relative a questi termini possono essere inviate a info@esposito-dossantos.org."
+        }
+      ]
+    },
+    "cookies": {
+      "eyebrow": "Note legali",
+      "title": "Informativa sui cookie",
+      "updated": "Ultimo aggiornamento: giugno 2026",
+      "sections": [
+        {
+          "heading": "Cosa sono i cookie",
+          "body": "I cookie sono piccoli file di testo memorizzati sul tuo dispositivo che aiutano i siti web a funzionare e forniscono informazioni su come vengono utilizzati."
+        },
+        {
+          "heading": "Come utilizziamo i cookie",
+          "body": "Utilizziamo cookie essenziali per il funzionamento del sito e, con il tuo consenso, cookie analitici per comprendere e migliorare il modo in cui i visitatori utilizzano il nostro sito."
+        },
+        {
+          "heading": "Gestione dei cookie",
+          "body": "Puoi accettare o rifiutare i cookie non essenziali tramite il nostro banner di consenso e gestire i cookie attraverso le impostazioni del tuo browser in qualsiasi momento."
+        },
+        {
+          "heading": "Cookie di terze parti",
+          "body": "Alcuni cookie possono essere impostati da servizi di terze parti affidabili, come fornitori di analisi o di pagamenti, soggetti alle rispettive informative sulla privacy."
+        },
+        {
+          "heading": "Contatti",
+          "body": "Per domande sul nostro utilizzo dei cookie, contatta privacy@esposito-dossantos.org."
+        }
+      ]
+    }
+  }
+}
