@@ -584,44 +584,6 @@
       "intro": "Reserva tu lugar, patrocina un evento o colabora como voluntario para hacerlo realidad."
     },
     "rsvp": "Confirmar asistencia",
-    "list": {
-      "gala": {
-        "date": "Próximamente",
-        "location": "Evento insignia",
-        "title": "Gala benéfica anual",
-        "summary": "Una elegante velada de música, inspiración y solidaridad en apoyo de nuestra misión global."
-      },
-      "concert": {
-        "date": "De temporada",
-        "location": "Varias ciudades",
-        "title": "Ciclo de conciertos benéficos",
-        "summary": "Actuaciones de primer nivel que celebran el talento y financian la educación musical."
-      },
-      "scholarshipNight": {
-        "date": "Anual",
-        "location": "Por anunciar",
-        "title": "Noche de las becas",
-        "summary": "Un homenaje a nuestros becarios y a los donantes que hacen posibles sus trayectorias."
-      },
-      "masterclass": {
-        "date": "Trimestral",
-        "location": "Presencial y en línea",
-        "title": "Clases magistrales de música",
-        "summary": "Sesiones cercanas en las que grandes artistas guían a la próxima generación."
-      },
-      "workshop": {
-        "date": "Permanente",
-        "location": "Espacios comunitarios",
-        "title": "Talleres comunitarios",
-        "summary": "Aprendizaje práctico en tecnología, liderazgo y artes para todas las edades."
-      },
-      "cultural": {
-        "date": "Todo el año",
-        "location": "A nivel mundial",
-        "title": "Eventos culturales",
-        "summary": "Festivales y encuentros que celebran el patrimonio, la creatividad y la conexión."
-      }
-    },
     "getInvolved": {
       "cta": "Ponte en contacto",
       "sponsor": {
@@ -636,6 +598,20 @@
         "title": "Organiza un evento",
         "body": "Colabora con nosotros para llevar un concierto, una gala o un taller a tu comunidad."
       }
+    },
+    "viewEvent": "Ver evento",
+    "allEvents": "Todos los eventos",
+    "status": {
+      "open": "Abierto",
+      "soon": "Próximamente",
+      "recurring": "Recurrente"
+    },
+    "detail": {
+      "aboutTitle": "Sobre el evento",
+      "whenLabel": "Cuándo",
+      "whereLabel": "Dónde",
+      "rsvpTitle": "Reserva tu lugar",
+      "rsvpIntro": "Dinos que asistirás y te mantendremos al día con los detalles."
     }
   },
   "blog": {
@@ -947,5 +923,16 @@
         }
       ]
     }
+  },
+  "rsvp": {
+    "name": "Nombre completo",
+    "email": "Correo electrónico",
+    "guests": "Número de invitados",
+    "submit": "Reservar mi lugar",
+    "submitting": "Enviando…",
+    "success": "¡Estás en la lista!",
+    "successBody": "Gracias por confirmar. Te contactaremos pronto con los detalles.",
+    "error": "Algo salió mal. Inténtalo de nuevo.",
+    "consent": "Al reservar, aceptas nuestra Política de Privacidad."
   }
 }

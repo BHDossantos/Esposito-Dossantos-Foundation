@@ -584,44 +584,6 @@
       "intro": "Reserve your place, sponsor an event, or volunteer to help bring it to life."
     },
     "rsvp": "RSVP",
-    "list": {
-      "gala": {
-        "date": "Coming soon",
-        "location": "Flagship event",
-        "title": "Annual Fundraising Gala",
-        "summary": "An elegant evening of music, inspiration, and giving in support of our global mission."
-      },
-      "concert": {
-        "date": "Seasonal",
-        "location": "Multiple cities",
-        "title": "Charity Concert Series",
-        "summary": "World-class performances that celebrate talent and fund music education."
-      },
-      "scholarshipNight": {
-        "date": "Annual",
-        "location": "To be announced",
-        "title": "Scholarship Night",
-        "summary": "Honoring our scholars and the donors who make their journeys possible."
-      },
-      "masterclass": {
-        "date": "Quarterly",
-        "location": "In-person & online",
-        "title": "Music Masterclasses",
-        "summary": "Intimate sessions where master artists mentor the next generation."
-      },
-      "workshop": {
-        "date": "Ongoing",
-        "location": "Community venues",
-        "title": "Community Workshops",
-        "summary": "Hands-on learning in technology, leadership, and the arts for all ages."
-      },
-      "cultural": {
-        "date": "Year-round",
-        "location": "Global",
-        "title": "Cultural Events",
-        "summary": "Festivals and gatherings that celebrate heritage, creativity, and connection."
-      }
-    },
     "getInvolved": {
       "cta": "Get in touch",
       "sponsor": {
@@ -636,6 +598,20 @@
         "title": "Host an Event",
         "body": "Partner with us to bring a concert, gala, or workshop to your community."
       }
+    },
+    "viewEvent": "View event",
+    "allEvents": "All events",
+    "status": {
+      "open": "Open",
+      "soon": "Coming soon",
+      "recurring": "Recurring"
+    },
+    "detail": {
+      "aboutTitle": "About this event",
+      "whenLabel": "When",
+      "whereLabel": "Where",
+      "rsvpTitle": "Reserve your place",
+      "rsvpIntro": "Tell us you're coming and we'll keep you updated with the details."
     }
   },
   "blog": {
@@ -947,5 +923,16 @@
         }
       ]
     }
+  },
+  "rsvp": {
+    "name": "Full name",
+    "email": "Email",
+    "guests": "Number of guests",
+    "submit": "Reserve my place",
+    "submitting": "Sending…",
+    "success": "You're on the list!",
+    "successBody": "Thank you for your RSVP. We'll be in touch with the details soon.",
+    "error": "Something went wrong. Please try again.",
+    "consent": "By reserving, you agree to our Privacy Policy."
   }
 }

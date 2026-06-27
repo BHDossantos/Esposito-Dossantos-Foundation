@@ -584,44 +584,6 @@
       "intro": "Prenota il tuo posto, sponsorizza un evento o offri il tuo volontariato per contribuire a realizzarlo."
     },
     "rsvp": "Conferma la partecipazione",
-    "list": {
-      "gala": {
-        "date": "Prossimamente",
-        "location": "Evento di punta",
-        "title": "Gala annuale di raccolta fondi",
-        "summary": "Una serata elegante di musica, ispirazione e generosità a sostegno della nostra missione globale."
-      },
-      "concert": {
-        "date": "Stagionale",
-        "location": "Diverse città",
-        "title": "Rassegna di concerti di beneficenza",
-        "summary": "Esibizioni di livello mondiale che celebrano il talento e finanziano l'educazione musicale."
-      },
-      "scholarshipNight": {
-        "date": "Annuale",
-        "location": "Da annunciare",
-        "title": "Serata delle borse di studio",
-        "summary": "Un omaggio ai nostri borsisti e ai donatori che rendono possibile il loro percorso."
-      },
-      "masterclass": {
-        "date": "Trimestrale",
-        "location": "In presenza e online",
-        "title": "Masterclass musicali",
-        "summary": "Sessioni intime in cui artisti di alto livello guidano la prossima generazione."
-      },
-      "workshop": {
-        "date": "In corso",
-        "location": "Spazi comunitari",
-        "title": "Workshop per la comunità",
-        "summary": "Apprendimento pratico in tecnologia, leadership e arti per tutte le età."
-      },
-      "cultural": {
-        "date": "Tutto l'anno",
-        "location": "Globale",
-        "title": "Eventi culturali",
-        "summary": "Festival e incontri che celebrano il patrimonio, la creatività e la connessione."
-      }
-    },
     "getInvolved": {
       "cta": "Mettiti in contatto",
       "sponsor": {
@@ -636,6 +598,20 @@
         "title": "Ospita un evento",
         "body": "Collabora con noi per portare un concerto, un gala o un workshop nella tua comunità."
       }
+    },
+    "viewEvent": "Vedi evento",
+    "allEvents": "Tutti gli eventi",
+    "status": {
+      "open": "Aperto",
+      "soon": "Prossimamente",
+      "recurring": "Ricorrente"
+    },
+    "detail": {
+      "aboutTitle": "Informazioni sull'evento",
+      "whenLabel": "Quando",
+      "whereLabel": "Dove",
+      "rsvpTitle": "Prenota il tuo posto",
+      "rsvpIntro": "Dicci che parteciperai e ti terremo aggiornato sui dettagli."
     }
   },
   "blog": {
@@ -947,5 +923,16 @@
         }
       ]
     }
+  },
+  "rsvp": {
+    "name": "Nome completo",
+    "email": "Email",
+    "guests": "Numero di ospiti",
+    "submit": "Prenota il mio posto",
+    "submitting": "Invio…",
+    "success": "Sei in lista!",
+    "successBody": "Grazie per la conferma. Ti contatteremo presto con i dettagli.",
+    "error": "Qualcosa è andato storto. Riprova.",
+    "consent": "Prenotando, accetti la nostra Informativa sulla privacy."
   }
 }

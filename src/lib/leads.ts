@@ -31,8 +31,18 @@ export const contactSchema = z.object({
   company: z.string().max(200).optional()
 });
 
+export const rsvpSchema = z.object({
+  name: z.string().trim().min(1).max(120),
+  email: z.string().trim().email().max(200),
+  guests: z.coerce.number().int().min(1).max(20).optional(),
+  eventSlug: z.string().trim().min(1).max(120),
+  eventTitle: z.string().trim().max(200).optional(),
+  // Honeypot.
+  company: z.string().max(200).optional()
+});
+
 export type Lead = {
-  source: 'newsletter' | 'contact';
+  source: 'newsletter' | 'contact' | 'rsvp';
   category: string;
   data: Record<string, unknown>;
   receivedAt: string;
