@@ -819,6 +819,14 @@
     "blog": {
       "title": "Noticias",
       "description": "Noticias, historias y novedades de la Esposito–Dossantos Foundation sobre educación, música, tecnología y oportunidad."
+    },
+    "volunteer": {
+      "title": "Voluntariado",
+      "description": "Hazte voluntario con la Esposito–Dossantos Foundation y ayuda a empoderar vidas a través de la educación, la música, la tecnología y la oportunidad."
+    },
+    "scholarships": {
+      "title": "Becas",
+      "description": "Solicita una beca de la Esposito–Dossantos Foundation en música, educación, tecnología o liderazgo."
     }
   },
   "legal": {
@@ -934,5 +942,61 @@
     "successBody": "Gracias por confirmar. Te contactaremos pronto con los detalles.",
     "error": "Algo salió mal. Inténtalo de nuevo.",
     "consent": "Al reservar, aceptas nuestra Política de Privacidad."
+  },
+  "applications": {
+    "name": "Nombre completo",
+    "email": "Correo electrónico",
+    "country": "País",
+    "choose": "Selecciona…",
+    "submit": "Enviar solicitud",
+    "submitting": "Enviando…",
+    "successTitle": "Gracias — hemos recibido tu solicitud.",
+    "successBody": "Hemos recibido tu solicitud y un miembro de nuestro equipo se pondrá en contacto pronto.",
+    "error": "Algo salió mal. Inténtalo de nuevo.",
+    "consent": "Al enviar, aceptas nuestra Política de Privacidad. Nunca compartiremos tu información."
+  },
+  "volunteer": {
+    "hero": {
+      "eyebrow": "Voluntariado",
+      "title": "Dona tu tiempo. Cambia una vida.",
+      "intro": "Nuestro trabajo se impulsa con personas que se preocupan. Cuéntanos cómo te gustaría ayudar y encontraremos la mejor manera de generar impacto."
+    },
+    "form": {
+      "interestLabel": "¿Dónde te gustaría ayudar?",
+      "availabilityLabel": "Tu disponibilidad",
+      "messageLabel": "Cuéntanos sobre ti",
+      "interests": {
+        "music": "Música y Artes",
+        "education": "Educación y Tutoría",
+        "technology": "Tecnología",
+        "events": "Eventos",
+        "mentorship": "Mentoría",
+        "admin": "Administración y Operaciones"
+      },
+      "availabilities": {
+        "weekly": "Unas horas a la semana",
+        "monthly": "Unas horas al mes",
+        "events": "Solo en eventos",
+        "flexible": "Flexible"
+      }
+    }
+  },
+  "scholarships": {
+    "hero": {
+      "eyebrow": "Becas",
+      "title": "Solicita una beca",
+      "intro": "La oportunidad nunca debería estar limitada por los ingresos. Si estás listo para aprender, liderar o crear, queremos ayudarte a dar el siguiente paso."
+    },
+    "form": {
+      "programLabel": "¿A qué área te postulas?",
+      "institutionLabel": "Centro / institución (opcional)",
+      "messageLabel": "Cuéntanos sobre ti y por qué te postulas",
+      "programs": {
+        "music": "Música y Artes",
+        "education": "Educación",
+        "technology": "Tecnología e Innovación",
+        "leadership": "Liderazgo"
+      }
+    }
   }
 }

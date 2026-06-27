@@ -23,7 +23,7 @@ export default async function Footer() {
       links: [
         { label: tn('donate'), href: '/donate' },
         { label: tn('partners'), href: '/partners' },
-        { label: t('volunteer'), href: '/contact' },
+        { label: t('volunteer'), href: '/volunteer' },
         { label: tn('contact'), href: '/contact' }
       ]
     },

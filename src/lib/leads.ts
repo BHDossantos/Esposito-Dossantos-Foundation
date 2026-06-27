@@ -41,8 +41,24 @@ export const rsvpSchema = z.object({
   company: z.string().max(200).optional()
 });
 
+export const applicationSchema = z.object({
+  type: z.enum(['volunteer', 'scholarship']),
+  name: z.string().trim().min(1).max(120),
+  email: z.string().trim().email().max(200),
+  country: z.string().trim().max(120).optional().or(z.literal('')),
+  // Volunteer-specific
+  interest: z.string().trim().max(60).optional().or(z.literal('')),
+  availability: z.string().trim().max(60).optional().or(z.literal('')),
+  // Scholarship-specific
+  program: z.string().trim().max(60).optional().or(z.literal('')),
+  institution: z.string().trim().max(200).optional().or(z.literal('')),
+  message: z.string().trim().min(1).max(5000),
+  // Honeypot.
+  company: z.string().max(200).optional()
+});
+
 export type Lead = {
-  source: 'newsletter' | 'contact' | 'rsvp';
+  source: 'newsletter' | 'contact' | 'rsvp' | 'application';
   category: string;
   data: Record<string, unknown>;
   receivedAt: string;

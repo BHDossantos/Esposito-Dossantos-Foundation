@@ -40,7 +40,7 @@ function ProgramsContent() {
         <Link href="/donate" className="btn-primary">
           {t('hero.donateCta')}
         </Link>
-        <Link href="/contact" className="btn-ghost-light">
+        <Link href="/scholarships" className="btn-ghost-light">
           {t('hero.applyCta')}
         </Link>
       </PageHero>

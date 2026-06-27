@@ -819,6 +819,14 @@
     "blog": {
       "title": "News",
       "description": "News, stories, and insights from the Esposito–Dossantos Foundation on education, music, technology, and opportunity."
+    },
+    "volunteer": {
+      "title": "Volunteer",
+      "description": "Volunteer with the Esposito–Dossantos Foundation and help empower lives through education, music, technology, and opportunity."
+    },
+    "scholarships": {
+      "title": "Scholarships",
+      "description": "Apply for a scholarship from the Esposito–Dossantos Foundation in music, education, technology, or leadership."
     }
   },
   "legal": {
@@ -934,5 +942,61 @@
     "successBody": "Thank you for your RSVP. We'll be in touch with the details soon.",
     "error": "Something went wrong. Please try again.",
     "consent": "By reserving, you agree to our Privacy Policy."
+  },
+  "applications": {
+    "name": "Full name",
+    "email": "Email",
+    "country": "Country",
+    "choose": "Please select…",
+    "submit": "Submit application",
+    "submitting": "Submitting…",
+    "successTitle": "Thank you — your application is in.",
+    "successBody": "We've received your application and a member of our team will be in touch soon.",
+    "error": "Something went wrong. Please try again.",
+    "consent": "By submitting, you agree to our Privacy Policy. We will never share your information."
+  },
+  "volunteer": {
+    "hero": {
+      "eyebrow": "Volunteer",
+      "title": "Give your time. Change a life.",
+      "intro": "Our work is powered by people who care. Tell us how you would like to help, and we will find the right way for you to make an impact."
+    },
+    "form": {
+      "interestLabel": "Where would you like to help?",
+      "availabilityLabel": "Your availability",
+      "messageLabel": "Tell us about yourself",
+      "interests": {
+        "music": "Music & Arts",
+        "education": "Education & Tutoring",
+        "technology": "Technology",
+        "events": "Events",
+        "mentorship": "Mentorship",
+        "admin": "Administration & Operations"
+      },
+      "availabilities": {
+        "weekly": "A few hours weekly",
+        "monthly": "A few hours monthly",
+        "events": "At events only",
+        "flexible": "Flexible"
+      }
+    }
+  },
+  "scholarships": {
+    "hero": {
+      "eyebrow": "Scholarships",
+      "title": "Apply for a scholarship",
+      "intro": "Opportunity should never be limited by income. If you are ready to learn, lead, or create, we want to help you take the next step."
+    },
+    "form": {
+      "programLabel": "Which area are you applying for?",
+      "institutionLabel": "School / institution (optional)",
+      "messageLabel": "Tell us about yourself and why you are applying",
+      "programs": {
+        "music": "Music & Arts",
+        "education": "Education",
+        "technology": "Technology & Innovation",
+        "leadership": "Leadership"
+      }
+    }
   }
 }

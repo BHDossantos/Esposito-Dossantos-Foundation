@@ -819,6 +819,14 @@
     "blog": {
       "title": "Notizie",
       "description": "Notizie, storie e approfondimenti della Esposito–Dossantos Foundation su istruzione, musica, tecnologia e opportunità."
+    },
+    "volunteer": {
+      "title": "Volontariato",
+      "description": "Fai volontariato con la Esposito–Dossantos Foundation e contribuisci a dare forza alle persone attraverso istruzione, musica, tecnologia e opportunità."
+    },
+    "scholarships": {
+      "title": "Borse di Studio",
+      "description": "Candidati per una borsa di studio della Esposito–Dossantos Foundation in musica, istruzione, tecnologia o leadership."
     }
   },
   "legal": {
@@ -934,5 +942,61 @@
     "successBody": "Grazie per la conferma. Ti contatteremo presto con i dettagli.",
     "error": "Qualcosa è andato storto. Riprova.",
     "consent": "Prenotando, accetti la nostra Informativa sulla privacy."
+  },
+  "applications": {
+    "name": "Nome completo",
+    "email": "Email",
+    "country": "Paese",
+    "choose": "Seleziona…",
+    "submit": "Invia candidatura",
+    "submitting": "Invio…",
+    "successTitle": "Grazie — la tua candidatura è stata ricevuta.",
+    "successBody": "Abbiamo ricevuto la tua candidatura e un membro del nostro team ti contatterà presto.",
+    "error": "Qualcosa è andato storto. Riprova.",
+    "consent": "Inviando, accetti la nostra Informativa sulla privacy. Non condivideremo mai i tuoi dati."
+  },
+  "volunteer": {
+    "hero": {
+      "eyebrow": "Volontariato",
+      "title": "Dona il tuo tempo. Cambia una vita.",
+      "intro": "Il nostro lavoro è alimentato da persone che hanno a cuore gli altri. Dicci come vorresti aiutare e troveremo il modo giusto per generare impatto."
+    },
+    "form": {
+      "interestLabel": "Dove vorresti aiutare?",
+      "availabilityLabel": "La tua disponibilità",
+      "messageLabel": "Parlaci di te",
+      "interests": {
+        "music": "Musica e Arti",
+        "education": "Istruzione e Tutoraggio",
+        "technology": "Tecnologia",
+        "events": "Eventi",
+        "mentorship": "Mentorship",
+        "admin": "Amministrazione e Operazioni"
+      },
+      "availabilities": {
+        "weekly": "Qualche ora a settimana",
+        "monthly": "Qualche ora al mese",
+        "events": "Solo agli eventi",
+        "flexible": "Flessibile"
+      }
+    }
+  },
+  "scholarships": {
+    "hero": {
+      "eyebrow": "Borse di Studio",
+      "title": "Candidati per una borsa di studio",
+      "intro": "L'opportunità non dovrebbe mai essere limitata dal reddito. Se sei pronto a imparare, guidare o creare, vogliamo aiutarti a fare il prossimo passo."
+    },
+    "form": {
+      "programLabel": "Per quale area ti candidi?",
+      "institutionLabel": "Scuola / istituto (facoltativo)",
+      "messageLabel": "Parlaci di te e del motivo della tua candidatura",
+      "programs": {
+        "music": "Musica e Arti",
+        "education": "Istruzione",
+        "technology": "Tecnologia e Innovazione",
+        "leadership": "Leadership"
+      }
+    }
   }
 }
