@@ -386,7 +386,9 @@
       "give": "Dona €{amount} {frequency}",
       "methods": "Pago seguro a través de Stripe, PayPal, Apple Pay, Google Pay y transferencia bancaria.",
       "secure": "Las donaciones se procesan de forma segura. Recibirás un recibo para tus registros. La deducibilidad fiscal depende de tu país de residencia.",
-      "demoNotice": "Este es un formulario de donación de demostración. Conecta un proveedor de pagos para procesar donaciones reales."
+      "demoNotice": "Este es un formulario de donación de demostración. Conecta un proveedor de pagos para procesar donaciones reales.",
+      "notConfigured": "Las donaciones en línea aún no están activas. Contáctanos para donar — y gracias por tu generosidad.",
+      "error": "Algo salió mal. Inténtalo de nuevo."
     },
     "ways": {
       "title": "Otras formas de donar",
@@ -827,6 +829,10 @@
     "scholarships": {
       "title": "Becas",
       "description": "Solicita una beca de la Esposito–Dossantos Foundation en música, educación, tecnología o liderazgo."
+    },
+    "donateThankYou": {
+      "title": "Gracias",
+      "description": "Gracias por apoyar a la Esposito–Dossantos Foundation."
     }
   },
   "legal": {
@@ -998,5 +1004,11 @@
         "leadership": "Liderazgo"
       }
     }
+  },
+  "donateThankYou": {
+    "eyebrow": "Gracias",
+    "title": "Tu generosidad crea oportunidades.",
+    "body": "Gracias por tu donación a la Esposito–Dossantos Foundation. Un recibo está en camino a tu correo. Tu apoyo ayuda a eliminar barreras y a abrir puertas para quienes más lo necesitan.",
+    "cta": "Volver al inicio"
   }
 }

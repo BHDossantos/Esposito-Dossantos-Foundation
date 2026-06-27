@@ -1,30 +1,40 @@
 'use client';
 
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
 const amounts = [25, 50, 100, 250, 1000];
 const frequencies = ['oneTime', 'monthly', 'annual'] as const;
 
 export default function DonateForm() {
   const t = useTranslations('donate.form');
+  const locale = useLocale();
   const [frequency, setFrequency] = useState<(typeof frequencies)[number]>('monthly');
   const [amount, setAmount] = useState<number>(100);
   const [custom, setCustom] = useState('');
-  const [status, setStatus] = useState<'idle' | 'loading'>('idle');
+  const [status, setStatus] = useState<'idle' | 'loading' | 'notConfigured' | 'error'>('idle');
 
   const effectiveAmount = custom ? Number(custom) : amount;
 
-  function onSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    if (!effectiveAmount || effectiveAmount < 1) return;
     setStatus('loading');
-    // Placeholder. Wire to Stripe / PayPal checkout session creation endpoint.
-    setTimeout(() => {
-      setStatus('idle');
-      alert(
-        `${t('demoNotice')}\n\n${t('frequency')}: ${t(`frequencies.${frequency}`)}\n${t('amountLabel')}: €${effectiveAmount || 0}`
-      );
-    }, 600);
+    try {
+      const res = await fetch('/api/checkout', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ amount: effectiveAmount, frequency, currency: 'eur', locale })
+      });
+      const data = await res.json();
+      if (data?.url) {
+        window.location.href = data.url; // Redirect to Stripe Checkout
+        return;
+      }
+      setStatus(data?.configured === false ? 'notConfigured' : 'error');
+    } catch {
+      setStatus('error');
+    }
   }
 
   return (
@@ -96,6 +106,17 @@ export default function DonateForm() {
           ? t('processing')
           : t('give', { amount: effectiveAmount || 0, frequency: t(`frequencies.${frequency}`) })}
       </button>
+
+      {status === 'notConfigured' ? (
+        <p className="mt-3 rounded-lg bg-champagne/10 px-4 py-3 text-center text-sm text-navy/80" role="status">
+          {t('notConfigured')}
+        </p>
+      ) : null}
+      {status === 'error' ? (
+        <p className="mt-3 text-center text-sm font-medium text-red-700" role="alert">
+          {t('error')}
+        </p>
+      ) : null}
 
       <div className="mt-5 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs text-softgray">
         <span>{t('methods')}</span>

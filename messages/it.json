@@ -386,7 +386,9 @@
       "give": "Dona €{amount} {frequency}",
       "methods": "Pagamento sicuro tramite Stripe, PayPal, Apple Pay, Google Pay e bonifico bancario.",
       "secure": "Le donazioni sono elaborate in modo sicuro. Riceverai una ricevuta per i tuoi archivi. La deducibilità fiscale dipende dal tuo Paese di residenza.",
-      "demoNotice": "Questo è un modulo di donazione dimostrativo. Collega un fornitore di pagamenti per elaborare donazioni reali."
+      "demoNotice": "Questo è un modulo di donazione dimostrativo. Collega un fornitore di pagamenti per elaborare donazioni reali.",
+      "notConfigured": "Le donazioni online non sono ancora attive. Contattaci per donare — e grazie per la tua generosità.",
+      "error": "Qualcosa è andato storto. Riprova."
     },
     "ways": {
       "title": "Altri modi per donare",
@@ -827,6 +829,10 @@
     "scholarships": {
       "title": "Borse di Studio",
       "description": "Candidati per una borsa di studio della Esposito–Dossantos Foundation in musica, istruzione, tecnologia o leadership."
+    },
+    "donateThankYou": {
+      "title": "Grazie",
+      "description": "Grazie per il tuo sostegno alla Esposito–Dossantos Foundation."
     }
   },
   "legal": {
@@ -998,5 +1004,11 @@
         "leadership": "Leadership"
       }
     }
+  },
+  "donateThankYou": {
+    "eyebrow": "Grazie",
+    "title": "La tua generosità crea opportunità.",
+    "body": "Grazie per la tua donazione alla Esposito–Dossantos Foundation. Una ricevuta è in arrivo nella tua casella di posta. Il tuo sostegno aiuta a rimuovere le barriere e ad aprire le porte a chi ne ha più bisogno.",
+    "cta": "Torna alla home"
   }
 }
