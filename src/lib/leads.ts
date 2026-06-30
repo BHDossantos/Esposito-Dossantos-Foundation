@@ -71,6 +71,10 @@ export async function recordLead(lead: Lead): Promise<void> {
   // eslint-disable-next-line no-console
   console.info('[lead]', JSON.stringify(lead));
 
+  // Persist to the store when configured (Supabase). No-op otherwise.
+  const { saveLead } = await import('./leadStore');
+  await saveLead(lead);
+
   // Example integration (uncomment + configure via env):
   //
   // if (process.env.HUBSPOT_PRIVATE_APP_TOKEN) {
