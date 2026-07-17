@@ -35,7 +35,8 @@
     "newsletterCopy": "Unisciti al movimento e ricevi aggiornamenti sui nostri programmi, eventi e risultati.",
     "joinCta": "Unisciti al movimento",
     "rights": "Tutti i diritti riservati.",
-    "registration": "Organizzazione no-profit registrata · Governance e trasparenza garantite."
+    "registration": "Organizzazione no-profit registrata · Governance e trasparenza garantite.",
+    "transparency": "Trasparenza"
   },
   "home": {
     "hero": {
@@ -833,6 +834,10 @@
     "donateThankYou": {
       "title": "Grazie",
       "description": "Grazie per il tuo sostegno alla Esposito–Dossantos Foundation."
+    },
+    "transparency": {
+      "title": "Trasparenza",
+      "description": "Trasparenza finanziaria e responsabilità della Esposito–Dossantos Foundation — allocazione, entrate, investimenti nei programmi e obiettivi di impatto."
     }
   },
   "legal": {
@@ -1010,5 +1015,76 @@
     "title": "La tua generosità crea opportunità.",
     "body": "Grazie per la tua donazione alla Esposito–Dossantos Foundation. Una ricevuta è in arrivo nella tua casella di posta. Il tuo sostegno aiuta a rimuovere le barriere e ad aprire le porte a chi ne ha più bisogno.",
     "cta": "Torna alla home"
+  },
+  "transparency": {
+    "hero": {
+      "eyebrow": "Trasparenza",
+      "title": "Dove va ogni donazione",
+      "intro": "Crediamo che la fiducia si conquisti con la trasparenza. Ecco come intendiamo raccogliere e gestire i fondi — e l’impatto che vogliamo raggiungere."
+    },
+    "disclaimer": "Le cifre sono obiettivi illustrativi a cinque anni per una fondazione in fase di avvio, non risultati certificati. Pubblicheremo dati finanziari verificati man mano che i programmi maturano.",
+    "allocation": {
+      "title": "Come vengono allocati i fondi",
+      "intro": "Il nostro impegno: la grande maggioranza di ogni donazione va direttamente ai programmi.",
+      "items": {
+        "programs": "Programmi e borse di studio",
+        "operations": "Operazioni e governance",
+        "fundraising": "Raccolta fondi"
+      }
+    },
+    "revenue": {
+      "title": "Entrate previste per fonte",
+      "intro": "Una base di finanziamento diversificata rende la missione resiliente.",
+      "totalLabel": "Totale previsto (Anno 1)",
+      "items": {
+        "donations": "Donazioni individuali",
+        "grants": "Sovvenzioni",
+        "sponsorships": "Sponsorizzazioni aziendali",
+        "events": "Eventi"
+      }
+    },
+    "spending": {
+      "title": "Investimenti nei programmi per pilastro",
+      "intro": "Come i fondi dei programmi sono distribuiti tra i nostri cinque pilastri.",
+      "items": {
+        "education": "Istruzione e Borse di studio",
+        "music": "Musica e Arti",
+        "technology": "Tecnologia e Innovazione",
+        "community": "Sviluppo della Comunità",
+        "leadership": "Leadership e Opportunità"
+      }
+    },
+    "impact": {
+      "title": "La nostra traiettoria di impatto",
+      "intro": "Obiettivi a cinque anni per le persone e le comunità che serviamo.",
+      "students": "Studenti sostenuti",
+      "scholarships": "Borse di studio finanziate"
+    },
+    "governance": {
+      "title": "Responsabilità e governance",
+      "items": {
+        "reports": {
+          "title": "Rapporti annuali",
+          "body": "Pubblicati ogni anno con attività, risultati e finanze."
+        },
+        "board": {
+          "title": "Consiglio indipendente",
+          "body": "Un consiglio responsabile e un comitato consultivo guidano ogni decisione."
+        },
+        "audits": {
+          "title": "Controllo finanziario",
+          "body": "Una revisione indipendente garantisce un uso responsabile dei fondi."
+        },
+        "receipts": {
+          "title": "Ricevute per i donatori",
+          "body": "Ogni donazione è riconosciuta con una ricevuta ufficiale."
+        }
+      }
+    },
+    "report": {
+      "title": "Leggi il nostro rapporto annuale",
+      "body": "Un rendiconto completo delle nostre attività, risultati e finanze — pubblicato al termine del nostro primo anno.",
+      "button": "Rapporto annuale (prossimamente)"
+    }
   }
 }

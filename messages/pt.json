@@ -35,7 +35,8 @@
     "newsletterCopy": "Junte-se ao movimento e receba novidades sobre os nossos programas, eventos e impacto.",
     "joinCta": "Junte-se ao movimento",
     "rights": "Todos os direitos reservados.",
-    "registration": "Organização sem fins lucrativos registada · Governação e transparência asseguradas."
+    "registration": "Organização sem fins lucrativos registada · Governação e transparência asseguradas.",
+    "transparency": "Transparência"
   },
   "home": {
     "hero": {
@@ -833,6 +834,10 @@
     "donateThankYou": {
       "title": "Obrigado",
       "description": "Obrigado por apoiar a Esposito–Dossantos Foundation."
+    },
+    "transparency": {
+      "title": "Transparência",
+      "description": "Transparência financeira e responsabilidade na Esposito–Dossantos Foundation — alocação, receita, investimento em programas e metas de impacto."
     }
   },
   "legal": {
@@ -1010,5 +1015,76 @@
     "title": "A sua generosidade cria oportunidades.",
     "body": "Obrigado pela sua doação à Esposito–Dossantos Foundation. Um recibo está a caminho do seu e-mail. O seu apoio ajuda a remover barreiras e a abrir portas para quem mais precisa.",
     "cta": "Voltar ao início"
+  },
+  "transparency": {
+    "hero": {
+      "eyebrow": "Transparência",
+      "title": "Para onde vai cada doação",
+      "intro": "Acreditamos que a confiança se conquista com abertura. Veja como planeamos angariar e gerir os fundos — e o impacto que queremos alcançar."
+    },
+    "disclaimer": "Os valores são metas ilustrativas de cinco anos para uma fundação em formação, não resultados auditados. Publicaremos dados financeiros verificados à medida que os programas amadurecem.",
+    "allocation": {
+      "title": "Como os fundos são alocados",
+      "intro": "O nosso compromisso: a grande maioria de cada doação vai diretamente para os programas.",
+      "items": {
+        "programs": "Programas e bolsas",
+        "operations": "Operações e governança",
+        "fundraising": "Angariação de fundos"
+      }
+    },
+    "revenue": {
+      "title": "Receita projetada por fonte",
+      "intro": "Uma base de financiamento diversificada mantém a missão resiliente.",
+      "totalLabel": "Total projetado (Ano 1)",
+      "items": {
+        "donations": "Doações individuais",
+        "grants": "Subsídios",
+        "sponsorships": "Patrocínios empresariais",
+        "events": "Eventos"
+      }
+    },
+    "spending": {
+      "title": "Investimento em programas por pilar",
+      "intro": "Como os fundos dos programas são distribuídos pelos nossos cinco pilares.",
+      "items": {
+        "education": "Educação e Bolsas",
+        "music": "Música e Artes",
+        "technology": "Tecnologia e Inovação",
+        "community": "Desenvolvimento Comunitário",
+        "leadership": "Liderança e Oportunidade"
+      }
+    },
+    "impact": {
+      "title": "A nossa trajetória de impacto",
+      "intro": "Metas de cinco anos para as pessoas e comunidades que servimos.",
+      "students": "Estudantes apoiados",
+      "scholarships": "Bolsas financiadas"
+    },
+    "governance": {
+      "title": "Responsabilidade e governança",
+      "items": {
+        "reports": {
+          "title": "Relatórios anuais",
+          "body": "Publicados anualmente com atividades, resultados e finanças."
+        },
+        "board": {
+          "title": "Conselho independente",
+          "body": "Um conselho responsável e um comité consultivo orientam cada decisão."
+        },
+        "audits": {
+          "title": "Supervisão financeira",
+          "body": "Uma revisão independente garante o uso responsável dos fundos."
+        },
+        "receipts": {
+          "title": "Recibos para doadores",
+          "body": "Cada doação é reconhecida com um recibo oficial."
+        }
+      }
+    },
+    "report": {
+      "title": "Leia o nosso relatório anual",
+      "body": "Uma prestação de contas completa das nossas atividades, resultados e finanças — publicada ao concluir o nosso primeiro ano.",
+      "button": "Relatório anual (em breve)"
+    }
   }
 }

@@ -14,6 +14,7 @@ export default async function Footer() {
         { label: tn('mission'), href: '/mission' },
         { label: tn('programs'), href: '/programs' },
         { label: tn('impact'), href: '/impact' },
+        { label: t('transparency'), href: '/transparency' },
         { label: tn('events'), href: '/events' },
         { label: tn('blog'), href: '/blog' }
       ]

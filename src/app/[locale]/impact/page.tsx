@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 import PageHero from '@/components/PageHero';
 import { Section, SectionHeading } from '@/components/Section';
 import Reveal from '@/components/Reveal';
@@ -86,6 +87,9 @@ function ImpactContent() {
                 </div>
               ))}
             </div>
+            <Link href="/transparency" className="btn-secondary mt-8">
+              {t('allocation.title')} →
+            </Link>
           </Reveal>
 
           <Reveal delay={120} className="rounded-2xl border border-navy/10 bg-warmwhite p-8">

@@ -35,7 +35,8 @@
     "newsletterCopy": "Join the movement and receive updates on our programs, events, and impact.",
     "joinCta": "Join the movement",
     "rights": "All rights reserved.",
-    "registration": "Registered nonprofit organization · Governance & transparency upheld."
+    "registration": "Registered nonprofit organization · Governance & transparency upheld.",
+    "transparency": "Transparency"
   },
   "home": {
     "hero": {
@@ -833,6 +834,10 @@
     "donateThankYou": {
       "title": "Thank You",
       "description": "Thank you for supporting the Esposito–Dossantos Foundation."
+    },
+    "transparency": {
+      "title": "Transparency",
+      "description": "Financial transparency and accountability at the Esposito–Dossantos Foundation — allocation, revenue, program spending, and impact targets."
     }
   },
   "legal": {
@@ -1010,5 +1015,76 @@
     "title": "Your generosity creates opportunity.",
     "body": "Thank you for your gift to the Esposito–Dossantos Foundation. A receipt is on its way to your inbox. Your support helps remove barriers and open doors for the people who need it most.",
     "cta": "Back to home"
+  },
+  "transparency": {
+    "hero": {
+      "eyebrow": "Transparency",
+      "title": "Where every gift goes",
+      "intro": "We believe trust is earned in the open. Here is how we plan to raise and steward funds — and the impact we are working toward."
+    },
+    "disclaimer": "Figures are illustrative five-year targets for a foundation in formation, not audited results. We will publish verified financials as our programs mature.",
+    "allocation": {
+      "title": "How funds are allocated",
+      "intro": "Our commitment: the large majority of every gift goes directly to programs.",
+      "items": {
+        "programs": "Programs & scholarships",
+        "operations": "Operations & governance",
+        "fundraising": "Fundraising"
+      }
+    },
+    "revenue": {
+      "title": "Projected revenue by source",
+      "intro": "A diversified funding base keeps the mission resilient.",
+      "totalLabel": "Total projected (Year 1)",
+      "items": {
+        "donations": "Individual donations",
+        "grants": "Grants",
+        "sponsorships": "Corporate sponsorships",
+        "events": "Events"
+      }
+    },
+    "spending": {
+      "title": "Program investment by pillar",
+      "intro": "How program funds are distributed across our five pillars.",
+      "items": {
+        "education": "Education & Scholarships",
+        "music": "Music & Arts",
+        "technology": "Technology & Innovation",
+        "community": "Community Development",
+        "leadership": "Leadership & Opportunity"
+      }
+    },
+    "impact": {
+      "title": "Our impact trajectory",
+      "intro": "Five-year targets for the people and communities we serve.",
+      "students": "Students supported",
+      "scholarships": "Scholarships funded"
+    },
+    "governance": {
+      "title": "Accountability & governance",
+      "items": {
+        "reports": {
+          "title": "Annual reports",
+          "body": "Published yearly with activities, outcomes, and finances."
+        },
+        "board": {
+          "title": "Independent board",
+          "body": "An accountable board and advisory council guide every decision."
+        },
+        "audits": {
+          "title": "Financial oversight",
+          "body": "Independent review ensures funds are used responsibly."
+        },
+        "receipts": {
+          "title": "Donor receipts",
+          "body": "Every gift is acknowledged with an official receipt."
+        }
+      }
+    },
+    "report": {
+      "title": "Read our annual report",
+      "body": "A full accounting of our activities, outcomes, and finances — published as our first year completes.",
+      "button": "Annual report (coming soon)"
+    }
   }
 }

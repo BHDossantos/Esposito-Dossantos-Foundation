@@ -35,7 +35,8 @@
     "newsletterCopy": "Súmate al movimiento y recibe novedades sobre nuestros programas, eventos e impacto.",
     "joinCta": "Súmate al movimiento",
     "rights": "Todos los derechos reservados.",
-    "registration": "Organización sin fines de lucro registrada · Comprometida con la gobernanza y la transparencia."
+    "registration": "Organización sin fines de lucro registrada · Comprometida con la gobernanza y la transparencia.",
+    "transparency": "Transparencia"
   },
   "home": {
     "hero": {
@@ -833,6 +834,10 @@
     "donateThankYou": {
       "title": "Gracias",
       "description": "Gracias por apoyar a la Esposito–Dossantos Foundation."
+    },
+    "transparency": {
+      "title": "Transparencia",
+      "description": "Transparencia financiera y rendición de cuentas de la Esposito–Dossantos Foundation — asignación, ingresos, inversión en programas y metas de impacto."
     }
   },
   "legal": {
@@ -1010,5 +1015,76 @@
     "title": "Tu generosidad crea oportunidades.",
     "body": "Gracias por tu donación a la Esposito–Dossantos Foundation. Un recibo está en camino a tu correo. Tu apoyo ayuda a eliminar barreras y a abrir puertas para quienes más lo necesitan.",
     "cta": "Volver al inicio"
+  },
+  "transparency": {
+    "hero": {
+      "eyebrow": "Transparencia",
+      "title": "A dónde va cada donación",
+      "intro": "Creemos que la confianza se gana con transparencia. Así planeamos recaudar y administrar los fondos — y el impacto que queremos lograr."
+    },
+    "disclaimer": "Las cifras son metas ilustrativas a cinco años para una fundación en formación, no resultados auditados. Publicaremos datos financieros verificados a medida que maduren los programas.",
+    "allocation": {
+      "title": "Cómo se asignan los fondos",
+      "intro": "Nuestro compromiso: la gran mayoría de cada donación se destina directamente a los programas.",
+      "items": {
+        "programs": "Programas y becas",
+        "operations": "Operaciones y gobernanza",
+        "fundraising": "Recaudación de fondos"
+      }
+    },
+    "revenue": {
+      "title": "Ingresos proyectados por fuente",
+      "intro": "Una base de financiación diversificada mantiene la misión resiliente.",
+      "totalLabel": "Total proyectado (Año 1)",
+      "items": {
+        "donations": "Donaciones individuales",
+        "grants": "Subvenciones",
+        "sponsorships": "Patrocinios corporativos",
+        "events": "Eventos"
+      }
+    },
+    "spending": {
+      "title": "Inversión en programas por pilar",
+      "intro": "Cómo se distribuyen los fondos de programas entre nuestros cinco pilares.",
+      "items": {
+        "education": "Educación y Becas",
+        "music": "Música y Artes",
+        "technology": "Tecnología e Innovación",
+        "community": "Desarrollo Comunitario",
+        "leadership": "Liderazgo y Oportunidad"
+      }
+    },
+    "impact": {
+      "title": "Nuestra trayectoria de impacto",
+      "intro": "Metas a cinco años para las personas y comunidades a las que servimos.",
+      "students": "Estudiantes apoyados",
+      "scholarships": "Becas financiadas"
+    },
+    "governance": {
+      "title": "Rendición de cuentas y gobernanza",
+      "items": {
+        "reports": {
+          "title": "Informes anuales",
+          "body": "Publicados cada año con actividades, resultados y finanzas."
+        },
+        "board": {
+          "title": "Junta independiente",
+          "body": "Una junta responsable y un consejo asesor guían cada decisión."
+        },
+        "audits": {
+          "title": "Supervisión financiera",
+          "body": "Una revisión independiente garantiza un uso responsable de los fondos."
+        },
+        "receipts": {
+          "title": "Recibos para donantes",
+          "body": "Cada donación se reconoce con un recibo oficial."
+        }
+      }
+    },
+    "report": {
+      "title": "Lee nuestro informe anual",
+      "body": "Una rendición de cuentas completa de nuestras actividades, resultados y finanzas — publicada al completar nuestro primer año.",
+      "button": "Informe anual (próximamente)"
+    }
   }
 }
