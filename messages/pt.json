@@ -36,7 +36,8 @@
     "joinCta": "Junte-se ao movimento",
     "rights": "Todos os direitos reservados.",
     "registration": "Organização sem fins lucrativos registada · Governação e transparência asseguradas.",
-    "transparency": "Transparência"
+    "transparency": "Transparência",
+    "chapters": "Delegações Globais"
   },
   "home": {
     "hero": {
@@ -838,6 +839,10 @@
     "transparency": {
       "title": "Transparência",
       "description": "Transparência financeira e responsabilidade na Esposito–Dossantos Foundation — alocação, receita, investimento em programas e metas de impacto."
+    },
+    "chapters": {
+      "title": "Delegações Globais",
+      "description": "Conheça as delegações globais da Esposito–Dossantos Foundation em Itália, Brasil, Portugal, Espanha e Estados Unidos."
     }
   },
   "legal": {
@@ -1086,5 +1091,18 @@
       "body": "Uma prestação de contas completa das nossas atividades, resultados e finanças — publicada ao concluir o nosso primeiro ano.",
       "button": "Relatório anual (em breve)"
     }
+  },
+  "chapters": {
+    "hero": {
+      "eyebrow": "Delegações Globais",
+      "title": "Uma missão global, com raízes locais",
+      "intro": "De Itália ao Brasil, de Portugal a Espanha e aos Estados Unidos, as nossas delegações levam a missão da fundação a comunidades de todo o mundo."
+    },
+    "focusLabel": "Áreas de foco",
+    "viewChapter": "Explorar delegação",
+    "allChapters": "Todas as delegações",
+    "contactTitle": "Leve a nossa missão à sua comunidade",
+    "contactBody": "Interessado em iniciar ou apoiar uma delegação? Adoraríamos ouvi-lo.",
+    "contactCta": "Entre em contacto"
   }
 }

@@ -36,7 +36,8 @@
     "joinCta": "Join the movement",
     "rights": "All rights reserved.",
     "registration": "Registered nonprofit organization · Governance & transparency upheld.",
-    "transparency": "Transparency"
+    "transparency": "Transparency",
+    "chapters": "Global Chapters"
   },
   "home": {
     "hero": {
@@ -838,6 +839,10 @@
     "transparency": {
       "title": "Transparency",
       "description": "Financial transparency and accountability at the Esposito–Dossantos Foundation — allocation, revenue, program spending, and impact targets."
+    },
+    "chapters": {
+      "title": "Global Chapters",
+      "description": "Explore the Esposito–Dossantos Foundation's global chapters across Italy, Brazil, Portugal, Spain, and the United States."
     }
   },
   "legal": {
@@ -1086,5 +1091,18 @@
       "body": "A full accounting of our activities, outcomes, and finances — published as our first year completes.",
       "button": "Annual report (coming soon)"
     }
+  },
+  "chapters": {
+    "hero": {
+      "eyebrow": "Global Chapters",
+      "title": "A global mission, rooted locally",
+      "intro": "From Italy to Brazil, Portugal to Spain and the United States, our chapters bring the foundation's mission to communities around the world."
+    },
+    "focusLabel": "Focus areas",
+    "viewChapter": "Explore chapter",
+    "allChapters": "All chapters",
+    "contactTitle": "Bring our mission to your community",
+    "contactBody": "Interested in starting or supporting a chapter? We'd love to hear from you.",
+    "contactCta": "Get in touch"
   }
 }

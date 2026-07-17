@@ -36,7 +36,8 @@
     "joinCta": "Unisciti al movimento",
     "rights": "Tutti i diritti riservati.",
     "registration": "Organizzazione no-profit registrata · Governance e trasparenza garantite.",
-    "transparency": "Trasparenza"
+    "transparency": "Trasparenza",
+    "chapters": "Sedi Globali"
   },
   "home": {
     "hero": {
@@ -838,6 +839,10 @@
     "transparency": {
       "title": "Trasparenza",
       "description": "Trasparenza finanziaria e responsabilità della Esposito–Dossantos Foundation — allocazione, entrate, investimenti nei programmi e obiettivi di impatto."
+    },
+    "chapters": {
+      "title": "Sedi Globali",
+      "description": "Scopri le sedi globali della Esposito–Dossantos Foundation in Italia, Brasile, Portogallo, Spagna e Stati Uniti."
     }
   },
   "legal": {
@@ -1086,5 +1091,18 @@
       "body": "Un rendiconto completo delle nostre attività, risultati e finanze — pubblicato al termine del nostro primo anno.",
       "button": "Rapporto annuale (prossimamente)"
     }
+  },
+  "chapters": {
+    "hero": {
+      "eyebrow": "Sedi Globali",
+      "title": "Una missione globale, con radici locali",
+      "intro": "Dall'Italia al Brasile, dal Portogallo alla Spagna e agli Stati Uniti, le nostre sedi portano la missione della fondazione alle comunità di tutto il mondo."
+    },
+    "focusLabel": "Aree di intervento",
+    "viewChapter": "Esplora la sede",
+    "allChapters": "Tutte le sedi",
+    "contactTitle": "Porta la nostra missione nella tua comunità",
+    "contactBody": "Ti interessa avviare o sostenere una sede? Ci farebbe piacere sentirti.",
+    "contactCta": "Contattaci"
   }
 }
