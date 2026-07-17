@@ -38,7 +38,8 @@
     "registration": "Registered nonprofit organization · Governance & transparency upheld.",
     "transparency": "Transparency",
     "chapters": "Global Chapters",
-    "portal": "Donor Login"
+    "portal": "Donor Login",
+    "sponsors": "Sponsor Login"
   },
   "home": {
     "hero": {
@@ -848,6 +849,10 @@
     "portal": {
       "title": "Donor Portal",
       "description": "Sign in to your Esposito–Dossantos Foundation donor portal to view your giving history and receipts."
+    },
+    "sponsors": {
+      "title": "Sponsor Portal",
+      "description": "Access your Esposito–Dossantos Foundation partnership impact report."
     }
   },
   "legal": {
@@ -1139,6 +1144,24 @@
       "manageBtn": "Manage giving",
       "setupTitle": "Giving history isn't available yet",
       "setupBody": "You're signed in, but payment history isn't connected yet. Once Stripe is configured, your gifts and receipts will appear here."
+    }
+  },
+  "sponsors": {
+    "login": {
+      "eyebrow": "Sponsor Portal",
+      "title": "Access your impact report",
+      "intro": "Sign in with your email to view your partnership's live impact report."
+    },
+    "dashboard": {
+      "title": "Partnership impact report",
+      "welcome": "Welcome, partner",
+      "signOut": "Sign out",
+      "reportIntro": "A live view of the impact your partnership helps create. Figures are current five-year targets and refresh as our programs grow.",
+      "allocationTitle": "How funds are allocated",
+      "impactTitle": "Impact trajectory",
+      "recognitionTitle": "Your recognition",
+      "recognitionBody": "As a valued partner, your organization is recognized across our website, events, and annual impact report. Contact your relationship manager to update your recognition preferences.",
+      "downloadBtn": "Annual report (coming soon)"
     }
   }
 }

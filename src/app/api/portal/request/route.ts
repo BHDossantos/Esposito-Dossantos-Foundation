@@ -5,7 +5,9 @@ import { emailConfigured, sendMagicLink } from '@/lib/email';
 
 const schema = z.object({
   email: z.string().trim().email().max(200),
-  locale: z.string().trim().max(5).optional()
+  locale: z.string().trim().max(5).optional(),
+  // Post-login destination (must be an internal path).
+  next: z.string().trim().max(80).optional()
 });
 
 export async function POST(request: Request) {
@@ -26,11 +28,12 @@ export async function POST(request: Request) {
   }
 
   const { email, locale } = parsed.data;
+  const dest = parsed.data.next && parsed.data.next.startsWith('/') ? parsed.data.next : '/portal';
   const token = createMagicToken(email);
   const origin =
     request.headers.get('origin') || process.env.NEXT_PUBLIC_SITE_URL || new URL(request.url).origin;
   const prefix = locale && locale !== 'en' ? `/${locale}` : '';
-  const link = `${origin}/api/portal/verify?token=${encodeURIComponent(token)}&next=${encodeURIComponent(prefix + '/portal')}`;
+  const link = `${origin}/api/portal/verify?token=${encodeURIComponent(token)}&next=${encodeURIComponent(prefix + dest)}`;
 
   if (emailConfigured()) {
     await sendMagicLink(email, link);

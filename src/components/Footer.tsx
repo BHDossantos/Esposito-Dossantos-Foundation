@@ -27,6 +27,7 @@ export default async function Footer() {
         { label: t('volunteer'), href: '/volunteer' },
         { label: t('chapters'), href: '/chapters' },
         { label: t('portal'), href: '/portal' },
+        { label: t('sponsors'), href: '/sponsors' },
         { label: tn('contact'), href: '/contact' }
       ]
     },

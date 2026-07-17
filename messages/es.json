@@ -38,7 +38,8 @@
     "registration": "Organización sin fines de lucro registrada · Comprometida con la gobernanza y la transparencia.",
     "transparency": "Transparencia",
     "chapters": "Sedes Globales",
-    "portal": "Acceso de Donantes"
+    "portal": "Acceso de Donantes",
+    "sponsors": "Acceso de Patrocinadores"
   },
   "home": {
     "hero": {
@@ -848,6 +849,10 @@
     "portal": {
       "title": "Portal del Donante",
       "description": "Accede al portal del donante de la Esposito–Dossantos Foundation para ver tu historial de donaciones y recibos."
+    },
+    "sponsors": {
+      "title": "Portal del Patrocinador",
+      "description": "Accede al informe de impacto de tu alianza con la Esposito–Dossantos Foundation."
     }
   },
   "legal": {
@@ -1139,6 +1144,24 @@
       "manageBtn": "Gestionar donaciones",
       "setupTitle": "El historial de donaciones aún no está disponible",
       "setupBody": "Has iniciado sesión, pero el historial de pagos aún no está conectado. Una vez configurado Stripe, tus donaciones y recibos aparecerán aquí."
+    }
+  },
+  "sponsors": {
+    "login": {
+      "eyebrow": "Portal del Patrocinador",
+      "title": "Accede a tu informe de impacto",
+      "intro": "Inicia sesión con tu correo para ver el informe de impacto en tiempo real de tu alianza."
+    },
+    "dashboard": {
+      "title": "Informe de impacto de la alianza",
+      "welcome": "Bienvenido, socio",
+      "signOut": "Cerrar sesión",
+      "reportIntro": "Una visión en tiempo real del impacto que tu alianza ayuda a crear. Las cifras son metas actuales a cinco años y se actualizan a medida que crecen los programas.",
+      "allocationTitle": "Cómo se asignan los fondos",
+      "impactTitle": "Trayectoria de impacto",
+      "recognitionTitle": "Tu reconocimiento",
+      "recognitionBody": "Como socio valioso, tu organización es reconocida en nuestro sitio web, eventos e informe anual de impacto. Contacta a tu gestor de relación para actualizar tus preferencias de reconocimiento.",
+      "downloadBtn": "Informe anual (próximamente)"
     }
   }
 }

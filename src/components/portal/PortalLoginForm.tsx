@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
 
-export default function PortalLoginForm() {
+export default function PortalLoginForm({ next = '/portal' }: { next?: string }) {
   const t = useTranslations('portal.login');
   const locale = useLocale();
   const [status, setStatus] = useState<'idle' | 'loading' | 'sent' | 'error' | 'notConfigured'>('idle');
@@ -23,7 +23,7 @@ export default function PortalLoginForm() {
       const res = await fetch('/api/portal/request', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, locale })
+        body: JSON.stringify({ email, locale, next })
       });
       const data = await res.json();
       if (data?.configured === false) {

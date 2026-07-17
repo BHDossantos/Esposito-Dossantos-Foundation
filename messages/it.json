@@ -38,7 +38,8 @@
     "registration": "Organizzazione no-profit registrata · Governance e trasparenza garantite.",
     "transparency": "Trasparenza",
     "chapters": "Sedi Globali",
-    "portal": "Accesso Donatori"
+    "portal": "Accesso Donatori",
+    "sponsors": "Accesso Sponsor"
   },
   "home": {
     "hero": {
@@ -848,6 +849,10 @@
     "portal": {
       "title": "Portale del Donatore",
       "description": "Accedi al portale del donatore della Esposito–Dossantos Foundation per vedere la cronologia delle donazioni e le ricevute."
+    },
+    "sponsors": {
+      "title": "Portale Sponsor",
+      "description": "Accedi al report di impatto della tua partnership con la Esposito–Dossantos Foundation."
     }
   },
   "legal": {
@@ -1139,6 +1144,24 @@
       "manageBtn": "Gestisci donazioni",
       "setupTitle": "La cronologia delle donazioni non è ancora disponibile",
       "setupBody": "Hai effettuato l'accesso, ma la cronologia dei pagamenti non è ancora collegata. Una volta configurato Stripe, le tue donazioni e ricevute appariranno qui."
+    }
+  },
+  "sponsors": {
+    "login": {
+      "eyebrow": "Portale Sponsor",
+      "title": "Accedi al tuo report di impatto",
+      "intro": "Accedi con la tua email per vedere il report di impatto in tempo reale della tua partnership."
+    },
+    "dashboard": {
+      "title": "Report di impatto della partnership",
+      "welcome": "Benvenuto, partner",
+      "signOut": "Esci",
+      "reportIntro": "Una visione in tempo reale dell’impatto che la tua partnership contribuisce a creare. Le cifre sono obiettivi attuali a cinque anni e si aggiornano man mano che i programmi crescono.",
+      "allocationTitle": "Come vengono allocati i fondi",
+      "impactTitle": "Traiettoria di impatto",
+      "recognitionTitle": "Il tuo riconoscimento",
+      "recognitionBody": "Come partner prezioso, la tua organizzazione è riconosciuta sul nostro sito, agli eventi e nel report annuale di impatto. Contatta il tuo referente per aggiornare le tue preferenze di riconoscimento.",
+      "downloadBtn": "Report annuale (prossimamente)"
     }
   }
 }
