@@ -37,7 +37,8 @@
     "rights": "Todos os direitos reservados.",
     "registration": "Organização sem fins lucrativos registada · Governação e transparência asseguradas.",
     "transparency": "Transparência",
-    "chapters": "Delegações Globais"
+    "chapters": "Delegações Globais",
+    "portal": "Acesso do Doador"
   },
   "home": {
     "hero": {
@@ -843,6 +844,10 @@
     "chapters": {
       "title": "Delegações Globais",
       "description": "Conheça as delegações globais da Esposito–Dossantos Foundation em Itália, Brasil, Portugal, Espanha e Estados Unidos."
+    },
+    "portal": {
+      "title": "Portal do Doador",
+      "description": "Aceda ao portal do doador da Esposito–Dossantos Foundation para ver o seu histórico de doações e recibos."
     }
   },
   "legal": {
@@ -1104,5 +1109,36 @@
     "contactTitle": "Leve a nossa missão à sua comunidade",
     "contactBody": "Interessado em iniciar ou apoiar uma delegação? Adoraríamos ouvi-lo.",
     "contactCta": "Entre em contacto"
+  },
+  "portal": {
+    "login": {
+      "eyebrow": "Portal do Doador",
+      "title": "Aceda ao seu portal",
+      "intro": "Introduza o seu e-mail e enviaremos um link de acesso seguro.",
+      "emailLabel": "E-mail",
+      "submit": "Enviar link de acesso",
+      "submitting": "A enviar…",
+      "sentTitle": "Verifique o seu e-mail",
+      "sentBody": "Se existir uma conta com esse e-mail, um link de acesso seguro está a caminho.",
+      "notConfigured": "O portal do doador ainda não está ativo.",
+      "linkError": "Esse link de acesso é inválido ou expirou. Solicite um novo."
+    },
+    "dashboard": {
+      "title": "As suas doações",
+      "welcome": "Bem-vindo de volta",
+      "signOut": "Sair",
+      "totalLabel": "Total doado",
+      "historyTitle": "Histórico de doações",
+      "empty": "Ainda não há doações nesta conta.",
+      "dateCol": "Data",
+      "amountCol": "Valor",
+      "statusCol": "Estado",
+      "receiptCol": "Recibo",
+      "receipt": "Ver",
+      "subsTitle": "Doações recorrentes",
+      "manageBtn": "Gerir doações",
+      "setupTitle": "O histórico de doações ainda não está disponível",
+      "setupBody": "Sessão iniciada, mas o histórico de pagamentos ainda não está ligado. Quando o Stripe estiver configurado, as suas doações e recibos aparecerão aqui."
+    }
   }
 }

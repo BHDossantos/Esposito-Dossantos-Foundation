@@ -37,7 +37,8 @@
     "rights": "Tutti i diritti riservati.",
     "registration": "Organizzazione no-profit registrata · Governance e trasparenza garantite.",
     "transparency": "Trasparenza",
-    "chapters": "Sedi Globali"
+    "chapters": "Sedi Globali",
+    "portal": "Accesso Donatori"
   },
   "home": {
     "hero": {
@@ -843,6 +844,10 @@
     "chapters": {
       "title": "Sedi Globali",
       "description": "Scopri le sedi globali della Esposito–Dossantos Foundation in Italia, Brasile, Portogallo, Spagna e Stati Uniti."
+    },
+    "portal": {
+      "title": "Portale del Donatore",
+      "description": "Accedi al portale del donatore della Esposito–Dossantos Foundation per vedere la cronologia delle donazioni e le ricevute."
     }
   },
   "legal": {
@@ -1104,5 +1109,36 @@
     "contactTitle": "Porta la nostra missione nella tua comunità",
     "contactBody": "Ti interessa avviare o sostenere una sede? Ci farebbe piacere sentirti.",
     "contactCta": "Contattaci"
+  },
+  "portal": {
+    "login": {
+      "eyebrow": "Portale del Donatore",
+      "title": "Accedi al tuo portale",
+      "intro": "Inserisci la tua email e ti invieremo un link di accesso sicuro.",
+      "emailLabel": "Email",
+      "submit": "Invia link di accesso",
+      "submitting": "Invio…",
+      "sentTitle": "Controlla la tua email",
+      "sentBody": "Se esiste un account con quell'email, un link di accesso sicuro è in arrivo.",
+      "notConfigured": "Il portale del donatore non è ancora attivo.",
+      "linkError": "Il link di accesso non è valido o è scaduto. Richiedine uno nuovo."
+    },
+    "dashboard": {
+      "title": "Le tue donazioni",
+      "welcome": "Bentornato",
+      "signOut": "Esci",
+      "totalLabel": "Totale donato",
+      "historyTitle": "Cronologia delle donazioni",
+      "empty": "Nessuna donazione trovata per questo account.",
+      "dateCol": "Data",
+      "amountCol": "Importo",
+      "statusCol": "Stato",
+      "receiptCol": "Ricevuta",
+      "receipt": "Vedi",
+      "subsTitle": "Donazioni ricorrenti",
+      "manageBtn": "Gestisci donazioni",
+      "setupTitle": "La cronologia delle donazioni non è ancora disponibile",
+      "setupBody": "Hai effettuato l'accesso, ma la cronologia dei pagamenti non è ancora collegata. Una volta configurato Stripe, le tue donazioni e ricevute appariranno qui."
+    }
   }
 }

@@ -37,7 +37,8 @@
     "rights": "All rights reserved.",
     "registration": "Registered nonprofit organization · Governance & transparency upheld.",
     "transparency": "Transparency",
-    "chapters": "Global Chapters"
+    "chapters": "Global Chapters",
+    "portal": "Donor Login"
   },
   "home": {
     "hero": {
@@ -843,6 +844,10 @@
     "chapters": {
       "title": "Global Chapters",
       "description": "Explore the Esposito–Dossantos Foundation's global chapters across Italy, Brazil, Portugal, Spain, and the United States."
+    },
+    "portal": {
+      "title": "Donor Portal",
+      "description": "Sign in to your Esposito–Dossantos Foundation donor portal to view your giving history and receipts."
     }
   },
   "legal": {
@@ -1104,5 +1109,36 @@
     "contactTitle": "Bring our mission to your community",
     "contactBody": "Interested in starting or supporting a chapter? We'd love to hear from you.",
     "contactCta": "Get in touch"
+  },
+  "portal": {
+    "login": {
+      "eyebrow": "Donor Portal",
+      "title": "Sign in to your portal",
+      "intro": "Enter your email and we'll send you a secure sign-in link.",
+      "emailLabel": "Email",
+      "submit": "Send sign-in link",
+      "submitting": "Sending…",
+      "sentTitle": "Check your inbox",
+      "sentBody": "If an account matches that email, a secure sign-in link is on its way.",
+      "notConfigured": "The donor portal isn't enabled yet.",
+      "linkError": "That sign-in link is invalid or has expired. Please request a new one."
+    },
+    "dashboard": {
+      "title": "Your giving",
+      "welcome": "Welcome back",
+      "signOut": "Sign out",
+      "totalLabel": "Total given",
+      "historyTitle": "Donation history",
+      "empty": "No donations found for this account yet.",
+      "dateCol": "Date",
+      "amountCol": "Amount",
+      "statusCol": "Status",
+      "receiptCol": "Receipt",
+      "receipt": "View",
+      "subsTitle": "Recurring gifts",
+      "manageBtn": "Manage giving",
+      "setupTitle": "Giving history isn't available yet",
+      "setupBody": "You're signed in, but payment history isn't connected yet. Once Stripe is configured, your gifts and receipts will appear here."
+    }
   }
 }

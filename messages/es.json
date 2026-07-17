@@ -37,7 +37,8 @@
     "rights": "Todos los derechos reservados.",
     "registration": "Organización sin fines de lucro registrada · Comprometida con la gobernanza y la transparencia.",
     "transparency": "Transparencia",
-    "chapters": "Sedes Globales"
+    "chapters": "Sedes Globales",
+    "portal": "Acceso de Donantes"
   },
   "home": {
     "hero": {
@@ -843,6 +844,10 @@
     "chapters": {
       "title": "Sedes Globales",
       "description": "Descubre las sedes globales de la Esposito–Dossantos Foundation en Italia, Brasil, Portugal, España y Estados Unidos."
+    },
+    "portal": {
+      "title": "Portal del Donante",
+      "description": "Accede al portal del donante de la Esposito–Dossantos Foundation para ver tu historial de donaciones y recibos."
     }
   },
   "legal": {
@@ -1104,5 +1109,36 @@
     "contactTitle": "Lleva nuestra misión a tu comunidad",
     "contactBody": "¿Te interesa iniciar o apoyar una sede? Nos encantaría saber de ti.",
     "contactCta": "Ponte en contacto"
+  },
+  "portal": {
+    "login": {
+      "eyebrow": "Portal del Donante",
+      "title": "Accede a tu portal",
+      "intro": "Introduce tu correo y te enviaremos un enlace de acceso seguro.",
+      "emailLabel": "Correo electrónico",
+      "submit": "Enviar enlace de acceso",
+      "submitting": "Enviando…",
+      "sentTitle": "Revisa tu correo",
+      "sentBody": "Si hay una cuenta con ese correo, un enlace de acceso seguro está en camino.",
+      "notConfigured": "El portal del donante aún no está activo.",
+      "linkError": "Ese enlace de acceso no es válido o ha caducado. Solicita uno nuevo."
+    },
+    "dashboard": {
+      "title": "Tus donaciones",
+      "welcome": "Bienvenido de nuevo",
+      "signOut": "Cerrar sesión",
+      "totalLabel": "Total donado",
+      "historyTitle": "Historial de donaciones",
+      "empty": "Aún no hay donaciones en esta cuenta.",
+      "dateCol": "Fecha",
+      "amountCol": "Importe",
+      "statusCol": "Estado",
+      "receiptCol": "Recibo",
+      "receipt": "Ver",
+      "subsTitle": "Donaciones recurrentes",
+      "manageBtn": "Gestionar donaciones",
+      "setupTitle": "El historial de donaciones aún no está disponible",
+      "setupBody": "Has iniciado sesión, pero el historial de pagos aún no está conectado. Una vez configurado Stripe, tus donaciones y recibos aparecerán aquí."
+    }
   }
 }
