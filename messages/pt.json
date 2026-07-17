@@ -853,6 +853,10 @@
     "sponsors": {
       "title": "Portal do Patrocinador",
       "description": "Aceda ao relatório de impacto da sua parceria com a Esposito–Dossantos Foundation."
+    },
+    "annualReport": {
+      "title": "Relatório Anual de Impacto",
+      "description": "Relatório anual de impacto da Esposito–Dossantos Foundation — missão, impacto, alocação e programas."
     }
   },
   "legal": {
@@ -1099,7 +1103,7 @@
     "report": {
       "title": "Leia o nosso relatório anual",
       "body": "Uma prestação de contas completa das nossas atividades, resultados e finanças — publicada ao concluir o nosso primeiro ano.",
-      "button": "Relatório anual (em breve)"
+      "button": "Ver relatório anual"
     }
   },
   "chapters": {
@@ -1161,7 +1165,27 @@
       "impactTitle": "Trajetória de impacto",
       "recognitionTitle": "O seu reconhecimento",
       "recognitionBody": "Como parceiro valioso, a sua organização é reconhecida no nosso site, eventos e relatório anual de impacto. Contacte o seu gestor de relação para atualizar as suas preferências de reconhecimento.",
-      "downloadBtn": "Relatório anual (em breve)"
+      "downloadBtn": "Ver relatório anual"
     }
+  },
+  "annualReport": {
+    "print": "Descarregar / Imprimir relatório",
+    "backHome": "Voltar ao site",
+    "cover": {
+      "eyebrow": "Relatório Anual de Impacto",
+      "tagline": "Capacitar Vidas. Inspirar o Futuro."
+    },
+    "letter": {
+      "title": "Uma mensagem do nosso fundador",
+      "p1": "Este foi um ano de fundação e de convicção. Partimos de uma ideia simples: o talento existe em toda a parte, mas a oportunidade não. Tudo nestas páginas é a nossa promessa de fechar essa lacuna.",
+      "p2": "Aos nossos doadores, parceiros e voluntários — obrigado. O impacto que se avizinha só é possível graças a vós. Juntos, estamos a construir futuros mais brilhantes.",
+      "signature": "Bruno Dossantos — Fundador e Presidente"
+    },
+    "impactTitle": "O nosso impacto num relance",
+    "allocationTitle": "Como o seu apoio é investido",
+    "programsTitle": "Os nossos programas",
+    "programsIntro": "Cinco pilares, um propósito comum — cada um concebido para remover uma barreira e abrir uma porta.",
+    "thanksTitle": "Obrigado",
+    "thanksBody": "Nada disto é possível sem si. Obrigado por acreditar num mundo em que a oportunidade chega a todos, em todo o lado."
   }
 }

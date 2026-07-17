@@ -216,3 +216,22 @@
     scroll-behavior: auto !important;
   }
 }
+
+/* Print / PDF export for the annual report */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #fff;
+  }
+  .print-page {
+    break-after: page;
+  }
+  .print-avoid-break {
+    break-inside: avoid;
+  }
+  a[href]::after {
+    content: '';
+  }
+}

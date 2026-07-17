@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { cookies } from 'next/headers';
 import { redirect } from 'next/navigation';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { Link } from '@/i18n/navigation';
 import { Section } from '@/components/Section';
 import { SignOutButton } from '@/components/portal/PortalActions';
 import { ShareBar, TrendArea } from '@/components/charts/Charts';
@@ -94,9 +95,9 @@ export default async function SponsorDashboard({
         <div className="mt-12 rounded-2xl bg-navy-800 p-8 text-ivory">
           <h2 className="font-serif text-2xl">{t('recognitionTitle')}</h2>
           <p className="mt-3 max-w-2xl text-ivory/75">{t('recognitionBody')}</p>
-          <span className="btn-ghost-light mt-6 inline-block cursor-default opacity-70">
+          <Link href="/annual-report" className="btn-ghost-light mt-6 inline-block">
             {t('downloadBtn')}
-          </span>
+          </Link>
         </div>
       </Section>
     </>

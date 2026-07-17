@@ -853,6 +853,10 @@
     "sponsors": {
       "title": "Portale Sponsor",
       "description": "Accedi al report di impatto della tua partnership con la Esposito–Dossantos Foundation."
+    },
+    "annualReport": {
+      "title": "Report Annuale di Impatto",
+      "description": "Report annuale di impatto della Esposito–Dossantos Foundation — missione, impatto, allocazione e programmi."
     }
   },
   "legal": {
@@ -1099,7 +1103,7 @@
     "report": {
       "title": "Leggi il nostro rapporto annuale",
       "body": "Un rendiconto completo delle nostre attività, risultati e finanze — pubblicato al termine del nostro primo anno.",
-      "button": "Rapporto annuale (prossimamente)"
+      "button": "Visualizza il report annuale"
     }
   },
   "chapters": {
@@ -1161,7 +1165,27 @@
       "impactTitle": "Traiettoria di impatto",
       "recognitionTitle": "Il tuo riconoscimento",
       "recognitionBody": "Come partner prezioso, la tua organizzazione è riconosciuta sul nostro sito, agli eventi e nel report annuale di impatto. Contatta il tuo referente per aggiornare le tue preferenze di riconoscimento.",
-      "downloadBtn": "Report annuale (prossimamente)"
+      "downloadBtn": "Visualizza il report annuale"
     }
+  },
+  "annualReport": {
+    "print": "Scarica / Stampa report",
+    "backHome": "Torna al sito",
+    "cover": {
+      "eyebrow": "Report Annuale di Impatto",
+      "tagline": "Dare forza alle persone. Ispirare il futuro."
+    },
+    "letter": {
+      "title": "Un messaggio dal nostro fondatore",
+      "p1": "È stato un anno di fondamenta e di convinzione. Siamo partiti da un principio semplice: il talento esiste ovunque, ma l’opportunità no. Tutto in queste pagine è la nostra promessa di colmare quel divario.",
+      "p2": "Ai nostri donatori, partner e volontari — grazie. L’impatto che ci attende è possibile solo grazie a voi. Insieme, stiamo costruendo un futuro più luminoso.",
+      "signature": "Bruno Dossantos — Fondatore e Presidente"
+    },
+    "impactTitle": "Il nostro impatto in sintesi",
+    "allocationTitle": "Come viene investito il tuo sostegno",
+    "programsTitle": "I nostri programmi",
+    "programsIntro": "Cinque pilastri, un unico scopo condiviso — ciascuno pensato per rimuovere una barriera e aprire una porta.",
+    "thanksTitle": "Grazie",
+    "thanksBody": "Niente di tutto questo è possibile senza di te. Grazie per aver creduto in un mondo in cui l’opportunità raggiunge tutti, ovunque."
   }
 }

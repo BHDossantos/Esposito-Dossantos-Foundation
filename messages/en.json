@@ -853,6 +853,10 @@
     "sponsors": {
       "title": "Sponsor Portal",
       "description": "Access your Esposito–Dossantos Foundation partnership impact report."
+    },
+    "annualReport": {
+      "title": "Annual Impact Report",
+      "description": "The Esposito–Dossantos Foundation annual impact report — mission, impact, allocation, and programs."
     }
   },
   "legal": {
@@ -1099,7 +1103,7 @@
     "report": {
       "title": "Read our annual report",
       "body": "A full accounting of our activities, outcomes, and finances — published as our first year completes.",
-      "button": "Annual report (coming soon)"
+      "button": "View annual report"
     }
   },
   "chapters": {
@@ -1161,7 +1165,27 @@
       "impactTitle": "Impact trajectory",
       "recognitionTitle": "Your recognition",
       "recognitionBody": "As a valued partner, your organization is recognized across our website, events, and annual impact report. Contact your relationship manager to update your recognition preferences.",
-      "downloadBtn": "Annual report (coming soon)"
+      "downloadBtn": "View annual report"
     }
+  },
+  "annualReport": {
+    "print": "Download / Print report",
+    "backHome": "Back to site",
+    "cover": {
+      "eyebrow": "Annual Impact Report",
+      "tagline": "Empowering Lives. Inspiring Futures."
+    },
+    "letter": {
+      "title": "A message from our founder",
+      "p1": "This has been a year of foundation and belief. We set out with a simple conviction: talent exists everywhere, but opportunity does not. Everything on these pages is our promise to close that gap.",
+      "p2": "To our donors, partners, and volunteers — thank you. The impact ahead is possible only because of you. Together, we are building brighter futures.",
+      "signature": "Bruno Dossantos — Founder & President"
+    },
+    "impactTitle": "Our impact at a glance",
+    "allocationTitle": "How your support is invested",
+    "programsTitle": "Our programs",
+    "programsIntro": "Five pillars, one shared purpose — each designed to remove a barrier and open a door.",
+    "thanksTitle": "Thank you",
+    "thanksBody": "None of this is possible without you. Thank you for believing in a world where opportunity reaches everyone, everywhere."
   }
 }

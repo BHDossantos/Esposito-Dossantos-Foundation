@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { getFormatter, getTranslations, setRequestLocale } from 'next-intl/server';
+import { Link } from '@/i18n/navigation';
 import PageHero from '@/components/PageHero';
 import { Section, SectionHeading } from '@/components/Section';
 import Reveal from '@/components/Reveal';
@@ -134,7 +135,9 @@ export default async function TransparencyPage({
             <h3 className="text-xl text-ivory">{t('report.title')}</h3>
             <p className="mt-1 text-ivory/70">{t('report.body')}</p>
           </div>
-          <span className="btn-ghost-light cursor-default opacity-70">{t('report.button')}</span>
+          <Link href="/annual-report" className="btn-ghost-light">
+            {t('report.button')}
+          </Link>
         </Reveal>
       </Section>
 
