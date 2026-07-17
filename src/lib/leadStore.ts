@@ -21,11 +21,15 @@ export function storeConfigured(): boolean {
   return Boolean(URL && KEY);
 }
 
+export const LEAD_STATUSES = ['new', 'reviewing', 'accepted', 'declined', 'archived'] as const;
+export type LeadStatus = (typeof LEAD_STATUSES)[number];
+
 export type StoredLead = {
   id: string;
   source: string;
   category: string | null;
   data: Record<string, unknown>;
+  status: LeadStatus | null;
   received_at: string;
 };
 
@@ -70,5 +74,24 @@ export async function listLeads(limit = 500): Promise<StoredLead[] | null> {
     return (await res.json()) as StoredLead[];
   } catch {
     return null;
+  }
+}
+
+export async function updateLeadStatus(id: string, status: LeadStatus): Promise<boolean> {
+  if (!storeConfigured()) return false;
+  try {
+    const res = await fetch(`${URL}/rest/v1/leads?id=eq.${encodeURIComponent(id)}`, {
+      method: 'PATCH',
+      headers: {
+        apikey: KEY as string,
+        Authorization: `Bearer ${KEY}`,
+        'Content-Type': 'application/json',
+        Prefer: 'return=minimal'
+      },
+      body: JSON.stringify({ status })
+    });
+    return res.ok;
+  } catch {
+    return false;
   }
 }

@@ -1,8 +1,9 @@
 import { cookies } from 'next/headers';
 import { redirect } from 'next/navigation';
 import { ADMIN_COOKIE, adminConfigured, isValidSession } from '@/lib/adminAuth';
-import { listLeads, storeConfigured, type StoredLead } from '@/lib/leadStore';
+import { LEAD_STATUSES, listLeads, storeConfigured, type LeadStatus, type StoredLead } from '@/lib/leadStore';
 import LogoutButton from './LogoutButton';
+import StatusControl from './StatusControl';
 
 export const dynamic = 'force-dynamic';
 
@@ -16,7 +17,7 @@ function field(data: Record<string, unknown>, key: string): string {
 export default async function AdminDashboard({
   searchParams
 }: {
-  searchParams: Promise<{ source?: string }>;
+  searchParams: Promise<{ source?: string; status?: string }>;
 }) {
   // Auth gate
   const cookieStore = await cookies();
@@ -24,7 +25,7 @@ export default async function AdminDashboard({
     redirect('/admin/login');
   }
 
-  const { source } = await searchParams;
+  const { source, status } = await searchParams;
   const leads = await listLeads();
 
   return (
@@ -45,7 +46,7 @@ export default async function AdminDashboard({
         {leads === null ? (
           <SetupNotice />
         ) : (
-          <Dashboard leads={leads} activeSource={source} />
+          <Dashboard leads={leads} activeSource={source} activeStatus={status} />
         )}
       </div>
     </main>
@@ -73,31 +74,64 @@ function SetupNotice() {
 
 function Dashboard({
   leads,
-  activeSource
+  activeSource,
+  activeStatus
 }: {
   leads: StoredLead[];
   activeSource?: string;
+  activeStatus?: string;
 }) {
   const counts = SOURCES.map((s) => ({
     source: s,
     count: leads.filter((l) => l.source === s).length
   }));
 
-  const filtered = activeSource ? leads.filter((l) => l.source === activeSource) : leads;
+  const filtered = leads.filter(
+    (l) =>
+      (!activeSource || l.source === activeSource) &&
+      (!activeStatus || (l.status ?? 'new') === activeStatus)
+  );
+
+  const suffix = activeSource ? `&source=${activeSource}` : '';
 
   return (
     <>
       {/* Summary cards */}
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
-        <StatCard label="Total" value={leads.length} href="/admin" active={!activeSource} />
+        <StatCard
+          label="Total"
+          value={leads.length}
+          href={`/admin${activeStatus ? `?status=${activeStatus}` : ''}`}
+          active={!activeSource}
+        />
         {counts.map((c) => (
           <StatCard
             key={c.source}
             label={labelFor(c.source)}
             value={c.count}
-            href={`/admin?source=${c.source}`}
+            href={`/admin?source=${c.source}${activeStatus ? `&status=${activeStatus}` : ''}`}
             active={activeSource === c.source}
           />
+        ))}
+      </div>
+
+      {/* Status filter */}
+      <div className="mt-6 flex flex-wrap items-center gap-2">
+        <span className="text-xs font-semibold uppercase tracking-wide text-softgray">Status:</span>
+        <a
+          href={`/admin${activeSource ? `?source=${activeSource}` : ''}`}
+          className={`rounded-full px-3 py-1 text-xs font-medium ${!activeStatus ? 'bg-navy text-ivory' : 'bg-navy/5 text-navy hover:bg-navy/10'}`}
+        >
+          All
+        </a>
+        {LEAD_STATUSES.map((s) => (
+          <a
+            key={s}
+            href={`/admin?status=${s}${suffix}`}
+            className={`rounded-full px-3 py-1 text-xs font-medium capitalize ${activeStatus === s ? 'bg-navy text-ivory' : 'bg-navy/5 text-navy hover:bg-navy/10'}`}
+          >
+            {s} ({leads.filter((l) => (l.status ?? 'new') === s).length})
+          </a>
         ))}
       </div>
 
@@ -112,12 +146,13 @@ function Dashboard({
               <th className="px-5 py-3 font-semibold">Name</th>
               <th className="px-5 py-3 font-semibold">Email</th>
               <th className="px-5 py-3 font-semibold">Detail</th>
+              <th className="px-5 py-3 font-semibold">Status</th>
             </tr>
           </thead>
           <tbody>
             {filtered.length === 0 ? (
               <tr>
-                <td colSpan={6} className="px-5 py-10 text-center text-softgray">
+                <td colSpan={7} className="px-5 py-10 text-center text-softgray">
                   No submissions yet.
                 </td>
               </tr>
@@ -145,6 +180,9 @@ function Dashboard({
                     <td className="px-5 py-3 text-navy">{field(d, 'email') || '—'}</td>
                     <td className="max-w-xs truncate px-5 py-3 text-softgray" title={detail}>
                       {detail || '—'}
+                    </td>
+                    <td className="px-5 py-3">
+                      <StatusControl id={lead.id} status={(lead.status ?? 'new') as LeadStatus} />
                     </td>
                   </tr>
                 );

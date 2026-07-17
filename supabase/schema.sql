@@ -7,8 +7,12 @@ create table if not exists public.leads (
   source text not null,            -- newsletter | contact | rsvp | application
   category text,                   -- interest / inquiry type / event / volunteer | scholarship
   data jsonb not null,             -- full submitted payload
+  status text not null default 'new', -- new | reviewing | accepted | declined | archived
   received_at timestamptz not null default now()
 );
+
+-- If upgrading an existing table, add the review status column:
+-- alter table public.leads add column if not exists status text not null default 'new';
 
 create index if not exists leads_received_at_idx on public.leads (received_at desc);
 create index if not exists leads_source_idx on public.leads (source);
