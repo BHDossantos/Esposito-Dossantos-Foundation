@@ -4,6 +4,7 @@ import { ADMIN_COOKIE, adminConfigured, isValidSession } from '@/lib/adminAuth';
 import { LEAD_STATUSES, listLeads, storeConfigured, type LeadStatus, type StoredLead } from '@/lib/leadStore';
 import LogoutButton from './LogoutButton';
 import StatusControl from './StatusControl';
+import RecommendationsPanel from './RecommendationsPanel';
 
 export const dynamic = 'force-dynamic';
 
@@ -43,6 +44,7 @@ export default async function AdminDashboard({
       </header>
 
       <div className="mx-auto max-w-6xl px-6 py-10">
+        <RecommendationsPanel />
         {leads === null ? (
           <SetupNotice />
         ) : (
