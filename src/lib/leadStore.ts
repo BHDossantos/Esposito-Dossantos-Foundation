@@ -30,6 +30,7 @@ export type StoredLead = {
   category: string | null;
   data: Record<string, unknown>;
   status: LeadStatus | null;
+  sequence_step: number | null;
   received_at: string;
 };
 
@@ -77,7 +78,10 @@ export async function listLeads(limit = 500): Promise<StoredLead[] | null> {
   }
 }
 
-export async function updateLeadStatus(id: string, status: LeadStatus): Promise<boolean> {
+export async function updateLeadFields(
+  id: string,
+  patch: Partial<Pick<StoredLead, 'status' | 'sequence_step'>>
+): Promise<boolean> {
   if (!storeConfigured()) return false;
   try {
     const res = await fetch(`${URL}/rest/v1/leads?id=eq.${encodeURIComponent(id)}`, {
@@ -88,10 +92,14 @@ export async function updateLeadStatus(id: string, status: LeadStatus): Promise<
         'Content-Type': 'application/json',
         Prefer: 'return=minimal'
       },
-      body: JSON.stringify({ status })
+      body: JSON.stringify(patch)
     });
     return res.ok;
   } catch {
     return false;
   }
+}
+
+export function updateLeadStatus(id: string, status: LeadStatus): Promise<boolean> {
+  return updateLeadFields(id, { status });
 }

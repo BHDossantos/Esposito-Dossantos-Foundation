@@ -75,6 +75,22 @@ export async function recordLead(lead: Lead): Promise<void> {
   const { saveLead } = await import('./leadStore');
   await saveLead(lead);
 
+  // Fire the immediate (step 0) email of any sequence for this source.
+  await maybeSendWelcome(lead);
+}
+
+async function maybeSendWelcome(lead: Lead): Promise<void> {
+  const { SEQUENCES, stepHtml } = await import('./sequences');
+  const steps = SEQUENCES[lead.source];
+  const email = typeof lead.data.email === 'string' ? lead.data.email : '';
+  if (!steps || steps.length === 0 || steps[0].afterDays !== 0 || !email) return;
+  try {
+    const { sendEmail } = await import('./email');
+    await sendEmail(email, steps[0].subject, stepHtml(steps[0]));
+  } catch {
+    // Non-fatal: submission is already recorded.
+  }
+
   // Example integration (uncomment + configure via env):
   //
   // if (process.env.HUBSPOT_PRIVATE_APP_TOKEN) {
