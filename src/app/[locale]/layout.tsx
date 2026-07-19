@@ -9,6 +9,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieConsent from '@/components/CookieConsent';
 import ScrollProgress from '@/components/interactive/ScrollProgress';
+import { getSocialLinks } from '@/lib/social';
 
 const serif = Cormorant_Garamond({
   subsets: ['latin'],
@@ -96,7 +97,7 @@ export default async function LocaleLayout({
     alternateName: t('alternateName'),
     description: t('description'),
     url: 'https://harmonia-foundation.org',
-    sameAs: [] as string[],
+    sameAs: getSocialLinks().map((l) => l.url),
     foundingDate: '2025',
     knowsLanguage: ['en', 'pt', 'it', 'es']
   };

@@ -46,7 +46,7 @@ export default async function OgImage({ params }: { params: { locale: string } }
               fontWeight: 600
             }}
           >
-            ED
+            H
           </div>
           <div style={{ letterSpacing: 6, textTransform: 'uppercase', fontSize: 22 }}>
             Harmonia Foundation

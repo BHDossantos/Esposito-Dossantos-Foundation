@@ -1,4 +1,4 @@
-import type { SVGProps } from 'react';
+import type { ReactElement, SVGProps } from 'react';
 
 const base = {
   width: 28,
@@ -109,4 +109,57 @@ export const pillarIcons = {
   technology: TechIcon,
   community: CommunityIcon,
   leadership: LeadershipIcon
+};
+
+// Brand-mark social icons, drawn on the same 24×24 grid.
+export function InstagramIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...base} {...props}>
+      <rect x="3" y="3" width="18" height="18" rx="5" />
+      <circle cx="12" cy="12" r="4" />
+      <circle cx="17.5" cy="6.5" r="0.6" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
+
+export function LinkedInIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...base} {...props}>
+      <rect x="3" y="3" width="18" height="18" rx="3" />
+      <path d="M7 10v7M7 7v.01M11 17v-4a2 2 0 0 1 4 0v4M11 10v7" />
+    </svg>
+  );
+}
+
+export function YouTubeIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...base} {...props}>
+      <rect x="2.5" y="6" width="19" height="12" rx="3.5" />
+      <path d="M10.5 9.5l4 2.5-4 2.5z" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
+
+export function FacebookIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M14 8h2M14 8a2 2 0 0 1 2-2h1M14 8v3m0 0h-2m2 0v9m0-9h2.5" />
+    </svg>
+  );
+}
+
+export function XIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M4 4l16 16M20 4L4 20" />
+    </svg>
+  );
+}
+
+export const socialIcons: Record<string, (props: SVGProps<SVGSVGElement>) => ReactElement> = {
+  instagram: InstagramIcon,
+  linkedin: LinkedInIcon,
+  youtube: YouTubeIcon,
+  facebook: FacebookIcon,
+  x: XIcon
 };

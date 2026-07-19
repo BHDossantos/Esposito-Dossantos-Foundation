@@ -1,11 +1,14 @@
 import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
+import { getSocialLinks } from '@/lib/social';
+import { socialIcons } from '@/components/Icons';
 
 export default async function Footer() {
   const t = await getTranslations('footer');
   const tn = await getTranslations('nav');
 
   const year = '2026';
+  const socialLinks = getSocialLinks();
 
   const columns = [
     {
@@ -65,6 +68,28 @@ export default async function Footer() {
             >
               info@harmonia-foundation.org
             </a>
+
+            {socialLinks.length > 0 ? (
+              <ul className="mt-6 flex items-center gap-3">
+                {socialLinks.map((link) => {
+                  const Icon = socialIcons[link.key];
+                  return (
+                    <li key={link.key}>
+                      <a
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={link.label}
+                        className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15
+                          text-ivory/70 transition hover:border-champagne hover:text-champagne"
+                      >
+                        {Icon ? <Icon width={18} height={18} /> : null}
+                      </a>
+                    </li>
+                  );
+                })}
+              </ul>
+            ) : null}
           </div>
 
           {columns.map((col) => (
