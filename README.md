@@ -79,7 +79,12 @@ npm run build      # production build (validates i18n + types)
 npm run start      # serve the production build
 npm run lint       # eslint
 npm run typecheck  # tsc --noEmit
+npm test           # vitest unit tests (i18n parity, auth, schemas, content)
 ```
+
+Security headers (CSP, HSTS, `X-Frame-Options: DENY`, `X-Content-Type-Options`,
+`Referrer-Policy`, `Permissions-Policy`) are applied to every route in
+`next.config.mjs`.
 
 ## Integration points (wired as placeholders)
 
