@@ -56,7 +56,7 @@ export async function POST(request: Request) {
           price_data: {
             currency,
             unit_amount: amount * 100,
-            product_data: { name: `Esposito–Dossantos Foundation — ${productName}` },
+            product_data: { name: `Harmonia Foundation — ${productName}` },
             ...(isRecurring
               ? { recurring: { interval: frequency === 'monthly' ? 'month' : 'year' } }
               : {})

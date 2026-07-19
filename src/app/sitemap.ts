@@ -4,7 +4,7 @@ import { getAllSlugs as getPostSlugs } from '@/content/posts';
 import { getAllEventSlugs } from '@/content/events';
 import { getAllChapterSlugs } from '@/content/chapters';
 
-const baseUrl = 'https://esposito-dossantos.org';
+const baseUrl = 'https://harmonia-foundation.org';
 
 // Public, indexable routes. Private areas (admin, donor/sponsor portals) and the
 // donation thank-you page are intentionally excluded.

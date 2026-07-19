@@ -1,6 +1,6 @@
 // Minimal transactional email via Resend (REST, no SDK). No-op when unconfigured.
 const RESEND_KEY = process.env.RESEND_API_KEY;
-const FROM = process.env.EMAIL_FROM || 'Esposito–Dossantos Foundation <noreply@esposito-dossantos.org>';
+const FROM = process.env.EMAIL_FROM || 'Harmonia Foundation <noreply@harmonia-foundation.org>';
 
 export function emailConfigured(): boolean {
   return Boolean(RESEND_KEY);
@@ -29,7 +29,7 @@ export async function sendMagicLink(to: string, url: string): Promise<boolean> {
       <h1 style="font-size: 20px; color: #0B1F3A;">Sign in to your donor portal</h1>
       <p style="color: #4b5563; line-height: 1.6;">
         Click the button below to securely access your giving history with the
-        Esposito–Dossantos Foundation. This link expires in 15 minutes.
+        Harmonia Foundation. This link expires in 15 minutes.
       </p>
       <p style="margin: 28px 0;">
         <a href="${url}" style="background: #C9A86A; color: #0B1F3A; text-decoration: none; font-weight: 600; padding: 12px 24px; border-radius: 999px;">

@@ -31,7 +31,7 @@ export default function AdminLoginPage() {
       <div className="w-full max-w-sm">
         <div className="text-center">
           <p className="font-serif text-2xl font-semibold text-navy">
-            Esposito<span className="text-champagne">–</span>Dossantos
+            Harmonia
           </p>
           <p className="mt-1 text-xs font-semibold uppercase tracking-widest2 text-champagne-dark">
             Admin

@@ -75,7 +75,7 @@ export async function getRecommendations(
     const client = new Anthropic();
 
     const system =
-      'You are a fundraising and development advisor for the Esposito–Dossantos Foundation, ' +
+      'You are a fundraising and development advisor for the Harmonia Foundation, ' +
       'a global nonprofit empowering people through education, music, technology, and opportunity. ' +
       'Given an anonymized summary of the CRM pipeline (donors, sponsors, volunteers, scholarship & ' +
       'event applicants, contacts), propose the most valuable next outreach and stewardship actions. ' +

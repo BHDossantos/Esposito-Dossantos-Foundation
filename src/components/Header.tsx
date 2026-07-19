@@ -37,7 +37,7 @@ export default function Header() {
         <div className="flex h-20 items-center justify-between gap-4">
           <Link href="/" className="group flex flex-col leading-none" aria-label={t('home')}>
             <span className="font-serif text-xl font-semibold tracking-tight text-navy sm:text-2xl">
-              Esposito<span className="text-champagne">–</span>Dossantos
+              Harmonia
             </span>
             <span className="mt-0.5 text-[0.6rem] font-semibold uppercase tracking-widest2 text-champagne-dark">
               {t('foundationLabel')}

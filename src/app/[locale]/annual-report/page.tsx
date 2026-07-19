@@ -60,7 +60,7 @@ export default async function AnnualReportPage({
             {t('cover.eyebrow')} · {fiscalYear}
           </p>
           <p className="mt-6 font-serif text-2xl">
-            Esposito<span className="text-champagne">–</span>Dossantos Foundation
+            Harmonia Foundation
           </p>
           <h1 className="mt-4 font-serif text-4xl font-semibold leading-tight sm:text-6xl">
             {t('cover.tagline')}

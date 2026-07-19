@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import '../globals.css';
 
 export const metadata: Metadata = {
-  title: 'Admin · Esposito–Dossantos Foundation',
+  title: 'Admin · Harmonia Foundation',
   robots: { index: false, follow: false }
 };
 

@@ -3,11 +3,11 @@ import type { PostContent } from './meta';
 const es: PostContent = {
   'announcing-the-foundation': {
     category: 'Anuncio',
-    title: 'Presentamos la Esposito–Dossantos Foundation',
+    title: 'Presentamos la Harmonia Foundation',
     excerpt:
       'Hoy lanzamos una fundación global dedicada a transformar vidas a través de la educación, la música, la tecnología y las oportunidades.',
     body: [
-      'Nos enorgullece anunciar el lanzamiento de la Esposito–Dossantos Foundation, una organización sin fines de lucro de alcance global cimentada en una convicción sencilla pero poderosa: las oportunidades nunca deberían estar limitadas por el origen, los ingresos o la geografía.',
+      'Nos enorgullece anunciar el lanzamiento de la Harmonia Foundation, una organización sin fines de lucro de alcance global cimentada en una convicción sencilla pero poderosa: las oportunidades nunca deberían estar limitadas por el origen, los ingresos o la geografía.',
       'Durante años, las personas que impulsan esta fundación han trabajado en la intersección de la música, la educación, la tecnología y el servicio comunitario. Una y otra vez hemos constatado la misma verdad: el talento existe en todas partes, pero la oportunidad de desarrollarlo no. Nuestra misión es cerrar esa brecha.',
       'La fundación se centrará en cinco pilares: Educación y Becas, Música y Artes, Tecnología e Innovación, Desarrollo Comunitario, y Liderazgo y Oportunidades. Cada uno está diseñado para eliminar una barrera real y abrir una puerta real.',
       'Esto es solo el comienzo. En los próximos meses pondremos en marcha nuestros primeros programas, daremos la bienvenida a los socios fundadores y compartiremos las historias de las personas cuyas vidas este trabajo busca transformar. Te invitamos a sumarte, ya sea como donante, socio, voluntario o amigo.',

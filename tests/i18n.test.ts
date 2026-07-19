@@ -57,9 +57,9 @@ describe('i18n message catalogs', () => {
       expect(icuPlaceholders(load(locale))).toEqual(enPlaceholders);
     });
 
-    it(`${locale} keeps the brand name with the en-dash`, () => {
+    it(`${locale} keeps the brand name consistent`, () => {
       const raw = fs.readFileSync(path.join(dir, `${locale}.json`), 'utf8');
-      expect(raw).toContain('Esposito–Dossantos');
+      expect(raw).toContain('Harmonia Foundation');
     });
   }
 

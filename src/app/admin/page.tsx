@@ -35,7 +35,7 @@ export default async function AdminDashboard({
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
           <div>
             <p className="font-serif text-xl font-semibold text-navy">
-              Esposito<span className="text-champagne">–</span>Dossantos · Admin
+              Harmonia · Admin
             </p>
             <p className="text-xs text-softgray">Submissions dashboard</p>
           </div>

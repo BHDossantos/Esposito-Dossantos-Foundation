@@ -52,7 +52,7 @@ export default async function PostPage({
     description: post.excerpt,
     datePublished: post.date,
     author: { '@type': 'Organization', name: post.author },
-    publisher: { '@type': 'NGO', name: 'Esposito–Dossantos Foundation' }
+    publisher: { '@type': 'NGO', name: 'Harmonia Foundation' }
   };
 
   return (

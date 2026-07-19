@@ -16,7 +16,7 @@ export async function generateMetadata({
   return buildPageMetadata(locale, 'about');
 }
 
-const board = ['founder', 'cofounder', 'director', 'treasurer'] as const;
+const board = ['founder', 'director', 'treasurer'] as const;
 const governance = ['structure', 'legal', 'accountability', 'ethics'] as const;
 
 export default async function AboutPage({

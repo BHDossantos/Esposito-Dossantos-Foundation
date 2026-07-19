@@ -1,12 +1,12 @@
 {
   "meta": {
-    "siteName": "Esposito–Dossantos Foundation",
-    "defaultTitle": "Esposito–Dossantos Foundation — Dare forza alle persone. Ispirare il futuro.",
+    "siteName": "Harmonia Foundation",
+    "defaultTitle": "Harmonia Foundation — Dare forza alle persone. Ispirare il futuro.",
     "defaultDescription": "Una fondazione no-profit globale che dà forza a individui e comunità attraverso istruzione, musica, tecnologia, cultura, mentorship e opportunità."
   },
   "organization": {
     "alternateName": "EDF",
-    "description": "La Esposito–Dossantos Foundation dà forza a individui e comunità attraverso istruzione, musica, tecnologia e opportunità, abbattendo le barriere al successo in tutto il mondo."
+    "description": "La Harmonia Foundation dà forza a individui e comunità attraverso istruzione, musica, tecnologia e opportunità, abbattendo le barriere al successo in tutto il mondo."
   },
   "nav": {
     "home": "Home",
@@ -45,7 +45,7 @@
     "hero": {
       "eyebrow": "Fondazione no-profit globale",
       "title": "Dare forza alle persone. Ispirare il futuro.",
-      "subtitle": "La Esposito–Dossantos Foundation crea opportunità attraverso istruzione, musica, tecnologia, cultura e impatto sulla comunità.",
+      "subtitle": "La Harmonia Foundation crea opportunità attraverso istruzione, musica, tecnologia, cultura e impatto sulla comunità.",
       "donateCta": "Dona ora",
       "partnerCta": "Diventa partner",
       "missionCta": "Scopri la nostra missione",
@@ -63,7 +63,7 @@
     "mission": {
       "eyebrow": "La nostra missione",
       "headline": "L'opportunità non dovrebbe mai essere limitata da origini, reddito o geografia.",
-      "body1": "La Esposito–Dossantos Foundation dà forza a individui e comunità attraverso istruzione, musica, tecnologia e opportunità. Abbattiamo le barriere al successo offrendo borse di studio, mentorship, programmi culturali e iniziative innovative.",
+      "body1": "La Harmonia Foundation dà forza a individui e comunità attraverso istruzione, musica, tecnologia e opportunità. Abbattiamo le barriere al successo offrendo borse di studio, mentorship, programmi culturali e iniziative innovative.",
       "body2": "Crediamo che il talento esista ovunque, ma l'opportunità no. Il nostro impegno è colmare questo divario e ispirare apprendimento permanente, creatività, leadership e un impatto sociale positivo in tutto il mondo.",
       "cta": "Leggi la nostra missione"
     },
@@ -92,7 +92,7 @@
     "founders": {
       "eyebrow": "La nostra storia",
       "headline": "Nata dalla convinzione che il talento esista ovunque, ma l'opportunità no.",
-      "body1": "La fondazione è stata creata da Bruno Dossantos e dalla famiglia Esposito, mossi da un impegno condiviso e di lunga data verso musica, istruzione, servizio e cultura.",
+      "body1": "La fondazione è stata creata da Bruno Dossantos, mosso da un impegno di lunga data verso musica, istruzione, servizio e cultura.",
       "body2": "Avendo constatato come una singola opportunità possa cambiare il corso di una vita, i fondatori si sono proposti di costruire una piattaforma globale che apra le porte alla prossima generazione di leader, artisti e promotori del cambiamento.",
       "cta": "Conosci i fondatori",
       "founderRole": "Fondatore e Presidente"
@@ -138,7 +138,7 @@
     },
     "statement": {
       "missionLabel": "La Nostra Missione",
-      "mission": "La Esposito–Dossantos Foundation dà forza a persone e comunità attraverso l’istruzione, la musica, la tecnologia e l’opportunità. Rimuoviamo le barriere al successo offrendo borse di studio, mentorship, programmi culturali e iniziative innovative che ispirano l’apprendimento permanente, la creatività, la leadership e un impatto sociale positivo in tutto il mondo.",
+      "mission": "La Harmonia Foundation dà forza a persone e comunità attraverso l’istruzione, la musica, la tecnologia e l’opportunità. Rimuoviamo le barriere al successo offrendo borse di studio, mentorship, programmi culturali e iniziative innovative che ispirano l’apprendimento permanente, la creatività, la leadership e un impatto sociale positivo in tutto il mondo.",
       "visionLabel": "La Nostra Visione",
       "vision": "Diventare una delle principali fondazioni non profit al mondo, dedicata a dare forza alle comunità attraverso l’istruzione, la musica, la tecnologia e l’arricchimento culturale — creando opportunità che ispirano le generazioni a imparare, guidare e servire."
     },
@@ -415,7 +415,7 @@
         }
       }
     },
-    "taxNote": "La Esposito–Dossantos Foundation è un'organizzazione no-profit. La deducibilità fiscale delle donazioni dipende dal tuo Paese di residenza. Ti invitiamo a consultare il tuo consulente fiscale; per ogni donazione viene rilasciata una ricevuta ufficiale.",
+    "taxNote": "La Harmonia Foundation è un'organizzazione no-profit. La deducibilità fiscale delle donazioni dipende dal tuo Paese di residenza. Ti invitiamo a consultare il tuo consulente fiscale; per ogni donazione viene rilasciata una ricevuta ufficiale.",
     "faq": {
       "eyebrow": "FAQ per i donatori",
       "title": "Le risposte alle tue domande",
@@ -637,15 +637,15 @@
     "hero": {
       "eyebrow": "Chi siamo",
       "title": "Chi siamo",
-      "intro": "La Esposito–Dossantos Foundation è un'organizzazione no-profit globale fondata sulla convinzione che l'opportunità debba raggiungere tutti, ovunque."
+      "intro": "La Harmonia Foundation è un'organizzazione no-profit globale fondata sulla convinzione che l'opportunità debba raggiungere tutti, ovunque."
     },
     "story": {
       "eyebrow": "La nostra storia",
       "title": "Una fondazione nata da uno scopo",
       "founderRole": "Fondatore e Presidente",
-      "body1": "La fondazione è stata creata da Bruno Dossantos e dalla famiglia Esposito, uniti da un amore di lunga data per la musica, l'istruzione, la tecnologia e il servizio.",
+      "body1": "La fondazione è stata creata da Bruno Dossantos, mosso da un amore di lunga data per la musica, l'istruzione, la tecnologia e il servizio.",
       "body2": "Nel corso di anni di lavoro con studenti, artisti e comunità, i fondatori hanno constatato la stessa verità più e più volte: il talento è ovunque, ma l'opportunità no.",
-      "body3": "La Esposito–Dossantos Foundation esiste per colmare questo divario, offrendo borse di studio, mentorship, programmi culturali e iniziative innovative che danno alle persone la forza di realizzare appieno il proprio potenziale."
+      "body3": "La Harmonia Foundation esiste per colmare questo divario, offrendo borse di studio, mentorship, programmi culturali e iniziative innovative che danno alle persone la forza di realizzare appieno il proprio potenziale."
     },
     "board": {
       "eyebrow": "Leadership",
@@ -655,10 +655,6 @@
         "founder": {
           "name": "Bruno Dossantos",
           "role": "Fondatore e Presidente"
-        },
-        "cofounder": {
-          "name": "Famiglia Esposito",
-          "role": "Co-fondatore"
         },
         "director": {
           "name": "Direttore dei programmi",
@@ -708,15 +704,15 @@
       "channels": {
         "general": {
           "label": "Generale",
-          "email": "info@esposito-dossantos.org"
+          "email": "info@harmonia-foundation.org"
         },
         "partnership": {
           "label": "Partnership",
-          "email": "partners@esposito-dossantos.org"
+          "email": "partners@harmonia-foundation.org"
         },
         "media": {
           "label": "Media",
-          "email": "media@esposito-dossantos.org"
+          "email": "media@harmonia-foundation.org"
         }
       }
     },
@@ -780,7 +776,7 @@
   "pageMeta": {
     "mission": {
       "title": "Missione, visione e valori",
-      "description": "Scopri la missione, la visione e i valori fondamentali della Esposito–Dossantos Foundation: dare forza alle vite attraverso istruzione, musica, tecnologia e opportunità."
+      "description": "Scopri la missione, la visione e i valori fondamentali della Harmonia Foundation: dare forza alle vite attraverso istruzione, musica, tecnologia e opportunità."
     },
     "programs": {
       "title": "Programmi",
@@ -788,15 +784,15 @@
     },
     "impact": {
       "title": "Impatto e trasparenza",
-      "description": "Scopri i nostri obiettivi di impatto a cinque anni, la trasparenza sulle donazioni e l'impegno verso la responsabilità della Esposito–Dossantos Foundation."
+      "description": "Scopri i nostri obiettivi di impatto a cinque anni, la trasparenza sulle donazioni e l'impegno verso la responsabilità della Harmonia Foundation."
     },
     "donate": {
       "title": "Dona",
-      "description": "Sostieni istruzione, musica, tecnologia e mentorship. Fai una donazione sicura, una tantum o mensile, alla Esposito–Dossantos Foundation."
+      "description": "Sostieni istruzione, musica, tecnologia e mentorship. Fai una donazione sicura, una tantum o mensile, alla Harmonia Foundation."
     },
     "partners": {
       "title": "Partner e sponsorizzazioni",
-      "description": "Collabora con la Esposito–Dossantos Foundation attraverso sponsorizzazioni aziendali e partnership con scuole, università, istituzioni culturali ed enti erogatori di sovvenzioni."
+      "description": "Collabora con la Harmonia Foundation attraverso sponsorizzazioni aziendali e partnership con scuole, università, istituzioni culturali ed enti erogatori di sovvenzioni."
     },
     "events": {
       "title": "Eventi",
@@ -804,59 +800,59 @@
     },
     "about": {
       "title": "Chi siamo",
-      "description": "Scopri i fondatori, il consiglio, la governance e la trasparenza della Esposito–Dossantos Foundation."
+      "description": "Scopri i fondatori, il consiglio, la governance e la trasparenza della Harmonia Foundation."
     },
     "contact": {
       "title": "Contatti",
-      "description": "Mettiti in contatto con la Esposito–Dossantos Foundation per donazioni, partnership, volontariato, media e richieste di sovvenzioni."
+      "description": "Mettiti in contatto con la Harmonia Foundation per donazioni, partnership, volontariato, media e richieste di sovvenzioni."
     },
     "privacy": {
       "title": "Informativa sulla privacy",
-      "description": "Come la Esposito–Dossantos Foundation raccoglie, utilizza e protegge le tue informazioni personali."
+      "description": "Come la Harmonia Foundation raccoglie, utilizza e protegge le tue informazioni personali."
     },
     "terms": {
       "title": "Termini di utilizzo",
-      "description": "I termini che regolano l'utilizzo del sito web della Esposito–Dossantos Foundation."
+      "description": "I termini che regolano l'utilizzo del sito web della Harmonia Foundation."
     },
     "cookies": {
       "title": "Informativa sui cookie",
-      "description": "Come la Esposito–Dossantos Foundation utilizza i cookie e tecnologie simili."
+      "description": "Come la Harmonia Foundation utilizza i cookie e tecnologie simili."
     },
     "blog": {
       "title": "Notizie",
-      "description": "Notizie, storie e approfondimenti della Esposito–Dossantos Foundation su istruzione, musica, tecnologia e opportunità."
+      "description": "Notizie, storie e approfondimenti della Harmonia Foundation su istruzione, musica, tecnologia e opportunità."
     },
     "volunteer": {
       "title": "Volontariato",
-      "description": "Fai volontariato con la Esposito–Dossantos Foundation e contribuisci a dare forza alle persone attraverso istruzione, musica, tecnologia e opportunità."
+      "description": "Fai volontariato con la Harmonia Foundation e contribuisci a dare forza alle persone attraverso istruzione, musica, tecnologia e opportunità."
     },
     "scholarships": {
       "title": "Borse di Studio",
-      "description": "Candidati per una borsa di studio della Esposito–Dossantos Foundation in musica, istruzione, tecnologia o leadership."
+      "description": "Candidati per una borsa di studio della Harmonia Foundation in musica, istruzione, tecnologia o leadership."
     },
     "donateThankYou": {
       "title": "Grazie",
-      "description": "Grazie per il tuo sostegno alla Esposito–Dossantos Foundation."
+      "description": "Grazie per il tuo sostegno alla Harmonia Foundation."
     },
     "transparency": {
       "title": "Trasparenza",
-      "description": "Trasparenza finanziaria e responsabilità della Esposito–Dossantos Foundation — allocazione, entrate, investimenti nei programmi e obiettivi di impatto."
+      "description": "Trasparenza finanziaria e responsabilità della Harmonia Foundation — allocazione, entrate, investimenti nei programmi e obiettivi di impatto."
     },
     "chapters": {
       "title": "Sedi Globali",
-      "description": "Scopri le sedi globali della Esposito–Dossantos Foundation in Italia, Brasile, Portogallo, Spagna e Stati Uniti."
+      "description": "Scopri le sedi globali della Harmonia Foundation in Italia, Brasile, Portogallo, Spagna e Stati Uniti."
     },
     "portal": {
       "title": "Portale del Donatore",
-      "description": "Accedi al portale del donatore della Esposito–Dossantos Foundation per vedere la cronologia delle donazioni e le ricevute."
+      "description": "Accedi al portale del donatore della Harmonia Foundation per vedere la cronologia delle donazioni e le ricevute."
     },
     "sponsors": {
       "title": "Portale Sponsor",
-      "description": "Accedi al report di impatto della tua partnership con la Esposito–Dossantos Foundation."
+      "description": "Accedi al report di impatto della tua partnership con la Harmonia Foundation."
     },
     "annualReport": {
       "title": "Report Annuale di Impatto",
-      "description": "Report annuale di impatto della Esposito–Dossantos Foundation — missione, impatto, allocazione e programmi."
+      "description": "Report annuale di impatto della Harmonia Foundation — missione, impatto, allocazione e programmi."
     }
   },
   "legal": {
@@ -867,7 +863,7 @@
       "sections": [
         {
           "heading": "Introduzione",
-          "body": "La Esposito–Dossantos Foundation (\"noi\") si impegna a proteggere la tua privacy. La presente informativa spiega come raccogliamo, utilizziamo e tuteliamo le tue informazioni personali in conformità con il GDPR e le leggi applicabili in materia di protezione dei dati."
+          "body": "La Harmonia Foundation (\"noi\") si impegna a proteggere la tua privacy. La presente informativa spiega come raccogliamo, utilizziamo e tuteliamo le tue informazioni personali in conformità con il GDPR e le leggi applicabili in materia di protezione dei dati."
         },
         {
           "heading": "Informazioni che raccogliamo",
@@ -891,11 +887,11 @@
         },
         {
           "heading": "I tuoi diritti",
-          "body": "Hai il diritto di accedere ai tuoi dati personali, rettificarli, cancellarli o limitarne il trattamento, nonché di revocare il consenso in qualsiasi momento. Per esercitare questi diritti, contatta privacy@esposito-dossantos.org."
+          "body": "Hai il diritto di accedere ai tuoi dati personali, rettificarli, cancellarli o limitarne il trattamento, nonché di revocare il consenso in qualsiasi momento. Per esercitare questi diritti, contatta privacy@harmonia-foundation.org."
         },
         {
           "heading": "Contatti",
-          "body": "Per qualsiasi domanda su questa informativa, contattaci all'indirizzo privacy@esposito-dossantos.org."
+          "body": "Per qualsiasi domanda su questa informativa, contattaci all'indirizzo privacy@harmonia-foundation.org."
         }
       ]
     },
@@ -918,7 +914,7 @@
         },
         {
           "heading": "Proprietà intellettuale",
-          "body": "Tutti i contenuti di questo sito web, inclusi testi, immagini e loghi, sono di proprietà della Esposito–Dossantos Foundation o dei suoi licenzianti e sono tutelati dalla legge."
+          "body": "Tutti i contenuti di questo sito web, inclusi testi, immagini e loghi, sono di proprietà della Harmonia Foundation o dei suoi licenzianti e sono tutelati dalla legge."
         },
         {
           "heading": "Limitazione di responsabilità",
@@ -930,7 +926,7 @@
         },
         {
           "heading": "Contatti",
-          "body": "Le domande relative a questi termini possono essere inviate a info@esposito-dossantos.org."
+          "body": "Le domande relative a questi termini possono essere inviate a info@harmonia-foundation.org."
         }
       ]
     },
@@ -957,7 +953,7 @@
         },
         {
           "heading": "Contatti",
-          "body": "Per domande sul nostro utilizzo dei cookie, contatta privacy@esposito-dossantos.org."
+          "body": "Per domande sul nostro utilizzo dei cookie, contatta privacy@harmonia-foundation.org."
         }
       ]
     }
@@ -1032,7 +1028,7 @@
   "donateThankYou": {
     "eyebrow": "Grazie",
     "title": "La tua generosità crea opportunità.",
-    "body": "Grazie per la tua donazione alla Esposito–Dossantos Foundation. Una ricevuta è in arrivo nella tua casella di posta. Il tuo sostegno aiuta a rimuovere le barriere e ad aprire le porte a chi ne ha più bisogno.",
+    "body": "Grazie per la tua donazione alla Harmonia Foundation. Una ricevuta è in arrivo nella tua casella di posta. Il tuo sostegno aiuta a rimuovere le barriere e ad aprire le porte a chi ne ha più bisogno.",
     "cta": "Torna alla home"
   },
   "transparency": {

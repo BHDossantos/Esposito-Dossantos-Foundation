@@ -14,10 +14,10 @@ export const SEQUENCES: Record<string, SequenceStep[]> = {
   newsletter: [
     {
       afterDays: 0,
-      subject: 'Welcome to the Esposito–Dossantos Foundation',
+      subject: 'Welcome to the Harmonia Foundation',
       heading: 'Welcome to the movement',
       paragraphs: [
-        'Thank you for joining the Esposito–Dossantos Foundation. You are now part of a global community working to empower lives through education, music, technology, and opportunity.',
+        'Thank you for joining the Harmonia Foundation. You are now part of a global community working to empower lives through education, music, technology, and opportunity.',
         'We believe talent exists everywhere, but opportunity does not — and together we can close that gap. We will keep you updated on our programs, events, and the impact you help create.'
       ]
     },
@@ -37,7 +37,7 @@ export const SEQUENCES: Record<string, SequenceStep[]> = {
       subject: 'We received your application',
       heading: 'Thank you for applying',
       paragraphs: [
-        'We have received your application to the Esposito–Dossantos Foundation. Thank you for taking this step — we are honored to consider it.',
+        'We have received your application to the Harmonia Foundation. Thank you for taking this step — we are honored to consider it.',
         'Our team reviews every application with care. We will be in touch as your application moves through our process.'
       ]
     },
@@ -59,12 +59,12 @@ export function stepHtml(step: SequenceStep): string {
     .join('');
   return `
     <div style="font-family:-apple-system,Segoe UI,sans-serif;max-width:520px;margin:0 auto;padding:24px;">
-      <p style="font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:#A8884B;margin:0 0 8px;">Esposito–Dossantos Foundation</p>
+      <p style="font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:#A8884B;margin:0 0 8px;">Harmonia Foundation</p>
       <h1 style="font-size:22px;color:#0B1F3A;margin:0 0 16px;">${step.heading}</h1>
       ${body}
       <p style="margin:28px 0 0;">
-        <a href="https://esposito-dossantos.org/donate" style="background:#C9A86A;color:#0B1F3A;text-decoration:none;font-weight:600;padding:12px 24px;border-radius:999px;">Support our mission</a>
+        <a href="https://harmonia-foundation.org/donate" style="background:#C9A86A;color:#0B1F3A;text-decoration:none;font-weight:600;padding:12px 24px;border-radius:999px;">Support our mission</a>
       </p>
-      <p style="color:#9ca3af;font-size:12px;margin-top:28px;">You are receiving this because you connected with the Esposito–Dossantos Foundation. To unsubscribe, reply to this email.</p>
+      <p style="color:#9ca3af;font-size:12px;margin-top:28px;">You are receiving this because you connected with the Harmonia Foundation. To unsubscribe, reply to this email.</p>
     </div>`;
 }

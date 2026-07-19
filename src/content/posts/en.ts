@@ -3,11 +3,11 @@ import type { PostContent } from './meta';
 const en: PostContent = {
   'announcing-the-foundation': {
     category: 'Announcement',
-    title: 'Announcing the Esposito–Dossantos Foundation',
+    title: 'Announcing the Harmonia Foundation',
     excerpt:
       'Today we launch a global foundation dedicated to empowering lives through education, music, technology, and opportunity.',
     body: [
-      'We are proud to announce the launch of the Esposito–Dossantos Foundation — a global nonprofit built on a simple but powerful belief: opportunity should never be limited by background, income, or geography.',
+      'We are proud to announce the launch of the Harmonia Foundation — a global nonprofit built on a simple but powerful belief: opportunity should never be limited by background, income, or geography.',
       'For years, the people behind this foundation have worked at the intersection of music, education, technology, and community service. Again and again, we saw the same truth: talent exists everywhere, but the opportunity to develop it does not. Our mission is to close that gap.',
       'The foundation will focus on five pillars — Education & Scholarships, Music & Arts, Technology & Innovation, Community Development, and Leadership & Opportunity. Each is designed to remove a real barrier and open a real door.',
       'This is only the beginning. In the months ahead we will open our first programs, welcome founding partners, and share the stories of the people whose lives this work is built to change. We invite you to join us — as a donor, a partner, a volunteer, or a friend.',

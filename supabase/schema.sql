@@ -1,4 +1,4 @@
--- Esposito–Dossantos Foundation — submissions store
+-- Harmonia Foundation — submissions store
 -- Run once in the Supabase SQL editor, then set SUPABASE_URL +
 -- SUPABASE_SERVICE_ROLE_KEY (and ADMIN_PASSWORD) in your environment.
 

@@ -37,7 +37,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: 'meta' });
 
   return {
-    metadataBase: new URL('https://esposito-dossantos.org'),
+    metadataBase: new URL('https://harmonia-foundation.org'),
     title: {
       default: t('defaultTitle'),
       template: `%s · ${t('siteName')}`
@@ -52,7 +52,7 @@ export async function generateMetadata({
       'technology education nonprofit',
       'corporate sponsorship nonprofit'
     ],
-    authors: [{ name: 'Esposito–Dossantos Foundation' }],
+    authors: [{ name: 'Harmonia Foundation' }],
     alternates: {
       types: { 'application/rss+xml': '/rss.xml' }
     },
@@ -92,10 +92,10 @@ export default async function LocaleLayout({
   const orgSchema = {
     '@context': 'https://schema.org',
     '@type': 'NGO',
-    name: 'Esposito–Dossantos Foundation',
+    name: 'Harmonia Foundation',
     alternateName: t('alternateName'),
     description: t('description'),
-    url: 'https://esposito-dossantos.org',
+    url: 'https://harmonia-foundation.org',
     sameAs: [] as string[],
     foundingDate: '2025',
     knowsLanguage: ['en', 'pt', 'it', 'es']

@@ -23,14 +23,14 @@ export const postsMeta: PostMeta[] = [
     date: '2026-05-18',
     readingMinutes: 5,
     cover: 'from-[#1b2e4a] via-navy-800 to-[#0a1830]',
-    author: 'Esposito–Dossantos Foundation'
+    author: 'Harmonia Foundation'
   },
   {
     slug: 'talent-is-everywhere',
     date: '2026-05-02',
     readingMinutes: 4,
     cover: 'from-[#243a5e] via-navy-700 to-navy-900',
-    author: 'Esposito–Dossantos Foundation'
+    author: 'Harmonia Foundation'
   }
 ];
 
