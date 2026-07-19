@@ -40,7 +40,8 @@
     "chapters": "Delegações Globais",
     "portal": "Acesso do Doador",
     "sponsors": "Acesso de Patrocinadores",
-    "faq": "Perguntas frequentes"
+    "faq": "Perguntas frequentes",
+    "press": "Imprensa"
   },
   "home": {
     "hero": {
@@ -858,6 +859,10 @@
     "faq": {
       "title": "Perguntas frequentes",
       "description": "Respostas sobre doações, bolsas, voluntariado, parcerias e como funciona a Harmonia Foundation."
+    },
+    "press": {
+      "title": "Imprensa e Media",
+      "description": "Recursos para imprensa, texto institucional, elementos de marca e contacto de imprensa da Harmonia Foundation."
     }
   },
   "legal": {
@@ -1241,5 +1246,60 @@
       "donate": "Fazer uma doação",
       "contact": "Fale connosco"
     }
+  },
+  "press": {
+    "hero": {
+      "eyebrow": "Imprensa e Media",
+      "title": "Recursos de imprensa e media",
+      "intro": "Tudo o que jornalistas, parceiros e organizadores de eventos precisam para contar com rigor a história da Harmonia Foundation."
+    },
+    "boilerplate": {
+      "title": "Texto institucional",
+      "shortLabel": "Breve",
+      "short": "A Harmonia Foundation é uma organização sem fins lucrativos de alcance global que capacita pessoas e comunidades através da educação, da música, da tecnologia e de oportunidades — oferecendo bolsas de estudo, mentoria e programas culturais que eliminam barreiras ao sucesso em todo o mundo.",
+      "longLabel": "Alargado",
+      "long": "Fundada por Bruno Dossantos, a Harmonia Foundation trabalha para garantir que o talento — que existe em toda a parte — encontre a oportunidade, que nem sempre existe. Através de bolsas de estudo, mentoria, educação musical e artística, acesso à tecnologia e iniciativas comunitárias, a fundação abre portas à próxima geração de líderes, artistas e agentes de mudança. Com núcleos em Itália, Brasil, Portugal, Espanha e Estados Unidos, e um compromisso com a transparência e o impacto mensurável, a Harmonia estabelece parcerias com escolas, universidades, instituições culturais e empresas para criar uma mudança duradoura."
+    },
+    "facts": {
+      "title": "Em resumo",
+      "founded": {
+        "label": "Fundação",
+        "value": "2025"
+      },
+      "founder": {
+        "label": "Fundador",
+        "value": "Bruno Dossantos"
+      },
+      "focus": {
+        "label": "Áreas de foco",
+        "value": "Educação, música, tecnologia, cultura, mentoria"
+      },
+      "reach": {
+        "label": "Alcance",
+        "value": "Global — núcleos em cinco países"
+      },
+      "languages": {
+        "label": "Idiomas",
+        "value": "Inglês, Português, Italiano, Espanhol"
+      },
+      "type": {
+        "label": "Tipo",
+        "value": "Fundação sem fins lucrativos"
+      }
+    },
+    "brand": {
+      "title": "Elementos de marca",
+      "nameLabel": "Nome",
+      "nameBody": "Refira-se sempre à organização como «Harmonia Foundation». «Harmonia» pode ser utilizado numa segunda referência.",
+      "colorsLabel": "Cores principais",
+      "toneLabel": "Tom de voz",
+      "toneBody": "Caloroso, elegante e com propósito — inspirador sem exageros."
+    },
+    "contact": {
+      "title": "Pedidos de imprensa",
+      "body": "Para entrevistas, citações, imagens ou histórias de parceria, a nossa equipa terá todo o gosto em ajudar.",
+      "cta": "Contactar a equipa"
+    },
+    "note": "Logótipos em alta resolução e fotografia estão disponíveis para a imprensa mediante pedido."
   }
 }

@@ -24,6 +24,7 @@ const staticPaths = [
   '/scholarships',
   '/annual-report',
   '/faq',
+  '/press',
   '/privacy',
   '/terms',
   '/cookies'

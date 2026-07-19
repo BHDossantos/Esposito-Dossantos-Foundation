@@ -40,7 +40,8 @@
     "chapters": "Global Chapters",
     "portal": "Donor Login",
     "sponsors": "Sponsor Login",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "press": "Press"
   },
   "home": {
     "hero": {
@@ -858,6 +859,10 @@
     "faq": {
       "title": "FAQ",
       "description": "Answers about donating, scholarships, volunteering, partnerships, and how the Harmonia Foundation works."
+    },
+    "press": {
+      "title": "Press & Media",
+      "description": "Media resources, boilerplate, brand basics, and press contact for the Harmonia Foundation."
     }
   },
   "legal": {
@@ -1241,5 +1246,60 @@
       "donate": "Make a donation",
       "contact": "Contact us"
     }
+  },
+  "press": {
+    "hero": {
+      "eyebrow": "Press & Media",
+      "title": "Media & press resources",
+      "intro": "Everything journalists, partners, and event organizers need to tell the Harmonia Foundation story accurately."
+    },
+    "boilerplate": {
+      "title": "Boilerplate",
+      "shortLabel": "Short",
+      "short": "The Harmonia Foundation is a global nonprofit that empowers individuals and communities through education, music, technology, and opportunity — providing scholarships, mentorship, and cultural programs that remove barriers to success worldwide.",
+      "longLabel": "Extended",
+      "long": "Founded by Bruno Dossantos, the Harmonia Foundation works to ensure that talent — which exists everywhere — is met by opportunity, which does not. Through scholarships, mentorship, music and arts education, technology access, and community initiatives, the foundation opens doors for the next generation of leaders, artists, and changemakers. With chapters across Italy, Brazil, Portugal, Spain, and the United States, and a commitment to transparency and measurable impact, Harmonia partners with schools, universities, cultural institutions, and companies to create lasting change."
+    },
+    "facts": {
+      "title": "At a glance",
+      "founded": {
+        "label": "Founded",
+        "value": "2025"
+      },
+      "founder": {
+        "label": "Founder",
+        "value": "Bruno Dossantos"
+      },
+      "focus": {
+        "label": "Focus areas",
+        "value": "Education, music, technology, culture, mentorship"
+      },
+      "reach": {
+        "label": "Reach",
+        "value": "Global — chapters in five countries"
+      },
+      "languages": {
+        "label": "Languages",
+        "value": "English, Portuguese, Italian, Spanish"
+      },
+      "type": {
+        "label": "Type",
+        "value": "Nonprofit foundation"
+      }
+    },
+    "brand": {
+      "title": "Brand basics",
+      "nameLabel": "Name",
+      "nameBody": "Always refer to the organization as “Harmonia Foundation.” “Harmonia” may be used on second reference.",
+      "colorsLabel": "Core colors",
+      "toneLabel": "Voice",
+      "toneBody": "Warm, elegant, and purposeful — inspiring without overstating."
+    },
+    "contact": {
+      "title": "Media inquiries",
+      "body": "For interviews, quotes, imagery, or partnership stories, our team is glad to help.",
+      "cta": "Contact our team"
+    },
+    "note": "High-resolution logos and photography are available to media on request."
   }
 }

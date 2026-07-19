@@ -38,7 +38,8 @@ export default async function Footer() {
         { label: t('privacy'), href: '/privacy' },
         { label: t('terms'), href: '/terms' },
         { label: t('cookies'), href: '/cookies' },
-        { label: tn('about'), href: '/about' }
+        { label: tn('about'), href: '/about' },
+        { label: t('press'), href: '/press' }
       ]
     }
   ];
