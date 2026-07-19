@@ -1187,5 +1187,11 @@
     "programsIntro": "Cinco pilares, un propósito común — cada uno diseñado para eliminar una barrera y abrir una puerta.",
     "thanksTitle": "Gracias",
     "thanksBody": "Nada de esto es posible sin ti. Gracias por creer en un mundo donde la oportunidad llega a todos, en todas partes."
+  },
+  "error": {
+    "title": "Algo salió mal",
+    "body": "Ocurrió un error inesperado. Inténtalo de nuevo.",
+    "retry": "Intentar de nuevo",
+    "home": "Volver al inicio"
   }
 }

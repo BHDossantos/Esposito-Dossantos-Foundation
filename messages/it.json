@@ -1187,5 +1187,11 @@
     "programsIntro": "Cinque pilastri, un unico scopo condiviso — ciascuno pensato per rimuovere una barriera e aprire una porta.",
     "thanksTitle": "Grazie",
     "thanksBody": "Niente di tutto questo è possibile senza di te. Grazie per aver creduto in un mondo in cui l’opportunità raggiunge tutti, ovunque."
+  },
+  "error": {
+    "title": "Qualcosa è andato storto",
+    "body": "Si è verificato un errore imprevisto. Riprova.",
+    "retry": "Riprova",
+    "home": "Torna alla home"
   }
 }

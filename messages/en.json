@@ -1187,5 +1187,11 @@
     "programsIntro": "Five pillars, one shared purpose — each designed to remove a barrier and open a door.",
     "thanksTitle": "Thank you",
     "thanksBody": "None of this is possible without you. Thank you for believing in a world where opportunity reaches everyone, everywhere."
+  },
+  "error": {
+    "title": "Something went wrong",
+    "body": "An unexpected error occurred. Please try again.",
+    "retry": "Try again",
+    "home": "Back to home"
   }
 }
