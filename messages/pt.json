@@ -1,0 +1,1314 @@
+{
+  "meta": {
+    "siteName": "Harmonia Foundation",
+    "defaultTitle": "Harmonia Foundation — Capacitar Vidas. Inspirar Futuros.",
+    "defaultDescription": "Uma fundação sem fins lucrativos de alcance global que capacita pessoas e comunidades através da educação, da música, da tecnologia, da cultura, da mentoria e de oportunidades."
+  },
+  "organization": {
+    "alternateName": "EDF",
+    "description": "A Harmonia Foundation capacita pessoas e comunidades através da educação, da música, da tecnologia e de oportunidades — eliminando barreiras ao sucesso em todo o mundo."
+  },
+  "nav": {
+    "home": "Início",
+    "mission": "Missão",
+    "programs": "Programas",
+    "impact": "Impacto",
+    "events": "Eventos",
+    "partners": "Parceiros",
+    "about": "Sobre",
+    "contact": "Contacto",
+    "blog": "Notícias",
+    "donate": "Doar",
+    "foundationLabel": "Fundação"
+  },
+  "footer": {
+    "exploreTitle": "Explorar",
+    "getInvolvedTitle": "Participe",
+    "legalTitle": "Aspetos Legais",
+    "volunteer": "Voluntariado",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Utilização",
+    "cookies": "Política de Cookies",
+    "tagline": "A capacitar vidas e a inspirar futuros através da educação, da música, da tecnologia, da cultura e de oportunidades — em todo o mundo.",
+    "address": "Fundação sem fins lucrativos registada · Atuação global",
+    "newsletterTitle": "Newsletter",
+    "newsletterCopy": "Junte-se ao movimento e receba novidades sobre os nossos programas, eventos e impacto.",
+    "joinCta": "Junte-se ao movimento",
+    "rights": "Todos os direitos reservados.",
+    "registration": "Organização sem fins lucrativos registada · Governação e transparência asseguradas.",
+    "transparency": "Transparência",
+    "chapters": "Delegações Globais",
+    "portal": "Acesso do Doador",
+    "sponsors": "Acesso de Patrocinadores",
+    "faq": "Perguntas frequentes",
+    "press": "Imprensa"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Fundação Global sem Fins Lucrativos",
+      "title": "Capacitar Vidas. Inspirar Futuros.",
+      "subtitle": "A Harmonia Foundation cria oportunidades através da educação, da música, da tecnologia, da cultura e do impacto na comunidade.",
+      "donateCta": "Doar Agora",
+      "partnerCta": "Tornar-se Parceiro",
+      "missionCta": "Conheça a Nossa Missão",
+      "scroll": "Deslizar"
+    },
+    "trust": {
+      "label": "Uma fundação assente num propósito",
+      "global": "Missão Global",
+      "scholarships": "Bolsas de Estudo",
+      "music": "Música e Artes",
+      "education": "Educação",
+      "technology": "Tecnologia",
+      "community": "Impacto na Comunidade"
+    },
+    "mission": {
+      "eyebrow": "A Nossa Missão",
+      "headline": "A oportunidade nunca deveria estar limitada pela origem, pelo rendimento ou pela geografia.",
+      "body1": "A Harmonia Foundation capacita pessoas e comunidades através da educação, da música, da tecnologia e de oportunidades. Eliminamos barreiras ao sucesso, oferecendo bolsas de estudo, mentoria, programas culturais e iniciativas inovadoras.",
+      "body2": "Acreditamos que o talento existe em toda a parte — mas a oportunidade não. O nosso trabalho consiste em colmatar essa lacuna e inspirar a aprendizagem ao longo da vida, a criatividade, a liderança e um impacto social positivo em todo o mundo.",
+      "cta": "Leia a Nossa Missão"
+    },
+    "pillars": {
+      "eyebrow": "O Que Fazemos",
+      "title": "Cinco pilares, um propósito comum",
+      "intro": "Em vez de procurarmos apoiar todas as causas, concentramos a nossa energia num conjunto reduzido de pilares claros, onde podemos gerar uma mudança duradoura e mensurável.",
+      "learnMore": "Saber mais",
+      "ctaCardTitle": "O seu apoio impulsiona cada pilar",
+      "ctaCardCopy": "Cada donativo amplia o acesso à educação, à música, à tecnologia e a oportunidades para quem mais precisa.",
+      "ctaCardButton": "Apoie o Nosso Trabalho"
+    },
+    "impact": {
+      "eyebrow": "As Nossas Metas de Impacto a 5 Anos",
+      "title": "Metas ambiciosas. Mudança mensurável.",
+      "intro": "Responsabilizamo-nos por objetivos claros e públicos. À medida que crescemos, estas metas serão substituídas por resultados verificados.",
+      "metrics": {
+        "students": "Estudantes apoiados",
+        "scholarships": "Bolsas de estudo financiadas",
+        "programs": "Programas comunitários",
+        "partners": "Parceiros globais",
+        "countries": "Países abrangidos"
+      },
+      "disclaimer": "Os números representam metas a cinco anos, não resultados atuais."
+    },
+    "founders": {
+      "eyebrow": "A Nossa História",
+      "headline": "Construída a partir da convicção de que o talento existe em toda a parte, mas a oportunidade não.",
+      "body1": "A fundação foi criada por Bruno Dossantos a partir de um compromisso de toda a vida com a música, a educação, o serviço e a cultura.",
+      "body2": "Tendo testemunhado como uma única oportunidade pode mudar o rumo de uma vida, os fundadores propuseram-se construir uma plataforma global que abre portas à próxima geração de líderes, artistas e agentes de mudança.",
+      "cta": "Conheça os Fundadores",
+      "founderRole": "Fundador e Presidente"
+    },
+    "programs": {
+      "eyebrow": "Programas em Destaque",
+      "title": "Programas que transformam vidas",
+      "intro": "Das bolsas de estudo à mentoria, passando pelo palco, os nossos programas convertem o potencial em oportunidade.",
+      "servesLabel": "A quem se destina",
+      "details": "Ver detalhes"
+    },
+    "donate": {
+      "eyebrow": "Doar",
+      "title": "O seu apoio cria oportunidades.",
+      "intro": "Cada contribuição — pontual ou mensal — amplia diretamente o acesso à educação, à música e à mentoria para quem mais precisa.",
+      "points": {
+        "materials": "€25 fornecem materiais de aprendizagem a um estudante",
+        "mentorship": "€50 apoiam uma sessão de mentoria",
+        "music": "€100 financiam educação musical e instrumentos",
+        "student": "€250 impulsionam o desenvolvimento de um estudante"
+      }
+    },
+    "events": {
+      "eyebrow": "Eventos",
+      "title": "Onde a nossa comunidade se reúne",
+      "intro": "Concertos solidários, galas, noites de bolsas de estudo e masterclasses que celebram o talento e angariam apoio para a nossa missão.",
+      "cta": "Ver Todos os Eventos"
+    },
+    "finalCta": {
+      "eyebrow": "Junte-se a Nós",
+      "title": "Ajude-nos a formar a próxima geração de líderes, artistas e agentes de mudança.",
+      "subtitle": "Quer doe, estabeleça uma parceria ou seja voluntário, o seu envolvimento transforma potencial em oportunidade.",
+      "donate": "Doar Agora",
+      "partner": "Seja Nosso Parceiro",
+      "contact": "Contacte-nos"
+    }
+  },
+  "mission": {
+    "hero": {
+      "eyebrow": "Missão, Visão e Valores",
+      "title": "Por que existimos",
+      "intro": "A oportunidade nunca deveria ser limitada por origem, renda ou geografia. Tudo o que fazemos nasce dessa convicção."
+    },
+    "statement": {
+      "missionLabel": "A Nossa Missão",
+      "mission": "A Harmonia Foundation capacita indivíduos e comunidades por meio da educação, da música, da tecnologia e da oportunidade. Removemos barreiras ao sucesso oferecendo bolsas de estudo, mentoria, programas culturais e iniciativas inovadoras que inspiram a aprendizagem ao longo da vida, a criatividade, a liderança e o impacto social positivo em todo o mundo.",
+      "visionLabel": "A Nossa Visão",
+      "vision": "Tornar-se uma das principais fundações sem fins lucrativos do mundo, dedicada a capacitar comunidades por meio da educação, da música, da tecnologia e do enriquecimento cultural — criando oportunidades que inspiram gerações a aprender, liderar e servir."
+    },
+    "belief": "Nascida da convicção de que o talento existe em toda parte, mas a oportunidade não.",
+    "purpose": "Existimos para capacitar pessoas de todas as idades e origens, ampliando o acesso à educação, à música, à tecnologia, à mentoria e a oportunidades que transformam vidas — ajudando comunidades a prosperar e formando a próxima geração de líderes, inovadores, artistas e agentes de mudança.",
+    "values": {
+      "eyebrow": "O Que Nos Orienta",
+      "title": "Os nossos valores fundamentais",
+      "intro": "Dez princípios moldam cada decisão que tomamos e cada vida que tocamos.",
+      "items": {
+        "integrity": {
+          "title": "Integridade",
+          "body": "Agimos com honestidade, responsabilidade e transparência."
+        },
+        "compassion": {
+          "title": "Compaixão",
+          "body": "Servimos com empatia e respeito por cada indivíduo."
+        },
+        "excellence": {
+          "title": "Excelência",
+          "body": "Buscamos os mais altos padrões em tudo o que fazemos."
+        },
+        "innovation": {
+          "title": "Inovação",
+          "body": "Abraçamos soluções criativas que ampliam oportunidades."
+        },
+        "education": {
+          "title": "Educação",
+          "body": "Acreditamos que aprender transforma vidas."
+        },
+        "culture": {
+          "title": "Música e Cultura",
+          "body": "Celebramos a criatividade como força de conexão e esperança."
+        },
+        "collaboration": {
+          "title": "Colaboração",
+          "body": "Construímos parcerias duradouras para maximizar o impacto."
+        },
+        "service": {
+          "title": "Serviço",
+          "body": "Medimos o sucesso pelas vidas que melhoramos."
+        },
+        "inclusion": {
+          "title": "Inclusão",
+          "body": "Criamos oportunidades para pessoas de todas as origens."
+        },
+        "sustainability": {
+          "title": "Sustentabilidade",
+          "body": "Investimos em soluções que geram impacto duradouro e mensurável."
+        }
+      }
+    }
+  },
+  "pillars": {
+    "education": {
+      "title": "Educação e Bolsas de Estudo",
+      "summary": "Bolsas de estudo, desenvolvimento de carreira, ensino de STEM e tecnologia, e programas de liderança que abrem portas à aprendizagem.",
+      "offerings": {
+        "a": {
+          "title": "Bolsas de Estudo",
+          "body": "Bolsas atribuídas por carência económica e por mérito, que eliminam barreiras financeiras à educação."
+        },
+        "b": {
+          "title": "Desenvolvimento de Carreira",
+          "body": "Percursos, acompanhamento e recursos que ligam a aprendizagem à oportunidade."
+        },
+        "c": {
+          "title": "STEM e Tecnologia",
+          "body": "Programas práticos que desenvolvem as competências da força de trabalho do futuro."
+        },
+        "d": {
+          "title": "Programas de Liderança",
+          "body": "Formação de líderes confiantes e capazes, prontos a servir as suas comunidades."
+        }
+      }
+    },
+    "music": {
+      "title": "Música e Artes",
+      "summary": "Bolsas para instrumentos, educação musical, mentoria de artistas, preservação cultural e oportunidades de atuação.",
+      "offerings": {
+        "a": {
+          "title": "Bolsas para Instrumentos",
+          "body": "Colocar instrumentos nas mãos de jovens músicos talentosos."
+        },
+        "b": {
+          "title": "Educação Musical",
+          "body": "Aulas, ensembles e teoria para estudantes de todas as origens."
+        },
+        "c": {
+          "title": "Mentoria de Artistas",
+          "body": "Orientação de artistas consagrados para cultivar talentos emergentes."
+        },
+        "d": {
+          "title": "Oportunidades de Atuação",
+          "body": "Palcos, recitais e concertos que permitem aos artistas brilhar."
+        }
+      }
+    },
+    "technology": {
+      "title": "Tecnologia e Inovação",
+      "summary": "Literacia digital, ensino de IA, programas de programação, acesso à tecnologia e formação em empreendedorismo.",
+      "offerings": {
+        "a": {
+          "title": "Literacia Digital",
+          "body": "Competências digitais essenciais para aprendentes de todas as idades."
+        },
+        "b": {
+          "title": "IA e Programação",
+          "body": "Programas modernos de inteligência artificial e desenvolvimento de software."
+        },
+        "c": {
+          "title": "Acesso à Tecnologia",
+          "body": "Reduzir o fosso digital com equipamentos e conetividade."
+        },
+        "d": {
+          "title": "Empreendedorismo",
+          "body": "Formação que transforma ideias em projetos sustentáveis."
+        }
+      }
+    },
+    "community": {
+      "title": "Desenvolvimento Comunitário",
+      "summary": "Parcerias locais, mentoria de jovens, iniciativas de voluntariado e projetos culturais que fortalecem as comunidades.",
+      "offerings": {
+        "a": {
+          "title": "Parcerias Comunitárias",
+          "body": "Trabalhar lado a lado com organizações locais para maximizar o impacto."
+        },
+        "b": {
+          "title": "Mentoria de Jovens",
+          "body": "Mentores de confiança que orientam os jovens rumo ao seu potencial."
+        },
+        "c": {
+          "title": "Iniciativas de Voluntariado",
+          "body": "Canalizar tempo e talento para um serviço com significado."
+        },
+        "d": {
+          "title": "Projetos Culturais",
+          "body": "Celebrar a herança e a criatividade à escala local."
+        }
+      }
+    },
+    "leadership": {
+      "title": "Liderança e Oportunidade",
+      "summary": "Mentoria profissional, preparação para a carreira, networking, formação em pequenos negócios e desenvolvimento da força de trabalho.",
+      "offerings": {
+        "a": {
+          "title": "Mentoria Profissional",
+          "body": "Mentores globais que abrem portas e partilham um saber conquistado com esforço."
+        },
+        "b": {
+          "title": "Preparação para a Carreira",
+          "body": "Competências, entrevistas e confiança para o mundo do trabalho."
+        },
+        "c": {
+          "title": "Networking",
+          "body": "Ligações que transformam a ambição em concretização."
+        },
+        "d": {
+          "title": "Desenvolvimento da Força de Trabalho",
+          "body": "Formação alinhada com oportunidades reais e setores em crescimento."
+        }
+      }
+    }
+  },
+  "programs": {
+    "hero": {
+      "eyebrow": "Programas",
+      "title": "Transformar potencial em oportunidade",
+      "intro": "Os nossos programas organizam-se em torno de cinco pilares — cada um concebido para eliminar barreiras e gerar uma mudança duradoura na vida das pessoas.",
+      "donateCta": "Apoie um Programa",
+      "applyCta": "Candidatar-se a Apoio"
+    },
+    "pillarLabel": "Pilar {n}",
+    "supportThis": "Apoie Este Pilar",
+    "featured": {
+      "musicScholarship": {
+        "tag": "Música e Artes",
+        "status": "Candidaturas abertas",
+        "title": "Fundo de Bolsas de Música",
+        "description": "Bolsas e instrumentos para jovens músicos talentosos sem meios para se dedicarem à sua arte.",
+        "serves": "Estudantes dos 8 aos 24 anos"
+      },
+      "youthLeadership": {
+        "tag": "Liderança",
+        "status": "Inscrições a decorrer",
+        "title": "Programa de Liderança Jovem",
+        "description": "Um programa imersivo que desenvolve a confiança, a comunicação e a liderança na próxima geração.",
+        "serves": "Jovens dos 14 aos 22 anos"
+      },
+      "technologyAccess": {
+        "tag": "Tecnologia",
+        "status": "Em breve",
+        "title": "Programa de Acesso à Tecnologia",
+        "description": "Equipamentos, conetividade e formação em competências digitais que reduzem o fosso de oportunidades.",
+        "serves": "Estudantes e famílias"
+      },
+      "globalMentorship": {
+        "tag": "Mentoria",
+        "status": "Aberto",
+        "title": "Rede Global de Mentoria",
+        "description": "Associar talentos emergentes a mentores experientes em diversos setores e continentes.",
+        "serves": "Estudantes e profissionais em início de carreira"
+      },
+      "communityConcert": {
+        "tag": "Comunidade",
+        "status": "Sazonal",
+        "title": "Ciclo de Concertos Comunitários",
+        "description": "Concertos gratuitos que aproximam as pessoas e angariam apoio para a educação musical.",
+        "serves": "Comunidades em todo o mundo"
+      },
+      "artistDevelopment": {
+        "tag": "Música e Artes",
+        "status": "Por candidatura",
+        "title": "Programa de Desenvolvimento de Artistas",
+        "description": "Mentoria, atuação e recursos para ajudar artistas emergentes a construir carreiras sustentáveis.",
+        "serves": "Artistas emergentes"
+      }
+    }
+  },
+  "donate": {
+    "hero": {
+      "eyebrow": "Doar",
+      "title": "A sua generosidade abre portas",
+      "intro": "Cada donativo financia diretamente bolsas de estudo, educação musical, acesso à tecnologia e mentoria para quem mais precisa."
+    },
+    "give": {
+      "title": "Faça um donativo",
+      "intro": "Escolha o valor e a frequência que melhor lhe convêm. Cem por cento da sua generosidade faz avançar a nossa missão."
+    },
+    "form": {
+      "frequency": "Frequência",
+      "frequencies": {
+        "oneTime": "Pontual",
+        "monthly": "Mensal",
+        "annual": "Anual"
+      },
+      "chooseAmount": "Escolha um valor",
+      "amountLabel": "Valor",
+      "tiers": {
+        "25": "Materiais de aprendizagem",
+        "50": "Programas de mentoria",
+        "100": "Educação musical",
+        "250": "Desenvolvimento de estudantes",
+        "1000": "Doador de bolsas de estudo"
+      },
+      "custom": "Personalizado",
+      "processing": "A processar…",
+      "give": "Doar €{amount} {frequency}",
+      "methods": "Pagamento seguro através de Stripe, PayPal, Apple Pay, Google Pay e transferência bancária.",
+      "secure": "Os donativos são processados de forma segura. Receberá um recibo para os seus registos. A dedutibilidade fiscal depende do seu país de residência.",
+      "demoNotice": "Este é um formulário de donativo de demonstração. Ligue um fornecedor de pagamentos para processar donativos reais.",
+      "notConfigured": "As doações online ainda não estão ativas. Contacte-nos para doar — e obrigado pela sua generosidade.",
+      "error": "Algo correu mal. Tente novamente.",
+      "impact": {
+        "title": "O seu impacto",
+        "lead": "€{amount} podem financiar uma destas opções:",
+        "kits": "{count, plural, one {# kit de materiais} other {# kits de materiais}}",
+        "sessions": "{count, plural, one {# sessão de mentoria} other {# sessões de mentoria}}",
+        "students": "{count, plural, one {educação musical para # estudante} other {educação musical para # estudantes}}",
+        "annual": "≈ €{total} por ano a este nível",
+        "note": "Estimativa ilustrativa da forma como os donativos são normalmente utilizados."
+      }
+    },
+    "ways": {
+      "title": "Outras formas de doar",
+      "items": {
+        "monthly": {
+          "title": "Doação Mensal",
+          "body": "Um apoio contínuo que nos permite planear o futuro e chegar a mais pessoas."
+        },
+        "corporate": {
+          "title": "Doação Empresarial",
+          "body": "Estabeleça uma parceria connosco através de patrocínios e programas de donativos equiparados."
+        },
+        "legacy": {
+          "title": "Doação de Legado",
+          "body": "Deixe um legado duradouro, incluindo a fundação no seu planeamento patrimonial."
+        },
+        "bank": {
+          "title": "Transferência Bancária",
+          "body": "Prefere uma transferência direta? Contacte-nos para obter os nossos dados bancários e instruções."
+        }
+      }
+    },
+    "taxNote": "A Harmonia Foundation é uma organização sem fins lucrativos. A dedutibilidade fiscal dos donativos depende do seu país de residência. Consulte o seu consultor fiscal; é emitido um recibo oficial para cada donativo.",
+    "faq": {
+      "eyebrow": "Perguntas Frequentes do Doador",
+      "title": "Respostas às suas perguntas",
+      "items": {
+        "secure": {
+          "q": "O meu donativo é seguro?",
+          "a": "Sim. Todos os pagamentos são processados através de fornecedores encriptados e em conformidade com a norma PCI. Nunca armazenamos os dados do seu cartão."
+        },
+        "recurring": {
+          "q": "Posso doar mensalmente?",
+          "a": "Sem dúvida. Os donativos mensais recorrentes proporcionam o apoio estável que nos ajuda a planear e a crescer. Pode alterá-los ou cancelá-los a qualquer momento."
+        },
+        "receipt": {
+          "q": "Vou receber um recibo?",
+          "a": "Sim. É enviado um recibo oficial por e-mail imediatamente após cada donativo."
+        },
+        "allocation": {
+          "q": "Como é utilizado o meu donativo?",
+          "a": "A grande maioria de cada donativo destina-se diretamente aos programas. Publicamos a nossa afetação de recursos na página de Impacto."
+        },
+        "cancel": {
+          "q": "Posso cancelar um donativo recorrente?",
+          "a": "Claro que sim. Pode gerir ou cancelar o seu donativo recorrente a qualquer momento — basta contactar-nos ou utilizar a sua conta de doador."
+        }
+      }
+    }
+  },
+  "impact": {
+    "hero": {
+      "eyebrow": "Impacto e Transparência",
+      "title": "Uma responsabilização visível",
+      "intro": "Acreditamos que a confiança se conquista com transparência. Eis o que pretendemos alcançar — e como gerimos cada donativo."
+    },
+    "goals": {
+      "eyebrow": "As Nossas Metas de Impacto a 5 Anos",
+      "title": "Para onde caminhamos",
+      "intro": "Objetivos claros e públicos mantêm-nos focados e responsáveis. Estes números representam metas, não resultados atuais.",
+      "metrics": {
+        "students": "Estudantes apoiados",
+        "scholarships": "Bolsas de estudo financiadas",
+        "programs": "Programas comunitários",
+        "partners": "Parceiros globais",
+        "countries": "Países abrangidos"
+      }
+    },
+    "allocation": {
+      "title": "Para onde vai o seu donativo",
+      "intro": "Estamos empenhados em direcionar a grande maioria de cada donativo para programas que transformam vidas.",
+      "items": {
+        "programs": "Programas e bolsas de estudo",
+        "operations": "Operações e governação",
+        "fundraising": "Angariação de fundos"
+      }
+    },
+    "transparency": {
+      "title": "O nosso compromisso com a transparência",
+      "items": {
+        "reports": {
+          "title": "Relatórios Anuais",
+          "body": "Publicados todos os anos, detalhando as nossas atividades, resultados e finanças."
+        },
+        "governance": {
+          "title": "Governação Clara",
+          "body": "Um conselho responsável e um conselho consultivo orientam cada decisão."
+        },
+        "receipts": {
+          "title": "Recibos para Doadores",
+          "body": "Cada donativo é reconhecido com um recibo oficial e discriminado."
+        },
+        "audits": {
+          "title": "Responsabilidade Financeira",
+          "body": "Uma supervisão independente assegura que os fundos são utilizados de forma responsável."
+        }
+      }
+    },
+    "stories": {
+      "eyebrow": "Histórias de Impacto",
+      "title": "A oportunidade, nas suas palavras",
+      "items": {
+        "a": {
+          "quote": "Uma única bolsa de estudo mudou por completo o rumo da minha vida e o futuro da minha família.",
+          "name": "Futura Bolseira",
+          "role": "Programa de Educação"
+        },
+        "b": {
+          "quote": "Nunca pensei que alguém como eu pudesse pegar num instrumento, quanto mais atuar num verdadeiro palco.",
+          "name": "Futuro Músico",
+          "role": "Programa de Música e Artes"
+        },
+        "c": {
+          "quote": "O meu mentor abriu-me portas que eu nem sabia que existiam. Agora faço o mesmo pelos outros.",
+          "name": "Futuro Líder",
+          "role": "Programa de Mentoria"
+        }
+      }
+    }
+  },
+  "partners": {
+    "hero": {
+      "eyebrow": "Parceiros",
+      "title": "Maior impacto, juntos",
+      "intro": "Estabelecemos parcerias com empresas, escolas, universidades, instituições culturais e organizações financiadoras para multiplicar o nosso alcance e impacto.",
+      "cta": "Tornar-se Parceiro"
+    },
+    "types": {
+      "eyebrow": "Tipos de Parceria",
+      "title": "Formas de colaborar connosco",
+      "intro": "Qualquer que seja a missão da sua organização, existe uma forma significativa de colaborar.",
+      "items": {
+        "corporate": {
+          "title": "Parcerias Empresariais",
+          "body": "Patrocínios e donativos equiparados que fazem avançar os seus objetivos de impacto social ao mesmo tempo que transformam vidas."
+        },
+        "schools": {
+          "title": "Parcerias com Escolas",
+          "body": "Leve bolsas de estudo e programas de música e tecnologia diretamente aos seus alunos."
+        },
+        "universities": {
+          "title": "Parcerias com Universidades",
+          "body": "Colabore em bolsas de estudo, investigação, mentoria e percursos para o ensino superior."
+        },
+        "cultural": {
+          "title": "Parcerias Culturais",
+          "body": "Cocrie concertos, festivais e programas que celebram a criatividade e a herança."
+        },
+        "government": {
+          "title": "Governo e Financiamentos",
+          "body": "Estabeleça parcerias em iniciativas financiadas por subvenções que ampliam as oportunidades em larga escala."
+        }
+      }
+    },
+    "sponsorship": {
+      "eyebrow": "Patrocínio Empresarial",
+      "title": "Níveis de patrocínio",
+      "intro": "Alinhe a sua marca com um impacto global. Cada nível inclui reconhecimento, relatórios e uma sessão de apresentação privada para doadores.",
+      "popular": "Mais popular",
+      "tiers": {
+        "bronze": "Parceiro Bronze",
+        "silver": "Parceiro Prata",
+        "gold": "Parceiro Ouro",
+        "platinum": "Parceiro Platina",
+        "legacy": "Parceiro de Legado"
+      },
+      "descriptions": {
+        "bronze": "Um ponto de partida com impacto na nossa missão, com reconhecimento significativo.",
+        "silver": "Maior visibilidade e um envolvimento mais profundo com os nossos programas.",
+        "gold": "Reconhecimento de destaque na nossa plataforma, eventos e relatórios.",
+        "platinum": "Parceria ao nível de liderança, com colaboração à medida.",
+        "legacy": "Parceria transformadora que molda o futuro da fundação."
+      },
+      "benefitsTitle": "Cada parceiro recebe",
+      "benefits": {
+        "website": "Reconhecimento no website",
+        "event": "Reconhecimento em eventos",
+        "report": "Relatório anual de impacto",
+        "social": "Reconhecimento nas redes sociais",
+        "certificate": "Certificado de patrocinador",
+        "briefing": "Sessão de apresentação privada para doadores"
+      },
+      "cta": "Tornar-se Parceiro Empresarial"
+    }
+  },
+  "events": {
+    "hero": {
+      "eyebrow": "Eventos",
+      "title": "Celebre. Conecte-se. Contribua.",
+      "intro": "De concertos solidários a galas e masterclasses, os nossos eventos reúnem a nossa comunidade e angariam apoio para a nossa missão."
+    },
+    "upcoming": {
+      "eyebrow": "Calendário",
+      "title": "Próximos eventos",
+      "intro": "Reserve o seu lugar, patrocine um evento ou seja voluntário para ajudar a concretizá-lo."
+    },
+    "rsvp": "Confirmar Presença",
+    "getInvolved": {
+      "cta": "Entre em contacto",
+      "sponsor": {
+        "title": "Patrocine um Evento",
+        "body": "Coloque a sua marca no centro de uma noite inesquecível, por uma causa que importa."
+      },
+      "volunteer": {
+        "title": "Voluntariado",
+        "body": "Dedique o seu tempo e talento para ajudar os nossos eventos a brilhar."
+      },
+      "host": {
+        "title": "Acolha um Evento",
+        "body": "Estabeleça uma parceria connosco para levar um concerto, uma gala ou um workshop à sua comunidade."
+      }
+    },
+    "viewEvent": "Ver evento",
+    "allEvents": "Todos os eventos",
+    "status": {
+      "open": "Aberto",
+      "soon": "Em breve",
+      "recurring": "Recorrente"
+    },
+    "detail": {
+      "aboutTitle": "Sobre o evento",
+      "whenLabel": "Quando",
+      "whereLabel": "Onde",
+      "rsvpTitle": "Reserve o seu lugar",
+      "rsvpIntro": "Diga-nos que vem e manteremos você informado com os detalhes."
+    }
+  },
+  "blog": {
+    "hero": {
+      "eyebrow": "Notícias e Histórias",
+      "title": "Notícias e novidades",
+      "intro": "Histórias de impacto, novidades dos nossos programas e reflexões sobre educação, música, tecnologia e oportunidade."
+    },
+    "readMore": "Ler artigo",
+    "backToBlog": "Todas as notícias",
+    "published": "Publicado",
+    "minuteRead": "min de leitura",
+    "related": "Mais histórias",
+    "empty": "Ainda não há histórias — volte em breve."
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "Sobre Nós",
+      "title": "Quem somos",
+      "intro": "A Harmonia Foundation é uma organização global sem fins lucrativos, construída sobre a convicção de que a oportunidade deve chegar a todos, em toda a parte."
+    },
+    "story": {
+      "eyebrow": "A Nossa História",
+      "title": "Uma fundação nascida de um propósito",
+      "founderRole": "Fundador e Presidente",
+      "body1": "A fundação foi criada por Bruno Dossantos, movido por um amor de uma vida pela música, pela educação, pela tecnologia e pelo serviço.",
+      "body2": "Ao longo de anos de trabalho com estudantes, artistas e comunidades, os fundadores constataram, vezes sem conta, a mesma verdade: o talento está em toda a parte, mas a oportunidade não.",
+      "body3": "A Harmonia Foundation existe para colmatar essa lacuna — oferecendo bolsas de estudo, mentoria, programas culturais e iniciativas inovadoras que capacitam as pessoas a alcançar todo o seu potencial."
+    },
+    "board": {
+      "eyebrow": "Liderança",
+      "title": "Conselho de administração e conselho consultivo",
+      "intro": "O nosso trabalho é orientado por líderes experientes, comprometidos com a integridade, a transparência e o impacto.",
+      "members": {
+        "founder": {
+          "name": "Bruno Dossantos",
+          "role": "Fundador e Presidente"
+        },
+        "director": {
+          "name": "Diretor de Programas",
+          "role": "Programas e Impacto"
+        },
+        "treasurer": {
+          "name": "Tesoureiro",
+          "role": "Finanças e Governação"
+        }
+      }
+    },
+    "governance": {
+      "eyebrow": "Governação",
+      "title": "Como atuamos",
+      "intro": "Uma governação sólida e a transparência estão no cerne de tudo o que fazemos.",
+      "items": {
+        "structure": {
+          "title": "Estrutura Organizacional",
+          "body": "Uma estrutura clara, com papéis definidos na liderança, nos programas, nas finanças e nas operações."
+        },
+        "legal": {
+          "title": "Estatuto Jurídico",
+          "body": "Uma fundação sem fins lucrativos registada, a operar em conformidade com a legislação aplicável."
+        },
+        "accountability": {
+          "title": "Responsabilidade Financeira",
+          "body": "Supervisão independente e relatórios transparentes sobre a forma como os fundos são angariados e utilizados."
+        },
+        "ethics": {
+          "title": "Ética e Integridade",
+          "body": "Agimos com honestidade, responsabilidade e respeito por cada pessoa que servimos."
+        }
+      }
+    }
+  },
+  "contact": {
+    "hero": {
+      "eyebrow": "Contacto",
+      "title": "Vamos iniciar uma conversa",
+      "intro": "Quer pretenda doar, estabelecer uma parceria, ser voluntário ou saber mais, gostaríamos muito de o ouvir."
+    },
+    "reach": {
+      "title": "Fale connosco diretamente",
+      "intro": "Escolha o canal mais adequado ao seu pedido, ou utilize o formulário e encaminharemos a sua mensagem para a equipa certa.",
+      "officeLabel": "Escritório",
+      "office": "Atuação global · Por marcação",
+      "channels": {
+        "general": {
+          "label": "Geral",
+          "email": "info@harmonia-foundation.org"
+        },
+        "partnership": {
+          "label": "Parcerias",
+          "email": "partners@harmonia-foundation.org"
+        },
+        "media": {
+          "label": "Imprensa",
+          "email": "media@harmonia-foundation.org"
+        }
+      }
+    },
+    "form": {
+      "name": "Nome completo",
+      "email": "E-mail",
+      "country": "País",
+      "inquiryType": "Tipo de pedido",
+      "types": {
+        "general": "Pedido geral",
+        "donation": "Pedido sobre donativos",
+        "partnership": "Pedido de parceria",
+        "volunteer": "Pedido de voluntariado",
+        "media": "Pedido de imprensa",
+        "grant": "Pedido de financiamento"
+      },
+      "message": "Mensagem",
+      "submit": "Enviar Mensagem",
+      "submitting": "A enviar…",
+      "privacyNote": "Ao enviar, aceita a nossa Política de Privacidade. Nunca partilharemos os seus dados.",
+      "successTitle": "Obrigado — a sua mensagem está a caminho.",
+      "successBody": "Um membro da nossa equipa entrará em contacto consigo em breve.",
+      "error": "Algo correu mal. Tente novamente."
+    }
+  },
+  "newsletter": {
+    "eyebrow": "Mantenha-se a Par",
+    "title": "Junte-se ao movimento.",
+    "intro": "Seja o primeiro a saber sobre novos programas, eventos, bolsas de estudo e o impacto que ajuda a criar.",
+    "name": "Nome",
+    "email": "E-mail",
+    "country": "País",
+    "interest": "Eu sou…",
+    "interests": {
+      "donor": "Doador",
+      "volunteer": "Voluntário",
+      "artist": "Artista",
+      "student": "Estudante",
+      "school": "Parceiro Escolar",
+      "sponsor": "Patrocinador Empresarial",
+      "media": "Imprensa"
+    },
+    "submit": "Subscrever",
+    "submitting": "A subscrever…",
+    "consent": "Respeitamos a sua privacidade. Cancele a subscrição a qualquer momento.",
+    "successTitle": "Bem-vindo ao movimento!",
+    "successBody": "Obrigado por subscrever. Fique atento à nossa próxima novidade.",
+    "error": "Algo correu mal. Tente novamente."
+  },
+  "cookieConsent": {
+    "message": "Utilizamos cookies para melhorar a sua experiência e analisar o tráfego do site.",
+    "learnMore": "Saber mais",
+    "accept": "Aceitar",
+    "reject": "Rejeitar"
+  },
+  "notFound": {
+    "title": "Página não encontrada",
+    "body": "A página que procura poderá ter sido movida ou já não existir.",
+    "cta": "Voltar ao Início"
+  },
+  "pageMeta": {
+    "mission": {
+      "title": "Missão, Visão e Valores",
+      "description": "Conheça a missão, a visão e os valores fundamentais da Harmonia Foundation — a capacitar vidas através da educação, da música, da tecnologia e de oportunidades."
+    },
+    "programs": {
+      "title": "Programas",
+      "description": "Explore os nossos programas nas áreas da educação, música, tecnologia, comunidade e liderança — concebidos para transformar potencial em oportunidade."
+    },
+    "impact": {
+      "title": "Impacto e Transparência",
+      "description": "Conheça as nossas metas de impacto a cinco anos, a transparência dos donativos e o compromisso com a responsabilização na Harmonia Foundation."
+    },
+    "donate": {
+      "title": "Doar",
+      "description": "Apoie a educação, a música, a tecnologia e a mentoria. Faça um donativo seguro, pontual ou mensal, à Harmonia Foundation."
+    },
+    "partners": {
+      "title": "Parceiros e Patrocínios",
+      "description": "Estabeleça uma parceria com a Harmonia Foundation através de patrocínios empresariais e parcerias com escolas, universidades, instituições culturais e organizações financiadoras."
+    },
+    "events": {
+      "title": "Eventos",
+      "description": "Concertos solidários, galas, noites de bolsas de estudo e masterclasses que reúnem a nossa comunidade e apoiam a nossa missão."
+    },
+    "about": {
+      "title": "Sobre Nós",
+      "description": "Conheça os fundadores, o conselho, a governação e a transparência da Harmonia Foundation."
+    },
+    "contact": {
+      "title": "Contacto",
+      "description": "Entre em contacto com a Harmonia Foundation para donativos, parcerias, voluntariado, imprensa e pedidos de financiamento."
+    },
+    "privacy": {
+      "title": "Política de Privacidade",
+      "description": "Como a Harmonia Foundation recolhe, utiliza e protege os seus dados pessoais."
+    },
+    "terms": {
+      "title": "Termos de Utilização",
+      "description": "Os termos que regem a utilização do website da Harmonia Foundation."
+    },
+    "cookies": {
+      "title": "Política de Cookies",
+      "description": "Como a Harmonia Foundation utiliza cookies e tecnologias semelhantes."
+    },
+    "blog": {
+      "title": "Notícias",
+      "description": "Notícias, histórias e novidades da Harmonia Foundation sobre educação, música, tecnologia e oportunidade."
+    },
+    "volunteer": {
+      "title": "Voluntariado",
+      "description": "Seja voluntário na Harmonia Foundation e ajude a capacitar vidas através da educação, música, tecnologia e oportunidade."
+    },
+    "scholarships": {
+      "title": "Bolsas de Estudo",
+      "description": "Candidate-se a uma bolsa da Harmonia Foundation em música, educação, tecnologia ou liderança."
+    },
+    "donateThankYou": {
+      "title": "Obrigado",
+      "description": "Obrigado por apoiar a Harmonia Foundation."
+    },
+    "transparency": {
+      "title": "Transparência",
+      "description": "Transparência financeira e responsabilidade na Harmonia Foundation — alocação, receita, investimento em programas e metas de impacto."
+    },
+    "chapters": {
+      "title": "Delegações Globais",
+      "description": "Conheça as delegações globais da Harmonia Foundation em Itália, Brasil, Portugal, Espanha e Estados Unidos."
+    },
+    "portal": {
+      "title": "Portal do Doador",
+      "description": "Aceda ao portal do doador da Harmonia Foundation para ver o seu histórico de doações e recibos."
+    },
+    "sponsors": {
+      "title": "Portal do Patrocinador",
+      "description": "Aceda ao relatório de impacto da sua parceria com a Harmonia Foundation."
+    },
+    "annualReport": {
+      "title": "Relatório Anual de Impacto",
+      "description": "Relatório anual de impacto da Harmonia Foundation — missão, impacto, alocação e programas."
+    },
+    "faq": {
+      "title": "Perguntas frequentes",
+      "description": "Respostas sobre doações, bolsas, voluntariado, parcerias e como funciona a Harmonia Foundation."
+    },
+    "press": {
+      "title": "Imprensa e Media",
+      "description": "Recursos para imprensa, texto institucional, elementos de marca e contacto de imprensa da Harmonia Foundation."
+    }
+  },
+  "legal": {
+    "privacy": {
+      "eyebrow": "Aspetos Legais",
+      "title": "Política de Privacidade",
+      "updated": "Última atualização: junho de 2026",
+      "sections": [
+        {
+          "heading": "Introdução",
+          "body": "A Harmonia Foundation (\"nós\") está empenhada em proteger a sua privacidade. Esta política explica como recolhemos, utilizamos e salvaguardamos os seus dados pessoais, em conformidade com o RGPD e a legislação de proteção de dados aplicável."
+        },
+        {
+          "heading": "Informações Que Recolhemos",
+          "body": "Recolhemos informações que nos fornece diretamente — como o seu nome, e-mail, país e mensagem — quando faz um donativo, subscreve, se voluntaria ou nos contacta. Recolhemos também dados técnicos limitados, como informações sobre o dispositivo e a utilização, para melhorar o nosso website."
+        },
+        {
+          "heading": "Como Utilizamos as Suas Informações",
+          "body": "Utilizamos as suas informações para processar donativos, responder a pedidos, enviar as novidades que solicitou e melhorar os nossos programas e serviços. Nunca vendemos os seus dados pessoais."
+        },
+        {
+          "heading": "Fundamento Jurídico",
+          "body": "Tratamos os dados pessoais com base no seu consentimento, nos nossos interesses legítimos na gestão da fundação e, sempre que necessário, para cumprir obrigações legais."
+        },
+        {
+          "heading": "Partilha de Dados",
+          "body": "Partilhamos dados apenas com prestadores de serviços de confiança (como fornecedores de pagamentos e de e-mail) que os tratam em nosso nome sob estrita confidencialidade, e sempre que exigido por lei."
+        },
+        {
+          "heading": "Segurança dos Dados",
+          "body": "Aplicamos medidas técnicas e organizativas adequadas, incluindo encriptação e controlos de acesso, para proteger as suas informações."
+        },
+        {
+          "heading": "Os Seus Direitos",
+          "body": "Tem o direito de aceder, retificar, eliminar ou limitar o tratamento dos seus dados pessoais, bem como de retirar o consentimento a qualquer momento. Para exercer estes direitos, contacte privacy@harmonia-foundation.org."
+        },
+        {
+          "heading": "Contacto",
+          "body": "Para quaisquer questões sobre esta política, contacte-nos através de privacy@harmonia-foundation.org."
+        }
+      ]
+    },
+    "terms": {
+      "eyebrow": "Aspetos Legais",
+      "title": "Termos de Utilização",
+      "updated": "Última atualização: junho de 2026",
+      "sections": [
+        {
+          "heading": "Aceitação dos Termos",
+          "body": "Ao aceder a este website, aceita estes Termos de Utilização. Se não concordar, não utilize o site."
+        },
+        {
+          "heading": "Utilização do Website",
+          "body": "Aceita utilizar este website de forma lícita e não fazer uso indevido, perturbar ou tentar obter acesso não autorizado a qualquer parte do mesmo."
+        },
+        {
+          "heading": "Donativos",
+          "body": "Os donativos são voluntários e processados de forma segura através de fornecedores terceiros. A dedutibilidade fiscal depende do seu país de residência."
+        },
+        {
+          "heading": "Propriedade Intelectual",
+          "body": "Todo o conteúdo deste website, incluindo textos, gráficos e logótipos, é propriedade da Harmonia Foundation ou dos seus licenciadores e está protegido por lei."
+        },
+        {
+          "heading": "Limitação de Responsabilidade",
+          "body": "O website é disponibilizado \"tal como está\". Não prestamos quaisquer garantias e não somos responsáveis por quaisquer danos decorrentes da sua utilização, na máxima medida permitida por lei."
+        },
+        {
+          "heading": "Alterações a Estes Termos",
+          "body": "Poderemos atualizar estes termos periodicamente. A utilização continuada do website constitui a aceitação dos termos revistos."
+        },
+        {
+          "heading": "Contacto",
+          "body": "As questões sobre estes termos podem ser enviadas para info@harmonia-foundation.org."
+        }
+      ]
+    },
+    "cookies": {
+      "eyebrow": "Aspetos Legais",
+      "title": "Política de Cookies",
+      "updated": "Última atualização: junho de 2026",
+      "sections": [
+        {
+          "heading": "O Que São Cookies",
+          "body": "Os cookies são pequenos ficheiros de texto armazenados no seu dispositivo que ajudam os websites a funcionar e a compreender como são utilizados."
+        },
+        {
+          "heading": "Como Utilizamos os Cookies",
+          "body": "Utilizamos cookies essenciais para o funcionamento do site e, com o seu consentimento, cookies de análise para compreender e melhorar a forma como os visitantes utilizam o nosso site."
+        },
+        {
+          "heading": "Gestão dos Cookies",
+          "body": "Pode aceitar ou rejeitar os cookies não essenciais através do nosso banner de consentimento, e gerir os cookies através das definições do seu navegador a qualquer momento."
+        },
+        {
+          "heading": "Cookies de Terceiros",
+          "body": "Alguns cookies podem ser definidos por serviços de terceiros de confiança, como fornecedores de análise ou de pagamentos, sujeitos às respetivas políticas de privacidade."
+        },
+        {
+          "heading": "Contacto",
+          "body": "Para questões sobre a nossa utilização de cookies, contacte privacy@harmonia-foundation.org."
+        }
+      ]
+    }
+  },
+  "rsvp": {
+    "name": "Nome completo",
+    "email": "E-mail",
+    "guests": "Número de convidados",
+    "submit": "Reservar o meu lugar",
+    "submitting": "A enviar…",
+    "success": "Está na lista!",
+    "successBody": "Obrigado pela confirmação. Entraremos em contacto com os detalhes em breve.",
+    "error": "Algo correu mal. Tente novamente.",
+    "consent": "Ao reservar, concorda com a nossa Política de Privacidade."
+  },
+  "applications": {
+    "name": "Nome completo",
+    "email": "E-mail",
+    "country": "País",
+    "choose": "Selecione…",
+    "submit": "Enviar candidatura",
+    "submitting": "A enviar…",
+    "successTitle": "Obrigado — a sua candidatura foi recebida.",
+    "successBody": "Recebemos a sua candidatura e um membro da nossa equipa entrará em contacto em breve.",
+    "error": "Algo correu mal. Tente novamente.",
+    "consent": "Ao enviar, concorda com a nossa Política de Privacidade. Nunca partilharemos os seus dados."
+  },
+  "volunteer": {
+    "hero": {
+      "eyebrow": "Voluntariado",
+      "title": "Dê o seu tempo. Mude uma vida.",
+      "intro": "O nosso trabalho é movido por pessoas que se importam. Diga-nos como gostaria de ajudar e encontraremos a melhor forma de gerar impacto."
+    },
+    "form": {
+      "interestLabel": "Onde gostaria de ajudar?",
+      "availabilityLabel": "A sua disponibilidade",
+      "messageLabel": "Fale-nos sobre si",
+      "interests": {
+        "music": "Música e Artes",
+        "education": "Educação e Tutoria",
+        "technology": "Tecnologia",
+        "events": "Eventos",
+        "mentorship": "Mentoria",
+        "admin": "Administração e Operações"
+      },
+      "availabilities": {
+        "weekly": "Algumas horas por semana",
+        "monthly": "Algumas horas por mês",
+        "events": "Apenas em eventos",
+        "flexible": "Flexível"
+      }
+    }
+  },
+  "scholarships": {
+    "hero": {
+      "eyebrow": "Bolsas de Estudo",
+      "title": "Candidate-se a uma bolsa",
+      "intro": "A oportunidade nunca deveria ser limitada pela renda. Se está pronto para aprender, liderar ou criar, queremos ajudá-lo a dar o próximo passo."
+    },
+    "form": {
+      "programLabel": "A que área se candidata?",
+      "institutionLabel": "Escola / instituição (opcional)",
+      "messageLabel": "Fale-nos sobre si e por que se candidata",
+      "programs": {
+        "music": "Música e Artes",
+        "education": "Educação",
+        "technology": "Tecnologia e Inovação",
+        "leadership": "Liderança"
+      }
+    }
+  },
+  "donateThankYou": {
+    "eyebrow": "Obrigado",
+    "title": "A sua generosidade cria oportunidades.",
+    "body": "Obrigado pela sua doação à Harmonia Foundation. Um recibo está a caminho do seu e-mail. O seu apoio ajuda a remover barreiras e a abrir portas para quem mais precisa.",
+    "cta": "Voltar ao início"
+  },
+  "transparency": {
+    "hero": {
+      "eyebrow": "Transparência",
+      "title": "Para onde vai cada doação",
+      "intro": "Acreditamos que a confiança se conquista com abertura. Veja como planeamos angariar e gerir os fundos — e o impacto que queremos alcançar."
+    },
+    "disclaimer": "Os valores são metas ilustrativas de cinco anos para uma fundação em formação, não resultados auditados. Publicaremos dados financeiros verificados à medida que os programas amadurecem.",
+    "allocation": {
+      "title": "Como os fundos são alocados",
+      "intro": "O nosso compromisso: a grande maioria de cada doação vai diretamente para os programas.",
+      "items": {
+        "programs": "Programas e bolsas",
+        "operations": "Operações e governança",
+        "fundraising": "Angariação de fundos"
+      }
+    },
+    "revenue": {
+      "title": "Receita projetada por fonte",
+      "intro": "Uma base de financiamento diversificada mantém a missão resiliente.",
+      "totalLabel": "Total projetado (Ano 1)",
+      "items": {
+        "donations": "Doações individuais",
+        "grants": "Subsídios",
+        "sponsorships": "Patrocínios empresariais",
+        "events": "Eventos"
+      }
+    },
+    "spending": {
+      "title": "Investimento em programas por pilar",
+      "intro": "Como os fundos dos programas são distribuídos pelos nossos cinco pilares.",
+      "items": {
+        "education": "Educação e Bolsas",
+        "music": "Música e Artes",
+        "technology": "Tecnologia e Inovação",
+        "community": "Desenvolvimento Comunitário",
+        "leadership": "Liderança e Oportunidade"
+      }
+    },
+    "impact": {
+      "title": "A nossa trajetória de impacto",
+      "intro": "Metas de cinco anos para as pessoas e comunidades que servimos.",
+      "students": "Estudantes apoiados",
+      "scholarships": "Bolsas financiadas"
+    },
+    "governance": {
+      "title": "Responsabilidade e governança",
+      "items": {
+        "reports": {
+          "title": "Relatórios anuais",
+          "body": "Publicados anualmente com atividades, resultados e finanças."
+        },
+        "board": {
+          "title": "Conselho independente",
+          "body": "Um conselho responsável e um comité consultivo orientam cada decisão."
+        },
+        "audits": {
+          "title": "Supervisão financeira",
+          "body": "Uma revisão independente garante o uso responsável dos fundos."
+        },
+        "receipts": {
+          "title": "Recibos para doadores",
+          "body": "Cada doação é reconhecida com um recibo oficial."
+        }
+      }
+    },
+    "report": {
+      "title": "Leia o nosso relatório anual",
+      "body": "Uma prestação de contas completa das nossas atividades, resultados e finanças — publicada ao concluir o nosso primeiro ano.",
+      "button": "Ver relatório anual"
+    }
+  },
+  "chapters": {
+    "hero": {
+      "eyebrow": "Delegações Globais",
+      "title": "Uma missão global, com raízes locais",
+      "intro": "De Itália ao Brasil, de Portugal a Espanha e aos Estados Unidos, as nossas delegações levam a missão da fundação a comunidades de todo o mundo."
+    },
+    "focusLabel": "Áreas de foco",
+    "viewChapter": "Explorar delegação",
+    "allChapters": "Todas as delegações",
+    "contactTitle": "Leve a nossa missão à sua comunidade",
+    "contactBody": "Interessado em iniciar ou apoiar uma delegação? Adoraríamos ouvi-lo.",
+    "contactCta": "Entre em contacto"
+  },
+  "portal": {
+    "login": {
+      "eyebrow": "Portal do Doador",
+      "title": "Aceda ao seu portal",
+      "intro": "Introduza o seu e-mail e enviaremos um link de acesso seguro.",
+      "emailLabel": "E-mail",
+      "submit": "Enviar link de acesso",
+      "submitting": "A enviar…",
+      "sentTitle": "Verifique o seu e-mail",
+      "sentBody": "Se existir uma conta com esse e-mail, um link de acesso seguro está a caminho.",
+      "notConfigured": "O portal do doador ainda não está ativo.",
+      "linkError": "Esse link de acesso é inválido ou expirou. Solicite um novo."
+    },
+    "dashboard": {
+      "title": "As suas doações",
+      "welcome": "Bem-vindo de volta",
+      "signOut": "Sair",
+      "totalLabel": "Total doado",
+      "historyTitle": "Histórico de doações",
+      "empty": "Ainda não há doações nesta conta.",
+      "dateCol": "Data",
+      "amountCol": "Valor",
+      "statusCol": "Estado",
+      "receiptCol": "Recibo",
+      "receipt": "Ver",
+      "subsTitle": "Doações recorrentes",
+      "manageBtn": "Gerir doações",
+      "setupTitle": "O histórico de doações ainda não está disponível",
+      "setupBody": "Sessão iniciada, mas o histórico de pagamentos ainda não está ligado. Quando o Stripe estiver configurado, as suas doações e recibos aparecerão aqui."
+    }
+  },
+  "sponsors": {
+    "login": {
+      "eyebrow": "Portal do Patrocinador",
+      "title": "Aceda ao seu relatório de impacto",
+      "intro": "Inicie sessão com o seu e-mail para ver o relatório de impacto em tempo real da sua parceria."
+    },
+    "dashboard": {
+      "title": "Relatório de impacto da parceria",
+      "welcome": "Bem-vindo, parceiro",
+      "signOut": "Sair",
+      "reportIntro": "Uma visão em tempo real do impacto que a sua parceria ajuda a criar. Os valores são metas atuais de cinco anos e atualizam-se à medida que os programas crescem.",
+      "allocationTitle": "Como os fundos são alocados",
+      "impactTitle": "Trajetória de impacto",
+      "recognitionTitle": "O seu reconhecimento",
+      "recognitionBody": "Como parceiro valioso, a sua organização é reconhecida no nosso site, eventos e relatório anual de impacto. Contacte o seu gestor de relação para atualizar as suas preferências de reconhecimento.",
+      "downloadBtn": "Ver relatório anual"
+    }
+  },
+  "annualReport": {
+    "print": "Descarregar / Imprimir relatório",
+    "backHome": "Voltar ao site",
+    "cover": {
+      "eyebrow": "Relatório Anual de Impacto",
+      "tagline": "Capacitar Vidas. Inspirar o Futuro."
+    },
+    "letter": {
+      "title": "Uma mensagem do nosso fundador",
+      "p1": "Este foi um ano de fundação e de convicção. Partimos de uma ideia simples: o talento existe em toda a parte, mas a oportunidade não. Tudo nestas páginas é a nossa promessa de fechar essa lacuna.",
+      "p2": "Aos nossos doadores, parceiros e voluntários — obrigado. O impacto que se avizinha só é possível graças a vós. Juntos, estamos a construir futuros mais brilhantes.",
+      "signature": "Bruno Dossantos — Fundador e Presidente"
+    },
+    "impactTitle": "O nosso impacto num relance",
+    "allocationTitle": "Como o seu apoio é investido",
+    "programsTitle": "Os nossos programas",
+    "programsIntro": "Cinco pilares, um propósito comum — cada um concebido para remover uma barreira e abrir uma porta.",
+    "thanksTitle": "Obrigado",
+    "thanksBody": "Nada disto é possível sem si. Obrigado por acreditar num mundo em que a oportunidade chega a todos, em todo o lado."
+  },
+  "error": {
+    "title": "Algo correu mal",
+    "body": "Ocorreu um erro inesperado. Tente novamente.",
+    "retry": "Tentar novamente",
+    "home": "Voltar ao início"
+  },
+  "faq": {
+    "hero": {
+      "eyebrow": "Apoio",
+      "title": "Perguntas frequentes",
+      "intro": "Respostas às perguntas que mais recebemos — sobre doações, bolsas, parcerias e como a fundação funciona."
+    },
+    "items": [
+      {
+        "q": "Para onde vai a minha doação?",
+        "a": "Cada contribuição financia os nossos programas essenciais — bolsas de estudo, mentoria, educação musical e artística, acesso à tecnologia e iniciativas comunitárias. Publicamos uma repartição completa na nossa página de Transparência para que veja exatamente como os recursos são utilizados."
+      },
+      {
+        "q": "A minha doação é dedutível nos impostos?",
+        "a": "A dedutibilidade fiscal depende do seu país de residência. Emitimos um recibo oficial para cada doação; consulte o seu consultor fiscal para confirmar como se aplica ao seu caso."
+      },
+      {
+        "q": "Como me candidato a uma bolsa?",
+        "a": "Visite a nossa página de Bolsas para consultar os requisitos e os programas abertos e, em seguida, envie a candidatura online. Recebemos candidatos em música, educação, tecnologia e liderança de todo o mundo."
+      },
+      {
+        "q": "Quem pode ser voluntário e como?",
+        "a": "São bem-vindos voluntários de todas as áreas — desde mentoria e apoio a eventos até tradução e competências pro bono. Partilhe os seus interesses no formulário de Voluntariado e a nossa equipa encontrará a melhor forma de colaborar."
+      },
+      {
+        "q": "Como pode a minha empresa tornar-se parceira ou patrocinadora?",
+        "a": "Oferecemos patrocínios empresariais e parcerias com escolas, universidades, instituições culturais e programas de financiamento. Explore a página de Parceiros ou contacte-nos para desenhar uma colaboração alinhada com os seus objetivos."
+      },
+      {
+        "q": "O meu pagamento é seguro?",
+        "a": "Sim. Todas as doações são processadas por fornecedores de pagamento em conformidade com o PCI, através de ligações encriptadas. Nunca guardamos os dados do seu cartão nos nossos servidores."
+      },
+      {
+        "q": "Posso doar mensalmente?",
+        "a": "Com certeza. Pode escolher uma doação única ou mensal recorrente no checkout e gerir ou atualizar o seu apoio a qualquer momento através do portal do doador."
+      },
+      {
+        "q": "Onde atuam?",
+        "a": "A fundação atua globalmente, com núcleos ativos em Itália, Brasil, Portugal, Espanha e Estados Unidos, e parceiros em muitas outras regiões."
+      }
+    ],
+    "cta": {
+      "title": "Ainda tem perguntas?",
+      "body": "A nossa equipa está disponível para ajudar com doações, parcerias, bolsas e pedidos de imprensa.",
+      "donate": "Fazer uma doação",
+      "contact": "Fale connosco"
+    }
+  },
+  "press": {
+    "hero": {
+      "eyebrow": "Imprensa e Media",
+      "title": "Recursos de imprensa e media",
+      "intro": "Tudo o que jornalistas, parceiros e organizadores de eventos precisam para contar com rigor a história da Harmonia Foundation."
+    },
+    "boilerplate": {
+      "title": "Texto institucional",
+      "shortLabel": "Breve",
+      "short": "A Harmonia Foundation é uma organização sem fins lucrativos de alcance global que capacita pessoas e comunidades através da educação, da música, da tecnologia e de oportunidades — oferecendo bolsas de estudo, mentoria e programas culturais que eliminam barreiras ao sucesso em todo o mundo.",
+      "longLabel": "Alargado",
+      "long": "Fundada por Bruno Dossantos, a Harmonia Foundation trabalha para garantir que o talento — que existe em toda a parte — encontre a oportunidade, que nem sempre existe. Através de bolsas de estudo, mentoria, educação musical e artística, acesso à tecnologia e iniciativas comunitárias, a fundação abre portas à próxima geração de líderes, artistas e agentes de mudança. Com núcleos em Itália, Brasil, Portugal, Espanha e Estados Unidos, e um compromisso com a transparência e o impacto mensurável, a Harmonia estabelece parcerias com escolas, universidades, instituições culturais e empresas para criar uma mudança duradoura."
+    },
+    "facts": {
+      "title": "Em resumo",
+      "founded": {
+        "label": "Fundação",
+        "value": "2025"
+      },
+      "founder": {
+        "label": "Fundador",
+        "value": "Bruno Dossantos"
+      },
+      "focus": {
+        "label": "Áreas de foco",
+        "value": "Educação, música, tecnologia, cultura, mentoria"
+      },
+      "reach": {
+        "label": "Alcance",
+        "value": "Global — núcleos em cinco países"
+      },
+      "languages": {
+        "label": "Idiomas",
+        "value": "Inglês, Português, Italiano, Espanhol"
+      },
+      "type": {
+        "label": "Tipo",
+        "value": "Fundação sem fins lucrativos"
+      }
+    },
+    "brand": {
+      "title": "Elementos de marca",
+      "nameLabel": "Nome",
+      "nameBody": "Refira-se sempre à organização como «Harmonia Foundation». «Harmonia» pode ser utilizado numa segunda referência.",
+      "colorsLabel": "Cores principais",
+      "toneLabel": "Tom de voz",
+      "toneBody": "Caloroso, elegante e com propósito — inspirador sem exageros."
+    },
+    "contact": {
+      "title": "Pedidos de imprensa",
+      "body": "Para entrevistas, citações, imagens ou histórias de parceria, a nossa equipa terá todo o gosto em ajudar.",
+      "cta": "Contactar a equipa"
+    },
+    "note": "Logótipos em alta resolução e fotografia estão disponíveis para a imprensa mediante pedido."
+  }
+}

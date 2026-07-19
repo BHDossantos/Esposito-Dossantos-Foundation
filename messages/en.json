@@ -1,0 +1,1314 @@
+{
+  "meta": {
+    "siteName": "Harmonia Foundation",
+    "defaultTitle": "Harmonia Foundation — Empowering Lives. Inspiring Futures.",
+    "defaultDescription": "A global nonprofit foundation empowering individuals and communities through education, music, technology, culture, mentorship, and opportunity."
+  },
+  "organization": {
+    "alternateName": "EDF",
+    "description": "The Harmonia Foundation empowers individuals and communities through education, music, technology, and opportunity — removing barriers to success worldwide."
+  },
+  "nav": {
+    "home": "Home",
+    "mission": "Mission",
+    "programs": "Programs",
+    "impact": "Impact",
+    "events": "Events",
+    "partners": "Partners",
+    "about": "About",
+    "contact": "Contact",
+    "blog": "News",
+    "donate": "Donate",
+    "foundationLabel": "Foundation"
+  },
+  "footer": {
+    "exploreTitle": "Explore",
+    "getInvolvedTitle": "Get Involved",
+    "legalTitle": "Legal",
+    "volunteer": "Volunteer",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "cookies": "Cookie Policy",
+    "tagline": "Empowering lives and inspiring futures through education, music, technology, culture, and opportunity — around the world.",
+    "address": "Registered nonprofit foundation · Operating globally",
+    "newsletterTitle": "Newsletter",
+    "newsletterCopy": "Join the movement and receive updates on our programs, events, and impact.",
+    "joinCta": "Join the movement",
+    "rights": "All rights reserved.",
+    "registration": "Registered nonprofit organization · Governance & transparency upheld.",
+    "transparency": "Transparency",
+    "chapters": "Global Chapters",
+    "portal": "Donor Login",
+    "sponsors": "Sponsor Login",
+    "faq": "FAQ",
+    "press": "Press"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Global Nonprofit Foundation",
+      "title": "Empowering Lives. Inspiring Futures.",
+      "subtitle": "The Harmonia Foundation creates opportunities through education, music, technology, culture, and community impact.",
+      "donateCta": "Donate Now",
+      "partnerCta": "Become a Partner",
+      "missionCta": "Explore Our Mission",
+      "scroll": "Scroll"
+    },
+    "trust": {
+      "label": "A foundation built on purpose",
+      "global": "Global Mission",
+      "scholarships": "Scholarships",
+      "music": "Music & Arts",
+      "education": "Education",
+      "technology": "Technology",
+      "community": "Community Impact"
+    },
+    "mission": {
+      "eyebrow": "Our Mission",
+      "headline": "Opportunity should never be limited by background, income, or geography.",
+      "body1": "The Harmonia Foundation empowers individuals and communities through education, music, technology, and opportunity. We remove barriers to success by providing scholarships, mentorship, cultural programs, and innovative initiatives.",
+      "body2": "We believe talent exists everywhere — but opportunity does not. Our work is to close that gap and inspire lifelong learning, creativity, leadership, and positive social impact around the world.",
+      "cta": "Read Our Mission"
+    },
+    "pillars": {
+      "eyebrow": "What We Do",
+      "title": "Five pillars, one shared purpose",
+      "intro": "Rather than trying to support every cause, we focus our energy on a few clear pillars where we can create lasting, measurable change.",
+      "learnMore": "Learn more",
+      "ctaCardTitle": "Your support powers every pillar",
+      "ctaCardCopy": "Every gift expands access to education, music, technology, and opportunity for people who need it most.",
+      "ctaCardButton": "Support Our Work"
+    },
+    "impact": {
+      "eyebrow": "Our 5-Year Impact Goals",
+      "title": "Ambitious goals. Measurable change.",
+      "intro": "We hold ourselves accountable to clear, public targets. As we grow, these goals will be replaced with verified results.",
+      "metrics": {
+        "students": "Students supported",
+        "scholarships": "Scholarships funded",
+        "programs": "Community programs",
+        "partners": "Global partners",
+        "countries": "Countries served"
+      },
+      "disclaimer": "Figures represent five-year goals, not current results."
+    },
+    "founders": {
+      "eyebrow": "Our Story",
+      "headline": "Built from a belief that talent exists everywhere, but opportunity does not.",
+      "body1": "The foundation was created by Bruno Dossantos out of a lifelong commitment to music, education, service, and culture.",
+      "body2": "Having seen how a single opportunity can change the course of a life, the founders set out to build a global platform that opens doors for the next generation of leaders, artists, and changemakers.",
+      "cta": "Meet the Founders",
+      "founderRole": "Founder & President"
+    },
+    "programs": {
+      "eyebrow": "Featured Programs",
+      "title": "Programs that change lives",
+      "intro": "From scholarships to mentorship to the stage, our programs turn potential into opportunity.",
+      "servesLabel": "Who it serves",
+      "details": "View details"
+    },
+    "donate": {
+      "eyebrow": "Donate",
+      "title": "Your support creates opportunity.",
+      "intro": "Every contribution — one-time or monthly — directly expands access to education, music, and mentorship for those who need it most.",
+      "points": {
+        "materials": "€25 provides learning materials for a student",
+        "mentorship": "€50 supports a mentorship session",
+        "music": "€100 funds music education and instruments",
+        "student": "€250 advances a student's development"
+      }
+    },
+    "events": {
+      "eyebrow": "Events",
+      "title": "Where our community comes together",
+      "intro": "Charity concerts, galas, scholarship nights, and masterclasses that celebrate talent and raise support for our mission.",
+      "cta": "View All Events"
+    },
+    "finalCta": {
+      "eyebrow": "Join Us",
+      "title": "Help us create the next generation of leaders, artists, and changemakers.",
+      "subtitle": "Whether you give, partner, or volunteer, your involvement turns potential into opportunity.",
+      "donate": "Donate Now",
+      "partner": "Partner With Us",
+      "contact": "Contact Us"
+    }
+  },
+  "mission": {
+    "hero": {
+      "eyebrow": "Mission, Vision & Values",
+      "title": "Why we exist",
+      "intro": "Opportunity should never be limited by background, income, or geography. Everything we do flows from that single belief."
+    },
+    "statement": {
+      "missionLabel": "Our Mission",
+      "mission": "The Harmonia Foundation empowers individuals and communities through education, music, technology, and opportunity. We remove barriers to success by providing scholarships, mentorship, cultural programs, and innovative initiatives that inspire lifelong learning, creativity, leadership, and positive social impact around the world.",
+      "visionLabel": "Our Vision",
+      "vision": "To become one of the world’s leading nonprofit foundations dedicated to empowering communities through education, music, technology, and cultural enrichment — creating opportunities that inspire generations to learn, lead, and serve."
+    },
+    "belief": "Built from a belief that talent exists everywhere, but opportunity does not.",
+    "purpose": "We exist to empower individuals of every age and background by expanding access to education, music, technology, mentorship, and life-changing opportunities — helping communities thrive while fostering the next generation of leaders, innovators, artists, and changemakers.",
+    "values": {
+      "eyebrow": "What Guides Us",
+      "title": "Our core values",
+      "intro": "Ten principles shape every decision we make and every life we touch.",
+      "items": {
+        "integrity": {
+          "title": "Integrity",
+          "body": "We act with honesty, accountability, and transparency."
+        },
+        "compassion": {
+          "title": "Compassion",
+          "body": "We serve with empathy and respect for every individual."
+        },
+        "excellence": {
+          "title": "Excellence",
+          "body": "We strive for the highest standards in everything we do."
+        },
+        "innovation": {
+          "title": "Innovation",
+          "body": "We embrace creative solutions that expand opportunity."
+        },
+        "education": {
+          "title": "Education",
+          "body": "We believe learning changes lives."
+        },
+        "culture": {
+          "title": "Music & Culture",
+          "body": "We celebrate creativity as a force for connection and hope."
+        },
+        "collaboration": {
+          "title": "Collaboration",
+          "body": "We build lasting partnerships to maximize impact."
+        },
+        "service": {
+          "title": "Service",
+          "body": "We measure success by the lives we improve."
+        },
+        "inclusion": {
+          "title": "Inclusion",
+          "body": "We create opportunities for people from all backgrounds."
+        },
+        "sustainability": {
+          "title": "Sustainability",
+          "body": "We invest in solutions that create lasting, measurable impact."
+        }
+      }
+    }
+  },
+  "pillars": {
+    "education": {
+      "title": "Education & Scholarships",
+      "summary": "Academic scholarships, career development, STEM and technology education, and leadership programs that open doors to learning.",
+      "offerings": {
+        "a": {
+          "title": "Academic Scholarships",
+          "body": "Need- and merit-based scholarships that remove financial barriers to education."
+        },
+        "b": {
+          "title": "Career Development",
+          "body": "Pathways, coaching, and resources that connect learning to opportunity."
+        },
+        "c": {
+          "title": "STEM & Technology",
+          "body": "Hands-on programs that build the skills of tomorrow's workforce."
+        },
+        "d": {
+          "title": "Leadership Programs",
+          "body": "Developing confident, capable leaders ready to serve their communities."
+        }
+      }
+    },
+    "music": {
+      "title": "Music & Arts",
+      "summary": "Instrument scholarships, music education, artist mentorship, cultural preservation, and performance opportunities.",
+      "offerings": {
+        "a": {
+          "title": "Instrument Scholarships",
+          "body": "Putting instruments into the hands of talented young musicians."
+        },
+        "b": {
+          "title": "Music Education",
+          "body": "Lessons, ensembles, and theory for students of every background."
+        },
+        "c": {
+          "title": "Artist Mentorship",
+          "body": "Guidance from established artists to nurture emerging talent."
+        },
+        "d": {
+          "title": "Performance Opportunities",
+          "body": "Stages, recitals, and concerts that let artists shine."
+        }
+      }
+    },
+    "technology": {
+      "title": "Technology & Innovation",
+      "summary": "Digital literacy, AI education, coding programs, technology access, and entrepreneurship training.",
+      "offerings": {
+        "a": {
+          "title": "Digital Literacy",
+          "body": "Essential digital skills for learners of all ages."
+        },
+        "b": {
+          "title": "AI & Coding",
+          "body": "Modern programs in artificial intelligence and software development."
+        },
+        "c": {
+          "title": "Technology Access",
+          "body": "Bridging the digital divide with devices and connectivity."
+        },
+        "d": {
+          "title": "Entrepreneurship",
+          "body": "Training that turns ideas into sustainable ventures."
+        }
+      }
+    },
+    "community": {
+      "title": "Community Development",
+      "summary": "Local partnerships, youth mentorship, volunteer initiatives, and cultural projects that strengthen communities.",
+      "offerings": {
+        "a": {
+          "title": "Community Partnerships",
+          "body": "Working alongside local organizations to maximize impact."
+        },
+        "b": {
+          "title": "Youth Mentorship",
+          "body": "Trusted mentors who guide young people toward their potential."
+        },
+        "c": {
+          "title": "Volunteer Initiatives",
+          "body": "Channeling time and talent into meaningful service."
+        },
+        "d": {
+          "title": "Cultural Projects",
+          "body": "Celebrating heritage and creativity at the local level."
+        }
+      }
+    },
+    "leadership": {
+      "title": "Leadership & Opportunity",
+      "summary": "Professional mentorship, career readiness, networking, small business education, and workforce development.",
+      "offerings": {
+        "a": {
+          "title": "Professional Mentorship",
+          "body": "Global mentors who open doors and share hard-won wisdom."
+        },
+        "b": {
+          "title": "Career Readiness",
+          "body": "Skills, interviews, and confidence for the working world."
+        },
+        "c": {
+          "title": "Networking",
+          "body": "Connections that turn ambition into achievement."
+        },
+        "d": {
+          "title": "Workforce Development",
+          "body": "Training aligned with real opportunities and growing industries."
+        }
+      }
+    }
+  },
+  "programs": {
+    "hero": {
+      "eyebrow": "Programs",
+      "title": "Turning potential into opportunity",
+      "intro": "Our programs are organized around five pillars — each designed to remove barriers and create lasting change in people's lives.",
+      "donateCta": "Support a Program",
+      "applyCta": "Apply for Support"
+    },
+    "pillarLabel": "Pillar {n}",
+    "supportThis": "Support This Pillar",
+    "featured": {
+      "musicScholarship": {
+        "tag": "Music & Arts",
+        "status": "Accepting applications",
+        "title": "Music Scholarship Fund",
+        "description": "Scholarships and instruments for talented young musicians who lack the means to pursue their craft.",
+        "serves": "Students aged 8–24"
+      },
+      "youthLeadership": {
+        "tag": "Leadership",
+        "status": "Now enrolling",
+        "title": "Youth Leadership Program",
+        "description": "An immersive program that builds confidence, communication, and leadership in the next generation.",
+        "serves": "Youth aged 14–22"
+      },
+      "technologyAccess": {
+        "tag": "Technology",
+        "status": "Launching soon",
+        "title": "Technology Access Program",
+        "description": "Devices, connectivity, and digital-skills training that bridge the opportunity gap.",
+        "serves": "Students & families"
+      },
+      "globalMentorship": {
+        "tag": "Mentorship",
+        "status": "Open",
+        "title": "Global Mentorship Network",
+        "description": "Pairing emerging talent with experienced mentors across industries and continents.",
+        "serves": "Students & early-career professionals"
+      },
+      "communityConcert": {
+        "tag": "Community",
+        "status": "Seasonal",
+        "title": "Community Concert Series",
+        "description": "Free concerts that bring people together and raise support for music education.",
+        "serves": "Communities worldwide"
+      },
+      "artistDevelopment": {
+        "tag": "Music & Arts",
+        "status": "By application",
+        "title": "Artist Development Program",
+        "description": "Mentorship, performance, and resources to help emerging artists build sustainable careers.",
+        "serves": "Emerging artists"
+      }
+    }
+  },
+  "donate": {
+    "hero": {
+      "eyebrow": "Donate",
+      "title": "Your generosity opens doors",
+      "intro": "Every gift directly funds scholarships, music education, technology access, and mentorship for people who need it most."
+    },
+    "give": {
+      "title": "Make a gift",
+      "intro": "Choose an amount and frequency that works for you. One hundred percent of your generosity advances our mission."
+    },
+    "form": {
+      "frequency": "Frequency",
+      "frequencies": {
+        "oneTime": "One-time",
+        "monthly": "Monthly",
+        "annual": "Annual"
+      },
+      "chooseAmount": "Choose an amount",
+      "amountLabel": "Amount",
+      "tiers": {
+        "25": "Learning materials",
+        "50": "Mentorship programs",
+        "100": "Music education",
+        "250": "Student development",
+        "1000": "Scholarship donor"
+      },
+      "custom": "Custom",
+      "processing": "Processing…",
+      "give": "Give €{amount} {frequency}",
+      "methods": "Secure checkout via Stripe, PayPal, Apple Pay, Google Pay & bank transfer.",
+      "secure": "Donations are processed securely. You will receive a receipt for your records. Tax-deductibility depends on your country of residence.",
+      "demoNotice": "This is a demo donation form. Connect a payment provider to process real gifts.",
+      "notConfigured": "Online donations aren't enabled yet. Please contact us to give — and thank you for your generosity.",
+      "error": "Something went wrong. Please try again.",
+      "impact": {
+        "title": "Your impact",
+        "lead": "€{amount} could fund any one of:",
+        "kits": "{count, plural, one {# learning kit} other {# learning kits}}",
+        "sessions": "{count, plural, one {# mentorship session} other {# mentorship sessions}}",
+        "students": "{count, plural, one {music education for # student} other {music education for # students}}",
+        "annual": "≈ €{total} a year at this level",
+        "note": "Illustrative estimate of how gifts are typically used."
+      }
+    },
+    "ways": {
+      "title": "More ways to give",
+      "items": {
+        "monthly": {
+          "title": "Monthly Giving",
+          "body": "Sustained support that lets us plan for the future and reach more people."
+        },
+        "corporate": {
+          "title": "Corporate Giving",
+          "body": "Partner with us through sponsorship and matched-giving programs."
+        },
+        "legacy": {
+          "title": "Legacy Giving",
+          "body": "Leave a lasting legacy by including the foundation in your estate planning."
+        },
+        "bank": {
+          "title": "Bank Transfer",
+          "body": "Prefer a direct transfer? Contact us for our banking details and instructions."
+        }
+      }
+    },
+    "taxNote": "The Harmonia Foundation is a nonprofit organization. Tax-deductibility of donations depends on your country of residence. Please consult your tax advisor; an official receipt is provided for every gift.",
+    "faq": {
+      "eyebrow": "Donor FAQ",
+      "title": "Questions, answered",
+      "items": {
+        "secure": {
+          "q": "Is my donation secure?",
+          "a": "Yes. All payments are processed through encrypted, PCI-compliant providers. We never store your card details."
+        },
+        "recurring": {
+          "q": "Can I give monthly?",
+          "a": "Absolutely. Recurring monthly gifts provide the steady support that helps us plan and grow. You can change or cancel at any time."
+        },
+        "receipt": {
+          "q": "Will I receive a receipt?",
+          "a": "Yes. An official receipt is emailed to you immediately after every donation."
+        },
+        "allocation": {
+          "q": "How is my donation used?",
+          "a": "The large majority of every gift goes directly to programs. We publish our allocation on the Impact page."
+        },
+        "cancel": {
+          "q": "Can I cancel a recurring gift?",
+          "a": "Of course. You can manage or cancel your recurring donation at any time — just contact us or use your donor account."
+        }
+      }
+    }
+  },
+  "impact": {
+    "hero": {
+      "eyebrow": "Impact & Transparency",
+      "title": "Accountability you can see",
+      "intro": "We believe trust is earned through transparency. Here is what we aim to achieve — and how we steward every gift."
+    },
+    "goals": {
+      "eyebrow": "Our 5-Year Impact Goals",
+      "title": "Where we're headed",
+      "intro": "Clear, public targets keep us focused and accountable. These figures represent goals, not current results.",
+      "metrics": {
+        "students": "Students supported",
+        "scholarships": "Scholarships funded",
+        "programs": "Community programs",
+        "partners": "Global partners",
+        "countries": "Countries served"
+      }
+    },
+    "allocation": {
+      "title": "Where your donation goes",
+      "intro": "We are committed to directing the large majority of every gift to programs that change lives.",
+      "items": {
+        "programs": "Programs & scholarships",
+        "operations": "Operations & governance",
+        "fundraising": "Fundraising"
+      }
+    },
+    "transparency": {
+      "title": "Our commitment to transparency",
+      "items": {
+        "reports": {
+          "title": "Annual Reports",
+          "body": "Published yearly, detailing our activities, outcomes, and finances."
+        },
+        "governance": {
+          "title": "Clear Governance",
+          "body": "An accountable board and advisory council guide every decision."
+        },
+        "receipts": {
+          "title": "Donor Receipts",
+          "body": "Every gift is acknowledged with an official, itemized receipt."
+        },
+        "audits": {
+          "title": "Financial Accountability",
+          "body": "Independent oversight ensures funds are used responsibly."
+        }
+      }
+    },
+    "stories": {
+      "eyebrow": "Stories of Impact",
+      "title": "Opportunity, in their words",
+      "items": {
+        "a": {
+          "quote": "A single scholarship changed the entire direction of my life and my family's future.",
+          "name": "Future Scholar",
+          "role": "Education Program"
+        },
+        "b": {
+          "quote": "I never thought someone like me could hold an instrument, let alone perform on a real stage.",
+          "name": "Future Musician",
+          "role": "Music & Arts Program"
+        },
+        "c": {
+          "quote": "My mentor opened doors I didn't even know existed. Now I'm doing the same for others.",
+          "name": "Future Leader",
+          "role": "Mentorship Program"
+        }
+      }
+    }
+  },
+  "partners": {
+    "hero": {
+      "eyebrow": "Partners",
+      "title": "Greater impact, together",
+      "intro": "We partner with corporations, schools, universities, cultural institutions, and grant organizations to multiply our reach and impact.",
+      "cta": "Become a Partner"
+    },
+    "types": {
+      "eyebrow": "Partnership Types",
+      "title": "Ways to partner with us",
+      "intro": "Whatever your organization's mission, there is a meaningful way to collaborate.",
+      "items": {
+        "corporate": {
+          "title": "Corporate Partnerships",
+          "body": "Sponsorship and matched giving that advance your social-impact goals while transforming lives."
+        },
+        "schools": {
+          "title": "School Partnerships",
+          "body": "Bring scholarships, music, and technology programs directly to your students."
+        },
+        "universities": {
+          "title": "University Partnerships",
+          "body": "Collaborate on scholarships, research, mentorship, and pathways to higher education."
+        },
+        "cultural": {
+          "title": "Cultural Partnerships",
+          "body": "Co-create concerts, festivals, and programs that celebrate creativity and heritage."
+        },
+        "government": {
+          "title": "Government & Grants",
+          "body": "Partner on grant-funded initiatives that expand opportunity at scale."
+        }
+      }
+    },
+    "sponsorship": {
+      "eyebrow": "Corporate Sponsorship",
+      "title": "Sponsorship tiers",
+      "intro": "Align your brand with global impact. Each tier includes recognition, reporting, and a private donor briefing.",
+      "popular": "Most popular",
+      "tiers": {
+        "bronze": "Bronze Partner",
+        "silver": "Silver Partner",
+        "gold": "Gold Partner",
+        "platinum": "Platinum Partner",
+        "legacy": "Legacy Partner"
+      },
+      "descriptions": {
+        "bronze": "An impactful entry point into our mission with meaningful recognition.",
+        "silver": "Expanded visibility and deeper engagement with our programs.",
+        "gold": "Premier recognition across our platform, events, and reports.",
+        "platinum": "Leadership-level partnership with bespoke collaboration.",
+        "legacy": "Transformational partnership that shapes the foundation's future."
+      },
+      "benefitsTitle": "Every partner receives",
+      "benefits": {
+        "website": "Website recognition",
+        "event": "Event recognition",
+        "report": "Annual impact report",
+        "social": "Social media recognition",
+        "certificate": "Sponsor certificate",
+        "briefing": "Private donor briefing"
+      },
+      "cta": "Become a Corporate Partner"
+    }
+  },
+  "events": {
+    "hero": {
+      "eyebrow": "Events",
+      "title": "Celebrate. Connect. Contribute.",
+      "intro": "From charity concerts to galas and masterclasses, our events bring our community together and raise support for our mission."
+    },
+    "upcoming": {
+      "eyebrow": "Calendar",
+      "title": "Upcoming events",
+      "intro": "Reserve your place, sponsor an event, or volunteer to help bring it to life."
+    },
+    "rsvp": "RSVP",
+    "getInvolved": {
+      "cta": "Get in touch",
+      "sponsor": {
+        "title": "Sponsor an Event",
+        "body": "Put your brand at the heart of an unforgettable evening for a cause that matters."
+      },
+      "volunteer": {
+        "title": "Volunteer",
+        "body": "Lend your time and talent to help our events shine."
+      },
+      "host": {
+        "title": "Host an Event",
+        "body": "Partner with us to bring a concert, gala, or workshop to your community."
+      }
+    },
+    "viewEvent": "View event",
+    "allEvents": "All events",
+    "status": {
+      "open": "Open",
+      "soon": "Coming soon",
+      "recurring": "Recurring"
+    },
+    "detail": {
+      "aboutTitle": "About this event",
+      "whenLabel": "When",
+      "whereLabel": "Where",
+      "rsvpTitle": "Reserve your place",
+      "rsvpIntro": "Tell us you're coming and we'll keep you updated with the details."
+    }
+  },
+  "blog": {
+    "hero": {
+      "eyebrow": "News & Stories",
+      "title": "News & insights",
+      "intro": "Stories of impact, updates from our programs, and reflections on education, music, technology, and opportunity."
+    },
+    "readMore": "Read article",
+    "backToBlog": "All news",
+    "published": "Published",
+    "minuteRead": "min read",
+    "related": "More stories",
+    "empty": "No stories yet — please check back soon."
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "About Us",
+      "title": "Who we are",
+      "intro": "The Harmonia Foundation is a global nonprofit built on a belief that opportunity should reach everyone, everywhere."
+    },
+    "story": {
+      "eyebrow": "Our Story",
+      "title": "A foundation born from purpose",
+      "founderRole": "Founder & President",
+      "body1": "The foundation was created by Bruno Dossantos out of a lifelong love of music, education, technology, and service.",
+      "body2": "Across years of working with students, artists, and communities, the founders saw the same truth again and again: talent is everywhere, but opportunity is not.",
+      "body3": "The Harmonia Foundation exists to close that gap — providing scholarships, mentorship, cultural programs, and innovative initiatives that empower people to reach their full potential."
+    },
+    "board": {
+      "eyebrow": "Leadership",
+      "title": "Board & advisory council",
+      "intro": "Our work is guided by experienced leaders committed to integrity, transparency, and impact.",
+      "members": {
+        "founder": {
+          "name": "Bruno Dossantos",
+          "role": "Founder & President"
+        },
+        "director": {
+          "name": "Program Director",
+          "role": "Programs & Impact"
+        },
+        "treasurer": {
+          "name": "Treasurer",
+          "role": "Finance & Governance"
+        }
+      }
+    },
+    "governance": {
+      "eyebrow": "Governance",
+      "title": "How we operate",
+      "intro": "Strong governance and transparency are at the core of everything we do.",
+      "items": {
+        "structure": {
+          "title": "Organizational Structure",
+          "body": "A clear structure with defined roles across leadership, programs, finance, and operations."
+        },
+        "legal": {
+          "title": "Legal Status",
+          "body": "A registered nonprofit foundation operating in compliance with applicable laws."
+        },
+        "accountability": {
+          "title": "Financial Accountability",
+          "body": "Independent oversight and transparent reporting of how funds are raised and used."
+        },
+        "ethics": {
+          "title": "Ethics & Integrity",
+          "body": "We act with honesty, accountability, and respect for every individual we serve."
+        }
+      }
+    }
+  },
+  "contact": {
+    "hero": {
+      "eyebrow": "Contact",
+      "title": "Let's start a conversation",
+      "intro": "Whether you want to give, partner, volunteer, or learn more, we would love to hear from you."
+    },
+    "reach": {
+      "title": "Reach us directly",
+      "intro": "Choose the channel that fits your inquiry, or use the form and we'll route your message to the right team.",
+      "officeLabel": "Office",
+      "office": "Operating globally · By appointment",
+      "channels": {
+        "general": {
+          "label": "General",
+          "email": "info@harmonia-foundation.org"
+        },
+        "partnership": {
+          "label": "Partnerships",
+          "email": "partners@harmonia-foundation.org"
+        },
+        "media": {
+          "label": "Media",
+          "email": "media@harmonia-foundation.org"
+        }
+      }
+    },
+    "form": {
+      "name": "Full name",
+      "email": "Email",
+      "country": "Country",
+      "inquiryType": "Inquiry type",
+      "types": {
+        "general": "General inquiry",
+        "donation": "Donation inquiry",
+        "partnership": "Partnership inquiry",
+        "volunteer": "Volunteer inquiry",
+        "media": "Media inquiry",
+        "grant": "Grant inquiry"
+      },
+      "message": "Message",
+      "submit": "Send Message",
+      "submitting": "Sending…",
+      "privacyNote": "By submitting, you agree to our Privacy Policy. We will never share your information.",
+      "successTitle": "Thank you — your message is on its way.",
+      "successBody": "A member of our team will be in touch with you shortly.",
+      "error": "Something went wrong. Please try again."
+    }
+  },
+  "newsletter": {
+    "eyebrow": "Stay Connected",
+    "title": "Join the movement.",
+    "intro": "Be the first to hear about new programs, events, scholarships, and the impact you help create.",
+    "name": "Name",
+    "email": "Email",
+    "country": "Country",
+    "interest": "I am a…",
+    "interests": {
+      "donor": "Donor",
+      "volunteer": "Volunteer",
+      "artist": "Artist",
+      "student": "Student",
+      "school": "School Partner",
+      "sponsor": "Corporate Sponsor",
+      "media": "Media"
+    },
+    "submit": "Subscribe",
+    "submitting": "Subscribing…",
+    "consent": "We respect your privacy. Unsubscribe at any time.",
+    "successTitle": "Welcome to the movement!",
+    "successBody": "Thank you for subscribing. Look out for our next update.",
+    "error": "Something went wrong. Please try again."
+  },
+  "cookieConsent": {
+    "message": "We use cookies to enhance your experience and analyze site traffic.",
+    "learnMore": "Learn more",
+    "accept": "Accept",
+    "reject": "Reject"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "body": "The page you're looking for may have moved or no longer exists.",
+    "cta": "Return Home"
+  },
+  "pageMeta": {
+    "mission": {
+      "title": "Mission, Vision & Values",
+      "description": "Discover the mission, vision, and core values of the Harmonia Foundation — empowering lives through education, music, technology, and opportunity."
+    },
+    "programs": {
+      "title": "Programs",
+      "description": "Explore our programs across education, music, technology, community, and leadership — designed to turn potential into opportunity."
+    },
+    "impact": {
+      "title": "Impact & Transparency",
+      "description": "See our five-year impact goals, donation transparency, and commitment to accountability at the Harmonia Foundation."
+    },
+    "donate": {
+      "title": "Donate",
+      "description": "Support education, music, technology, and mentorship. Make a secure one-time or monthly donation to the Harmonia Foundation."
+    },
+    "partners": {
+      "title": "Partners & Sponsorship",
+      "description": "Partner with the Harmonia Foundation through corporate sponsorship, school, university, cultural, and grant partnerships."
+    },
+    "events": {
+      "title": "Events",
+      "description": "Charity concerts, galas, scholarship nights, and masterclasses that bring our community together and support our mission."
+    },
+    "about": {
+      "title": "About Us",
+      "description": "Learn about the founders, board, governance, and transparency of the Harmonia Foundation."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Get in touch with the Harmonia Foundation for donations, partnerships, volunteering, media, and grant inquiries."
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "description": "How the Harmonia Foundation collects, uses, and protects your personal information."
+    },
+    "terms": {
+      "title": "Terms of Use",
+      "description": "The terms governing the use of the Harmonia Foundation website."
+    },
+    "cookies": {
+      "title": "Cookie Policy",
+      "description": "How the Harmonia Foundation uses cookies and similar technologies."
+    },
+    "blog": {
+      "title": "News",
+      "description": "News, stories, and insights from the Harmonia Foundation on education, music, technology, and opportunity."
+    },
+    "volunteer": {
+      "title": "Volunteer",
+      "description": "Volunteer with the Harmonia Foundation and help empower lives through education, music, technology, and opportunity."
+    },
+    "scholarships": {
+      "title": "Scholarships",
+      "description": "Apply for a scholarship from the Harmonia Foundation in music, education, technology, or leadership."
+    },
+    "donateThankYou": {
+      "title": "Thank You",
+      "description": "Thank you for supporting the Harmonia Foundation."
+    },
+    "transparency": {
+      "title": "Transparency",
+      "description": "Financial transparency and accountability at the Harmonia Foundation — allocation, revenue, program spending, and impact targets."
+    },
+    "chapters": {
+      "title": "Global Chapters",
+      "description": "Explore the Harmonia Foundation's global chapters across Italy, Brazil, Portugal, Spain, and the United States."
+    },
+    "portal": {
+      "title": "Donor Portal",
+      "description": "Sign in to your Harmonia Foundation donor portal to view your giving history and receipts."
+    },
+    "sponsors": {
+      "title": "Sponsor Portal",
+      "description": "Access your Harmonia Foundation partnership impact report."
+    },
+    "annualReport": {
+      "title": "Annual Impact Report",
+      "description": "The Harmonia Foundation annual impact report — mission, impact, allocation, and programs."
+    },
+    "faq": {
+      "title": "FAQ",
+      "description": "Answers about donating, scholarships, volunteering, partnerships, and how the Harmonia Foundation works."
+    },
+    "press": {
+      "title": "Press & Media",
+      "description": "Media resources, boilerplate, brand basics, and press contact for the Harmonia Foundation."
+    }
+  },
+  "legal": {
+    "privacy": {
+      "eyebrow": "Legal",
+      "title": "Privacy Policy",
+      "updated": "Last updated: June 2026",
+      "sections": [
+        {
+          "heading": "Introduction",
+          "body": "The Harmonia Foundation (\"we\", \"us\") is committed to protecting your privacy. This policy explains how we collect, use, and safeguard your personal information in line with the GDPR and applicable data-protection laws."
+        },
+        {
+          "heading": "Information We Collect",
+          "body": "We collect information you provide directly — such as your name, email, country, and message — when you donate, subscribe, volunteer, or contact us. We also collect limited technical data, such as device and usage information, to improve our website."
+        },
+        {
+          "heading": "How We Use Your Information",
+          "body": "We use your information to process donations, respond to inquiries, send updates you have requested, and improve our programs and services. We never sell your personal data."
+        },
+        {
+          "heading": "Legal Basis",
+          "body": "We process personal data on the basis of your consent, our legitimate interests in operating the foundation, and where necessary to comply with legal obligations."
+        },
+        {
+          "heading": "Data Sharing",
+          "body": "We share data only with trusted service providers (such as payment and email providers) who process it on our behalf under strict confidentiality, and where required by law."
+        },
+        {
+          "heading": "Data Security",
+          "body": "We apply appropriate technical and organizational measures, including encryption and access controls, to protect your information."
+        },
+        {
+          "heading": "Your Rights",
+          "body": "You have the right to access, correct, delete, or restrict the processing of your personal data, and to withdraw consent at any time. To exercise these rights, contact privacy@harmonia-foundation.org."
+        },
+        {
+          "heading": "Contact",
+          "body": "For any questions about this policy, contact us at privacy@harmonia-foundation.org."
+        }
+      ]
+    },
+    "terms": {
+      "eyebrow": "Legal",
+      "title": "Terms of Use",
+      "updated": "Last updated: June 2026",
+      "sections": [
+        {
+          "heading": "Acceptance of Terms",
+          "body": "By accessing this website, you agree to these Terms of Use. If you do not agree, please do not use the site."
+        },
+        {
+          "heading": "Use of the Website",
+          "body": "You agree to use this website lawfully and not to misuse, disrupt, or attempt to gain unauthorized access to any part of it."
+        },
+        {
+          "heading": "Donations",
+          "body": "Donations are voluntary and processed securely through third-party providers. Tax-deductibility depends on your country of residence."
+        },
+        {
+          "heading": "Intellectual Property",
+          "body": "All content on this website, including text, graphics, and logos, is the property of the Harmonia Foundation or its licensors and is protected by law."
+        },
+        {
+          "heading": "Limitation of Liability",
+          "body": "The website is provided \"as is\". We make no warranties and are not liable for any damages arising from its use to the maximum extent permitted by law."
+        },
+        {
+          "heading": "Changes to These Terms",
+          "body": "We may update these terms from time to time. Continued use of the website constitutes acceptance of the revised terms."
+        },
+        {
+          "heading": "Contact",
+          "body": "Questions about these terms can be sent to info@harmonia-foundation.org."
+        }
+      ]
+    },
+    "cookies": {
+      "eyebrow": "Legal",
+      "title": "Cookie Policy",
+      "updated": "Last updated: June 2026",
+      "sections": [
+        {
+          "heading": "What Are Cookies",
+          "body": "Cookies are small text files stored on your device that help websites function and provide insight into how they are used."
+        },
+        {
+          "heading": "How We Use Cookies",
+          "body": "We use essential cookies to make the site work, and, with your consent, analytics cookies to understand and improve how visitors use our site."
+        },
+        {
+          "heading": "Managing Cookies",
+          "body": "You can accept or reject non-essential cookies via our consent banner, and manage cookies through your browser settings at any time."
+        },
+        {
+          "heading": "Third-Party Cookies",
+          "body": "Some cookies may be set by trusted third-party services, such as analytics or payment providers, subject to their own privacy policies."
+        },
+        {
+          "heading": "Contact",
+          "body": "For questions about our use of cookies, contact privacy@harmonia-foundation.org."
+        }
+      ]
+    }
+  },
+  "rsvp": {
+    "name": "Full name",
+    "email": "Email",
+    "guests": "Number of guests",
+    "submit": "Reserve my place",
+    "submitting": "Sending…",
+    "success": "You're on the list!",
+    "successBody": "Thank you for your RSVP. We'll be in touch with the details soon.",
+    "error": "Something went wrong. Please try again.",
+    "consent": "By reserving, you agree to our Privacy Policy."
+  },
+  "applications": {
+    "name": "Full name",
+    "email": "Email",
+    "country": "Country",
+    "choose": "Please select…",
+    "submit": "Submit application",
+    "submitting": "Submitting…",
+    "successTitle": "Thank you — your application is in.",
+    "successBody": "We've received your application and a member of our team will be in touch soon.",
+    "error": "Something went wrong. Please try again.",
+    "consent": "By submitting, you agree to our Privacy Policy. We will never share your information."
+  },
+  "volunteer": {
+    "hero": {
+      "eyebrow": "Volunteer",
+      "title": "Give your time. Change a life.",
+      "intro": "Our work is powered by people who care. Tell us how you would like to help, and we will find the right way for you to make an impact."
+    },
+    "form": {
+      "interestLabel": "Where would you like to help?",
+      "availabilityLabel": "Your availability",
+      "messageLabel": "Tell us about yourself",
+      "interests": {
+        "music": "Music & Arts",
+        "education": "Education & Tutoring",
+        "technology": "Technology",
+        "events": "Events",
+        "mentorship": "Mentorship",
+        "admin": "Administration & Operations"
+      },
+      "availabilities": {
+        "weekly": "A few hours weekly",
+        "monthly": "A few hours monthly",
+        "events": "At events only",
+        "flexible": "Flexible"
+      }
+    }
+  },
+  "scholarships": {
+    "hero": {
+      "eyebrow": "Scholarships",
+      "title": "Apply for a scholarship",
+      "intro": "Opportunity should never be limited by income. If you are ready to learn, lead, or create, we want to help you take the next step."
+    },
+    "form": {
+      "programLabel": "Which area are you applying for?",
+      "institutionLabel": "School / institution (optional)",
+      "messageLabel": "Tell us about yourself and why you are applying",
+      "programs": {
+        "music": "Music & Arts",
+        "education": "Education",
+        "technology": "Technology & Innovation",
+        "leadership": "Leadership"
+      }
+    }
+  },
+  "donateThankYou": {
+    "eyebrow": "Thank You",
+    "title": "Your generosity creates opportunity.",
+    "body": "Thank you for your gift to the Harmonia Foundation. A receipt is on its way to your inbox. Your support helps remove barriers and open doors for the people who need it most.",
+    "cta": "Back to home"
+  },
+  "transparency": {
+    "hero": {
+      "eyebrow": "Transparency",
+      "title": "Where every gift goes",
+      "intro": "We believe trust is earned in the open. Here is how we plan to raise and steward funds — and the impact we are working toward."
+    },
+    "disclaimer": "Figures are illustrative five-year targets for a foundation in formation, not audited results. We will publish verified financials as our programs mature.",
+    "allocation": {
+      "title": "How funds are allocated",
+      "intro": "Our commitment: the large majority of every gift goes directly to programs.",
+      "items": {
+        "programs": "Programs & scholarships",
+        "operations": "Operations & governance",
+        "fundraising": "Fundraising"
+      }
+    },
+    "revenue": {
+      "title": "Projected revenue by source",
+      "intro": "A diversified funding base keeps the mission resilient.",
+      "totalLabel": "Total projected (Year 1)",
+      "items": {
+        "donations": "Individual donations",
+        "grants": "Grants",
+        "sponsorships": "Corporate sponsorships",
+        "events": "Events"
+      }
+    },
+    "spending": {
+      "title": "Program investment by pillar",
+      "intro": "How program funds are distributed across our five pillars.",
+      "items": {
+        "education": "Education & Scholarships",
+        "music": "Music & Arts",
+        "technology": "Technology & Innovation",
+        "community": "Community Development",
+        "leadership": "Leadership & Opportunity"
+      }
+    },
+    "impact": {
+      "title": "Our impact trajectory",
+      "intro": "Five-year targets for the people and communities we serve.",
+      "students": "Students supported",
+      "scholarships": "Scholarships funded"
+    },
+    "governance": {
+      "title": "Accountability & governance",
+      "items": {
+        "reports": {
+          "title": "Annual reports",
+          "body": "Published yearly with activities, outcomes, and finances."
+        },
+        "board": {
+          "title": "Independent board",
+          "body": "An accountable board and advisory council guide every decision."
+        },
+        "audits": {
+          "title": "Financial oversight",
+          "body": "Independent review ensures funds are used responsibly."
+        },
+        "receipts": {
+          "title": "Donor receipts",
+          "body": "Every gift is acknowledged with an official receipt."
+        }
+      }
+    },
+    "report": {
+      "title": "Read our annual report",
+      "body": "A full accounting of our activities, outcomes, and finances — published as our first year completes.",
+      "button": "View annual report"
+    }
+  },
+  "chapters": {
+    "hero": {
+      "eyebrow": "Global Chapters",
+      "title": "A global mission, rooted locally",
+      "intro": "From Italy to Brazil, Portugal to Spain and the United States, our chapters bring the foundation's mission to communities around the world."
+    },
+    "focusLabel": "Focus areas",
+    "viewChapter": "Explore chapter",
+    "allChapters": "All chapters",
+    "contactTitle": "Bring our mission to your community",
+    "contactBody": "Interested in starting or supporting a chapter? We'd love to hear from you.",
+    "contactCta": "Get in touch"
+  },
+  "portal": {
+    "login": {
+      "eyebrow": "Donor Portal",
+      "title": "Sign in to your portal",
+      "intro": "Enter your email and we'll send you a secure sign-in link.",
+      "emailLabel": "Email",
+      "submit": "Send sign-in link",
+      "submitting": "Sending…",
+      "sentTitle": "Check your inbox",
+      "sentBody": "If an account matches that email, a secure sign-in link is on its way.",
+      "notConfigured": "The donor portal isn't enabled yet.",
+      "linkError": "That sign-in link is invalid or has expired. Please request a new one."
+    },
+    "dashboard": {
+      "title": "Your giving",
+      "welcome": "Welcome back",
+      "signOut": "Sign out",
+      "totalLabel": "Total given",
+      "historyTitle": "Donation history",
+      "empty": "No donations found for this account yet.",
+      "dateCol": "Date",
+      "amountCol": "Amount",
+      "statusCol": "Status",
+      "receiptCol": "Receipt",
+      "receipt": "View",
+      "subsTitle": "Recurring gifts",
+      "manageBtn": "Manage giving",
+      "setupTitle": "Giving history isn't available yet",
+      "setupBody": "You're signed in, but payment history isn't connected yet. Once Stripe is configured, your gifts and receipts will appear here."
+    }
+  },
+  "sponsors": {
+    "login": {
+      "eyebrow": "Sponsor Portal",
+      "title": "Access your impact report",
+      "intro": "Sign in with your email to view your partnership's live impact report."
+    },
+    "dashboard": {
+      "title": "Partnership impact report",
+      "welcome": "Welcome, partner",
+      "signOut": "Sign out",
+      "reportIntro": "A live view of the impact your partnership helps create. Figures are current five-year targets and refresh as our programs grow.",
+      "allocationTitle": "How funds are allocated",
+      "impactTitle": "Impact trajectory",
+      "recognitionTitle": "Your recognition",
+      "recognitionBody": "As a valued partner, your organization is recognized across our website, events, and annual impact report. Contact your relationship manager to update your recognition preferences.",
+      "downloadBtn": "View annual report"
+    }
+  },
+  "annualReport": {
+    "print": "Download / Print report",
+    "backHome": "Back to site",
+    "cover": {
+      "eyebrow": "Annual Impact Report",
+      "tagline": "Empowering Lives. Inspiring Futures."
+    },
+    "letter": {
+      "title": "A message from our founder",
+      "p1": "This has been a year of foundation and belief. We set out with a simple conviction: talent exists everywhere, but opportunity does not. Everything on these pages is our promise to close that gap.",
+      "p2": "To our donors, partners, and volunteers — thank you. The impact ahead is possible only because of you. Together, we are building brighter futures.",
+      "signature": "Bruno Dossantos — Founder & President"
+    },
+    "impactTitle": "Our impact at a glance",
+    "allocationTitle": "How your support is invested",
+    "programsTitle": "Our programs",
+    "programsIntro": "Five pillars, one shared purpose — each designed to remove a barrier and open a door.",
+    "thanksTitle": "Thank you",
+    "thanksBody": "None of this is possible without you. Thank you for believing in a world where opportunity reaches everyone, everywhere."
+  },
+  "error": {
+    "title": "Something went wrong",
+    "body": "An unexpected error occurred. Please try again.",
+    "retry": "Try again",
+    "home": "Back to home"
+  },
+  "faq": {
+    "hero": {
+      "eyebrow": "Support",
+      "title": "Frequently asked questions",
+      "intro": "Answers to the questions we hear most — about giving, scholarships, partnerships, and how the foundation works."
+    },
+    "items": [
+      {
+        "q": "Where does my donation go?",
+        "a": "Every gift funds our core programs — scholarships, mentorship, music and arts education, technology access, and community initiatives. We publish a full allocation breakdown on our Transparency page so you can see exactly how resources are used."
+      },
+      {
+        "q": "Is my donation tax-deductible?",
+        "a": "Tax-deductibility depends on your country of residence. We issue an official receipt for every gift; please consult your tax advisor to confirm how it applies to you."
+      },
+      {
+        "q": "How do I apply for a scholarship?",
+        "a": "Visit our Scholarships page to review eligibility and open programs, then submit the online application. We welcome applicants in music, education, technology, and leadership from around the world."
+      },
+      {
+        "q": "Who can volunteer, and how?",
+        "a": "Volunteers of all backgrounds are welcome — from mentoring and event support to translation and pro-bono expertise. Share your interests through the Volunteer form and our team will match you to current needs."
+      },
+      {
+        "q": "How can my company partner or sponsor?",
+        "a": "We offer corporate sponsorships and school, university, cultural, and grant partnerships. Explore the Partners page or contact us to design a collaboration aligned with your goals."
+      },
+      {
+        "q": "Is my payment secure?",
+        "a": "Yes. All donations are processed through PCI-compliant payment providers over encrypted connections. We never store your card details on our servers."
+      },
+      {
+        "q": "Can I give monthly?",
+        "a": "Absolutely. You can choose a one-time or recurring monthly gift at checkout, and manage or update your recurring support at any time through your donor portal."
+      },
+      {
+        "q": "Where do you operate?",
+        "a": "The foundation works globally, with active chapters across Italy, Brazil, Portugal, Spain, and the United States, and partners in many more regions."
+      }
+    ],
+    "cta": {
+      "title": "Still have questions?",
+      "body": "Our team is here to help with donations, partnerships, scholarships, and media inquiries.",
+      "donate": "Make a donation",
+      "contact": "Contact us"
+    }
+  },
+  "press": {
+    "hero": {
+      "eyebrow": "Press & Media",
+      "title": "Media & press resources",
+      "intro": "Everything journalists, partners, and event organizers need to tell the Harmonia Foundation story accurately."
+    },
+    "boilerplate": {
+      "title": "Boilerplate",
+      "shortLabel": "Short",
+      "short": "The Harmonia Foundation is a global nonprofit that empowers individuals and communities through education, music, technology, and opportunity — providing scholarships, mentorship, and cultural programs that remove barriers to success worldwide.",
+      "longLabel": "Extended",
+      "long": "Founded by Bruno Dossantos, the Harmonia Foundation works to ensure that talent — which exists everywhere — is met by opportunity, which does not. Through scholarships, mentorship, music and arts education, technology access, and community initiatives, the foundation opens doors for the next generation of leaders, artists, and changemakers. With chapters across Italy, Brazil, Portugal, Spain, and the United States, and a commitment to transparency and measurable impact, Harmonia partners with schools, universities, cultural institutions, and companies to create lasting change."
+    },
+    "facts": {
+      "title": "At a glance",
+      "founded": {
+        "label": "Founded",
+        "value": "2025"
+      },
+      "founder": {
+        "label": "Founder",
+        "value": "Bruno Dossantos"
+      },
+      "focus": {
+        "label": "Focus areas",
+        "value": "Education, music, technology, culture, mentorship"
+      },
+      "reach": {
+        "label": "Reach",
+        "value": "Global — chapters in five countries"
+      },
+      "languages": {
+        "label": "Languages",
+        "value": "English, Portuguese, Italian, Spanish"
+      },
+      "type": {
+        "label": "Type",
+        "value": "Nonprofit foundation"
+      }
+    },
+    "brand": {
+      "title": "Brand basics",
+      "nameLabel": "Name",
+      "nameBody": "Always refer to the organization as “Harmonia Foundation.” “Harmonia” may be used on second reference.",
+      "colorsLabel": "Core colors",
+      "toneLabel": "Voice",
+      "toneBody": "Warm, elegant, and purposeful — inspiring without overstating."
+    },
+    "contact": {
+      "title": "Media inquiries",
+      "body": "For interviews, quotes, imagery, or partnership stories, our team is glad to help.",
+      "cta": "Contact our team"
+    },
+    "note": "High-resolution logos and photography are available to media on request."
+  }
+}

@@ -1,0 +1,256 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 250 247 240;
+    --foreground: 10 10 10;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-ivory text-ink font-sans antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    @apply bg-champagne/30 text-navy;
+  }
+
+  /* Clear, on-brand keyboard focus for links, inputs, and disclosures.
+     Buttons manage their own focus ring via the .btn component class. */
+  a:focus-visible,
+  summary:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible,
+  [tabindex]:focus-visible {
+    outline: 2px solid #c9a86a;
+    outline-offset: 2px;
+    border-radius: 3px;
+  }
+
+  /* Without JavaScript, scroll-reveal content must not stay hidden. */
+  .no-js .reveal-init {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-serif text-navy;
+    text-wrap: balance;
+  }
+}
+
+@layer components {
+  .container-px {
+    @apply mx-auto w-full max-w-content px-6 sm:px-8 lg:px-10;
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-widest2 text-champagne-dark;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-7 py-3 text-sm font-semibold
+      transition-all duration-300 focus-visible:outline-none focus-visible:ring-2
+      focus-visible:ring-champagne focus-visible:ring-offset-2;
+  }
+
+  .btn-primary {
+    @apply btn bg-champagne text-navy-900 hover:bg-champagne-dark hover:shadow-lg
+      hover:shadow-champagne/20;
+  }
+
+  .btn-secondary {
+    @apply btn border border-navy/20 bg-transparent text-navy hover:border-navy hover:bg-navy
+      hover:text-ivory;
+  }
+
+  .btn-ghost-light {
+    @apply btn border border-white/40 bg-white/5 text-white backdrop-blur-sm hover:bg-white/15;
+  }
+
+  .link-underline {
+    @apply relative font-medium text-navy after:absolute after:-bottom-0.5 after:left-0
+      after:h-px after:w-0 after:bg-champagne after:transition-all after:duration-300
+      hover:after:w-full;
+  }
+
+  .card-elevated {
+    @apply rounded-2xl border border-navy/5 bg-warmwhite p-8 shadow-sm transition-all duration-300
+      hover:-translate-y-1 hover:border-champagne/30 hover:shadow-xl hover:shadow-navy/5;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .reveal {
+    @apply animate-fade-up;
+  }
+}
+
+/* ── Interactive layer: tilt, glass glare, hero parallax, scroll scrub ── */
+@layer components {
+  /* 3D tilt + see-through cursor glare on cards */
+  .tilt {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+    will-change: transform;
+  }
+
+  .tilt-glare {
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    background: radial-gradient(
+      circle at var(--mx, 50%) var(--my, 50%),
+      rgba(255, 255, 255, 0.45),
+      rgba(255, 255, 255, 0) 45%
+    );
+    mix-blend-mode: soft-light;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .tilt:hover {
+      box-shadow: 0 30px 60px -25px rgba(11, 31, 58, 0.35);
+    }
+
+    .tilt:hover .tilt-glare {
+      opacity: 1;
+    }
+  }
+
+  /* Mouse-tracking hero backdrop */
+  .hero-fx {
+    --mx: 0;
+    --my: 0;
+    --spot-x: 50%;
+    --spot-y: 50%;
+  }
+
+  .hero-base {
+    position: absolute;
+    inset: -8%;
+    background: radial-gradient(
+      ellipse at 30% 20%,
+      #15355f 0%,
+      #0b1f3a 45%,
+      #071528 100%
+    );
+  }
+
+  .hero-blob {
+    position: absolute;
+    border-radius: 9999px;
+    filter: blur(120px);
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .hero-blob--gold {
+    width: 42rem;
+    height: 42rem;
+    left: -12rem;
+    top: 6%;
+    background: rgba(201, 168, 106, 0.16);
+    transform: translate3d(calc(var(--mx) * -70px), calc(var(--my) * -45px), 0);
+  }
+
+  .hero-blob--navy {
+    width: 38rem;
+    height: 38rem;
+    right: -10rem;
+    bottom: -6rem;
+    background: rgba(21, 53, 95, 0.55);
+    transform: translate3d(calc(var(--mx) * 55px), calc(var(--my) * 45px), 0);
+  }
+
+  .hero-grid {
+    position: absolute;
+    inset: -5%;
+    opacity: 0.4;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40'><circle cx='1' cy='1' r='0.5' fill='%23C9A86A' opacity='0.15'/></svg>");
+    transform: translate3d(calc(var(--mx) * 22px), calc(var(--my) * 22px), 0);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .hero-spotlight {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(
+      640px circle at var(--spot-x) var(--spot-y),
+      rgba(201, 168, 106, 0.14),
+      transparent 60%
+    );
+    transition: background 0.2s ease;
+  }
+
+  .hero-fade {
+    position: absolute;
+    inset-inline: 0;
+    bottom: 0;
+    height: 16rem;
+    background: linear-gradient(to top, #071528, transparent);
+  }
+
+  /* Reading-progress bar */
+  .scroll-progress {
+    position: fixed;
+    inset-inline: 0;
+    top: 0;
+    z-index: 50;
+    height: 2px;
+    pointer-events: none;
+  }
+
+  .scroll-progress__bar {
+    height: 100%;
+    width: 0;
+    background: linear-gradient(90deg, #a8884b, #c9a86a, #e2ce9f);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Print / PDF export for the annual report */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #fff;
+  }
+  .print-page {
+    break-after: page;
+  }
+  .print-avoid-break {
+    break-inside: avoid;
+  }
+  a[href]::after {
+    content: '';
+  }
+}
