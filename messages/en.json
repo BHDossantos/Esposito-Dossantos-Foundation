@@ -394,7 +394,16 @@
       "secure": "Donations are processed securely. You will receive a receipt for your records. Tax-deductibility depends on your country of residence.",
       "demoNotice": "This is a demo donation form. Connect a payment provider to process real gifts.",
       "notConfigured": "Online donations aren't enabled yet. Please contact us to give — and thank you for your generosity.",
-      "error": "Something went wrong. Please try again."
+      "error": "Something went wrong. Please try again.",
+      "impact": {
+        "title": "Your impact",
+        "lead": "€{amount} could fund any one of:",
+        "kits": "{count, plural, one {# learning kit} other {# learning kits}}",
+        "sessions": "{count, plural, one {# mentorship session} other {# mentorship sessions}}",
+        "students": "{count, plural, one {music education for # student} other {music education for # students}}",
+        "annual": "≈ €{total} a year at this level",
+        "note": "Illustrative estimate of how gifts are typically used."
+      }
     },
     "ways": {
       "title": "More ways to give",

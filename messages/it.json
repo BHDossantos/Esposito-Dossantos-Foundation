@@ -394,7 +394,16 @@
       "secure": "Le donazioni sono elaborate in modo sicuro. Riceverai una ricevuta per i tuoi archivi. La deducibilità fiscale dipende dal tuo Paese di residenza.",
       "demoNotice": "Questo è un modulo di donazione dimostrativo. Collega un fornitore di pagamenti per elaborare donazioni reali.",
       "notConfigured": "Le donazioni online non sono ancora attive. Contattaci per donare — e grazie per la tua generosità.",
-      "error": "Qualcosa è andato storto. Riprova."
+      "error": "Qualcosa è andato storto. Riprova.",
+      "impact": {
+        "title": "Il tuo impatto",
+        "lead": "€{amount} possono finanziare una di queste opzioni:",
+        "kits": "{count, plural, one {# kit di materiali} other {# kit di materiali}}",
+        "sessions": "{count, plural, one {# sessione di mentorship} other {# sessioni di mentorship}}",
+        "students": "{count, plural, one {educazione musicale per # studente} other {educazione musicale per # studenti}}",
+        "annual": "≈ €{total} all'anno a questo livello",
+        "note": "Stima illustrativa di come vengono generalmente utilizzate le donazioni."
+      }
     },
     "ways": {
       "title": "Altri modi per donare",

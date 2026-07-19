@@ -394,7 +394,16 @@
       "secure": "Las donaciones se procesan de forma segura. Recibirás un recibo para tus registros. La deducibilidad fiscal depende de tu país de residencia.",
       "demoNotice": "Este es un formulario de donación de demostración. Conecta un proveedor de pagos para procesar donaciones reales.",
       "notConfigured": "Las donaciones en línea aún no están activas. Contáctanos para donar — y gracias por tu generosidad.",
-      "error": "Algo salió mal. Inténtalo de nuevo."
+      "error": "Algo salió mal. Inténtalo de nuevo.",
+      "impact": {
+        "title": "Tu impacto",
+        "lead": "€{amount} pueden financiar una de estas opciones:",
+        "kits": "{count, plural, one {# kit de materiales} other {# kits de materiales}}",
+        "sessions": "{count, plural, one {# sesión de mentoría} other {# sesiones de mentoría}}",
+        "students": "{count, plural, one {educación musical para # estudiante} other {educación musical para # estudiantes}}",
+        "annual": "≈ €{total} al año a este nivel",
+        "note": "Estimación ilustrativa de cómo se suelen utilizar las donaciones."
+      }
     },
     "ways": {
       "title": "Otras formas de donar",

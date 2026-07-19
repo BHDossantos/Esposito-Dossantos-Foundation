@@ -394,7 +394,16 @@
       "secure": "Os donativos são processados de forma segura. Receberá um recibo para os seus registos. A dedutibilidade fiscal depende do seu país de residência.",
       "demoNotice": "Este é um formulário de donativo de demonstração. Ligue um fornecedor de pagamentos para processar donativos reais.",
       "notConfigured": "As doações online ainda não estão ativas. Contacte-nos para doar — e obrigado pela sua generosidade.",
-      "error": "Algo correu mal. Tente novamente."
+      "error": "Algo correu mal. Tente novamente.",
+      "impact": {
+        "title": "O seu impacto",
+        "lead": "€{amount} podem financiar uma destas opções:",
+        "kits": "{count, plural, one {# kit de materiais} other {# kits de materiais}}",
+        "sessions": "{count, plural, one {# sessão de mentoria} other {# sessões de mentoria}}",
+        "students": "{count, plural, one {educação musical para # estudante} other {educação musical para # estudantes}}",
+        "annual": "≈ €{total} por ano a este nível",
+        "note": "Estimativa ilustrativa da forma como os donativos são normalmente utilizados."
+      }
     },
     "ways": {
       "title": "Outras formas de doar",

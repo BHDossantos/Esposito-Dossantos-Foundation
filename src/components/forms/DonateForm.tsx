@@ -16,6 +16,18 @@ export default function DonateForm() {
 
   const effectiveAmount = custom ? Number(custom) : amount;
 
+  // Live, illustrative impact preview based on the representative unit costs
+  // used across the site (€25 kit, €50 mentorship session, €100 music).
+  const kits = Math.floor(effectiveAmount / 25);
+  const sessions = Math.floor(effectiveAmount / 50);
+  const students = Math.floor(effectiveAmount / 100);
+  const impactItems = [
+    kits >= 1 ? t('impact.kits', { count: kits }) : null,
+    sessions >= 1 ? t('impact.sessions', { count: sessions }) : null,
+    students >= 1 ? t('impact.students', { count: students }) : null
+  ].filter(Boolean) as string[];
+  const annualTotal = frequency === 'monthly' ? effectiveAmount * 12 : 0;
+
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     if (!effectiveAmount || effectiveAmount < 1) return;
@@ -100,6 +112,30 @@ export default function DonateForm() {
           </div>
         </div>
       </fieldset>
+
+      {/* Live impact preview */}
+      {effectiveAmount >= 1 && impactItems.length > 0 ? (
+        <div className="mt-6 rounded-xl border border-champagne/30 bg-champagne/5 p-5" aria-live="polite">
+          <p className="text-xs font-semibold uppercase tracking-widest2 text-champagne-dark">
+            {t('impact.title')}
+          </p>
+          <p className="mt-2 text-sm text-navy/80">{t('impact.lead', { amount: effectiveAmount })}</p>
+          <ul className="mt-3 flex flex-wrap gap-2">
+            {impactItems.map((item) => (
+              <li
+                key={item}
+                className="rounded-full bg-ivory px-3 py-1 text-sm font-medium text-navy"
+              >
+                {item}
+              </li>
+            ))}
+          </ul>
+          {annualTotal > 0 ? (
+            <p className="mt-3 text-xs text-softgray">{t('impact.annual', { total: annualTotal })}</p>
+          ) : null}
+          <p className="mt-2 text-xs text-softgray">{t('impact.note')}</p>
+        </div>
+      ) : null}
 
       <button type="submit" disabled={status === 'loading'} className="btn-primary mt-7 w-full">
         {status === 'loading'
