@@ -103,8 +103,13 @@ export default async function LocaleLayout({
   };
 
   return (
-    <html lang={locale} className={`${serif.variable} ${sans.variable}`}>
+    <html lang={locale} className={`no-js ${serif.variable} ${sans.variable}`}>
       <body>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: "document.documentElement.classList.remove('no-js');"
+          }}
+        />
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50

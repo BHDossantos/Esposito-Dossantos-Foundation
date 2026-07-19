@@ -32,7 +32,7 @@ export default function ApplicationForm({ kind }: { kind: 'volunteer' | 'scholar
 
   if (status === 'success') {
     return (
-      <div className="rounded-2xl border border-champagne/30 bg-warmwhite p-10 text-center">
+      <div role="status" className="rounded-2xl border border-champagne/30 bg-warmwhite p-10 text-center">
         <p className="font-serif text-2xl text-navy">{a('successTitle')}</p>
         <p className="mt-3 text-softgray">{a('successBody')}</p>
       </div>

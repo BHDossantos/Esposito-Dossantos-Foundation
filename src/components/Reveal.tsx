@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState, type ReactNode } from 'react';
+import { prefersReducedMotion } from '@/lib/motion';
 
 type RevealProps = {
   children: ReactNode;
@@ -24,6 +25,12 @@ export default function Reveal({
     const node = ref.current;
     if (!node) return;
 
+    // Honor reduced-motion: show content immediately, no reveal transition.
+    if (prefersReducedMotion()) {
+      setVisible(true);
+      return;
+    }
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -44,7 +51,7 @@ export default function Reveal({
     <Tag
       ref={ref as never}
       style={{ transitionDelay: `${delay}ms` }}
-      className={`transition-all duration-700 ease-out ${
+      className={`reveal-init transition-all duration-700 ease-out ${
         visible ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'
       } ${className}`}
     >

@@ -52,6 +52,7 @@ export default function Header() {
                 <Link
                   key={item.key}
                   href={item.href}
+                  aria-current={active ? 'page' : undefined}
                   className={`text-sm font-medium transition-colors hover:text-champagne-dark ${
                     active ? 'text-champagne-dark' : 'text-navy'
                   }`}
@@ -89,15 +90,20 @@ export default function Header() {
       {menuOpen ? (
         <div className="border-t border-navy/10 bg-ivory lg:hidden">
           <nav className="container-px flex flex-col py-4" aria-label="Mobile">
-            {mainNav.map((item) => (
-              <Link
-                key={item.key}
-                href={item.href}
-                className="border-b border-navy/5 py-3 text-base font-medium text-navy"
-              >
-                {t(item.key)}
-              </Link>
-            ))}
+            {mainNav.map((item) => {
+              const active =
+                item.href === '/' ? pathname === '/' : pathname.startsWith(item.href);
+              return (
+                <Link
+                  key={item.key}
+                  href={item.href}
+                  aria-current={active ? 'page' : undefined}
+                  className="border-b border-navy/5 py-3 text-base font-medium text-navy"
+                >
+                  {t(item.key)}
+                </Link>
+              );
+            })}
             <div className="mt-5 flex items-center justify-between">
               <LocaleSwitcher />
               <Link href="/donate" className="btn-primary">

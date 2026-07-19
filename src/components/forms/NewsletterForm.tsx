@@ -29,7 +29,7 @@ export default function NewsletterForm() {
 
   if (status === 'success') {
     return (
-      <div className="rounded-2xl border border-champagne/30 bg-warmwhite p-8 text-center">
+      <div role="status" className="rounded-2xl border border-champagne/30 bg-warmwhite p-8 text-center">
         <p className="font-serif text-2xl text-navy">{t('successTitle')}</p>
         <p className="mt-2 text-softgray">{t('successBody')}</p>
       </div>

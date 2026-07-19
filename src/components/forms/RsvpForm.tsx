@@ -33,7 +33,7 @@ export default function RsvpForm({
 
   if (status === 'success') {
     return (
-      <div className="rounded-2xl border border-champagne/30 bg-warmwhite p-8 text-center">
+      <div role="status" className="rounded-2xl border border-champagne/30 bg-warmwhite p-8 text-center">
         <p className="font-serif text-2xl text-navy">{t('success')}</p>
         <p className="mt-2 text-softgray">{t('successBody')}</p>
       </div>
