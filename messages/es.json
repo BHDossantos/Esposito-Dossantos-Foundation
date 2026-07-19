@@ -39,7 +39,8 @@
     "transparency": "Transparencia",
     "chapters": "Sedes Globales",
     "portal": "Acceso de Donantes",
-    "sponsors": "Acceso de Patrocinadores"
+    "sponsors": "Acceso de Patrocinadores",
+    "faq": "Preguntas frecuentes"
   },
   "home": {
     "hero": {
@@ -853,6 +854,10 @@
     "annualReport": {
       "title": "Informe Anual de Impacto",
       "description": "Informe anual de impacto de la Harmonia Foundation — misión, impacto, asignación y programas."
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "description": "Respuestas sobre donaciones, becas, voluntariado, alianzas y el funcionamiento de la Harmonia Foundation."
     }
   },
   "legal": {
@@ -1189,5 +1194,52 @@
     "body": "Ocurrió un error inesperado. Inténtalo de nuevo.",
     "retry": "Intentar de nuevo",
     "home": "Volver al inicio"
+  },
+  "faq": {
+    "hero": {
+      "eyebrow": "Apoyo",
+      "title": "Preguntas frecuentes",
+      "intro": "Respuestas a las preguntas que más recibimos — sobre donaciones, becas, alianzas y el funcionamiento de la fundación."
+    },
+    "items": [
+      {
+        "q": "¿A dónde va mi donación?",
+        "a": "Cada aportación financia nuestros programas esenciales — becas, mentoría, educación musical y artística, acceso a la tecnología e iniciativas comunitarias. Publicamos un desglose completo en nuestra página de Transparencia para que veas exactamente cómo se utilizan los recursos."
+      },
+      {
+        "q": "¿Mi donación es deducible de impuestos?",
+        "a": "La deducibilidad fiscal depende de tu país de residencia. Emitimos un recibo oficial por cada donación; consulta a tu asesor fiscal para confirmar cómo se aplica en tu caso."
+      },
+      {
+        "q": "¿Cómo solicito una beca?",
+        "a": "Visita nuestra página de Becas para revisar los requisitos y los programas abiertos y, a continuación, envía la solicitud en línea. Recibimos candidaturas en música, educación, tecnología y liderazgo de todo el mundo."
+      },
+      {
+        "q": "¿Quién puede ser voluntario y cómo?",
+        "a": "Damos la bienvenida a voluntarios de todos los perfiles — desde mentoría y apoyo en eventos hasta traducción y experiencia pro bono. Comparte tus intereses en el formulario de Voluntariado y nuestro equipo te orientará según las necesidades actuales."
+      },
+      {
+        "q": "¿Cómo puede mi empresa colaborar o patrocinar?",
+        "a": "Ofrecemos patrocinios corporativos y alianzas con escuelas, universidades, instituciones culturales y programas de subvención. Explora la página de Aliados o contáctanos para diseñar una colaboración alineada con tus objetivos."
+      },
+      {
+        "q": "¿Es seguro mi pago?",
+        "a": "Sí. Todas las donaciones se procesan a través de proveedores de pago conformes con PCI mediante conexiones cifradas. Nunca almacenamos los datos de tu tarjeta en nuestros servidores."
+      },
+      {
+        "q": "¿Puedo donar cada mes?",
+        "a": "Por supuesto. Puedes elegir una donación única o mensual recurrente al finalizar la compra y gestionar o actualizar tu apoyo en cualquier momento desde el portal de donantes."
+      },
+      {
+        "q": "¿Dónde operan?",
+        "a": "La fundación trabaja a nivel mundial, con capítulos activos en Italia, Brasil, Portugal, España y Estados Unidos, y aliados en muchas otras regiones."
+      }
+    ],
+    "cta": {
+      "title": "¿Aún tienes preguntas?",
+      "body": "Nuestro equipo está aquí para ayudarte con donaciones, alianzas, becas y consultas de prensa.",
+      "donate": "Hacer una donación",
+      "contact": "Contáctanos"
+    }
   }
 }

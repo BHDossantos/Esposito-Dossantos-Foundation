@@ -39,7 +39,8 @@
     "transparency": "Trasparenza",
     "chapters": "Sedi Globali",
     "portal": "Accesso Donatori",
-    "sponsors": "Accesso Sponsor"
+    "sponsors": "Accesso Sponsor",
+    "faq": "Domande frequenti"
   },
   "home": {
     "hero": {
@@ -853,6 +854,10 @@
     "annualReport": {
       "title": "Report Annuale di Impatto",
       "description": "Report annuale di impatto della Harmonia Foundation — missione, impatto, allocazione e programmi."
+    },
+    "faq": {
+      "title": "Domande frequenti",
+      "description": "Risposte su donazioni, borse di studio, volontariato, partnership e sul funzionamento della Harmonia Foundation."
     }
   },
   "legal": {
@@ -1189,5 +1194,52 @@
     "body": "Si è verificato un errore imprevisto. Riprova.",
     "retry": "Riprova",
     "home": "Torna alla home"
+  },
+  "faq": {
+    "hero": {
+      "eyebrow": "Sostegno",
+      "title": "Domande frequenti",
+      "intro": "Le risposte alle domande che riceviamo più spesso — su donazioni, borse di studio, partnership e sul funzionamento della fondazione."
+    },
+    "items": [
+      {
+        "q": "Dove va la mia donazione?",
+        "a": "Ogni contributo finanzia i nostri programmi principali — borse di studio, mentorship, educazione musicale e artistica, accesso alla tecnologia e iniziative per la comunità. Pubblichiamo una ripartizione completa nella pagina Trasparenza, così puoi vedere esattamente come vengono impiegate le risorse."
+      },
+      {
+        "q": "La mia donazione è deducibile fiscalmente?",
+        "a": "La deducibilità fiscale dipende dal tuo Paese di residenza. Rilasciamo una ricevuta ufficiale per ogni donazione; consulta il tuo consulente fiscale per verificare come si applica al tuo caso."
+      },
+      {
+        "q": "Come faccio a richiedere una borsa di studio?",
+        "a": "Visita la pagina Borse di studio per consultare i requisiti e i programmi aperti, quindi invia la domanda online. Accogliamo candidati in musica, istruzione, tecnologia e leadership da tutto il mondo."
+      },
+      {
+        "q": "Chi può fare volontariato e come?",
+        "a": "Sono benvenuti volontari di ogni provenienza — dal mentoring al supporto agli eventi, dalla traduzione alle competenze pro bono. Condividi i tuoi interessi tramite il modulo Volontariato e il nostro team ti indirizzerà alle esigenze attuali."
+      },
+      {
+        "q": "Come può la mia azienda diventare partner o sponsor?",
+        "a": "Offriamo sponsorizzazioni aziendali e partnership con scuole, università, istituzioni culturali e programmi di finanziamento. Esplora la pagina Partner o contattaci per progettare una collaborazione in linea con i tuoi obiettivi."
+      },
+      {
+        "q": "Il mio pagamento è sicuro?",
+        "a": "Sì. Tutte le donazioni sono elaborate tramite fornitori di pagamento conformi allo standard PCI su connessioni crittografate. Non memorizziamo mai i dati della tua carta sui nostri server."
+      },
+      {
+        "q": "Posso donare ogni mese?",
+        "a": "Certamente. Al momento del pagamento puoi scegliere una donazione una tantum o mensile ricorrente e gestire o aggiornare il tuo sostegno in qualsiasi momento dal portale dei donatori."
+      },
+      {
+        "q": "Dove operate?",
+        "a": "La fondazione opera a livello globale, con sedi attive in Italia, Brasile, Portogallo, Spagna e Stati Uniti, e partner in molte altre regioni."
+      }
+    ],
+    "cta": {
+      "title": "Hai altre domande?",
+      "body": "Il nostro team è a disposizione per donazioni, partnership, borse di studio e richieste stampa.",
+      "donate": "Fai una donazione",
+      "contact": "Contattaci"
+    }
   }
 }

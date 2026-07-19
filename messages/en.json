@@ -39,7 +39,8 @@
     "transparency": "Transparency",
     "chapters": "Global Chapters",
     "portal": "Donor Login",
-    "sponsors": "Sponsor Login"
+    "sponsors": "Sponsor Login",
+    "faq": "FAQ"
   },
   "home": {
     "hero": {
@@ -853,6 +854,10 @@
     "annualReport": {
       "title": "Annual Impact Report",
       "description": "The Harmonia Foundation annual impact report — mission, impact, allocation, and programs."
+    },
+    "faq": {
+      "title": "FAQ",
+      "description": "Answers about donating, scholarships, volunteering, partnerships, and how the Harmonia Foundation works."
     }
   },
   "legal": {
@@ -1189,5 +1194,52 @@
     "body": "An unexpected error occurred. Please try again.",
     "retry": "Try again",
     "home": "Back to home"
+  },
+  "faq": {
+    "hero": {
+      "eyebrow": "Support",
+      "title": "Frequently asked questions",
+      "intro": "Answers to the questions we hear most — about giving, scholarships, partnerships, and how the foundation works."
+    },
+    "items": [
+      {
+        "q": "Where does my donation go?",
+        "a": "Every gift funds our core programs — scholarships, mentorship, music and arts education, technology access, and community initiatives. We publish a full allocation breakdown on our Transparency page so you can see exactly how resources are used."
+      },
+      {
+        "q": "Is my donation tax-deductible?",
+        "a": "Tax-deductibility depends on your country of residence. We issue an official receipt for every gift; please consult your tax advisor to confirm how it applies to you."
+      },
+      {
+        "q": "How do I apply for a scholarship?",
+        "a": "Visit our Scholarships page to review eligibility and open programs, then submit the online application. We welcome applicants in music, education, technology, and leadership from around the world."
+      },
+      {
+        "q": "Who can volunteer, and how?",
+        "a": "Volunteers of all backgrounds are welcome — from mentoring and event support to translation and pro-bono expertise. Share your interests through the Volunteer form and our team will match you to current needs."
+      },
+      {
+        "q": "How can my company partner or sponsor?",
+        "a": "We offer corporate sponsorships and school, university, cultural, and grant partnerships. Explore the Partners page or contact us to design a collaboration aligned with your goals."
+      },
+      {
+        "q": "Is my payment secure?",
+        "a": "Yes. All donations are processed through PCI-compliant payment providers over encrypted connections. We never store your card details on our servers."
+      },
+      {
+        "q": "Can I give monthly?",
+        "a": "Absolutely. You can choose a one-time or recurring monthly gift at checkout, and manage or update your recurring support at any time through your donor portal."
+      },
+      {
+        "q": "Where do you operate?",
+        "a": "The foundation works globally, with active chapters across Italy, Brazil, Portugal, Spain, and the United States, and partners in many more regions."
+      }
+    ],
+    "cta": {
+      "title": "Still have questions?",
+      "body": "Our team is here to help with donations, partnerships, scholarships, and media inquiries.",
+      "donate": "Make a donation",
+      "contact": "Contact us"
+    }
   }
 }

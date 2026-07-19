@@ -28,6 +28,7 @@ export default async function Footer() {
         { label: t('chapters'), href: '/chapters' },
         { label: t('portal'), href: '/portal' },
         { label: t('sponsors'), href: '/sponsors' },
+        { label: t('faq'), href: '/faq' },
         { label: tn('contact'), href: '/contact' }
       ]
     },
