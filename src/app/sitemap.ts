@@ -3,8 +3,7 @@ import { routing } from '@/i18n/routing';
 import { getAllSlugs as getPostSlugs } from '@/content/posts';
 import { getAllEventSlugs } from '@/content/events';
 import { getAllChapterSlugs } from '@/content/chapters';
-
-const baseUrl = 'https://harmonia-foundation.org';
+import { localizedUrl } from '@/lib/schema';
 
 // Public, indexable routes. Private areas (admin, donor/sponsor portals) and the
 // donation thank-you page are intentionally excluded.
@@ -29,11 +28,6 @@ const staticPaths = [
   '/terms',
   '/cookies'
 ];
-
-function localizedUrl(locale: string, path: string): string {
-  const prefix = locale === routing.defaultLocale ? '' : `/${locale}`;
-  return `${baseUrl}${prefix}${path}`;
-}
 
 function entry(path: string, priority: number, changeFrequency: MetadataRoute.Sitemap[number]['changeFrequency']) {
   return routing.locales.map((locale) => ({

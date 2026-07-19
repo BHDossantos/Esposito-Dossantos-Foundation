@@ -7,6 +7,7 @@ import RsvpForm from '@/components/forms/RsvpForm';
 import { CalendarIcon } from '@/components/Icons';
 import { getAllEventSlugs, getEvent } from '@/content/events';
 import type { Locale } from '@/i18n/routing';
+import { breadcrumbSchema } from '@/lib/schema';
 
 export function generateStaticParams() {
   return getAllEventSlugs().map((slug) => ({ slug }));
@@ -49,6 +50,12 @@ export default async function EventPage({
     location: { '@type': 'Place', name: event.location },
     organizer: { '@type': 'NGO', name: 'Harmonia Foundation' }
   };
+
+  const breadcrumbs = breadcrumbSchema(locale, [
+    { name: 'Home', path: '' },
+    { name: t('hero.eyebrow'), path: '/events' },
+    { name: event.title, path: `/events/${slug}` }
+  ]);
 
   return (
     <>
@@ -118,6 +125,7 @@ export default async function EventPage({
       </Section>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }} />
     </>
   );
 }

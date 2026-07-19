@@ -6,6 +6,7 @@ import { Section } from '@/components/Section';
 import FinalCTA from '@/components/sections/FinalCTA';
 import { getAllChapterSlugs, getChapter } from '@/content/chapters';
 import type { Locale } from '@/i18n/routing';
+import { breadcrumbSchema } from '@/lib/schema';
 
 export function generateStaticParams() {
   return getAllChapterSlugs().map((slug) => ({ slug }));
@@ -38,6 +39,12 @@ export default async function ChapterPage({
   if (!chapter) notFound();
 
   const t = await getTranslations('chapters');
+
+  const breadcrumbs = breadcrumbSchema(locale, [
+    { name: 'Home', path: '' },
+    { name: t('hero.eyebrow'), path: '/chapters' },
+    { name: chapter.name, path: `/chapters/${slug}` }
+  ]);
 
   return (
     <>
@@ -102,6 +109,8 @@ export default async function ChapterPage({
       </Section>
 
       <FinalCTA />
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }} />
     </>
   );
 }

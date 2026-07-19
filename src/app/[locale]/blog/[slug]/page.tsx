@@ -7,6 +7,7 @@ import Reveal from '@/components/Reveal';
 import FinalCTA from '@/components/sections/FinalCTA';
 import { getAllPosts, getAllSlugs, getPost } from '@/content/posts';
 import type { Locale } from '@/i18n/routing';
+import { baseUrl, breadcrumbSchema, localizedUrl } from '@/lib/schema';
 
 export function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
@@ -45,15 +46,30 @@ export default async function PostPage({
     .filter((p) => p.slug !== slug)
     .slice(0, 2);
 
+  const articleUrl = localizedUrl(locale, `/blog/${slug}`);
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: post.title,
     description: post.excerpt,
     datePublished: post.date,
+    dateModified: post.date,
+    inLanguage: locale,
+    mainEntityOfPage: { '@type': 'WebPage', '@id': articleUrl },
+    url: articleUrl,
     author: { '@type': 'Organization', name: post.author },
-    publisher: { '@type': 'NGO', name: 'Harmonia Foundation' }
+    publisher: {
+      '@type': 'NGO',
+      name: 'Harmonia Foundation',
+      url: baseUrl
+    }
   };
+
+  const breadcrumbs = breadcrumbSchema(locale, [
+    { name: 'Home', path: '' },
+    { name: t('hero.title'), path: '/blog' },
+    { name: post.title, path: `/blog/${slug}` }
+  ]);
 
   return (
     <>
@@ -129,6 +145,10 @@ export default async function PostPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }}
       />
     </>
   );
