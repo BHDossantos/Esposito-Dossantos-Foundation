@@ -53,6 +53,9 @@ export async function generateMetadata({
       'corporate sponsorship nonprofit'
     ],
     authors: [{ name: 'Esposito–Dossantos Foundation' }],
+    alternates: {
+      types: { 'application/rss+xml': '/rss.xml' }
+    },
     openGraph: {
       type: 'website',
       title: t('defaultTitle'),
