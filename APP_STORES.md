@@ -46,6 +46,15 @@ npm run cap:sync             # copies config + web fallback into the native proj
 `splash*.png` are the committed brand source art. `npm run cap:assets`
 turns them into every size iOS and Android require.
 
+> **Why the Capacitor CLI isn't a committed dependency.** The `@capacitor/cli`
+> and `@capacitor/assets` tools pull a transitive `xcode → uuid` chain with a
+> dev-only security advisory and no fix path, and the website never imports
+> them. So the `cap:*` npm scripts invoke them with `npx` (fetched only on the
+> build machine); only the runtime packages the app actually uses
+> (`@capacitor/core`, `/app`, `/push-notifications`) and the platform scaffolds
+> (`@capacitor/ios`, `/android`) are installed. Nothing extra to do — the
+> scripts handle it.
+
 ---
 
 ## 2. Android → Google Play
