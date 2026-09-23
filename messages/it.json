@@ -41,7 +41,8 @@
     "portal": "Accesso Donatori",
     "sponsors": "Accesso Sponsor",
     "faq": "Domande frequenti",
-    "press": "Stampa"
+    "press": "Stampa",
+    "accessibility": "Accessibilità"
   },
   "home": {
     "hero": {
@@ -872,6 +873,10 @@
     "press": {
       "title": "Stampa e Media",
       "description": "Risorse per la stampa, testo istituzionale, elementi di marca e contatti stampa della Harmonia Foundation."
+    },
+    "accessibility": {
+      "title": "Accessibilità",
+      "description": "La Harmonia Foundation si impegna per un sito accessibile a tutti, puntando alle WCAG 2.1 AA."
     }
   },
   "legal": {
@@ -1310,5 +1315,37 @@
       "cta": "Contatta il team"
     },
     "note": "Loghi ad alta risoluzione e fotografie sono disponibili per la stampa su richiesta."
+  },
+  "accessibility": {
+    "hero": {
+      "eyebrow": "Accessibilità",
+      "title": "Accessibilità alla Harmonia Foundation",
+      "intro": "Vogliamo che tutti possano conoscere il nostro lavoro, candidarsi alle opportunità e donare — indipendentemente dalle capacità o dalla tecnologia che utilizzano."
+    },
+    "commitment": {
+      "title": "Il nostro impegno",
+      "body": "Ci impegniamo a rendere questo sito utilizzabile dal pubblico più ampio possibile e a migliorare continuamente l’esperienza di chi si affida alle tecnologie assistive."
+    },
+    "standard": {
+      "title": "Lo standard a cui puntiamo",
+      "body": "Puntiamo a soddisfare le Linee guida per l’accessibilità dei contenuti web (WCAG) 2.1 al livello AA. L’accessibilità è un impegno continuo e rivediamo il sito man mano che aggiungiamo nuove funzionalità."
+    },
+    "features": {
+      "title": "Cosa abbiamo integrato",
+      "items": [
+        "Navigazione completa da tastiera, un indicatore di focus visibile e un link per saltare al contenuto",
+        "Rispetto delle preferenze di movimento ridotto — le animazioni sono minimizzate quando il tuo sistema lo richiede",
+        "Struttura HTML semantica ed etichette ARIA affinché gli screen reader trasmettano la pagina",
+        "Colori del testo e dell’interfaccia scelti per un contrasto leggibile",
+        "Quattro lingue — inglese, portoghese, italiano e spagnolo",
+        "Contenuti essenziali che restano disponibili anche senza JavaScript"
+      ]
+    },
+    "feedback": {
+      "title": "Segnalaci una barriera",
+      "body": "Se riscontri difficoltà nell’usare questo sito, faccelo sapere. Faremo del nostro meglio per aiutarti direttamente e per risolvere il problema.",
+      "cta": "Contattaci"
+    },
+    "updated": "Questa dichiarazione è stata rivista l’ultima volta a settembre 2026."
   }
 }
