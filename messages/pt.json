@@ -41,7 +41,8 @@
     "portal": "Acesso do Doador",
     "sponsors": "Acesso de Patrocinadores",
     "faq": "Perguntas frequentes",
-    "press": "Imprensa"
+    "press": "Imprensa",
+    "accessibility": "Acessibilidade"
   },
   "home": {
     "hero": {
@@ -872,6 +873,10 @@
     "press": {
       "title": "Imprensa e Media",
       "description": "Recursos para imprensa, texto institucional, elementos de marca e contacto de imprensa da Harmonia Foundation."
+    },
+    "accessibility": {
+      "title": "Acessibilidade",
+      "description": "A Harmonia Foundation compromete-se com um site acessível que todos possam utilizar, procurando cumprir as WCAG 2.1 AA."
     }
   },
   "legal": {
@@ -1310,5 +1315,37 @@
       "cta": "Contactar a equipa"
     },
     "note": "Logótipos em alta resolução e fotografia estão disponíveis para a imprensa mediante pedido."
+  },
+  "accessibility": {
+    "hero": {
+      "eyebrow": "Acessibilidade",
+      "title": "Acessibilidade na Harmonia Foundation",
+      "intro": "Queremos que todas as pessoas possam conhecer o nosso trabalho, candidatar-se a oportunidades e doar — independentemente das suas capacidades ou da tecnologia que utilizam."
+    },
+    "commitment": {
+      "title": "O nosso compromisso",
+      "body": "Comprometemo-nos a tornar este site utilizável pelo maior número possível de pessoas e a melhorar continuamente a experiência de quem depende de tecnologias de apoio."
+    },
+    "standard": {
+      "title": "A norma que procuramos cumprir",
+      "body": "Procuramos cumprir as Diretrizes de Acessibilidade para Conteúdo Web (WCAG) 2.1 no nível AA. A acessibilidade é um esforço contínuo e revemos o site à medida que adicionamos novas funcionalidades."
+    },
+    "features": {
+      "title": "O que já integrámos",
+      "items": [
+        "Navegação completa por teclado, um indicador de foco visível e uma ligação para saltar para o conteúdo",
+        "Respeito pelas preferências de movimento reduzido — as animações são minimizadas quando o seu sistema o solicita",
+        "Estrutura HTML semântica e etiquetas ARIA para que os leitores de ecrã transmitam a página",
+        "Cores de texto e de interface escolhidas para um contraste legível",
+        "Quatro idiomas — inglês, português, italiano e espanhol",
+        "Conteúdo essencial que permanece disponível mesmo sem JavaScript"
+      ]
+    },
+    "feedback": {
+      "title": "Fale-nos de uma barreira",
+      "body": "Se tiver alguma dificuldade em utilizar este site, informe-nos. Faremos o nosso melhor para o ajudar diretamente e para corrigir o problema.",
+      "cta": "Contacte-nos"
+    },
+    "updated": "Esta declaração foi revista pela última vez em setembro de 2026."
   }
 }

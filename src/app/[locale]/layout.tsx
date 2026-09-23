@@ -9,6 +9,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieConsent from '@/components/CookieConsent';
 import ScrollProgress from '@/components/interactive/ScrollProgress';
+import NativeBridge from '@/components/native/NativeBridge';
 import { getSocialLinks } from '@/lib/social';
 
 const serif = Cormorant_Garamond({
@@ -123,6 +124,7 @@ export default async function LocaleLayout({
           <main id="main">{children}</main>
           <Footer />
           <CookieConsent />
+          <NativeBridge />
         </NextIntlClientProvider>
         <script
           type="application/ld+json"

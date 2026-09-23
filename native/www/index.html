@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Harmonia Foundation</title>
+    <style>
+      :root { color-scheme: dark; }
+      html, body {
+        margin: 0;
+        height: 100%;
+        background: radial-gradient(ellipse at 30% 20%, #15355f 0%, #0b1f3a 45%, #071528 100%);
+        color: #faf7f0;
+        font-family: Georgia, 'Times New Roman', serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      .wrap {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 32px;
+        box-sizing: border-box;
+      }
+      .mark {
+        width: 72px; height: 72px;
+        border: 2px solid #c9a86a; border-radius: 18px;
+        display: flex; align-items: center; justify-content: center;
+        font-size: 36px; font-weight: 600; color: #c9a86a; margin-bottom: 28px;
+      }
+      .word { letter-spacing: 6px; text-transform: uppercase; font-size: 14px; color: #c9a86a; }
+      h1 { font-size: 26px; font-weight: 600; margin: 18px 0 10px; }
+      p { color: rgba(250,247,240,0.7); max-width: 22rem; line-height: 1.6; font-size: 15px; }
+      button {
+        margin-top: 28px; border: 0; border-radius: 999px; cursor: pointer;
+        background: #c9a86a; color: #0b1f3a; font-weight: 700; font-size: 15px;
+        padding: 13px 28px; font-family: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="mark">H</div>
+      <div class="word">Harmonia Foundation</div>
+      <h1>You're offline</h1>
+      <p>Please check your connection. The Harmonia Foundation loads the latest content once you're back online.</p>
+      <button onclick="location.reload()">Try again</button>
+    </div>
+  </body>
+</html>

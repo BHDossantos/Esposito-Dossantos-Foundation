@@ -41,7 +41,8 @@
     "portal": "Donor Login",
     "sponsors": "Sponsor Login",
     "faq": "FAQ",
-    "press": "Press"
+    "press": "Press",
+    "accessibility": "Accessibility"
   },
   "home": {
     "hero": {
@@ -872,6 +873,10 @@
     "press": {
       "title": "Press & Media",
       "description": "Media resources, boilerplate, brand basics, and press contact for the Harmonia Foundation."
+    },
+    "accessibility": {
+      "title": "Accessibility",
+      "description": "The Harmonia Foundation is committed to an accessible website that everyone can use, aiming for WCAG 2.1 AA."
     }
   },
   "legal": {
@@ -1310,5 +1315,37 @@
       "cta": "Contact our team"
     },
     "note": "High-resolution logos and photography are available to media on request."
+  },
+  "accessibility": {
+    "hero": {
+      "eyebrow": "Accessibility",
+      "title": "Accessibility at the Harmonia Foundation",
+      "intro": "We want everyone to be able to learn about our work, apply for opportunities, and give — regardless of ability or the technology they use."
+    },
+    "commitment": {
+      "title": "Our commitment",
+      "body": "We are committed to making this website usable for the widest possible audience, and to continually improving the experience for people who rely on assistive technologies."
+    },
+    "standard": {
+      "title": "The standard we aim for",
+      "body": "We aim to meet the Web Content Accessibility Guidelines (WCAG) 2.1 at level AA. Accessibility is an ongoing effort, and we review the site as we add new features."
+    },
+    "features": {
+      "title": "What we've built in",
+      "items": [
+        "Full keyboard navigation, a visible focus indicator, and a skip-to-content link",
+        "Respect for reduced-motion preferences — animations are minimized when your system requests it",
+        "Semantic HTML structure and ARIA labels so screen readers can convey the page",
+        "Text and interface colors chosen for readable contrast",
+        "Four languages — English, Portuguese, Italian, and Spanish",
+        "Core content that stays available even when JavaScript is unavailable"
+      ]
+    },
+    "feedback": {
+      "title": "Tell us about a barrier",
+      "body": "If you have any difficulty using this site, please let us know. We will do our best to help you directly and to fix the problem.",
+      "cta": "Contact us"
+    },
+    "updated": "This statement was last reviewed in September 2026."
   }
 }

@@ -9,28 +9,41 @@
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run"
+    "test": "vitest run",
+    "cap:add:ios": "npx --yes @capacitor/cli@8 add ios",
+    "cap:add:android": "npx --yes @capacitor/cli@8 add android",
+    "cap:assets": "npx --yes @capacitor/assets@3 generate --iconBackgroundColor '#0B1F3A' --iconBackgroundColorDark '#0B1F3A' --splashBackgroundColor '#0B1F3A' --splashBackgroundColorDark '#071528'",
+    "cap:sync": "npx --yes @capacitor/cli@8 sync",
+    "cap:open:ios": "npx --yes @capacitor/cli@8 open ios",
+    "cap:open:android": "npx --yes @capacitor/cli@8 open android",
+    "gen:app-icons": "node scripts/gen-app-icons.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.112.3",
+    "@capacitor/app": "^8.1.1",
+    "@capacitor/core": "^8.5.2",
+    "@capacitor/push-notifications": "^8.1.2",
     "next": "15.1.7",
     "next-intl": "3.26.3",
-    "react": "19.0.0",
-    "react-dom": "19.0.0",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
     "stripe": "^17.5.0",
-    "zod": "^3.24.1"
+    "zod": "^4.4.3"
   },
   "devDependencies": {
+    "@capacitor/android": "^8.5.2",
+    "@capacitor/ios": "^8.5.2",
     "@types/node": "22.10.7",
-    "@types/react": "19.0.8",
-    "@types/react-dom": "19.0.3",
-    "autoprefixer": "10.4.20",
+    "@types/react": "19.2.17",
+    "@types/react-dom": "19.2.3",
+    "autoprefixer": "10.5.4",
     "eslint": "9.18.0",
     "eslint-config-next": "15.1.7",
-    "postcss": "8.5.1",
+    "postcss": "8.5.19",
+    "sharp": "^0.34.4",
     "tailwindcss": "3.4.17",
     "typescript": "5.7.3",
-    "vitest": "^2.1.8"
+    "vitest": "^4.1.10"
   },
   "engines": {
     "node": ">=18.18.0"
