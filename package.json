@@ -9,10 +9,22 @@
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run"
+    "test": "vitest run",
+    "cap:add:ios": "cap add ios",
+    "cap:add:android": "cap add android",
+    "cap:assets": "capacitor-assets generate --iconBackgroundColor '#0B1F3A' --iconBackgroundColorDark '#0B1F3A' --splashBackgroundColor '#0B1F3A' --splashBackgroundColorDark '#071528'",
+    "cap:sync": "cap sync",
+    "cap:open:ios": "cap open ios",
+    "cap:open:android": "cap open android",
+    "gen:app-icons": "node scripts/gen-app-icons.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.112.3",
+    "@capacitor/android": "^8.5.2",
+    "@capacitor/app": "^8.1.1",
+    "@capacitor/core": "^8.5.2",
+    "@capacitor/ios": "^8.5.2",
+    "@capacitor/push-notifications": "^8.1.2",
     "next": "15.1.7",
     "next-intl": "3.26.3",
     "react": "19.2.7",
@@ -21,6 +33,8 @@
     "zod": "^4.4.3"
   },
   "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^8.5.2",
     "@types/node": "22.10.7",
     "@types/react": "19.2.17",
     "@types/react-dom": "19.2.3",
