@@ -74,10 +74,16 @@ Android accepts web-backed apps without issue.
 iOS binaries can only be built on macOS, but you don't need to buy a Mac.
 Pick one:
 
-- **Codemagic (recommended, has a free tier).** Connect the repo, choose the
-  Capacitor/iOS workflow, add your Apple Developer credentials (Codemagic
-  automates signing), and it produces and uploads the build to TestFlight /
-  App Store Connect. `codemagic.yaml` can be added on request.
+- **Codemagic (recommended, has a free tier) — already wired up.** A
+  `codemagic.yaml` is committed at the repo root with ready-to-run **iOS** and
+  **Android** workflows. One-time setup in the Codemagic UI (all documented in
+  the file's header comments): connect the repo, add an App Store Connect API
+  key integration named `HarmoniaAppStore`, upload an Android keystore named
+  `harmonia_keystore`, and add a Google Play service-account JSON as
+  `GCLOUD_SERVICE_ACCOUNT_CREDENTIALS` in a `google_play` group. Then each run
+  builds, signs, and publishes to **TestFlight** / the **Play internal track**.
+  The native `ios/`/`android/` projects are generated during the build, so runs
+  are clean and reproducible.
 - **Ionic Appflow** or **GitHub Actions `macos-latest` runners** — same idea,
   cloud macOS.
 - **A borrowed/rented Mac** (e.g. MacinCloud) with Xcode: `npm run cap:open:ios`,
@@ -170,4 +176,7 @@ the wiring.
 
 **Still done by you (accounts/signing/submission):** running `cap add` on your
 build machine, signing, store listings, screenshots, privacy forms, and pressing
-Submit. I can add a `codemagic.yaml` for hands-off iOS builds whenever you want.
+**Still done by you (accounts/signing/submission):** running `cap add` on your
+build machine (or letting `codemagic.yaml` do it in the cloud), signing, store
+listings, screenshots, privacy forms, and pressing Submit. The `codemagic.yaml`
+pipeline for hands-off iOS + Android builds is included — see §3.
