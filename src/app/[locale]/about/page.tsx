@@ -279,7 +279,7 @@ export default async function AboutPage({
             <Reveal>
               <h3 className="mt-10 font-serif text-xl text-navy">A father&rsquo;s reason to care</h3>
               <Para>
-                I am a father of three. When I think about the future, I think about the encouragement
+                I am a father. When I think about the future, I think about the encouragement
                 my children will receive and the opportunities they will have to discover themselves.
                 Then I think about other parents who want those same things for their children but have
                 fewer resources to make them possible.
