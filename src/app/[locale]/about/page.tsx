@@ -31,7 +31,7 @@ const founders = [
   {
     initial: 'G',
     name: 'Guilia Esposito',
-    role: 'Co-founder',
+    role: 'Administration Director',
     bio: 'Shaped the founding program, Arte que Transforma, and holds close the community it is built to serve.'
   }
 ];
