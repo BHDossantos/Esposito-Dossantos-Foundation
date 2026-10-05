@@ -280,13 +280,13 @@ export default async function AboutPage({
               <h3 className="mt-10 font-serif text-xl text-navy">A father&rsquo;s reason to care</h3>
               <Para>
                 I am a father. When I think about the future, I think about the encouragement
-                my children will receive and the opportunities they will have to discover themselves.
-                Then I think about other parents who want those same things for their children but have
+                my child will receive and the opportunities they will have to discover themselves.
+                Then I think about other parents who want those same things for their child but have
                 fewer resources to make them possible.
               </Para>
               <Para>
                 The wish is not different. The love is not smaller. The child&rsquo;s potential does not
-                matter less. That is why access matters so much to me. I want my children to grow up
+                matter less. That is why access matters so much to me. I want my child to grow up
                 knowing that achievement is not only about what we can provide for ourselves — it is
                 also about what we choose to make possible for others.
               </Para>
