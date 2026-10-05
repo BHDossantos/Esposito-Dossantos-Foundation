@@ -34,3 +34,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# capacitor / mobile
+# Native projects are generated per build machine via `npx cap add`.
+/ios/
+/android/
+*.keystore
+*.jks
+google-services.json
+GoogleService-Info.plist

@@ -1,6 +1,6 @@
 import { routing } from '@/i18n/routing';
 
-export const baseUrl = 'https://harmonia-foundation.org';
+export const baseUrl = 'https://espositodossantosfoundation.org';
 
 // Build a locale-aware absolute URL. The default locale is served without a
 // prefix (localePrefix: 'as-needed'); other locales are prefixed.

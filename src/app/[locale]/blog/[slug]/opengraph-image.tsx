@@ -2,7 +2,7 @@ import { ImageResponse } from 'next/og';
 import { getAllSlugs, getPost } from '@/content/posts';
 import type { Locale } from '@/i18n/routing';
 
-export const alt = 'Harmonia Foundation';
+export const alt = 'Esposito–Dossantos Foundation';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
@@ -17,7 +17,7 @@ export default async function BlogOgImage({
 }) {
   const { locale, slug } = params;
   const post = getPost(locale as Locale, slug);
-  const title = post?.title ?? 'Harmonia Foundation';
+  const title = post?.title ?? 'Esposito–Dossantos Foundation';
   const category = post?.category ?? '';
 
   return new ImageResponse(
@@ -51,10 +51,10 @@ export default async function BlogOgImage({
               fontWeight: 600
             }}
           >
-            H
+            ED
           </div>
           <div style={{ letterSpacing: 6, textTransform: 'uppercase', fontSize: 20 }}>
-            Harmonia Foundation
+            Esposito–Dossantos Foundation
           </div>
         </div>
 

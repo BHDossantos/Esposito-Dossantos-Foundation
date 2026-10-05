@@ -2,7 +2,7 @@ import type { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Harmonia Foundation',
+    name: 'Esposito–Dossantos Foundation',
     short_name: 'EDF',
     description:
       'A global nonprofit foundation empowering lives through education, music, technology, culture, and opportunity.',

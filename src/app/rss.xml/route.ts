@@ -1,6 +1,6 @@
 import { getAllPosts } from '@/content/posts';
 
-const baseUrl = 'https://harmonia-foundation.org';
+const baseUrl = 'https://espositodossantosfoundation.org';
 
 function escape(s: string): string {
   return s
@@ -31,9 +31,9 @@ export async function GET() {
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
-    <title>Harmonia Foundation — News</title>
+    <title>Esposito–Dossantos Foundation — News</title>
     <link>${baseUrl}/blog</link>
-    <description>News, stories, and insights from the Harmonia Foundation.</description>
+    <description>News, stories, and insights from the Esposito–Dossantos Foundation.</description>
     <language>en</language>
 ${items}
   </channel>

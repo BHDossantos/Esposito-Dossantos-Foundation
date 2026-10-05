@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/'
     },
-    sitemap: 'https://harmonia-foundation.org/sitemap.xml'
+    sitemap: 'https://espositodossantosfoundation.org/sitemap.xml'
   };
 }

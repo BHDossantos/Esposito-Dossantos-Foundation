@@ -48,7 +48,7 @@ export default async function EventPage({
     description: event.summary,
     ...(event.isoDate ? { startDate: event.isoDate } : {}),
     location: { '@type': 'Place', name: event.location },
-    organizer: { '@type': 'NGO', name: 'Harmonia Foundation' }
+    organizer: { '@type': 'NGO', name: 'Esposito–Dossantos Foundation' }
   };
 
   const breadcrumbs = breadcrumbSchema(locale, [

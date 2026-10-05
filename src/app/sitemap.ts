@@ -25,6 +25,7 @@ const staticPaths = [
   '/annual-report',
   '/faq',
   '/press',
+  '/accessibility',
   '/privacy',
   '/terms',
   '/cookies'

@@ -1,0 +1,120 @@
+# Codemagic CI/CD for the Esposito–Dossantos Foundation mobile apps (Capacitor).
+#
+# This builds the native iOS and Android apps in the cloud — no Mac required —
+# and can publish them straight to TestFlight / App Store Connect and the
+# Google Play internal track.
+#
+# ── One-time setup in the Codemagic UI (codemagic.io) ───────────────────────
+# 1. Connect this GitHub repository.
+# 2. iOS:
+#    - Add an App Store Connect API key integration and name it exactly
+#      "EspositoDossantosAppStore" (or change `integrations.app_store_connect` below).
+#    - Create the app with bundle id `org.espositodossantosfoundation.app` in
+#      App Store Connect (Codemagic can also register it on first run).
+# 3. Android:
+#    - Upload your upload keystore to Codemagic and reference it as
+#      "espositodossantos_keystore" (or change the `android_signing` entry below).
+#    - Add a Google Play service-account JSON as a secure variable named
+#      GCLOUD_SERVICE_ACCOUNT_CREDENTIALS in a group called "google_play".
+# 4. Set the recipient email below (or wire Slack) for build notifications.
+#
+# The native ios/ and android/ projects are generated during the build
+# (they are intentionally not committed), so each run starts from a clean,
+# reproducible native project.
+
+definitions:
+  scripts:
+    - &install_deps
+      name: Install JS dependencies
+      script: npm ci
+
+workflows:
+  ios-capacitor:
+    name: iOS — App Store
+    instance_type: mac_mini_m2
+    max_build_duration: 60
+    integrations:
+      app_store_connect: EspositoDossantosAppStore
+    environment:
+      node: 20
+      xcode: latest
+      cocoapods: default
+      ios_signing:
+        distribution_type: app_store
+        bundle_identifier: org.espositodossantosfoundation.app
+      vars:
+        BUNDLE_ID: "org.espositodossantosfoundation.app"
+        APP_NAME: "Esposito–Dossantos Foundation"
+    scripts:
+      - *install_deps
+      - name: Generate the native iOS project
+        script: |
+          npx --yes @capacitor/cli@8 add ios || true
+          npm run cap:assets || true
+          npx --yes @capacitor/cli@8 sync ios
+      - name: Install CocoaPods dependencies
+        script: |
+          cd ios/App && pod install
+      - name: Apply signing profiles
+        script: |
+          xcode-project use-profiles
+      - name: Build the signed IPA
+        script: |
+          xcode-project build-ipa \
+            --workspace "ios/App/App.xcworkspace" \
+            --scheme "App"
+    artifacts:
+      - build/ios/ipa/*.ipa
+      - /tmp/xcodebuild_logs/*.log
+    publishing:
+      app_store_connect:
+        auth: integration
+        submit_to_testflight: true
+        # Flip to true once the listing is complete to auto-submit for review:
+        submit_to_app_store: false
+      email:
+        recipients:
+          - brunodossantos707@gmail.com
+        notify:
+          success: true
+          failure: true
+
+  android-capacitor:
+    name: Android — Google Play
+    instance_type: linux_x2
+    max_build_duration: 60
+    environment:
+      node: 20
+      java: 17
+      groups:
+        - google_play
+      android_signing:
+        - espositodossantos_keystore
+      vars:
+        BUNDLE_ID: "org.espositodossantosfoundation.app"
+        PACKAGE_NAME: "org.espositodossantosfoundation.app"
+    scripts:
+      - *install_deps
+      - name: Generate the native Android project
+        script: |
+          npx --yes @capacitor/cli@8 add android || true
+          npm run cap:assets || true
+          npx --yes @capacitor/cli@8 sync android
+      - name: Build the release App Bundle
+        script: |
+          cd android
+          ./gradlew bundleRelease
+    artifacts:
+      - android/app/build/outputs/**/*.aab
+      - android/app/build/outputs/**/mapping.txt
+    publishing:
+      google_play:
+        credentials: $GCLOUD_SERVICE_ACCOUNT_CREDENTIALS
+        track: internal
+        submit_as_draft: true
+      email:
+        recipients:
+          - brunodossantos707@gmail.com
+        notify:
+          success: true
+          failure: true
