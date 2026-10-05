@@ -281,7 +281,7 @@ export default async function AboutPage({
               <Para>
                 I am a father. When I think about the future, I think about the encouragement
                 my child will receive and the opportunities they will have to discover themselves.
-                Then I think about other parents who want those same things for their children but have
+                Then I think about other parents who want those same things for their child but have
                 fewer resources to make them possible.
               </Para>
               <Para>
