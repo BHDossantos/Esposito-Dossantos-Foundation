@@ -1,8 +1,8 @@
-# Harmonia Foundation
+# Esposito–Dossantos Foundation
 
 > **Empowering Lives. Inspiring Futures.**
 
-A premium, investor-grade nonprofit platform for the Harmonia Foundation —
+A premium, investor-grade nonprofit platform for the Esposito–Dossantos Foundation —
 a global foundation empowering individuals and communities through **education, music,
 technology, culture, mentorship, and opportunity**.
 

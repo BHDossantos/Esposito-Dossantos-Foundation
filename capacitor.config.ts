@@ -3,11 +3,11 @@ import type { CapacitorConfig } from '@capacitor/cli';
 // The mobile apps are a native shell around the deployed website. The shell
 // loads the live production site; `CAP_SERVER_URL` can override it (e.g. a
 // Vercel preview URL) when building a test build.
-const PRODUCTION_URL = 'https://harmonia-foundation.org';
+const PRODUCTION_URL = 'https://espositodossantosfoundation.org';
 
 const config: CapacitorConfig = {
-  appId: 'org.harmoniafoundation.app',
-  appName: 'Harmonia Foundation',
+  appId: 'org.espositodossantosfoundation.app',
+  appName: 'Esposito–Dossantos Foundation',
   // Offline fallback bundle. When `server.url` is reachable the live site is
   // shown; this local copy is what loads if the device is offline.
   webDir: 'native/www',

@@ -54,7 +54,7 @@ export default async function Footer() {
         <div className="grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-4">
             <p className="font-serif text-2xl font-semibold">
-              Harmonia
+              Esposito<span className="text-champagne">–</span>Dossantos
             </p>
             <p className="mt-1 text-xs font-semibold uppercase tracking-widest2 text-champagne">
               {tn('foundationLabel')}
@@ -64,10 +64,10 @@ export default async function Footer() {
             </p>
             <p className="mt-6 text-sm text-ivory/60">{t('address')}</p>
             <a
-              href="mailto:info@harmonia-foundation.org"
+              href="mailto:info@espositodossantosfoundation.org"
               className="mt-2 inline-block text-sm text-champagne-light hover:text-champagne"
             >
-              info@harmonia-foundation.org
+              info@espositodossantosfoundation.org
             </a>
 
             {socialLinks.length > 0 ? (
@@ -126,7 +126,7 @@ export default async function Footer() {
 
         <div className="mt-14 flex flex-col gap-4 border-t border-white/10 pt-8 text-xs text-ivory/55 sm:flex-row sm:items-center sm:justify-between">
           <p>
-            © {year} Harmonia Foundation. {t('rights')}
+            © {year} Esposito–Dossantos Foundation. {t('rights')}
           </p>
           <p>{t('registration')}</p>
         </div>

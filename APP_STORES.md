@@ -1,14 +1,14 @@
 # Publishing the mobile apps (iOS + Android)
 
-The Harmonia Foundation mobile apps are a **Capacitor** native shell around the
-live website. The app opens the deployed site (`https://harmonia-foundation.org`)
+The Esposito–Dossantos Foundation mobile apps are a **Capacitor** native shell around the
+live website. The app opens the deployed site (`https://espositodossantosfoundation.org`)
 inside a native container and adds native capabilities (push notifications,
 offline fallback). Because the content is loaded from the live site,
 **content/design updates ship instantly with no app-store resubmission** — you
 only rebuild the app when native code changes.
 
-- **App name:** Harmonia Foundation
-- **Bundle / application ID:** `org.harmoniafoundation.app`
+- **App name:** Esposito–Dossantos Foundation
+- **Bundle / application ID:** `org.espositodossantosfoundation.app`
 - **Backing URL:** set in `capacitor.config.ts` (override per build with the
   `CAP_SERVER_URL` env var, e.g. a Vercel preview URL for testing)
 
@@ -78,8 +78,8 @@ Pick one:
   `codemagic.yaml` is committed at the repo root with ready-to-run **iOS** and
   **Android** workflows. One-time setup in the Codemagic UI (all documented in
   the file's header comments): connect the repo, add an App Store Connect API
-  key integration named `HarmoniaAppStore`, upload an Android keystore named
-  `harmonia_keystore`, and add a Google Play service-account JSON as
+  key integration named `EspositoDossantosAppStore`, upload an Android keystore named
+  `espositodossantos_keystore`, and add a Google Play service-account JSON as
   `GCLOUD_SERVICE_ACCOUNT_CREDENTIALS` in a `google_play` group. Then each run
   builds, signs, and publishes to **TestFlight** / the **Play internal track**.
   The native `ios/`/`android/` projects are generated during the build, so runs
@@ -106,7 +106,7 @@ and submit for review.
 
 Reuse the vetted copy from the **Press page** (`/press`) and translations:
 
-- **Name:** Harmonia Foundation
+- **Name:** Esposito–Dossantos Foundation
 - **Subtitle / short description:** "Empowering lives through education, music,
   technology, and opportunity."
 - **Description:** the extended boilerplate from `messages/*.json → press.boilerplate.long`.
@@ -114,9 +114,9 @@ Reuse the vetted copy from the **Press page** (`/press`) and translations:
 - **Category:** Education (primary) / Lifestyle (secondary).
 - **Localizations:** list English, Portuguese, Italian, Spanish — the app is
   fully translated, which strengthens both listings.
-- **Support URL:** `https://harmonia-foundation.org/contact`
-- **Marketing URL:** `https://harmonia-foundation.org`
-- **Privacy Policy URL:** `https://harmonia-foundation.org/privacy` (required by both stores)
+- **Support URL:** `https://espositodossantosfoundation.org/contact`
+- **Marketing URL:** `https://espositodossantosfoundation.org`
+- **Privacy Policy URL:** `https://espositodossantosfoundation.org/privacy` (required by both stores)
 
 **Screenshots** (capture from the live site in a device / simulator):
 - iPhone 6.7" (1290×2796) and 6.5" (1242×2688) — required.
@@ -136,7 +136,7 @@ Declare what the site collects, based on current features:
   "Analytics" and usage data.
 
 Fill **Google Play → Data safety** and **App Store Connect → App Privacy** to
-match. Both link to `https://harmonia-foundation.org/privacy`.
+match. Both link to `https://espositodossantosfoundation.org/privacy`.
 
 ---
 

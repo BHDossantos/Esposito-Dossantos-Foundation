@@ -22,7 +22,7 @@ const brandColors = [
   { name: 'Champagne', hex: '#C9A86A' },
   { name: 'Ivory', hex: '#FAF7F0' }
 ] as const;
-const pressEmail = 'press@harmonia-foundation.org';
+const pressEmail = 'press@espositodossantosfoundation.org';
 
 export default async function PressPage({
   params

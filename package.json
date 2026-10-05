@@ -1,8 +1,8 @@
 {
-  "name": "harmonia-foundation",
+  "name": "esposito-dossantos-foundation",
   "version": "0.1.0",
   "private": true,
-  "description": "Premium global nonprofit platform for the Harmonia Foundation",
+  "description": "Premium global nonprofit platform for the Esposito–Dossantos Foundation",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

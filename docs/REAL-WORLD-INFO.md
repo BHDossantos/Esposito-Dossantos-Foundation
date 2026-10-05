@@ -45,7 +45,7 @@ Replace the labeled *5-year goals* with real figures **only once true**.
 - (Leave blank to keep showing them as goals.)
 
 ## 5. Contact details  (Contact + footer)
-- Public email(s): `____`  _(site currently uses info@ / press@harmonia-foundation.org)_
+- Public email(s): `____`  _(site currently uses info@ / press@espositodossantosfoundation.org)_
 - Phone (optional): `____`
 - Mailing address (optional): `____`
 

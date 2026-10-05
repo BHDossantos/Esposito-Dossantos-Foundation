@@ -60,7 +60,7 @@ export default async function PostPage({
     author: { '@type': 'Organization', name: post.author },
     publisher: {
       '@type': 'NGO',
-      name: 'Harmonia Foundation',
+      name: 'Esposito–Dossantos Foundation',
       url: baseUrl
     }
   };

@@ -2,7 +2,7 @@ import { ImageResponse } from 'next/og';
 import { getTranslations } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 
-export const alt = 'Harmonia Foundation';
+export const alt = 'Esposito–Dossantos Foundation';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
@@ -46,10 +46,10 @@ export default async function OgImage({ params }: { params: { locale: string } }
               fontWeight: 600
             }}
           >
-            H
+            ED
           </div>
           <div style={{ letterSpacing: 6, textTransform: 'uppercase', fontSize: 22 }}>
-            Harmonia Foundation
+            Esposito–Dossantos Foundation
           </div>
         </div>
         <div style={{ marginTop: 40, fontSize: 76, fontWeight: 600, lineHeight: 1.05, maxWidth: 1000 }}>
