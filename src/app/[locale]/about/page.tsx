@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
-import { setRequestLocale } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import { Section } from '@/components/Section';
 import Reveal from '@/components/Reveal';
@@ -30,7 +30,7 @@ const founders = [
   },
   {
     initial: 'G',
-    name: 'Guilia Esposito',
+    name: 'Giulia Esposito',
     role: 'Administration Director',
     bio: 'Shaped the founding program, Arte que Transforma, and holds close the community it is built to serve.'
   }
@@ -63,6 +63,9 @@ export default async function AboutPage({
   const { locale } = await params;
   setRequestLocale(locale);
 
+  const t = await getTranslations('about');
+  const giuliaBody = t.raw('giulia.body') as string[];
+
   return (
     <>
       {/* ───────────────── Hero ───────────────── */}
@@ -90,7 +93,7 @@ export default async function AboutPage({
         <div className="mx-auto max-w-3xl">
           <Reveal>
             <Para lead>
-              When Bruno met Caíque and his wife, Guilia, in Italy, the connection was immediate.
+              When Bruno met Caíque and his wife, Giulia, in Italy, the connection was immediate.
               What began as getting to know one another became a conversation about the kind of
               difference they wanted to make — and the young people they hoped to reach.
             </Para>
@@ -157,7 +160,7 @@ export default async function AboutPage({
               opportunities that help interests become abilities.
             </Para>
             <Para>
-              Guilia helped give this vision a practical beginning through <em>Arte que Transforma</em>,
+              Giulia helped give this vision a practical beginning through <em>Arte que Transforma</em>,
               a program of accessible music and arts activities built around learning, creativity, and
               community. That founding program is the starting point for the broader work we hope to
               develop.
@@ -333,6 +336,29 @@ export default async function AboutPage({
             <Reveal>
               <p className="mt-10 font-serif text-lg text-navy">Bruno dos Santos</p>
               <p className="text-sm text-champagne-dark">Co-founder, Esposito&ndash;Dossantos Foundation</p>
+            </Reveal>
+          </div>
+        </div>
+      </Section>
+
+      {/* ───────────────── Giulia's message ───────────────── */}
+      <Section tone="white">
+        <div className="mx-auto max-w-3xl">
+          <Reveal className="text-center">
+            <p className="eyebrow text-champagne-dark">{t('giulia.eyebrow')}</p>
+            <h2 className="mt-4 font-serif text-3xl leading-tight text-navy sm:text-4xl">
+              {t('giulia.title')}
+            </h2>
+          </Reveal>
+          <div className="mt-10">
+            {giuliaBody.map((para, i) => (
+              <Reveal as="div" key={i}>
+                <Para lead={i === 0}>{para}</Para>
+              </Reveal>
+            ))}
+            <Reveal>
+              <p className="mt-10 font-serif text-lg text-navy">{t('giulia.name')}</p>
+              <p className="text-sm text-champagne-dark">{t('giulia.role')}</p>
             </Reveal>
           </div>
         </div>
