@@ -647,63 +647,85 @@
   },
   "about": {
     "hero": {
-      "eyebrow": "Sobre Nós",
-      "title": "Quem somos",
-      "intro": "A Esposito–Dossantos Foundation é uma organização global sem fins lucrativos, construída sobre a convicção de que a oportunidade deve chegar a todos, em toda a parte."
+      "eyebrow": "Nossa História",
+      "titleLine1": "Uma amizade na Itália.",
+      "titleLine2": "Dois sonhos. Um propósito em comum.",
+      "subtitle": "Antes de existir uma fundação, existiu uma amizade."
     },
-    "story": {
-      "eyebrow": "A Nossa História",
-      "title": "Uma fundação nascida de um propósito",
-      "founderRole": "Fundador e Presidente",
-      "body1": "A fundação foi criada por Bruno Dossantos e pela família Esposito, unidos por um amor de uma vida pela música, pela educação, pela tecnologia e pelo serviço.",
-      "body2": "Ao longo de anos de trabalho com estudantes, artistas e comunidades, os fundadores constataram, vezes sem conta, a mesma verdade: o talento está em toda a parte, mas a oportunidade não.",
-      "body3": "A Esposito–Dossantos Foundation existe para colmatar essa lacuna — oferecendo bolsas de estudo, mentoria, programas culturais e iniciativas inovadoras que capacitam as pessoas a alcançar todo o seu potencial."
+    "friendship": {
+      "lead": "Quando Bruno conheceu Caíque e sua esposa, Giulia, na Itália, a conexão foi imediata. O que começou como um simples conhecer-se tornou-se uma conversa sobre o tipo de diferença que queriam fazer — e sobre os jovens que esperavam alcançar.",
+      "p1": "Caíque trazia um sonho enraizado na música: dar a crianças, adolescentes e jovens a oportunidade de aprender, tocar e descobrir o que poderiam expressar através de um instrumento. Ele queria que essa oportunidade fosse além das famílias que já podiam pagá-la.",
+      "p2": "Bruno trazia um sonho que chegava à sala de aula e ia além dela — um lugar acolhedor onde os jovens pudessem explorar a cultura, aprender idiomas, desenvolver habilidades práticas e se sentir apoiados enquanto encontravam o seu caminho. Um lugar onde a condição financeira de uma família não decidiria se uma criança poderia participar.",
+      "p3": "À medida que as conversas continuavam, eles perceberam algo importante: não estavam descrevendo dois sonhos separados.",
+      "quote1": "Estavam imaginando partes diferentes do mesmo lugar.",
+      "p4": "Um lugar onde um jovem pudesse pegar um instrumento, segurar um pincel, praticar um novo idioma ou aprender uma habilidade que um dia pareceu fora de alcance. Onde fazer uma pergunta seria bem-vindo. Onde errar seria parte do aprendizado — e não um motivo para sentir vergonha.",
+      "quote2": "Um lugar onde alguém perceberia o seu esforço, aprenderia o seu nome e esperaria revê-lo.",
+      "outcome": "Essa visão compartilhada tornou-se a <b>Esposito–Dossantos Foundation</b> — batizada em homenagem às suas duas famílias fundadoras, os Esposito e os Dos Santos. Sua primeira causa, a <b>United Youth Orchestra</b>, é onde o trabalho começou — e a Fundação existe para nutrir muitas outras associações e causas que ajudam crianças necessitadas."
     },
-    "board": {
-      "eyebrow": "Liderança",
-      "title": "Conselho de administração e conselho consultivo",
-      "intro": "O nosso trabalho é orientado por líderes experientes, comprometidos com a integridade, a transparência e o impacto.",
+    "belong": {
+      "eyebrow": "Mais do que aulas",
+      "title": "Um lugar para pertencer.",
+      "p1": "Nosso propósito começa com a música, mas não termina nela. Estamos construindo um ambiente de aprendizado conectado que reúne música, pintura, artesanato, cultura, idiomas e habilidades práticas para a vida em um mundo em transformação. Nossa preocupação particular é o acesso: alcançar jovens cujas famílias não podem pagar as aulas, os materiais e as oportunidades que ajudam os interesses a se tornarem habilidades.",
+      "p2": "Giulia ajudou a dar um começo prático a essa visão por meio do <i>Arte que Transforma</i>, um programa de atividades acessíveis de música e artes construído em torno do aprendizado, da criatividade e da comunidade. Esse programa fundador é o ponto de partida para o trabalho mais amplo que esperamos desenvolver.",
+      "p3": "Não esperamos que cada aluno se torne um músico ou artista profissional. Queremos que tenham a chance de descobrir o que lhes interessa, praticar algo difícil, trabalhar com outras pessoas e reconhecer o próprio progresso.",
+      "p4": "Para um aluno, isso pode significar tocar uma peça que um dia achou impossível. Para outro, pode significar explicar uma ideia em um novo idioma, concluir uma pintura ou ficar diante de um grupo e falar com confiança.",
+      "quote": "Esses são os momentos para os quais queremos abrir espaço."
+    },
+    "founders": {
+      "eyebrow": "Forças diferentes. Uma responsabilidade compartilhada.",
+      "title": "As pessoas por trás da promessa",
+      "intro": "Juntos, estamos transformando uma ambição compartilhada no trabalho prático de criar algo confiável: espaços adequados, professores preparados, materiais de aprendizado, programas bem pensados e relações construídas ao longo do tempo.",
       "members": {
-        "founder": {
-          "name": "Bruno Dossantos",
-          "role": "Fundador e Presidente"
+        "bruno": {
+          "name": "Bruno dos Santos",
+          "role": "Cofundador",
+          "bio": "Traz uma trajetória em tecnologia, educação e liderança — e um saxofone que mantém a música próxima de tudo o que ele constrói."
         },
-        "cofounder": {
-          "name": "Família Esposito",
-          "role": "Cofundadora"
+        "caique": {
+          "name": "Caíque Esposito",
+          "role": "Cofundador",
+          "bio": "Traz profunda experiência musical e o compromisso de ajudar os jovens a descobrir o que podem expressar através de um instrumento."
         },
-        "director": {
-          "name": "Diretor de Programas",
-          "role": "Programas e Impacto"
-        },
-        "treasurer": {
-          "name": "Tesoureiro",
-          "role": "Finanças e Governação"
+        "giulia": {
+          "name": "Giulia Esposito",
+          "role": "Diretora Administrativa",
+          "bio": "Deu forma ao programa fundador, o Arte que Transforma, e guarda com carinho a comunidade que ele foi criado para servir."
         }
-      }
+      },
+      "closing": "Nosso trabalho começa em Roma. Nossa ambição de longo prazo se estende pela Europa, pelo Brasil, pelos Estados Unidos e, eventualmente, por outras comunidades onde a missão possa ser realizada com responsabilidade. Mas onde quer que cresçamos, o propósito continua sendo pessoal.",
+      "quote": "Um jovem não deveria ter de abrir mão de um interesse antes mesmo de descobrir o que poderia se tornar, simplesmente porque sua família não pode pagar a primeira oportunidade."
     },
-    "governance": {
-      "eyebrow": "Governação",
-      "title": "Como atuamos",
-      "intro": "Uma governação sólida e a transparência estão no cerne de tudo o que fazemos.",
-      "items": {
-        "structure": {
-          "title": "Estrutura Organizacional",
-          "body": "Uma estrutura clara, com papéis definidos na liderança, nos programas, nas finanças e nas operações."
-        },
-        "legal": {
-          "title": "Estatuto Jurídico",
-          "body": "Uma fundação sem fins lucrativos registada, a operar em conformidade com a legislação aplicável."
-        },
-        "accountability": {
-          "title": "Responsabilidade Financeira",
-          "body": "Supervisão independente e relatórios transparentes sobre a forma como os fundos são angariados e utilizados."
-        },
-        "ethics": {
-          "title": "Ética e Integridade",
-          "body": "Agimos com honestidade, responsabilidade e respeito por cada pessoa que servimos."
-        }
-      }
+    "donateCta": {
+      "eyebrow": "Ajude a tornar isso possível",
+      "title": "Ajude-nos a construir um lugar onde os jovens sejam acolhidos, encorajados e tenham espaço para crescer.",
+      "body": "Estamos no início deste trabalho. Seu apoio pode ajudar a transformar uma amizade e um sonho compartilhado em oportunidades duradouras de aprender — não porque temos todas as respostas, mas porque acreditamos que este é um trabalho que vale a pena, e estamos comprometidos em realizá-lo com cuidado.",
+      "donate": "Doe agora",
+      "partner": "Seja parceiro ou voluntário"
+    },
+    "letter": {
+      "eyebrow": "Uma mensagem do nosso cofundador",
+      "quote": "Quero que aquilo que aprendi se torne uma oportunidade para outra pessoa.",
+      "lead": "Nasci em Belo Horizonte, Brasil, e me mudei para os Estados Unidos aos dez anos de idade. Desde então, minha vida me levou por idiomas, culturas e países, e por fim a Roma — estudando, construindo uma carreira em tecnologia e liderança, trabalhando com educação e aprendendo o quanto pode mudar quando continuamos a desenvolver nossas capacidades.",
+      "p1": "Mas quando penso no porquê de isso importar para mim, não começo por um cargo. Começo por uma criança. Uma criança curiosa sobre um instrumento, mas que nunca teve a chance de aprendê-lo. Um adolescente que tem algo a dizer, mas ainda busca a confiança — ou as palavras — para dizê-lo. Um jovem com ideias e ambição, mas sem dinheiro para pagar o curso, os materiais ou o apoio extra.",
+      "quote2": "Quero ajudar a tornar mais oportunidades possíveis.",
+      "h1": "A razão de um pai para se importar",
+      "p2": "Sou pai. Quando penso no futuro, penso no incentivo que meu filho receberá e nas oportunidades que terá para se descobrir. Então penso em outros pais que desejam essas mesmas coisas para seu filho, mas têm menos recursos para torná-las possíveis.",
+      "p3": "O desejo não é diferente. O amor não é menor. O potencial da criança não importa menos. É por isso que o acesso importa tanto para mim. Quero que meu filho cresça sabendo que realização não é apenas o que podemos oferecer a nós mesmos — é também o que escolhemos tornar possível para os outros.",
+      "h2": "Por que música, cultura e aprendizado prático andam juntos",
+      "p4": "Eu toco saxofone. Não vejo a música, a tecnologia e as habilidades do dia a dia como mundos separados entre os quais um jovem precise escolher — vejo diferentes formas de explorar, comunicar, resolver problemas e criar. Um adolescente deveria poder descobrir o amor pela pintura e ainda aprender a administrar um orçamento. Deveria poder tocar música e aprender outro idioma.",
+      "p5": "Meu sonho é ajudar a criar um lugar onde um jovem não precise chegar sabendo no que é bom. Pode chegar curioso. Pode chegar incerto. Pode começar.",
+      "h3": "Um convite da minha parte",
+      "p6": "Não estou pedindo que se impressionem com a minha biografia. Estou pedindo que considerem o que poderíamos tornar possível juntos. Imagine um jovem voltando a uma aula onde alguém lembra com o que ele teve dificuldade na semana passada — e se preparou para ajudá-lo a tentar de novo. Imagine um pai ouvindo uma peça de música ensaiada, ou escutando enquanto seu filho explica algo que aprendeu. Imagine aquele aluno percebendo: <i>eu não conseguia fazer isso antes. Agora consigo.</i>",
+      "p7": "Seu apoio é um ato de confiança. Minha responsabilidade é ajudar a transformar essa confiança em decisões cuidadosas, trabalho constante e prestações de contas honestas sobre o que conquistamos — e o que ainda não conquistamos. Não posso prometer no que cada jovem vai se tornar. Mas posso dizer no que estou comprometido a construir: mais chances para que aprendam, criem, participem e descubram possibilidades para si mesmos.",
+      "quote3": "Minha história importa mais para mim quando aquilo que aprendi se torna útil na vida de outra pessoa.",
+      "name": "Bruno dos Santos",
+      "role": "Cofundador, Esposito–Dossantos Foundation"
+    },
+    "finalCta": {
+      "title": "Faça parte do começo",
+      "body": "Como apoiador, educador, voluntário ou parceiro da comunidade — ajude-nos a receber o próximo jovem que atravessar a porta.",
+      "donate": "Faça uma doação",
+      "contact": "Fale conosco"
     },
     "giulia": {
       "eyebrow": "Nas palavras de Giulia",
