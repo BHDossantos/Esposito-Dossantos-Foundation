@@ -19,7 +19,8 @@
     "contact": "Contatti",
     "blog": "Notizie",
     "donate": "Dona",
-    "foundationLabel": "Fondazione"
+    "foundationLabel": "Fondazione",
+    "audition": "Audizioni"
   },
   "footer": {
     "exploreTitle": "Esplora",
@@ -42,7 +43,8 @@
     "sponsors": "Accesso Sponsor",
     "faq": "Domande frequenti",
     "press": "Stampa",
-    "accessibility": "Accessibilità"
+    "accessibility": "Accessibilità",
+    "apply": "Richiedi un sostegno"
   },
   "home": {
     "hero": {
@@ -894,6 +896,14 @@
     "accessibility": {
       "title": "Accessibilità",
       "description": "La Esposito–Dossantos Foundation si impegna per un sito accessibile a tutti, puntando alle WCAG 2.1 AA."
+    },
+    "audition": {
+      "title": "Audizioni",
+      "description": "Fai l'audizione per la United Youth Orchestra — raccontaci la tua storia e invia qualche registrazione, e vieni a suonare con noi."
+    },
+    "apply": {
+      "title": "Richiedi un sostegno",
+      "description": "Richiedi un sostegno alla Esposito–Dossantos Foundation. Se il costo è un ostacolo per imparare, raccontaci la tua storia."
     }
   },
   "legal": {
@@ -1364,5 +1374,97 @@
       "cta": "Contattaci"
     },
     "updated": "Questa dichiarazione è stata rivista l’ultima volta a settembre 2026."
+  },
+  "audition": {
+    "hero": {
+      "eyebrow": "Entra nella musica",
+      "title": "Fai l'audizione per la United Youth Orchestra",
+      "intro": "Cerchiamo giovani musicisti pronti a imparare, crescere ed esibirsi. Raccontaci di te e condividi qualche registrazione — ci farebbe piacere ascoltarti suonare."
+    },
+    "who": {
+      "title": "Chi può fare l'audizione",
+      "body": "Le audizioni sono aperte a bambini, adolescenti e giovani adulti di ogni provenienza. Non devi essere un professionista — ti servono curiosità, impegno e amore per la musica. Se il costo si è mai messo tra te e la possibilità di suonare, questo è per te."
+    },
+    "how": {
+      "title": "Come funziona",
+      "s1": {
+        "t": "Raccontaci di te",
+        "d": "Condividi il tuo nome, il tuo strumento e una breve nota sul perché vorresti partecipare."
+      },
+      "s2": {
+        "t": "Invia le tue registrazioni",
+        "d": "Aggiungi i link di tre o cinque video in cui ti esibisci, così possiamo sentire come suoni."
+      },
+      "s3": {
+        "t": "Ti ricontatteremo",
+        "d": "Il nostro team esamina ogni audizione con cura e ti farà sapere i passi successivi."
+      }
+    },
+    "form": {
+      "heading": "La tua audizione",
+      "firstName": "Nome",
+      "lastName": "Cognome",
+      "email": "Email",
+      "instrument": "Strumento",
+      "instrumentPlaceholder": "es. Violino, Sassofono, Pianoforte",
+      "titleLabel": "Un titolo per la tua audizione",
+      "titlePlaceholder": "es. “Spero di suonare come secondo violino”",
+      "summaryLabel": "Raccontaci di te e perché vorresti partecipare",
+      "summaryPlaceholder": "Condividi qualcosa del tuo percorso musicale, cosa significherebbe per te questa opportunità e perché dovremmo accoglierti nell’orchestra. Per esempio: “Suono il violino da tre anni e sogno di esibirmi insieme ad altri…”",
+      "videosLabel": "Link ai tuoi video di esibizione",
+      "videosHelp": "Incolla da tre a cinque link (YouTube, Google Drive, Vimeo o Instagram). Assicurati che ogni link sia visibile da noi. Ciascuno dovrebbe mostrarti mentre suoni un brano o un arrangiamento.",
+      "videoPlaceholder": "https://…",
+      "optional": "facoltativo",
+      "videoRequired": "Aggiungi almeno tre link ai video.",
+      "submit": "Invia l'audizione",
+      "submitting": "Invio in corso…",
+      "successTitle": "La tua audizione è arrivata!",
+      "successBody": "Grazie per aver condiviso la tua musica con noi. Il nostro team esaminerà le tue registrazioni e ti ricontatterà. Continua a suonare.",
+      "error": "Qualcosa è andato storto. Riprova oppure scrivici se il problema persiste.",
+      "consent": "Inviando, accetti che possiamo contattarti riguardo alla tua audizione e conservare in modo sicuro il tuo invio."
+    }
+  },
+  "apply": {
+    "hero": {
+      "eyebrow": "Siamo qui per aiutare",
+      "title": "Richiedi un sostegno",
+      "intro": "Se tu o qualcuno della tua famiglia sogna di imparare la musica, l'arte o una nuova competenza ma il costo è un ostacolo, vorremmo ascoltarti. Raccontaci la tua storia — non esiste un modo sbagliato di chiedere."
+    },
+    "reassurance": "La tua richiesta è privata. Leggiamo ogni storia con rispetto e la usiamo solo per capire come possiamo aiutare.",
+    "how": {
+      "title": "Come funziona",
+      "s1": {
+        "t": "Racconta la tua storia",
+        "d": "Dicci chi sei e che tipo di sostegno ti aiuterebbe."
+      },
+      "s2": {
+        "t": "Esaminiamo con cura",
+        "d": "Ogni richiesta viene letta personalmente e trattata con riservatezza."
+      },
+      "s3": {
+        "t": "Ti ricontattiamo",
+        "d": "Ti scriveremo per parlare di come possiamo aiutarti e di cosa viene dopo."
+      }
+    },
+    "form": {
+      "heading": "La tua richiesta",
+      "firstName": "Nome",
+      "lastName": "Cognome",
+      "email": "Email",
+      "age": "Età",
+      "address": "Città e paese",
+      "referral": "Come hai saputo di noi?",
+      "need": "Che tipo di aiuto stai cercando?",
+      "situation": "Raccontaci un po’ della tua situazione",
+      "situationPlaceholder": "Condividi ciò che te la senti di raccontare sulla tua vita e le tue circostanze.",
+      "motivation": "Cosa ti ha spinto a fare domanda?",
+      "help": "Come pensi che possiamo aiutarti?",
+      "submit": "Invia la richiesta",
+      "submitting": "Invio in corso…",
+      "successTitle": "Abbiamo ricevuto la tua richiesta",
+      "successBody": "Grazie per averci affidato la tua storia. Il nostro team la leggerà con cura e ti ricontatterà. Non sei solo in questo.",
+      "error": "Qualcosa è andato storto. Riprova oppure scrivici se il problema persiste.",
+      "consent": "La tua richiesta è riservata e usata solo per capire come possiamo aiutare. Inviando, accetti che possiamo contattarti."
+    }
   }
 }

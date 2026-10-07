@@ -19,7 +19,8 @@
     "contact": "Contacto",
     "blog": "Notícias",
     "donate": "Doar",
-    "foundationLabel": "Fundação"
+    "foundationLabel": "Fundação",
+    "audition": "Audição"
   },
   "footer": {
     "exploreTitle": "Explorar",
@@ -42,7 +43,8 @@
     "sponsors": "Acesso de Patrocinadores",
     "faq": "Perguntas frequentes",
     "press": "Imprensa",
-    "accessibility": "Acessibilidade"
+    "accessibility": "Acessibilidade",
+    "apply": "Inscreva-se para apoio"
   },
   "home": {
     "hero": {
@@ -894,6 +896,14 @@
     "accessibility": {
       "title": "Acessibilidade",
       "description": "A Esposito–Dossantos Foundation compromete-se com um site acessível que todos possam utilizar, procurando cumprir as WCAG 2.1 AA."
+    },
+    "audition": {
+      "title": "Audição",
+      "description": "Faça a audição para a United Youth Orchestra — conte sua história e envie algumas gravações, e venha tocar conosco."
+    },
+    "apply": {
+      "title": "Inscreva-se para receber apoio",
+      "description": "Inscreva-se para receber apoio da Esposito–Dossantos Foundation. Se o custo é um obstáculo para aprender, conte-nos a sua história."
     }
   },
   "legal": {
@@ -1364,5 +1374,97 @@
       "cta": "Contacte-nos"
     },
     "updated": "Esta declaração foi revista pela última vez em setembro de 2026."
+  },
+  "audition": {
+    "hero": {
+      "eyebrow": "Entre para a música",
+      "title": "Faça a audição para a United Youth Orchestra",
+      "intro": "Procuramos jovens músicos prontos para aprender, crescer e se apresentar. Conte-nos sobre você e compartilhe algumas gravações — adoraríamos ouvir você tocar."
+    },
+    "who": {
+      "title": "Quem pode fazer a audição",
+      "body": "As audições estão abertas a crianças, adolescentes e jovens de todas as origens. Você não precisa ser profissional — precisa de curiosidade, dedicação e amor pela música. Se o custo um dia ficou entre você e a chance de tocar, isto é para você."
+    },
+    "how": {
+      "title": "Como funciona",
+      "s1": {
+        "t": "Conte sobre você",
+        "d": "Compartilhe seu nome, seu instrumento e uma breve nota sobre por que gostaria de participar."
+      },
+      "s2": {
+        "t": "Envie suas gravações",
+        "d": "Adicione links de três a cinco vídeos em que você está tocando, para que possamos ouvir como você toca."
+      },
+      "s3": {
+        "t": "Entraremos em contato",
+        "d": "Nossa equipe analisa cada audição com cuidado e dará retorno sobre os próximos passos."
+      }
+    },
+    "form": {
+      "heading": "Sua audição",
+      "firstName": "Nome",
+      "lastName": "Sobrenome",
+      "email": "E-mail",
+      "instrument": "Instrumento",
+      "instrumentPlaceholder": "ex.: Violino, Saxofone, Piano",
+      "titleLabel": "Um título para a sua audição",
+      "titlePlaceholder": "ex.: “Espero tocar como segundo violino”",
+      "summaryLabel": "Conte sobre você e por que gostaria de participar",
+      "summaryPlaceholder": "Compartilhe um pouco da sua trajetória musical, o que esta oportunidade significaria para você e por que deveríamos recebê-lo na orquestra. Por exemplo: “Toco violino há três anos e sonho em me apresentar com outras pessoas…”",
+      "videosLabel": "Links dos seus vídeos de apresentação",
+      "videosHelp": "Cole de três a cinco links (YouTube, Google Drive, Vimeo ou Instagram). Verifique se cada link pode ser visto por nós. Cada um deve mostrar você tocando uma peça ou um arranjo.",
+      "videoPlaceholder": "https://…",
+      "optional": "opcional",
+      "videoRequired": "Por favor, adicione pelo menos três links de vídeo.",
+      "submit": "Enviar audição",
+      "submitting": "Enviando…",
+      "successTitle": "Sua audição foi enviada!",
+      "successBody": "Obrigado por compartilhar sua música conosco. Nossa equipe vai analisar suas gravações e entrará em contato. Continue tocando.",
+      "error": "Algo deu errado. Tente novamente ou envie-nos um e-mail se o problema persistir.",
+      "consent": "Ao enviar, você concorda que podemos contatá-lo sobre sua audição e armazenar seu envio com segurança."
+    }
+  },
+  "apply": {
+    "hero": {
+      "eyebrow": "Estamos aqui para ajudar",
+      "title": "Inscreva-se para receber apoio",
+      "intro": "Se você ou alguém da sua família sonha em aprender música, arte ou uma nova habilidade, mas o custo é um obstáculo, gostaríamos de ouvir você. Conte-nos a sua história — não existe forma errada de pedir."
+    },
+    "reassurance": "Sua inscrição é privada. Lemos cada história com respeito e a usamos apenas para entender como podemos ajudar.",
+    "how": {
+      "title": "Como funciona",
+      "s1": {
+        "t": "Conte sua história",
+        "d": "Diga-nos quem você é e que tipo de apoio ajudaria."
+      },
+      "s2": {
+        "t": "Analisamos com cuidado",
+        "d": "Cada inscrição é lida pessoalmente e tratada com confidencialidade."
+      },
+      "s3": {
+        "t": "Damos retorno",
+        "d": "Entraremos em contato para conversar sobre como podemos ajudar e o que vem a seguir."
+      }
+    },
+    "form": {
+      "heading": "Sua inscrição",
+      "firstName": "Nome",
+      "lastName": "Sobrenome",
+      "email": "E-mail",
+      "age": "Idade",
+      "address": "Cidade e país",
+      "referral": "Como você soube de nós?",
+      "need": "Que tipo de ajuda você procura?",
+      "situation": "Conte um pouco sobre a sua situação",
+      "situationPlaceholder": "Compartilhe o que se sentir à vontade para contar sobre a sua vida e as suas circunstâncias.",
+      "motivation": "O que fez você decidir se inscrever?",
+      "help": "Como você acha que podemos ajudá-lo?",
+      "submit": "Enviar inscrição",
+      "submitting": "Enviando…",
+      "successTitle": "Recebemos a sua inscrição",
+      "successBody": "Obrigado por confiar a nós a sua história. Nossa equipe vai lê-la com cuidado e entrar em contato com você. Você não está sozinho nisso.",
+      "error": "Algo deu errado. Tente novamente ou envie-nos um e-mail se o problema persistir.",
+      "consent": "Sua inscrição é mantida em sigilo e usada apenas para entender como podemos ajudar. Ao enviar, você concorda que podemos contatá-lo."
+    }
   }
 }

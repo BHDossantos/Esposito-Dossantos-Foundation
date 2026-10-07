@@ -57,8 +57,41 @@ export const applicationSchema = z.object({
   company: z.string().max(200).optional()
 });
 
+// Audition submissions from aspiring musicians. Videos are collected as links
+// (YouTube / Drive / Vimeo / Instagram) rather than uploads — at least three.
+export const auditionSchema = z.object({
+  firstName: z.string().trim().min(1).max(80),
+  lastName: z.string().trim().min(1).max(80),
+  email: z.string().trim().email().max(200),
+  instrument: z.string().trim().min(1).max(80),
+  title: z.string().trim().max(160).optional().or(z.literal('')),
+  summary: z.string().trim().min(1).max(5000),
+  videos: z
+    .array(z.string().trim().url().max(500))
+    .min(3, 'Please add at least three video links.')
+    .max(5),
+  // Honeypot.
+  company: z.string().max(200).optional()
+});
+
+// Support applications from prospective students / families.
+export const studentApplicationSchema = z.object({
+  firstName: z.string().trim().min(1).max(80),
+  lastName: z.string().trim().min(1).max(80),
+  email: z.string().trim().email().max(200),
+  age: z.coerce.number().int().min(1).max(120).optional(),
+  address: z.string().trim().max(200).optional().or(z.literal('')),
+  referral: z.string().trim().max(200).optional().or(z.literal('')),
+  need: z.string().trim().min(1).max(2000),
+  situation: z.string().trim().min(1).max(5000),
+  motivation: z.string().trim().max(5000).optional().or(z.literal('')),
+  help: z.string().trim().max(5000).optional().or(z.literal('')),
+  // Honeypot.
+  company: z.string().max(200).optional()
+});
+
 export type Lead = {
-  source: 'newsletter' | 'contact' | 'rsvp' | 'application';
+  source: 'newsletter' | 'contact' | 'rsvp' | 'application' | 'audition' | 'studentApplication';
   category: string;
   data: Record<string, unknown>;
   receivedAt: string;
