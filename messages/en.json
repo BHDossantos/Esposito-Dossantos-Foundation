@@ -44,7 +44,8 @@
     "faq": "FAQ",
     "press": "Press",
     "accessibility": "Accessibility",
-    "apply": "Apply for support"
+    "apply": "Apply for support",
+    "sponsorChild": "Sponsor a child"
   },
   "home": {
     "hero": {
@@ -904,6 +905,10 @@
     "apply": {
       "title": "Apply for support",
       "description": "Apply for support from the Esposito–Dossantos Foundation. If cost stands between you and learning, tell us your story."
+    },
+    "sponsor": {
+      "title": "Sponsor a young musician",
+      "description": "Sponsor a young musician with a monthly gift — lessons, an instrument, and a place in the program for a child who could not otherwise take part."
     }
   },
   "legal": {
@@ -1466,5 +1471,61 @@
       "error": "Something went wrong. Please try again, or email us if it keeps happening.",
       "consent": "Your application is kept private and used only to understand how we can help. By submitting, you agree that we may contact you."
     }
+  },
+  "sponsor": {
+    "hero": {
+      "eyebrow": "Sponsor a child",
+      "title": "Sponsor a young musician",
+      "intro": "A monthly gift keeps a child in the program — with lessons, an instrument in their hands, and someone expecting to see them next week. Choose a level that feels right for you."
+    },
+    "lead": {
+      "title": "What your sponsorship does",
+      "body": "Every month, your support helps cover the real costs of keeping a young person learning: lessons, sheet music, strings and reeds, the loan of an instrument, mentorship, and the chance to perform — for children whose families could not otherwise afford it."
+    },
+    "tiers": {
+      "supporter": {
+        "name": "Supporter",
+        "blurb": "Helps provide sheet music, strings, reeds, and the small essentials a young musician needs to keep going."
+      },
+      "mentor": {
+        "name": "Mentor",
+        "blurb": "Helps fund regular lessons and mentorship so a student can learn consistently, week after week."
+      },
+      "patron": {
+        "name": "Patron",
+        "blurb": "Helps place an instrument in a child's hands and keep them in the program through the year."
+      },
+      "guardian": {
+        "name": "Guardian",
+        "blurb": "Helps sustain a young musician's full participation — lessons, materials, and the stage to perform on."
+      }
+    },
+    "perMonth": "/month",
+    "sponsorCta": "Sponsor now",
+    "processing": "Starting…",
+    "notConfigured": "Online sponsorship isn't available just yet — please check back soon, or contact us to set up your gift.",
+    "error": "Something went wrong. Please try again.",
+    "cancelNote": "Secure monthly payment through Stripe. Pause or cancel anytime.",
+    "oneTime": {
+      "title": "Prefer to give once?",
+      "body": "A one-time gift of any size still makes a real difference.",
+      "cta": "Make a one-time gift"
+    },
+    "how": {
+      "title": "How it works",
+      "s1": {
+        "t": "Choose a level",
+        "d": "Pick the monthly amount that fits you."
+      },
+      "s2": {
+        "t": "Give securely",
+        "d": "Complete your gift through our secure Stripe checkout."
+      },
+      "s3": {
+        "t": "Stay connected",
+        "d": "We'll keep you updated on the young people your gift supports."
+      }
+    },
+    "trust": "Your gift supports the Foundation's programs rather than a single named child, so we can direct help where it's needed most while protecting every child's privacy."
   }
 }

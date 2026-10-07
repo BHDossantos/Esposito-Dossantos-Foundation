@@ -44,7 +44,8 @@
     "faq": "Preguntas frecuentes",
     "press": "Prensa",
     "accessibility": "Accesibilidad",
-    "apply": "Solicita apoyo"
+    "apply": "Solicita apoyo",
+    "sponsorChild": "Apadrina a un niño"
   },
   "home": {
     "hero": {
@@ -904,6 +905,10 @@
     "apply": {
       "title": "Solicita apoyo",
       "description": "Solicita apoyo de la Esposito–Dossantos Foundation. Si el costo es un obstáculo para aprender, cuéntanos tu historia."
+    },
+    "sponsor": {
+      "title": "Apadrina a un joven músico",
+      "description": "Apadrina a un joven músico con un aporte mensual — clases, un instrumento y un lugar en el programa para un niño que de otro modo no podría participar."
     }
   },
   "legal": {
@@ -1466,5 +1471,61 @@
       "error": "Algo salió mal. Inténtalo de nuevo o escríbenos si el problema continúa.",
       "consent": "Tu solicitud se mantiene privada y se usa solo para entender cómo podemos ayudar. Al enviar, aceptas que podemos contactarte."
     }
+  },
+  "sponsor": {
+    "hero": {
+      "eyebrow": "Apadrina a un niño",
+      "title": "Apadrina a un joven músico",
+      "intro": "Un aporte mensual mantiene a un niño en el programa — con clases, un instrumento en sus manos y alguien que espera volver a verlo la próxima semana. Elige el nivel que sientas adecuado para ti."
+    },
+    "lead": {
+      "title": "Qué hace tu apadrinamiento",
+      "body": "Cada mes, tu apoyo ayuda a cubrir los costos reales de mantener a un joven aprendiendo: clases, partituras, cuerdas y cañas, el préstamo de un instrumento, mentoría y la oportunidad de presentarse — para niños cuyas familias de otro modo no podrían pagarlo."
+    },
+    "tiers": {
+      "supporter": {
+        "name": "Colaborador",
+        "blurb": "Ayuda a proporcionar partituras, cuerdas, cañas y los pequeños elementos esenciales que un joven músico necesita para seguir adelante."
+      },
+      "mentor": {
+        "name": "Mentor",
+        "blurb": "Ayuda a financiar clases regulares y mentoría para que un estudiante aprenda de forma constante, semana tras semana."
+      },
+      "patron": {
+        "name": "Mecenas",
+        "blurb": "Ayuda a poner un instrumento en las manos de un niño y a mantenerlo en el programa durante el año."
+      },
+      "guardian": {
+        "name": "Guardián",
+        "blurb": "Ayuda a sostener la participación plena de un joven músico — clases, materiales y el escenario para presentarse."
+      }
+    },
+    "perMonth": "/mes",
+    "sponsorCta": "Apadrinar ahora",
+    "processing": "Iniciando…",
+    "notConfigured": "El apadrinamiento en línea aún no está disponible — vuelve pronto o contáctanos para configurar tu aporte.",
+    "error": "Algo salió mal. Inténtalo de nuevo.",
+    "cancelNote": "Pago mensual seguro a través de Stripe. Pausa o cancela cuando quieras.",
+    "oneTime": {
+      "title": "¿Prefieres dar una sola vez?",
+      "body": "Una donación única de cualquier monto también hace una diferencia real.",
+      "cta": "Hacer una donación única"
+    },
+    "how": {
+      "title": "Cómo funciona",
+      "s1": {
+        "t": "Elige un nivel",
+        "d": "Elige el monto mensual que se ajuste a ti."
+      },
+      "s2": {
+        "t": "Dona de forma segura",
+        "d": "Completa tu aporte a través de nuestro checkout seguro de Stripe."
+      },
+      "s3": {
+        "t": "Mantente conectado",
+        "d": "Te mantendremos al tanto de los jóvenes que tu aporte apoya."
+      }
+    },
+    "trust": "Tu aporte apoya los programas de la Fundación, no a un solo niño con nombre, para que podamos dirigir la ayuda a donde más se necesita protegiendo la privacidad de cada niño."
   }
 }

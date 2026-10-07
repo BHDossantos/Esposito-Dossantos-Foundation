@@ -44,7 +44,8 @@
     "faq": "Perguntas frequentes",
     "press": "Imprensa",
     "accessibility": "Acessibilidade",
-    "apply": "Inscreva-se para apoio"
+    "apply": "Inscreva-se para apoio",
+    "sponsorChild": "Apadrinhe uma criança"
   },
   "home": {
     "hero": {
@@ -904,6 +905,10 @@
     "apply": {
       "title": "Inscreva-se para receber apoio",
       "description": "Inscreva-se para receber apoio da Esposito–Dossantos Foundation. Se o custo é um obstáculo para aprender, conte-nos a sua história."
+    },
+    "sponsor": {
+      "title": "Apadrinhe um jovem músico",
+      "description": "Apadrinhe um jovem músico com uma contribuição mensal — aulas, um instrumento e um lugar no programa para uma criança que, de outra forma, não poderia participar."
     }
   },
   "legal": {
@@ -1466,5 +1471,61 @@
       "error": "Algo deu errado. Tente novamente ou envie-nos um e-mail se o problema persistir.",
       "consent": "Sua inscrição é mantida em sigilo e usada apenas para entender como podemos ajudar. Ao enviar, você concorda que podemos contatá-lo."
     }
+  },
+  "sponsor": {
+    "hero": {
+      "eyebrow": "Apadrinhe uma criança",
+      "title": "Apadrinhe um jovem músico",
+      "intro": "Uma contribuição mensal mantém uma criança no programa — com aulas, um instrumento nas mãos e alguém esperando revê-la na próxima semana. Escolha um valor que faça sentido para você."
+    },
+    "lead": {
+      "title": "O que o seu apadrinhamento faz",
+      "body": "A cada mês, seu apoio ajuda a cobrir os custos reais de manter um jovem aprendendo: aulas, partituras, cordas e palhetas, o empréstimo de um instrumento, mentoria e a chance de se apresentar — para crianças cujas famílias, de outra forma, não poderiam pagar."
+    },
+    "tiers": {
+      "supporter": {
+        "name": "Apoiador",
+        "blurb": "Ajuda a fornecer partituras, cordas, palhetas e os pequenos itens essenciais de que um jovem músico precisa para continuar."
+      },
+      "mentor": {
+        "name": "Mentor",
+        "blurb": "Ajuda a custear aulas regulares e mentoria para que um aluno aprenda de forma constante, semana após semana."
+      },
+      "patron": {
+        "name": "Patrono",
+        "blurb": "Ajuda a colocar um instrumento nas mãos de uma criança e a mantê-la no programa ao longo do ano."
+      },
+      "guardian": {
+        "name": "Guardião",
+        "blurb": "Ajuda a sustentar a participação plena de um jovem músico — aulas, materiais e o palco para se apresentar."
+      }
+    },
+    "perMonth": "/mês",
+    "sponsorCta": "Apadrinhar agora",
+    "processing": "Iniciando…",
+    "notConfigured": "O apadrinhamento on-line ainda não está disponível — volte em breve ou entre em contato para configurar a sua contribuição.",
+    "error": "Algo deu errado. Tente novamente.",
+    "cancelNote": "Pagamento mensal seguro via Stripe. Pause ou cancele quando quiser.",
+    "oneTime": {
+      "title": "Prefere contribuir uma única vez?",
+      "body": "Uma contribuição única de qualquer valor também faz uma diferença real.",
+      "cta": "Fazer uma doação única"
+    },
+    "how": {
+      "title": "Como funciona",
+      "s1": {
+        "t": "Escolha um valor",
+        "d": "Escolha o valor mensal que combina com você."
+      },
+      "s2": {
+        "t": "Contribua com segurança",
+        "d": "Conclua sua contribuição pelo nosso checkout seguro da Stripe."
+      },
+      "s3": {
+        "t": "Fique por perto",
+        "d": "Vamos mantê-lo atualizado sobre os jovens que sua contribuição apoia."
+      }
+    },
+    "trust": "Sua contribuição apoia os programas da Fundação, e não uma única criança nomeada, para que possamos direcionar a ajuda para onde ela é mais necessária, protegendo a privacidade de cada criança."
   }
 }

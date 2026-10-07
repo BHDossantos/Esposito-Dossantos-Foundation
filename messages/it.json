@@ -44,7 +44,8 @@
     "faq": "Domande frequenti",
     "press": "Stampa",
     "accessibility": "Accessibilità",
-    "apply": "Richiedi un sostegno"
+    "apply": "Richiedi un sostegno",
+    "sponsorChild": "Sostieni un bambino"
   },
   "home": {
     "hero": {
@@ -904,6 +905,10 @@
     "apply": {
       "title": "Richiedi un sostegno",
       "description": "Richiedi un sostegno alla Esposito–Dossantos Foundation. Se il costo è un ostacolo per imparare, raccontaci la tua storia."
+    },
+    "sponsor": {
+      "title": "Sostieni un giovane musicista",
+      "description": "Sostieni un giovane musicista con un contributo mensile — lezioni, uno strumento e un posto nel programma per un bambino che altrimenti non potrebbe partecipare."
     }
   },
   "legal": {
@@ -1466,5 +1471,61 @@
       "error": "Qualcosa è andato storto. Riprova oppure scrivici se il problema persiste.",
       "consent": "La tua richiesta è riservata e usata solo per capire come possiamo aiutare. Inviando, accetti che possiamo contattarti."
     }
+  },
+  "sponsor": {
+    "hero": {
+      "eyebrow": "Sostieni un bambino",
+      "title": "Sostieni un giovane musicista",
+      "intro": "Un contributo mensile tiene un bambino nel programma — con lezioni, uno strumento tra le mani e qualcuno che si aspetta di rivederlo la settimana prossima. Scegli il livello che senti giusto per te."
+    },
+    "lead": {
+      "title": "Cosa fa il tuo sostegno",
+      "body": "Ogni mese, il tuo sostegno aiuta a coprire i costi reali per far continuare a imparare un giovane: lezioni, spartiti, corde e ance, il prestito di uno strumento, il tutoraggio e la possibilità di esibirsi — per bambini le cui famiglie altrimenti non potrebbero permetterselo."
+    },
+    "tiers": {
+      "supporter": {
+        "name": "Sostenitore",
+        "blurb": "Aiuta a fornire spartiti, corde, ance e i piccoli elementi essenziali di cui un giovane musicista ha bisogno per andare avanti."
+      },
+      "mentor": {
+        "name": "Mentore",
+        "blurb": "Aiuta a finanziare lezioni regolari e tutoraggio perché uno studente possa imparare con costanza, settimana dopo settimana."
+      },
+      "patron": {
+        "name": "Patrono",
+        "blurb": "Aiuta a mettere uno strumento tra le mani di un bambino e a tenerlo nel programma per tutto l’anno."
+      },
+      "guardian": {
+        "name": "Guardiano",
+        "blurb": "Aiuta a sostenere la piena partecipazione di un giovane musicista — lezioni, materiali e il palco su cui esibirsi."
+      }
+    },
+    "perMonth": "/mese",
+    "sponsorCta": "Sostieni ora",
+    "processing": "Avvio…",
+    "notConfigured": "Il sostegno online non è ancora disponibile — torna presto oppure contattaci per attivare il tuo contributo.",
+    "error": "Qualcosa è andato storto. Riprova.",
+    "cancelNote": "Pagamento mensile sicuro tramite Stripe. Sospendi o annulla quando vuoi.",
+    "oneTime": {
+      "title": "Preferisci donare una volta sola?",
+      "body": "Una donazione una tantum di qualsiasi importo fa comunque una differenza reale.",
+      "cta": "Fai una donazione una tantum"
+    },
+    "how": {
+      "title": "Come funziona",
+      "s1": {
+        "t": "Scegli un livello",
+        "d": "Scegli l'importo mensile più adatto a te."
+      },
+      "s2": {
+        "t": "Dona in sicurezza",
+        "d": "Completa il tuo contributo tramite il nostro checkout sicuro Stripe."
+      },
+      "s3": {
+        "t": "Resta in contatto",
+        "d": "Ti terremo aggiornato sui giovani che il tuo contributo sostiene."
+      }
+    },
+    "trust": "Il tuo contributo sostiene i programmi della Fondazione, non un singolo bambino nominato, così possiamo indirizzare l’aiuto dove serve di più proteggendo la privacy di ogni bambino."
   }
 }
