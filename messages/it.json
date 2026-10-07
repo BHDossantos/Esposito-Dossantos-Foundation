@@ -679,21 +679,40 @@
         "bruno": {
           "name": "Bruno dos Santos",
           "role": "Cofondatore",
-          "bio": "Porta un percorso nella tecnologia, nell’istruzione e nella leadership — e un sassofono che tiene la musica vicina a tutto ciò che costruisce."
+          "bio": "Porta un percorso nella tecnologia, nell’istruzione e nella leadership — e un sassofono che tiene la musica vicina a tutto ciò che costruisce.",
+          "full": [
+            "Bruno dos Santos è nato a Belo Horizonte, in Brasile, e si è trasferito negli Stati Uniti all’età di dieci anni — un’infanzia trascorsa attraversando lingue, culture e paesi. Quel percorso ha plasmato una convinzione che dura tutta la vita: che l’opportunità, molto più del talento, decide fin dove un giovane può arrivare.",
+            "Ha costruito una carriera tra tecnologia, istruzione e leadership — e l’amore per la musica non lo ha mai abbandonato. Suona il sassofono e vede la musica, l’apprendimento e le competenze quotidiane non come mondi separati, ma come porte diverse sulla stessa stanza.",
+            "Bruno ha cofondato la Esposito–Dossantos Foundation per aprire quelle porte ai giovani le cui famiglie non possono permettersi la prima opportunità. Da padre, la missione è personale: desidera che suo figlio — e ogni bambino — cresca sapendo che la realizzazione riguarda anche ciò che scegliamo di rendere possibile per gli altri.",
+            "All’interno della Fondazione, il suo impegno è costruire qualcosa di affidabile e trasparente: spazi adeguati, insegnanti preparati, resoconti onesti su ciò che viene raccolto e su come viene impiegato, e un luogo accogliente in cui un giovane possa semplicemente cominciare."
+          ]
         },
         "caique": {
           "name": "Caíque Esposito",
           "role": "Cofondatore",
-          "bio": "Porta una profonda esperienza musicale e l’impegno ad aiutare i giovani a scoprire ciò che possono esprimere attraverso uno strumento."
+          "bio": "Porta una profonda esperienza musicale e l’impegno ad aiutare i giovani a scoprire ciò che possono esprimere attraverso uno strumento.",
+          "full": [
+            "Caíque Esposito è un musicista e cofondatore della Esposito–Dossantos Foundation — e il cuore della sua causa fondativa, la United Youth Orchestra. Porta con sé un sogno radicato nella musica: dare a bambini, adolescenti e giovani adulti la possibilità di imparare, suonare e scoprire ciò che possono esprimere attraverso uno strumento.",
+            "La biografia completa di Caíque è in arrivo. Non vediamo l’ora di condividere presto qui altri dettagli della sua storia."
+          ]
         },
         "giulia": {
           "name": "Giulia Esposito",
           "role": "Direttrice Amministrativa",
-          "bio": "Ha dato forma al programma fondativo, Arte que Transforma, e custodisce con cura la comunità che è stato creato per servire."
+          "bio": "Ha dato forma al programma fondativo, Arte que Transforma, e custodisce con cura la comunità che è stato creato per servire.",
+          "full": [
+            "Credo che questa fondazione sia nata per toccare le persone — giovani e adulti — e per aprire porte che la vita, così spesso, insiste a tenere chiuse.",
+            "Quando un progetto offre arte, musica e tante altre discipline, non consegna soltanto una competenza. Prende qualcuno per mano e dice: “puoi di più”. Un bambino che scopre la musica trova disciplina, concentrazione e, soprattutto, il coraggio di credere in se stesso. Un giovane che si dedica all’arte impara a esprimersi, a sognare e a vedere un futuro che la realtà ha tentato di negargli. E un adulto che ritrova queste iniziative recupera scopo, dignità e la possibilità di ricominciare — qualcosa che nessuno dovrebbe mai perdere.",
+            "È per questo che credo così profondamente in questo lavoro: perché trasforma davvero. E la trasformazione non si ferma a una persona — trabocca. Cambia la famiglia. Cambia il quartiere. Cambia l’intera comunità che respira intorno. È un investimento nelle persone. E le persone sono, senza dubbio, la cosa più preziosa che esista.",
+            "Una fondazione e un progetto come questo contano perché piantano oggi ciò che fiorirà per molti, molti anni: opportunità, speranza e vite intere che trovano nuove strade.",
+            "Il mio sogno è sempre stato raggiungere il maggior numero possibile di persone con la mia musica. E questo progetto abbraccia quel sogno a braccia aperte — perché, alla fine, è la mia musica che diventa vita nella vita di qualcun altro."
+          ]
         }
       },
       "closing": "Il nostro lavoro comincia a Roma. La nostra ambizione a lungo termine si estende all’Europa, al Brasile, agli Stati Uniti e, col tempo, ad altre comunità in cui la missione possa essere realizzata in modo responsabile. Ma ovunque cresceremo, lo scopo resta personale.",
-      "quote": "Un giovane non dovrebbe dover rinunciare a un interesse prima ancora di scoprire ciò che potrebbe diventare, solo perché la sua famiglia non può permettersi la prima opportunità."
+      "quote": "Un giovane non dovrebbe dover rinunciare a un interesse prima ancora di scoprire ciò che potrebbe diventare, solo perché la sua famiglia non può permettersi la prima opportunità.",
+      "readMore": "Leggi di più",
+      "close": "Chiudi"
     },
     "donateCta": {
       "eyebrow": "Aiutaci a renderlo possibile",

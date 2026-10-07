@@ -4,6 +4,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import { Section } from '@/components/Section';
 import Reveal from '@/components/Reveal';
+import FoundersGrid, { type Founder } from '@/components/about/FoundersGrid';
 import { buildPageMetadata } from '@/lib/metadata';
 
 export async function generateMetadata({
@@ -57,6 +58,15 @@ export default async function AboutPage({
 
   const t = await getTranslations('about');
   const giuliaBody = t.raw('giulia.body') as string[];
+
+  const founders: Founder[] = FOUNDER_KEYS.map((key) => ({
+    key,
+    initial: FOUNDER_INITIALS[key],
+    name: t(`founders.members.${key}.name`),
+    role: t(`founders.members.${key}.role`),
+    bio: t(`founders.members.${key}.bio`),
+    full: t.raw(`founders.members.${key}.full`) as string[]
+  }));
 
   return (
     <>
@@ -129,26 +139,11 @@ export default async function AboutPage({
           <p className="mt-6 text-lg leading-relaxed text-softgray">{t('founders.intro')}</p>
         </Reveal>
 
-        <div className="mx-auto mt-14 grid max-w-4xl gap-6 sm:grid-cols-3">
-          {FOUNDER_KEYS.map((key, i) => (
-            <Reveal as="div" key={key} delay={i * 90}>
-              <div className="h-full rounded-2xl border border-navy/10 bg-warmwhite p-8 text-center transition hover:border-champagne/40 hover:shadow-lg hover:shadow-navy/5">
-                <span className="mx-auto flex h-16 w-16 items-center justify-center rounded-full border-2 border-champagne font-serif text-2xl font-semibold text-champagne-dark">
-                  {FOUNDER_INITIALS[key]}
-                </span>
-                <h3 className="mt-5 font-serif text-xl text-navy">
-                  {t(`founders.members.${key}.name`)}
-                </h3>
-                <p className="mt-1 text-xs font-semibold uppercase tracking-widest2 text-champagne-dark">
-                  {t(`founders.members.${key}.role`)}
-                </p>
-                <p className="mt-4 text-sm leading-relaxed text-softgray">
-                  {t(`founders.members.${key}.bio`)}
-                </p>
-              </div>
-            </Reveal>
-          ))}
-        </div>
+        <FoundersGrid
+          founders={founders}
+          readMoreLabel={t('founders.readMore')}
+          closeLabel={t('founders.close')}
+        />
 
         <Reveal className="mx-auto mt-14 max-w-3xl">
           <Para>{t('founders.closing')}</Para>

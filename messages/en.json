@@ -679,21 +679,40 @@
         "bruno": {
           "name": "Bruno dos Santos",
           "role": "Co-founder",
-          "bio": "Brings a background in technology, education, and leadership — and a saxophone that keeps music close to everything he builds."
+          "bio": "Brings a background in technology, education, and leadership — and a saxophone that keeps music close to everything he builds.",
+          "full": [
+            "Bruno dos Santos was born in Belo Horizonte, Brazil, and moved to the United States at the age of ten — a childhood spent crossing languages, cultures, and countries. That journey shaped a lifelong conviction: that opportunity, far more than talent, is what decides how far a young person can go.",
+            "He built a career across technology, education, and leadership — and a love of music never left his side. He plays the saxophone, and he sees music, learning, and everyday skills not as separate worlds but as different doors into the same room.",
+            "Bruno co-founded the Esposito–Dossantos Foundation to open those doors for young people whose families cannot afford the first opportunity. As a father, the mission is personal: he wants his own child — and every child — to grow up knowing that achievement is also about what we choose to make possible for others.",
+            "Within the Foundation, his focus is on building something dependable and transparent: suitable spaces, prepared teachers, honest accounts of what is raised and how it is used, and a welcoming place where a young person can simply begin."
+          ]
         },
         "caique": {
           "name": "Caíque Esposito",
           "role": "Co-founder",
-          "bio": "Brings deep musical experience and a commitment to helping young people discover what they can express through an instrument."
+          "bio": "Brings deep musical experience and a commitment to helping young people discover what they can express through an instrument.",
+          "full": [
+            "Caíque Esposito is a musician and co-founder of the Esposito–Dossantos Foundation — and the heart of its founding cause, United Youth Orchestra. He carries a dream rooted in music: to give children, teenagers, and young adults the chance to learn, play, and discover what they can express through an instrument.",
+            "Caíque’s full biography is on its way. We look forward to sharing more of his story here soon."
+          ]
         },
         "giulia": {
           "name": "Giulia Esposito",
           "role": "Administration Director",
-          "bio": "Shaped the founding program, Arte que Transforma, and holds close the community it is built to serve."
+          "bio": "Shaped the founding program, Arte que Transforma, and holds close the community it is built to serve.",
+          "full": [
+            "I believe this foundation was born to touch people — young and old — and to open doors that life, so often, insists on keeping closed.",
+            "When a project offers art, music, and so many other disciplines, it does not simply hand over a skill. It takes someone by the hand and says: “you are capable of more.” A child who discovers music finds discipline, focus and, above all, the courage to believe in themselves. A young person who gives themselves to art learns to express, to dream, and to see a future that reality tried to deny them. And an adult who finds these initiatives again recovers purpose, dignity, and the chance to begin anew — something no one should ever lose.",
+            "That is why I believe so deeply in this work: because it truly transforms. And the transformation does not stop with one person — it overflows. It changes the family. It changes the neighborhood. It changes the whole community breathing around them. It is an investment in people. And people are, without a doubt, the most valuable thing there is.",
+            "A foundation and a project like this matter because they plant today what will flower for many, many years: opportunities, hope, and whole lives finding new paths.",
+            "My dream has always been to reach as many people as possible with my music. And this project embraces that dream with open arms — because, in the end, it is my music becoming life in someone else’s life."
+          ]
         }
       },
       "closing": "Our work begins in Rome. Our long-term ambition reaches across Europe, Brazil, the United States, and eventually other communities where the mission can be delivered responsibly. But wherever we grow, the purpose remains personal.",
-      "quote": "A young person should not have to give up an interest before discovering what they might become simply because their family cannot afford the first opportunity."
+      "quote": "A young person should not have to give up an interest before discovering what they might become simply because their family cannot afford the first opportunity.",
+      "readMore": "Read more",
+      "close": "Close"
     },
     "donateCta": {
       "eyebrow": "Help make it possible",

@@ -679,21 +679,40 @@
         "bruno": {
           "name": "Bruno dos Santos",
           "role": "Cofundador",
-          "bio": "Aporta una trayectoria en tecnología, educación y liderazgo — y un saxofón que mantiene la música cerca de todo lo que construye."
+          "bio": "Aporta una trayectoria en tecnología, educación y liderazgo — y un saxofón que mantiene la música cerca de todo lo que construye.",
+          "full": [
+            "Bruno dos Santos nació en Belo Horizonte, Brasil, y se mudó a los Estados Unidos a los diez años — una infancia atravesando idiomas, culturas y países. Ese recorrido forjó una convicción para toda la vida: que la oportunidad, mucho más que el talento, es lo que decide hasta dónde puede llegar un joven.",
+            "Construyó una carrera entre la tecnología, la educación y el liderazgo — y el amor por la música nunca lo abandonó. Toca el saxofón y ve la música, el aprendizaje y las habilidades cotidianas no como mundos separados, sino como puertas distintas a la misma sala.",
+            "Bruno cofundó la Esposito–Dossantos Foundation para abrir esas puertas a los jóvenes cuyas familias no pueden pagar la primera oportunidad. Como padre, la misión es personal: quiere que su propio hijo — y cada niño — crezca sabiendo que el logro también tiene que ver con lo que elegimos hacer posible para los demás.",
+            "Dentro de la Fundación, su enfoque es construir algo confiable y transparente: espacios adecuados, profesores preparados, cuentas honestas sobre lo que se recauda y cómo se usa, y un lugar acogedor donde un joven pueda simplemente empezar."
+          ]
         },
         "caique": {
           "name": "Caíque Esposito",
           "role": "Cofundador",
-          "bio": "Aporta una profunda experiencia musical y el compromiso de ayudar a los jóvenes a descubrir lo que pueden expresar a través de un instrumento."
+          "bio": "Aporta una profunda experiencia musical y el compromiso de ayudar a los jóvenes a descubrir lo que pueden expresar a través de un instrumento.",
+          "full": [
+            "Caíque Esposito es músico y cofundador de la Esposito–Dossantos Foundation — y el corazón de su causa fundacional, la United Youth Orchestra. Lleva un sueño arraigado en la música: dar a niños, adolescentes y jóvenes la oportunidad de aprender, tocar y descubrir lo que pueden expresar a través de un instrumento.",
+            "La biografía completa de Caíque está en camino. Esperamos compartir pronto más de su historia aquí."
+          ]
         },
         "giulia": {
           "name": "Giulia Esposito",
           "role": "Directora Administrativa",
-          "bio": "Dio forma al programa fundacional, Arte que Transforma, y guarda con cariño a la comunidad para la que fue creado."
+          "bio": "Dio forma al programa fundacional, Arte que Transforma, y guarda con cariño a la comunidad para la que fue creado.",
+          "full": [
+            "Creo que esta fundación nació para tocar a las personas — jóvenes y adultos — y para abrir puertas que la vida, tantas veces, insiste en mantener cerradas.",
+            "Cuando un proyecto ofrece arte, música y tantas otras disciplinas, no entrega solo una habilidad. Toma a alguien de la mano y le dice: “puedes más”. Un niño que descubre la música encuentra disciplina, concentración y, sobre todo, el valor de creer en sí mismo. Un joven que se entrega al arte aprende a expresarse, a soñar y a ver un futuro que la realidad intentó negarle. Y un adulto que reencuentra estas iniciativas recupera propósito, dignidad y la oportunidad de volver a empezar — algo que nadie debería perder.",
+            "Por eso creo tanto en este trabajo: porque transforma de verdad. Y la transformación no se detiene en una persona — se desborda. Cambia a la familia. Cambia al barrio. Cambia a toda la comunidad que respira alrededor. Es una inversión en las personas. Y las personas son, sin duda, lo más valioso que existe.",
+            "Una fundación y un proyecto así importan porque siembran hoy lo que florecerá por muchos, muchos años: oportunidades, esperanza y vidas enteras encontrando nuevos caminos.",
+            "Mi sueño siempre ha sido llegar a la mayor cantidad posible de personas con mi música. Y este proyecto abraza ese sueño con los brazos abiertos — porque, al final, es mi música convirtiéndose en vida en la vida de otra persona."
+          ]
         }
       },
       "closing": "Nuestro trabajo comienza en Roma. Nuestra ambición a largo plazo se extiende por Europa, Brasil, los Estados Unidos y, con el tiempo, otras comunidades donde la misión pueda llevarse a cabo de manera responsable. Pero dondequiera que crezcamos, el propósito sigue siendo personal.",
-      "quote": "Un joven no debería tener que renunciar a un interés antes de descubrir en qué podría convertirse, simplemente porque su familia no puede pagar la primera oportunidad."
+      "quote": "Un joven no debería tener que renunciar a un interés antes de descubrir en qué podría convertirse, simplemente porque su familia no puede pagar la primera oportunidad.",
+      "readMore": "Leer más",
+      "close": "Cerrar"
     },
     "donateCta": {
       "eyebrow": "Ayuda a hacerlo posible",
