@@ -647,63 +647,109 @@
   },
   "about": {
     "hero": {
-      "eyebrow": "About Us",
-      "title": "Who we are",
-      "intro": "The Esposito–Dossantos Foundation is a global nonprofit built on a belief that opportunity should reach everyone, everywhere."
-    },
-    "story": {
       "eyebrow": "Our Story",
-      "title": "A foundation born from purpose",
-      "founderRole": "Founder & President",
-      "body1": "The foundation was created by Bruno Dossantos and the Esposito family, united by a lifelong love of music, education, technology, and service.",
-      "body2": "Across years of working with students, artists, and communities, the founders saw the same truth again and again: talent is everywhere, but opportunity is not.",
-      "body3": "The Esposito–Dossantos Foundation exists to close that gap — providing scholarships, mentorship, cultural programs, and innovative initiatives that empower people to reach their full potential."
+      "titleLine1": "A friendship in Italy.",
+      "titleLine2": "Two dreams. One shared purpose.",
+      "subtitle": "Before there was a foundation, there was a friendship."
     },
-    "board": {
-      "eyebrow": "Leadership",
-      "title": "Board & advisory council",
-      "intro": "Our work is guided by experienced leaders committed to integrity, transparency, and impact.",
+    "friendship": {
+      "lead": "When Bruno met Caíque and his wife, Giulia, in Italy, the connection was immediate. What began as getting to know one another became a conversation about the kind of difference they wanted to make — and the young people they hoped to reach.",
+      "p1": "Caíque carried a dream rooted in music: to give children, teenagers, and young adults the opportunity to learn, play, and discover what they could express through an instrument. He wanted that opportunity to reach beyond the families who could already afford it.",
+      "p2": "Bruno carried a dream that reached into the classroom and beyond it — a welcoming place where young people could explore culture, learn languages, develop practical skills, and feel supported as they found their direction. A place where a family’s financial circumstances would not decide whether a child could take part.",
+      "p3": "As their conversations continued, they recognized something important: they were not describing two separate dreams.",
+      "quote1": "They were imagining different parts of the same place.",
+      "p4": "A place where a young person could pick up an instrument, hold a paintbrush, practice a new language, or learn a skill that once seemed out of reach. Where asking a question would be welcomed. Where making a mistake would be part of learning — not a reason to feel ashamed.",
+      "quote2": "A place where someone would notice their effort, learn their name, and expect to see them again.",
+      "outcome": "That shared vision became the <b>Esposito–Dossantos Foundation</b> — named for its two founding families, the Espositos and the Dos Santos. Its first cause, <b>United Youth Orchestra</b>, is where the work began — and the Foundation exists to nurture many more associations and causes that help children in need."
+    },
+    "belong": {
+      "eyebrow": "More than lessons",
+      "title": "A place to belong.",
+      "p1": "Our purpose begins with music, but it does not end there. We are building toward a connected learning environment that brings together music, painting, crafts, culture, languages, and practical skills for life in a changing world. Our particular concern is access: reaching young people whose families cannot afford the lessons, materials, and opportunities that help interests become abilities.",
+      "p2": "Giulia helped give this vision a practical beginning through <i>Arte que Transforma</i>, a program of accessible music and arts activities built around learning, creativity, and community. That founding program is the starting point for the broader work we hope to develop.",
+      "p3": "We do not expect every learner to become a professional musician or artist. We want them to have the chance to discover what interests them, practice something difficult, work with others, and recognize their own progress.",
+      "p4": "For one learner, that might mean playing a piece they once thought was impossible. For another, it might mean explaining an idea in a new language, finishing a painting, or standing in front of a group and speaking with confidence.",
+      "quote": "Those are the moments we want to make room for."
+    },
+    "founders": {
+      "eyebrow": "Different strengths. A shared responsibility.",
+      "title": "The people behind the promise",
+      "intro": "Together, we are turning a shared ambition into the practical work of creating something dependable: suitable spaces, prepared teachers, learning materials, thoughtful programs, and relationships built over time.",
       "members": {
-        "founder": {
-          "name": "Bruno Dossantos",
-          "role": "Founder & President"
+        "bruno": {
+          "name": "Bruno dos Santos",
+          "role": "Co-founder",
+          "bio": "Brings a background in technology, education, and leadership — and a saxophone that keeps music close to everything he builds.",
+          "full": [
+            "Bruno dos Santos was born in Belo Horizonte, Brazil, and moved to the United States at the age of ten — a childhood spent crossing languages, cultures, and countries. That journey shaped a lifelong conviction: that opportunity, far more than talent, is what decides how far a young person can go.",
+            "He built a career across technology, education, and leadership — and a love of music never left his side. He plays the saxophone, and he sees music, learning, and everyday skills not as separate worlds but as different doors into the same room.",
+            "Bruno co-founded the Esposito–Dossantos Foundation to open those doors for young people whose families cannot afford the first opportunity. As a father, the mission is personal: he wants his own child — and every child — to grow up knowing that achievement is also about what we choose to make possible for others.",
+            "Within the Foundation, his focus is on building something dependable and transparent: suitable spaces, prepared teachers, honest accounts of what is raised and how it is used, and a welcoming place where a young person can simply begin."
+          ]
         },
-        "cofounder": {
-          "name": "Esposito Family",
-          "role": "Co-Founder"
+        "caique": {
+          "name": "Caíque Esposito",
+          "role": "Co-founder",
+          "bio": "Italian–Brazilian violinist and conductor — from the cacao farms of Bahia to the world's great stages — now leading the Foundation's music mission.",
+          "full": [
+            "Caíque Esposito is an Italian–Brazilian violinist and conductor whose journey began among the cacao plantations of rural Bahia and has reached some of the most important stages in international music.",
+            "Raised on a cattle and cacao farm in the municipality of Jiquiriçá, in Bahia, Caíque had music as part of his imagined world from a very early age. Inspired by the genius of Ennio Morricone and other great masters, as a child he would walk among the cacao trees conducting, in his imagination, a great orchestra. There, between nature and a boy’s dreams, the conductor was born.",
+            "His path took a new turn when he joined a music foundation in Salvador, the capital of Bahia. The opportunity transformed his life and opened the way to a career that would lead him on major tours and to the great international stages.",
+            "Along the way, Caíque has performed in emblematic venues such as the Philharmonie de Paris and the Auditorium Parco della Musica Ennio Morricone in Rome, alongside celebrated names in world music such as Martha Argerich and Lang Lang.",
+            "Today, a young conductor and violinist, Caíque leads an institution of global reach, dedicated to promoting music and bringing together young people from different regions of Italy and other parts of the world.",
+            "His purpose goes beyond musical training: it is to create opportunities, draw new generations closer to art, and awaken in them the ability to dream, create, and transform.",
+            "In my view, the importance of this foundation lies in its power to transform lives. Through its classes, its activities, and above all the purpose that guides every action, it reaches young people, children, and adults who often would have no other opportunities. It is not only about teaching or filling time, but about planting hope, awakening dreams, and showing that a different future is possible. Every class, every activity, and every gesture made with purpose has the power to change stories, open paths, and build a stronger community. That is what makes this foundation so essential: it changes not only the present of those who take part, but the entire future of these people."
+          ]
         },
-        "director": {
-          "name": "Program Director",
-          "role": "Programs & Impact"
-        },
-        "treasurer": {
-          "name": "Treasurer",
-          "role": "Finance & Governance"
+        "giulia": {
+          "name": "Giulia Esposito",
+          "role": "Administration Director",
+          "bio": "Shaped the founding program, Arte que Transforma, and holds close the community it is built to serve.",
+          "full": [
+            "I believe this foundation was born to touch people — young and old — and to open doors that life, so often, insists on keeping closed.",
+            "When a project offers art, music, and so many other disciplines, it does not simply hand over a skill. It takes someone by the hand and says: “you are capable of more.” A child who discovers music finds discipline, focus and, above all, the courage to believe in themselves. A young person who gives themselves to art learns to express, to dream, and to see a future that reality tried to deny them. And an adult who finds these initiatives again recovers purpose, dignity, and the chance to begin anew — something no one should ever lose.",
+            "That is why I believe so deeply in this work: because it truly transforms. And the transformation does not stop with one person — it overflows. It changes the family. It changes the neighborhood. It changes the whole community breathing around them. It is an investment in people. And people are, without a doubt, the most valuable thing there is.",
+            "A foundation and a project like this matter because they plant today what will flower for many, many years: opportunities, hope, and whole lives finding new paths.",
+            "My dream has always been to reach as many people as possible with my music. And this project embraces that dream with open arms — because, in the end, it is my music becoming life in someone else’s life."
+          ]
         }
-      }
+      },
+      "closing": "Our work begins in Rome. Our long-term ambition reaches across Europe, Brazil, the United States, and eventually other communities where the mission can be delivered responsibly. But wherever we grow, the purpose remains personal.",
+      "quote": "A young person should not have to give up an interest before discovering what they might become simply because their family cannot afford the first opportunity.",
+      "readMore": "Read more",
+      "close": "Close"
     },
-    "governance": {
-      "eyebrow": "Governance",
-      "title": "How we operate",
-      "intro": "Strong governance and transparency are at the core of everything we do.",
-      "items": {
-        "structure": {
-          "title": "Organizational Structure",
-          "body": "A clear structure with defined roles across leadership, programs, finance, and operations."
-        },
-        "legal": {
-          "title": "Legal Status",
-          "body": "A registered nonprofit foundation operating in compliance with applicable laws."
-        },
-        "accountability": {
-          "title": "Financial Accountability",
-          "body": "Independent oversight and transparent reporting of how funds are raised and used."
-        },
-        "ethics": {
-          "title": "Ethics & Integrity",
-          "body": "We act with honesty, accountability, and respect for every individual we serve."
-        }
-      }
+    "donateCta": {
+      "eyebrow": "Help make it possible",
+      "title": "Help us build a place where young people are welcomed, encouraged, and given room to grow.",
+      "body": "We are at the beginning of this work. Your support can help turn a friendship and a shared dream into sustained opportunities to learn — not because we have every answer, but because we believe this is work worth doing, and we are committed to doing it with care.",
+      "donate": "Donate now",
+      "partner": "Partner or volunteer"
+    },
+    "letter": {
+      "eyebrow": "A message from our co-founder",
+      "quote": "I want what I have learned to become an opportunity for someone else.",
+      "lead": "I was born in Belo Horizonte, Brazil, and moved to the United States when I was ten years old. My life has since taken me across languages, cultures, and countries, and eventually to Rome — studying, building a career in technology and leadership, working in education, and learning how much can change when you keep developing your abilities.",
+      "p1": "But when I think about why this matters to me, I do not begin with a job title. I begin with a child. A child who is curious about an instrument but has never had the chance to learn it. A teenager who has something to say but is still searching for the confidence — or the language — to say it. A young person with ideas and ambition, but without the money to pay for the course, the materials, or the extra support.",
+      "quote2": "I want to help make more opportunities possible.",
+      "h1": "A father’s reason to care",
+      "p2": "I am a father. When I think about the future, I think about the encouragement my child will receive and the opportunities they will have to discover themselves. Then I think about other parents who want those same things for their child but have fewer resources to make them possible.",
+      "p3": "The wish is not different. The love is not smaller. The child’s potential does not matter less. That is why access matters so much to me. I want my child to grow up knowing that achievement is not only about what we can provide for ourselves — it is also about what we choose to make possible for others.",
+      "h2": "Why music, culture, and practical learning belong together",
+      "p4": "I play the saxophone. I do not see music, technology, and everyday skills as separate worlds a young person must choose between — I see different ways to explore, communicate, solve problems, and create. A teenager should be able to discover a love for painting and still learn how to manage a budget. They should be able to play music and learn another language.",
+      "p5": "My dream is to help create a place where a young person does not need to arrive knowing what they are good at. They can arrive curious. They can arrive uncertain. They can begin.",
+      "h3": "An invitation from me",
+      "p6": "I am not asking you to be impressed by my biography. I am asking you to consider what we might make possible together. Imagine a young person returning to a class where someone remembers what they struggled with last week — and has prepared to help them try again. Imagine a parent hearing a practiced piece of music, or listening as their child explains something they have learned. Imagine that learner realizing: <i>I could not do this before. Now I can.</i>",
+      "p7": "Your support is an act of trust. My responsibility is to help turn that trust into careful decisions, consistent work, and honest accounts of what we have — and have not — achieved. I cannot promise what every young person will become. But I can tell you what I am committed to building: more chances for them to learn, create, participate, and discover possibilities for themselves.",
+      "quote3": "My story matters most to me when what I have learned becomes useful in someone else’s life.",
+      "name": "Bruno dos Santos",
+      "role": "Co-founder, Esposito–Dossantos Foundation"
+    },
+    "finalCta": {
+      "title": "Become part of the beginning",
+      "body": "As a supporter, educator, volunteer, or community partner — help us welcome the next young person through the door.",
+      "donate": "Make a donation",
+      "contact": "Get in touch"
     },
     "giulia": {
       "eyebrow": "In Giulia’s words",
