@@ -19,7 +19,8 @@
     "contact": "Contacto",
     "blog": "Noticias",
     "donate": "Donar",
-    "foundationLabel": "Fundación"
+    "foundationLabel": "Fundación",
+    "audition": "Audición"
   },
   "footer": {
     "exploreTitle": "Explorar",
@@ -42,7 +43,9 @@
     "sponsors": "Acceso de Patrocinadores",
     "faq": "Preguntas frecuentes",
     "press": "Prensa",
-    "accessibility": "Accesibilidad"
+    "accessibility": "Accesibilidad",
+    "apply": "Solicita apoyo",
+    "sponsorChild": "Apadrina a un niño"
   },
   "home": {
     "hero": {
@@ -940,6 +943,18 @@
     "accessibility": {
       "title": "Accesibilidad",
       "description": "La Esposito–Dossantos Foundation se compromete con un sitio accesible que todos puedan usar, aspirando a las WCAG 2.1 AA."
+    },
+    "audition": {
+      "title": "Audición",
+      "description": "Haz la audición para la United Youth Orchestra — cuéntanos tu historia y envía algunas grabaciones, y ven a tocar con nosotros."
+    },
+    "apply": {
+      "title": "Solicita apoyo",
+      "description": "Solicita apoyo de la Esposito–Dossantos Foundation. Si el costo es un obstáculo para aprender, cuéntanos tu historia."
+    },
+    "sponsor": {
+      "title": "Apadrina a un joven músico",
+      "description": "Apadrina a un joven músico con un aporte mensual — clases, un instrumento y un lugar en el programa para un niño que de otro modo no podría participar."
     }
   },
   "legal": {
@@ -1410,5 +1425,153 @@
       "cta": "Contáctanos"
     },
     "updated": "Esta declaración se revisó por última vez en septiembre de 2026."
+  },
+  "audition": {
+    "hero": {
+      "eyebrow": "Únete a la música",
+      "title": "Haz la audición para la United Youth Orchestra",
+      "intro": "Buscamos jóvenes músicos listos para aprender, crecer y presentarse. Cuéntanos sobre ti y comparte algunas grabaciones — nos encantaría escucharte tocar."
+    },
+    "who": {
+      "title": "Quién puede audicionar",
+      "body": "Las audiciones están abiertas a niños, adolescentes y jóvenes de todos los orígenes. No necesitas ser profesional — necesitas curiosidad, compromiso y amor por la música. Si el costo alguna vez se interpuso entre tú y la oportunidad de tocar, esto es para ti."
+    },
+    "how": {
+      "title": "Cómo funciona",
+      "s1": {
+        "t": "Cuéntanos sobre ti",
+        "d": "Comparte tu nombre, tu instrumento y una breve nota sobre por qué te gustaría participar."
+      },
+      "s2": {
+        "t": "Envía tus grabaciones",
+        "d": "Agrega enlaces de tres a cinco videos tocando, para que podamos escuchar cómo tocas."
+      },
+      "s3": {
+        "t": "Nos pondremos en contacto",
+        "d": "Nuestro equipo revisa cada audición con cuidado y te informará los siguientes pasos."
+      }
+    },
+    "form": {
+      "heading": "Tu audición",
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "email": "Correo electrónico",
+      "instrument": "Instrumento",
+      "instrumentPlaceholder": "ej.: Violín, Saxofón, Piano",
+      "titleLabel": "Un título para tu audición",
+      "titlePlaceholder": "ej.: “Espero tocar como segundo violín”",
+      "summaryLabel": "Cuéntanos sobre ti y por qué te gustaría participar",
+      "summaryPlaceholder": "Comparte un poco de tu recorrido musical, lo que esta oportunidad significaría para ti y por qué deberíamos darte la bienvenida a la orquesta. Por ejemplo: “Toco el violín desde hace tres años y sueño con presentarme junto a otros…”",
+      "videosLabel": "Enlaces a tus videos de interpretación",
+      "videosHelp": "Pega de tres a cinco enlaces (YouTube, Google Drive, Vimeo o Instagram). Asegúrate de que podamos ver cada enlace. Cada uno debe mostrarte tocando una pieza o un arreglo.",
+      "videoPlaceholder": "https://…",
+      "optional": "opcional",
+      "videoRequired": "Por favor, agrega al menos tres enlaces de video.",
+      "submit": "Enviar audición",
+      "submitting": "Enviando…",
+      "successTitle": "¡Tu audición fue enviada!",
+      "successBody": "Gracias por compartir tu música con nosotros. Nuestro equipo revisará tus grabaciones y se pondrá en contacto. Sigue tocando.",
+      "error": "Algo salió mal. Inténtalo de nuevo o escríbenos si el problema continúa.",
+      "consent": "Al enviar, aceptas que podemos contactarte sobre tu audición y almacenar tu envío de forma segura."
+    }
+  },
+  "apply": {
+    "hero": {
+      "eyebrow": "Estamos aquí para ayudar",
+      "title": "Solicita apoyo",
+      "intro": "Si tú o alguien de tu familia sueña con aprender música, arte o una nueva habilidad pero el costo es un obstáculo, nos gustaría escucharte. Cuéntanos tu historia — no hay una forma incorrecta de pedir."
+    },
+    "reassurance": "Tu solicitud es privada. Leemos cada historia con respeto y la usamos solo para entender cómo podemos ayudar.",
+    "how": {
+      "title": "Cómo funciona",
+      "s1": {
+        "t": "Comparte tu historia",
+        "d": "Dinos quién eres y qué tipo de apoyo te ayudaría."
+      },
+      "s2": {
+        "t": "Revisamos con cuidado",
+        "d": "Cada solicitud se lee personalmente y se trata con confidencialidad."
+      },
+      "s3": {
+        "t": "Te damos seguimiento",
+        "d": "Nos comunicaremos para hablar de cómo podemos ayudarte y qué sigue."
+      }
+    },
+    "form": {
+      "heading": "Tu solicitud",
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "email": "Correo electrónico",
+      "age": "Edad",
+      "address": "Ciudad y país",
+      "referral": "¿Cómo supiste de nosotros?",
+      "need": "¿Qué tipo de ayuda estás buscando?",
+      "situation": "Cuéntanos un poco sobre tu situación",
+      "situationPlaceholder": "Comparte lo que te sientas cómodo compartiendo sobre tu vida y tus circunstancias.",
+      "motivation": "¿Qué te hizo decidir solicitar?",
+      "help": "¿Cómo crees que podemos ayudarte?",
+      "submit": "Enviar solicitud",
+      "submitting": "Enviando…",
+      "successTitle": "Hemos recibido tu solicitud",
+      "successBody": "Gracias por confiarnos tu historia. Nuestro equipo la leerá con cuidado y se pondrá en contacto contigo. No estás solo en esto.",
+      "error": "Algo salió mal. Inténtalo de nuevo o escríbenos si el problema continúa.",
+      "consent": "Tu solicitud se mantiene privada y se usa solo para entender cómo podemos ayudar. Al enviar, aceptas que podemos contactarte."
+    }
+  },
+  "sponsor": {
+    "hero": {
+      "eyebrow": "Apadrina a un niño",
+      "title": "Apadrina a un joven músico",
+      "intro": "Un aporte mensual mantiene a un niño en el programa — con clases, un instrumento en sus manos y alguien que espera volver a verlo la próxima semana. Elige el nivel que sientas adecuado para ti."
+    },
+    "lead": {
+      "title": "Qué hace tu apadrinamiento",
+      "body": "Cada mes, tu apoyo ayuda a cubrir los costos reales de mantener a un joven aprendiendo: clases, partituras, cuerdas y cañas, el préstamo de un instrumento, mentoría y la oportunidad de presentarse — para niños cuyas familias de otro modo no podrían pagarlo."
+    },
+    "tiers": {
+      "supporter": {
+        "name": "Colaborador",
+        "blurb": "Ayuda a proporcionar partituras, cuerdas, cañas y los pequeños elementos esenciales que un joven músico necesita para seguir adelante."
+      },
+      "mentor": {
+        "name": "Mentor",
+        "blurb": "Ayuda a financiar clases regulares y mentoría para que un estudiante aprenda de forma constante, semana tras semana."
+      },
+      "patron": {
+        "name": "Mecenas",
+        "blurb": "Ayuda a poner un instrumento en las manos de un niño y a mantenerlo en el programa durante el año."
+      },
+      "guardian": {
+        "name": "Guardián",
+        "blurb": "Ayuda a sostener la participación plena de un joven músico — clases, materiales y el escenario para presentarse."
+      }
+    },
+    "perMonth": "/mes",
+    "sponsorCta": "Apadrinar ahora",
+    "processing": "Iniciando…",
+    "notConfigured": "El apadrinamiento en línea aún no está disponible — vuelve pronto o contáctanos para configurar tu aporte.",
+    "error": "Algo salió mal. Inténtalo de nuevo.",
+    "cancelNote": "Pago mensual seguro a través de Stripe. Pausa o cancela cuando quieras.",
+    "oneTime": {
+      "title": "¿Prefieres dar una sola vez?",
+      "body": "Una donación única de cualquier monto también hace una diferencia real.",
+      "cta": "Hacer una donación única"
+    },
+    "how": {
+      "title": "Cómo funciona",
+      "s1": {
+        "t": "Elige un nivel",
+        "d": "Elige el monto mensual que se ajuste a ti."
+      },
+      "s2": {
+        "t": "Dona de forma segura",
+        "d": "Completa tu aporte a través de nuestro checkout seguro de Stripe."
+      },
+      "s3": {
+        "t": "Mantente conectado",
+        "d": "Te mantendremos al tanto de los jóvenes que tu aporte apoya."
+      }
+    },
+    "trust": "Tu aporte apoya los programas de la Fundación, no a un solo niño con nombre, para que podamos dirigir la ayuda a donde más se necesita protegiendo la privacidad de cada niño."
   }
 }

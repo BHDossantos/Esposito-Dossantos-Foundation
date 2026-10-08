@@ -19,7 +19,8 @@
     "contact": "Contact",
     "blog": "News",
     "donate": "Donate",
-    "foundationLabel": "Foundation"
+    "foundationLabel": "Foundation",
+    "audition": "Audition"
   },
   "footer": {
     "exploreTitle": "Explore",
@@ -42,7 +43,9 @@
     "sponsors": "Sponsor Login",
     "faq": "FAQ",
     "press": "Press",
-    "accessibility": "Accessibility"
+    "accessibility": "Accessibility",
+    "apply": "Apply for support",
+    "sponsorChild": "Sponsor a child"
   },
   "home": {
     "hero": {
@@ -940,6 +943,18 @@
     "accessibility": {
       "title": "Accessibility",
       "description": "The Esposito–Dossantos Foundation is committed to an accessible website that everyone can use, aiming for WCAG 2.1 AA."
+    },
+    "audition": {
+      "title": "Audition",
+      "description": "Audition for the United Youth Orchestra — share your story and a few recordings, and come play with us."
+    },
+    "apply": {
+      "title": "Apply for support",
+      "description": "Apply for support from the Esposito–Dossantos Foundation. If cost stands between you and learning, tell us your story."
+    },
+    "sponsor": {
+      "title": "Sponsor a young musician",
+      "description": "Sponsor a young musician with a monthly gift — lessons, an instrument, and a place in the program for a child who could not otherwise take part."
     }
   },
   "legal": {
@@ -1410,5 +1425,153 @@
       "cta": "Contact us"
     },
     "updated": "This statement was last reviewed in September 2026."
+  },
+  "audition": {
+    "hero": {
+      "eyebrow": "Join the music",
+      "title": "Audition for the United Youth Orchestra",
+      "intro": "We're looking for young musicians ready to learn, grow, and perform. Tell us about yourself and share a few recordings — we would love to hear you play."
+    },
+    "who": {
+      "title": "Who can audition",
+      "body": "Auditions are open to children, teenagers, and young adults of every background. You don't need to be a professional — you need curiosity, commitment, and a love of music. If cost has ever stood between you and the chance to play, this is for you."
+    },
+    "how": {
+      "title": "How it works",
+      "s1": {
+        "t": "Tell us about yourself",
+        "d": "Share your name, your instrument, and a short note on why you'd like to join."
+      },
+      "s2": {
+        "t": "Send your recordings",
+        "d": "Add links to three to five videos of you performing, so we can hear how you play."
+      },
+      "s3": {
+        "t": "We'll be in touch",
+        "d": "Our team reviews every audition with care and will follow up with next steps."
+      }
+    },
+    "form": {
+      "heading": "Your audition",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Email",
+      "instrument": "Instrument",
+      "instrumentPlaceholder": "e.g. Violin, Saxophone, Piano",
+      "titleLabel": "A title for your audition",
+      "titlePlaceholder": "e.g. “Hoping to play second violin”",
+      "summaryLabel": "Tell us about yourself and why you'd like to join",
+      "summaryPlaceholder": "Share a little about your musical journey, what this opportunity would mean to you, and why we should welcome you into the orchestra. For example: “I have played the violin for three years and dream of performing with others…”",
+      "videosLabel": "Links to your performance videos",
+      "videosHelp": "Paste three to five links (YouTube, Google Drive, Vimeo, or Instagram). Please make sure each link can be viewed by us. Each should show you playing a piece or an arrangement.",
+      "videoPlaceholder": "https://…",
+      "optional": "optional",
+      "videoRequired": "Please add at least three video links.",
+      "submit": "Submit audition",
+      "submitting": "Submitting…",
+      "successTitle": "Your audition is in!",
+      "successBody": "Thank you for sharing your music with us. Our team will review your recordings and be in touch. Keep playing.",
+      "error": "Something went wrong. Please try again, or email us if it keeps happening.",
+      "consent": "By submitting, you agree that we may contact you about your audition and store your submission securely."
+    }
+  },
+  "apply": {
+    "hero": {
+      "eyebrow": "We're here to help",
+      "title": "Apply for support",
+      "intro": "If you or someone in your family dreams of learning music, art, or a new skill but cost stands in the way, we would like to hear from you. Tell us your story — there is no wrong way to ask."
+    },
+    "reassurance": "Your application is private. We read every story with respect and use it only to understand how we can help.",
+    "how": {
+      "title": "How it works",
+      "s1": {
+        "t": "Share your story",
+        "d": "Tell us who you are and what kind of support would help."
+      },
+      "s2": {
+        "t": "We review with care",
+        "d": "Every application is read personally and treated with confidentiality."
+      },
+      "s3": {
+        "t": "We follow up",
+        "d": "We'll reach out to talk about how we can help and what comes next."
+      }
+    },
+    "form": {
+      "heading": "Your application",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Email",
+      "age": "Age",
+      "address": "City and country",
+      "referral": "How did you hear about us?",
+      "need": "What kind of help are you looking for?",
+      "situation": "Tell us a little about your situation",
+      "situationPlaceholder": "Share whatever you feel comfortable sharing about your life and circumstances.",
+      "motivation": "What made you decide to apply?",
+      "help": "How do you think we can help you?",
+      "submit": "Submit application",
+      "submitting": "Submitting…",
+      "successTitle": "We've received your application",
+      "successBody": "Thank you for trusting us with your story. Our team will read it with care and reach out to you. You are not alone in this.",
+      "error": "Something went wrong. Please try again, or email us if it keeps happening.",
+      "consent": "Your application is kept private and used only to understand how we can help. By submitting, you agree that we may contact you."
+    }
+  },
+  "sponsor": {
+    "hero": {
+      "eyebrow": "Sponsor a child",
+      "title": "Sponsor a young musician",
+      "intro": "A monthly gift keeps a child in the program — with lessons, an instrument in their hands, and someone expecting to see them next week. Choose a level that feels right for you."
+    },
+    "lead": {
+      "title": "What your sponsorship does",
+      "body": "Every month, your support helps cover the real costs of keeping a young person learning: lessons, sheet music, strings and reeds, the loan of an instrument, mentorship, and the chance to perform — for children whose families could not otherwise afford it."
+    },
+    "tiers": {
+      "supporter": {
+        "name": "Supporter",
+        "blurb": "Helps provide sheet music, strings, reeds, and the small essentials a young musician needs to keep going."
+      },
+      "mentor": {
+        "name": "Mentor",
+        "blurb": "Helps fund regular lessons and mentorship so a student can learn consistently, week after week."
+      },
+      "patron": {
+        "name": "Patron",
+        "blurb": "Helps place an instrument in a child's hands and keep them in the program through the year."
+      },
+      "guardian": {
+        "name": "Guardian",
+        "blurb": "Helps sustain a young musician's full participation — lessons, materials, and the stage to perform on."
+      }
+    },
+    "perMonth": "/month",
+    "sponsorCta": "Sponsor now",
+    "processing": "Starting…",
+    "notConfigured": "Online sponsorship isn't available just yet — please check back soon, or contact us to set up your gift.",
+    "error": "Something went wrong. Please try again.",
+    "cancelNote": "Secure monthly payment through Stripe. Pause or cancel anytime.",
+    "oneTime": {
+      "title": "Prefer to give once?",
+      "body": "A one-time gift of any size still makes a real difference.",
+      "cta": "Make a one-time gift"
+    },
+    "how": {
+      "title": "How it works",
+      "s1": {
+        "t": "Choose a level",
+        "d": "Pick the monthly amount that fits you."
+      },
+      "s2": {
+        "t": "Give securely",
+        "d": "Complete your gift through our secure Stripe checkout."
+      },
+      "s3": {
+        "t": "Stay connected",
+        "d": "We'll keep you updated on the young people your gift supports."
+      }
+    },
+    "trust": "Your gift supports the Foundation's programs rather than a single named child, so we can direct help where it's needed most while protecting every child's privacy."
   }
 }
