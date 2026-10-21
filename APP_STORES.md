@@ -1,5 +1,10 @@
 # Publishing the mobile apps (iOS + Android)
 
+> Read [mobile validation and release gates](docs/MOBILE_READINESS.md) first.
+> The unsigned validation workflow does not publish. The older release recipes
+> below are not proof that offline behavior, push delivery, signing, or store
+> readiness has been verified.
+
 The Esposito–Dossantos Foundation mobile apps are a **Capacitor** native shell around the
 live website. The app opens the deployed site (`https://espositodossantosfoundation.org`)
 inside a native container and adds native capabilities (push notifications,
