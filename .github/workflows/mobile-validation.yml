@@ -1,0 +1,111 @@
+name: Mobile validation
+
+# Validation only. No store upload, production signing, or deployment.
+on:
+  pull_request:
+  push:
+    branches: ["claude/foundation-multilingual-build-9lo6tn", "main", "codex/mobile-validation-20261021"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: mobile-validation-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  shell-tests:
+    name: Mobile shell contract tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run test:mobile
+
+  android:
+    name: Android debug build and lint
+    needs: shell-tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - run: npm ci
+      - name: Generate Android project
+        run: npm run cap:add:android
+      - name: Generate branded assets
+        run: npm run cap:assets -- --android
+      - name: Sync native dependencies
+        run: npm run cap:sync -- android
+      - name: Build and validate debug app
+        working-directory: android
+        run: ./gradlew --no-daemon assembleDebug lintDebug testDebugUnitTest
+      - name: Upload debug APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: foundation-android-debug-${{ github.sha }}
+          path: android/app/build/outputs/apk/debug/*.apk
+          if-no-files-found: error
+          retention-days: 7
+      - name: Upload validation reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: foundation-android-reports-${{ github.sha }}
+          path: android/app/build/reports/
+          if-no-files-found: ignore
+          retention-days: 7
+
+  ios:
+    name: iOS unsigned simulator build
+    needs: shell-tests
+    runs-on: macos-26
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Show Xcode toolchain
+        run: xcodebuild -version
+      # Capacitor 8 uses Swift Package Manager, not a CocoaPods workspace.
+      - name: Generate iOS project
+        run: npm run cap:add:ios -- --packagemanager SPM
+      - name: Generate branded assets
+        run: npm run cap:assets -- --ios
+      - name: Sync native dependencies
+        run: npm run cap:sync -- ios
+      - name: Build unsigned simulator app
+        run: |
+          xcodebuild -project ios/App/App.xcodeproj \
+            -scheme App -configuration Debug \
+            -destination 'generic/platform=iOS Simulator' \
+            -derivedDataPath build/ios-simulator \
+            CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO build
+      - name: Package simulator app
+        run: |
+          ditto -c -k --sequesterRsrc --keepParent \
+            build/ios-simulator/Build/Products/Debug-iphonesimulator/App.app \
+            build/foundation-ios-simulator.zip
+      - name: Upload simulator app
+        uses: actions/upload-artifact@v4
+        with:
+          name: foundation-ios-simulator-${{ github.sha }}
+          path: build/foundation-ios-simulator.zip
+          if-no-files-found: error
+          retention-days: 7
