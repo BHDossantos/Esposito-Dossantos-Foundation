@@ -18,13 +18,15 @@ function sign(payload: string): string {
   return createHmac('sha256', SECRET).update(payload).digest('hex');
 }
 
-function encode(email: string, exp: number): string {
-  const payload = `${email}|${exp}`;
+type Purpose = 'magic' | 'session';
+
+function encode(email: string, exp: number, purpose: Purpose): string {
+  const payload = `${purpose}|${email}|${exp}`;
   const sig = sign(payload);
   return Buffer.from(`${payload}|${sig}`).toString('base64url');
 }
 
-function decode(token: string): { email: string; exp: number } | null {
+function decode(token: string, expectedPurpose: Purpose): { email: string; exp: number } | null {
   try {
     const raw = Buffer.from(token, 'base64url').toString('utf8');
     const idx = raw.lastIndexOf('|');
@@ -35,7 +37,8 @@ function decode(token: string): { email: string; exp: number } | null {
     const a = Buffer.from(sig);
     const b = Buffer.from(expected);
     if (a.length !== b.length || !timingSafeEqual(a, b)) return null;
-    const [email, expStr] = payload.split('|');
+    const [purpose, email, expStr, extra] = payload.split('|');
+    if (purpose !== expectedPurpose || extra !== undefined) return null;
     const exp = Number(expStr);
     if (!email || !Number.isFinite(exp) || exp < Date.now()) return null;
     return { email, exp };
@@ -45,15 +48,15 @@ function decode(token: string): { email: string; exp: number } | null {
 }
 
 export function createMagicToken(email: string): string {
-  return encode(email.toLowerCase(), Date.now() + MAGIC_TTL_MS);
+  return encode(email.toLowerCase(), Date.now() + MAGIC_TTL_MS, 'magic');
 }
 
 export function createSessionToken(email: string): string {
-  return encode(email.toLowerCase(), Date.now() + SESSION_TTL_MS);
+  return encode(email.toLowerCase(), Date.now() + SESSION_TTL_MS, 'session');
 }
 
 /** Returns the verified email, or null if the token is invalid/expired. */
-export function verifyToken(token: string | undefined): string | null {
+export function verifyToken(token: string | undefined, purpose: Purpose = 'session'): string | null {
   if (!SECRET || !token) return null;
-  return decode(token)?.email ?? null;
+  return decode(token, purpose)?.email ?? null;
 }

@@ -67,7 +67,9 @@ export default async function PortalPage({
               <div className="rounded-2xl border border-navy/10 bg-ivory p-6">
                 <p className="text-sm text-softgray">{t('totalLabel')}</p>
                 <p className="mt-1 font-serif text-3xl font-semibold text-navy">
-                  {money(summary.totalGiven, summary.currency)}
+                  {summary.totals.length === 0 ? money(0, 'eur') : summary.totals.map((total) => (
+                    <span className="block" key={total.currency}>{money(total.amount, total.currency)}</span>
+                  ))}
                 </p>
               </div>
               {summary.subscriptions
@@ -85,7 +87,9 @@ export default async function PortalPage({
             </div>
 
             <div className="mt-6">
-              <ManageButtonWrapper label={t('manageBtn')} show={Boolean(summary.customerId)} />
+              {summary.customerIds.map((customerId, index) => (
+                <ManageButton key={customerId} customerId={customerId} label={`${t('manageBtn')}${summary.customerIds.length > 1 ? ` (${index + 1})` : ''}`} />
+              ))}
             </div>
 
             {/* History */}
@@ -141,8 +145,4 @@ export default async function PortalPage({
 // Small wrappers keep the client components isolated.
 function SignOutButtonWrapper({ label }: { label: string }) {
   return <SignOutButton label={label} />;
-}
-function ManageButtonWrapper({ label, show }: { label: string; show: boolean }) {
-  if (!show) return null;
-  return <ManageButton label={label} />;
 }

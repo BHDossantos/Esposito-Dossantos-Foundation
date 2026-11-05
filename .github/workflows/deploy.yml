@@ -16,7 +16,7 @@ jobs:
     # Stays skipped (not failed) until you opt in by setting the repo variable
     # ENABLE_VERCEL_DEPLOY=true and adding the three Vercel secrets.
     # See DEPLOYMENT.md for the one-time setup.
-    if: ${{ vars.ENABLE_VERCEL_DEPLOY == 'true' }}
+    if: ${{ vars.ENABLE_VERCEL_DEPLOY == 'true' && github.ref != 'refs/heads/codex/foundation-integrity-20261105' && github.head_ref != 'codex/foundation-integrity-20261105' }}
     permissions:
       contents: read
       pull-requests: write

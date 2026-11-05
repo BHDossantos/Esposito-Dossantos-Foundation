@@ -1,20 +1,21 @@
 import { NextResponse } from 'next/server';
 import { createSessionToken, PORTAL_COOKIE, verifyToken } from '@/lib/portalAuth';
+import { siteOrigin, safeInternalPath } from '@/lib/siteOrigin';
 
 export async function GET(request: Request) {
   const url = new URL(request.url);
   const token = url.searchParams.get('token') ?? undefined;
   const next = url.searchParams.get('next') || '/portal';
 
-  const email = verifyToken(token);
+  const origin = siteOrigin();
+  const email = verifyToken(token, 'magic');
   if (!email) {
     // Invalid/expired link → back to login with a flag.
-    return NextResponse.redirect(new URL('/portal/login?error=link', url.origin));
+    return NextResponse.redirect(new URL('/portal/login?error=link', origin));
   }
 
   // Only allow internal redirect targets.
-  const safeNext = next.startsWith('/') ? next : '/portal';
-  const res = NextResponse.redirect(new URL(safeNext, url.origin));
+  const res = NextResponse.redirect(new URL(safeInternalPath(next), origin));
   res.cookies.set(PORTAL_COOKIE, createSessionToken(email), {
     httpOnly: true,
     secure: process.env.NODE_ENV === 'production',
