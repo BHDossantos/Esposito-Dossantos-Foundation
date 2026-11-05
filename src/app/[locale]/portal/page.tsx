@@ -35,7 +35,7 @@ export default async function PortalPage({
   const format = await getFormatter();
   const summary = await getDonorSummary(email);
   const money = (n: number, cur = 'eur') =>
-    format.number(n, { style: 'currency', currency: cur.toUpperCase(), maximumFractionDigits: 0 });
+    format.number(n, { style: 'currency', currency: cur.toUpperCase() });
 
   return (
     <>
@@ -72,18 +72,15 @@ export default async function PortalPage({
                   ))}
                 </p>
               </div>
-              {summary.subscriptions
-                .filter((s) => s.status === 'active' || s.status === 'trialing')
-                .slice(0, 2)
-                .map((s) => (
-                  <div key={s.id} className="rounded-2xl border border-navy/10 bg-ivory p-6">
-                    <p className="text-sm text-softgray">{t('subsTitle')}</p>
-                    <p className="mt-1 font-serif text-2xl font-semibold text-navy">
-                      {money(s.amount, s.currency)}
-                      <span className="text-base font-normal text-softgray"> / {s.interval}</span>
-                    </p>
-                  </div>
-                ))}
+              {summary.subscriptions.some((s) => s.status === 'active' || s.status === 'trialing') && (
+                <div className="rounded-2xl border border-navy/10 bg-ivory p-6">
+                  <p className="text-sm text-softgray">{t('subsTitle')}</p>
+                  <p className="mt-1 font-serif text-2xl font-semibold text-navy">
+                    {t('subsCount', { count: summary.subscriptions.filter((s) => s.status === 'active' || s.status === 'trialing').length })}
+                  </p>
+                  <p className="mt-2 text-sm text-softgray">{t('subsDetails')}</p>
+                </div>
+              )}
             </div>
 
             <div className="mt-6">

@@ -5,8 +5,7 @@ export type DonorCharge = {
   status: string; receiptUrl: string | null; description: string | null;
 };
 export type DonorSubscription = {
-  id: string; customerId: string; amount: number; currency: string;
-  interval: string; status: string;
+  id: string; customerId: string; status: string;
 };
 export type DonorSummary = {
   email: string; found: boolean; customerIds: string[];
@@ -57,11 +56,8 @@ export async function getDonorSummary(email: string): Promise<DonorSummary | nul
       }
       for await (const s of stripe.subscriptions.list({ customer: customer.id, limit: 100, status: 'all' })) {
         count();
-        const item = s.items.data[0]?.price;
         result.subscriptions.push({
-          id: s.id, customerId: customer.id,
-          amount: majorUnits(item?.unit_amount ?? 0, item?.currency ?? 'eur'),
-          currency: item?.currency ?? 'eur', interval: item?.recurring?.interval ?? 'month', status: s.status
+          id: s.id, customerId: customer.id, status: s.status
         });
       }
     }

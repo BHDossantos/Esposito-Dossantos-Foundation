@@ -1169,6 +1169,8 @@
       "receiptCol": "Recibo",
       "receipt": "Ver",
       "subsTitle": "Donaciones recurrentes",
+      "subsCount": "{count, plural, one {# suscripción activa o en prueba} other {# suscripciones activas o en prueba}}",
+      "subsDetails": "Usa Gestionar donaciones abajo para ver los detalles de facturación, incluidos artículos, cantidades, descuentos e impuestos.",
       "manageBtn": "Gestionar donaciones",
       "setupTitle": "El historial de donaciones aún no está disponible",
       "setupBody": "Has iniciado sesión, pero el historial de pagos aún no está conectado. Una vez configurado Stripe, tus donaciones y recibos aparecerán aquí."

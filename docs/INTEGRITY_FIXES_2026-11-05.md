@@ -82,3 +82,16 @@ provider-account configuration and store approval remain owner decisions.
 References consulted: Stripe's Node auto-pagination documentation and current
 Supabase API-security documentation/changelog. Existing REST persistence
 protocol/schema was not changed.
+
+## Review follow-up: portal display accuracy
+
+Currency formatting now uses the currency's default display precision, preserving
+EUR 9.60 and BHD 1.234 rather than rounding both to integers. Rendered-page tests
+check totals and history, including zero-decimal JPY. The recurring-gift summary
+counts all active/trialing subscriptions and directs donors to Manage giving for
+full billing details. It no longer truncates to two subscriptions or presents a
+first-item unit price as the complete subscription bill; quantities, multiple
+items, discounts, taxes and usage can change the amount actually charged.
+
+Follow-up validation: 61 tests across 7 files, typecheck and lint. Production build
+was not repeated; the earlier Google Fonts network failure remains unresolved.

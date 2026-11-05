@@ -64,6 +64,15 @@ describe('complete donor summaries', () => {
       { currency: 'isk', amount: 10 }, { currency: 'jpy', amount: 1000 }
     ]);
   });
+  it('retains every subscription without inferring a bill from its first item', async () => {
+    mocks.subscriptions.mockImplementation(() => items(Array.from({ length: 30 }, (_, i) => ({
+      id: `sub_${i}`, status: 'active', items: { data: [{ price: { unit_amount: 1000, currency: 'eur' }, quantity: 3 }] }
+    }))));
+    const { getDonorSummary } = await import('@/lib/donations');
+    const result = await getDonorSummary('a@b.com');
+    expect(result?.subscriptions).toHaveLength(30);
+    expect(result?.subscriptions[0]).toEqual({ id: 'sub_0', customerId: 'cus_a', status: 'active' });
+  });
   it('returns unavailable, never partial totals, when later provider iteration fails', async () => {
     mocks.charges.mockImplementation(() => items([charge('first')], new Error('later page failed')));
     const { getDonorSummary } = await import('@/lib/donations');
