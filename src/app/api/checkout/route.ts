@@ -1,11 +1,12 @@
 import { NextResponse } from 'next/server';
 import { z } from 'zod';
+import { siteOrigin } from '@/lib/siteOrigin';
 
 const checkoutSchema = z.object({
   amount: z.coerce.number().int().min(1).max(1_000_000),
   frequency: z.enum(['oneTime', 'monthly', 'annual']),
-  currency: z.string().trim().length(3).toLowerCase().default('eur'),
-  locale: z.string().trim().max(5).optional()
+  currency: z.literal('eur').default('eur'),
+  locale: z.enum(['en', 'pt', 'it', 'es']).optional()
 });
 
 export async function POST(request: Request) {
@@ -30,13 +31,10 @@ export async function POST(request: Request) {
 
   const { amount, frequency, currency, locale } = parsed.data;
 
-  const origin =
-    request.headers.get('origin') ||
-    process.env.NEXT_PUBLIC_SITE_URL ||
-    new URL(request.url).origin;
   const prefix = locale && locale !== 'en' ? `/${locale}` : '';
 
   try {
+    const origin = siteOrigin();
     const Stripe = (await import('stripe')).default;
     const stripe = new Stripe(secret);
 
@@ -50,6 +48,8 @@ export async function POST(request: Request) {
 
     const session = await stripe.checkout.sessions.create({
       mode: isRecurring ? 'subscription' : 'payment',
+      // Ensure one-time gifts can be found in the donor portal as well.
+      ...(!isRecurring ? { customer_creation: 'always' as const } : {}),
       line_items: [
         {
           quantity: 1,
