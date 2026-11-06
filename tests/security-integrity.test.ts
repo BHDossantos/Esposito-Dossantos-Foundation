@@ -9,6 +9,10 @@ vi.mock('@/lib/leadStore', () => store);
 beforeEach(() => {
   vi.resetModules();
   vi.clearAllMocks();
+  vi.stubEnv('SUPABASE_URL', 'https://storage.example');
+  vi.stubEnv('SUPABASE_SERVICE_ROLE_KEY', 'test-key');
+  vi.stubEnv('PORTAL_ONE_TIME_LINKS_READY', 'true');
+  vi.stubGlobal('fetch', vi.fn().mockResolvedValue(new Response(null, { status: 201 })));
   vi.stubEnv('PORTAL_SECRET', 'test-only-secret');
   vi.stubEnv('NEXT_PUBLIC_SITE_URL', 'https://foundation.example');
   email.emailConfigured.mockReturnValue(true);
@@ -16,7 +20,7 @@ beforeEach(() => {
   email.sendEmail.mockResolvedValue(true);
   store.saveLead.mockResolvedValue(true);
 });
-afterEach(() => vi.unstubAllEnvs());
+afterEach(() => { vi.unstubAllEnvs(); vi.unstubAllGlobals(); });
 
 const request = (body: unknown) => new Request('https://attacker.invalid/api/portal/request', {
   method: 'POST', headers: { origin: 'https://attacker.invalid', 'content-type': 'application/json' },
@@ -51,6 +55,12 @@ describe('canonical links', () => {
     expect((await POST(request({ email: 'donor@example.com' }))).status).toBe(503);
     expect(email.sendMagicLink).not.toHaveBeenCalled(); expect(log).not.toHaveBeenCalled();
     log.mockRestore();
+  });
+  it('does not email a link until one-time storage readiness is explicit', async () => {
+    vi.stubEnv('PORTAL_ONE_TIME_LINKS_READY', 'false');
+    const { POST } = await import('@/app/api/portal/request/route');
+    expect((await POST(request({ email: 'donor@example.com' }))).status).toBe(503);
+    expect(email.sendMagicLink).not.toHaveBeenCalled();
   });
   it('reports provider failure instead of a false sent result', async () => {
     email.sendMagicLink.mockResolvedValue(false);

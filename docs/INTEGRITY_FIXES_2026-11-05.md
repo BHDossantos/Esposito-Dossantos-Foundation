@@ -95,3 +95,12 @@ items, discounts, taxes and usage can change the amount actually charged.
 
 Follow-up validation: 61 tests across 7 files, typecheck and lint. Production build
 was not repeated; the earlier Google Fonts network failure remains unresolved.
+
+## 6 November: one-time magic links
+
+See [single-use link rollout and validation](PORTAL_SINGLE_USE_LINKS.md). Magic-link
+redemption now requires a confirmed unique durable digest insert before issuing a
+session. Existing sessions stay stateless. The local SQL addition has NOT been
+applied or checked against PostgreSQL; storage readiness defaults false until
+real schema/permission/concurrency checks pass. Application contract tests are
+separate from that outstanding database integration gate.

@@ -1,4 +1,4 @@
-import { createHmac, timingSafeEqual } from 'crypto';
+import { createHash, createHmac, randomUUID, timingSafeEqual } from 'crypto';
 
 // Passwordless donor auth via signed, expiring tokens. A magic-link token
 // (short TTL) is emailed; verifying it mints a longer-lived session token. Both
@@ -21,12 +21,12 @@ function sign(payload: string): string {
 type Purpose = 'magic' | 'session';
 
 function encode(email: string, exp: number, purpose: Purpose): string {
-  const payload = `${purpose}|${email}|${exp}`;
+  const payload = `${purpose}|${email}|${exp}${purpose === 'magic' ? `|${randomUUID()}` : ''}`;
   const sig = sign(payload);
   return Buffer.from(`${payload}|${sig}`).toString('base64url');
 }
 
-function decode(token: string, expectedPurpose: Purpose): { email: string; exp: number } | null {
+function decode(token: string, expectedPurpose: Purpose): { email: string; exp: number; digest: string } | null {
   try {
     const raw = Buffer.from(token, 'base64url').toString('utf8');
     const idx = raw.lastIndexOf('|');
@@ -37,11 +37,13 @@ function decode(token: string, expectedPurpose: Purpose): { email: string; exp: 
     const a = Buffer.from(sig);
     const b = Buffer.from(expected);
     if (a.length !== b.length || !timingSafeEqual(a, b)) return null;
-    const [purpose, email, expStr, extra] = payload.split('|');
+    const [purpose, email, expStr, nonce, extra] = payload.split('|');
     if (purpose !== expectedPurpose || extra !== undefined) return null;
+    if (purpose === 'session' ? nonce !== undefined : !nonce || !/^[0-9a-f-]{36}$/.test(nonce)) return null;
     const exp = Number(expStr);
-    if (!email || !Number.isFinite(exp) || exp < Date.now()) return null;
-    return { email, exp };
+    if (!email || !Number.isFinite(exp) || exp <= Date.now()) return null;
+    // Hash the decoded signed bytes, not the base64 spelling (padding aliases exist).
+    return { email, exp, digest: createHash('sha256').update(raw).digest('hex') };
   } catch {
     return null;
   }
@@ -59,4 +61,16 @@ export function createSessionToken(email: string): string {
 export function verifyToken(token: string | undefined, purpose: Purpose = 'session'): string | null {
   if (!SECRET || !token) return null;
   return decode(token, purpose)?.email ?? null;
+}
+
+/** Only this operation may authorize a magic-link session. Verification alone
+ * proves authenticity, not single use. Session cookies remain stateless. */
+export async function consumeMagicToken(token: string | undefined): Promise<string | null> {
+  if (!SECRET || !token) return null;
+  const verified = decode(token, 'magic');
+  if (!verified) return null;
+  const { claimMagicLink } = await import('./portalTokenStore');
+  if (!await claimMagicLink(verified.digest, verified.exp)) return null;
+  // A slow storage request must not extend the link's expiry.
+  return verified.exp > Date.now() ? verified.email : null;
 }

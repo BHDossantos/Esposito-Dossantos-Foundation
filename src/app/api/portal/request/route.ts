@@ -4,6 +4,8 @@ import { createMagicToken, portalConfigured } from '@/lib/portalAuth';
 import { emailConfigured, sendMagicLink } from '@/lib/email';
 import { siteOrigin, safeInternalPath } from '@/lib/siteOrigin';
 
+import { magicLinkStoreConfigured } from '@/lib/portalTokenStore';
+
 const schema = z.object({
   email: z.string().trim().email().max(200),
   locale: z.enum(['en', 'pt', 'it', 'es']).optional(),
@@ -12,7 +14,7 @@ const schema = z.object({
 });
 
 export async function POST(request: Request) {
-  if (!portalConfigured() || !emailConfigured()) {
+  if (!portalConfigured() || !emailConfigured() || !magicLinkStoreConfigured()) {
     return NextResponse.json({ ok: false, error: 'Sign-in is temporarily unavailable.' }, { status: 503 });
   }
 
