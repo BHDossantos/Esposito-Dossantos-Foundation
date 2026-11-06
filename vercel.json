@@ -1,5 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "git": { "deploymentEnabled": { "codex/foundation-integrity-20261105": false } },
   "crons": [
     {
       "path": "/api/cron/email-sequences",

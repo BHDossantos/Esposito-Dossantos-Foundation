@@ -18,12 +18,12 @@ export function SignOutButton({ label }: { label: string }) {
   );
 }
 
-export function ManageButton({ label }: { label: string }) {
+export function ManageButton({ label, customerId }: { label: string; customerId: string }) {
   const [loading, setLoading] = useState(false);
   async function manage() {
     setLoading(true);
     try {
-      const res = await fetch('/api/portal/manage', { method: 'POST' });
+      const res = await fetch('/api/portal/manage', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ customerId }) });
       const data = await res.json();
       if (data?.url) {
         window.location.href = data.url;
