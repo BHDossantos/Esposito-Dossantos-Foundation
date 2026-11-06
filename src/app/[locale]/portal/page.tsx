@@ -35,7 +35,7 @@ export default async function PortalPage({
   const format = await getFormatter();
   const summary = await getDonorSummary(email);
   const money = (n: number, cur = 'eur') =>
-    format.number(n, { style: 'currency', currency: cur.toUpperCase(), maximumFractionDigits: 0 });
+    format.number(n, { style: 'currency', currency: cur.toUpperCase() });
 
   return (
     <>
@@ -67,25 +67,26 @@ export default async function PortalPage({
               <div className="rounded-2xl border border-navy/10 bg-ivory p-6">
                 <p className="text-sm text-softgray">{t('totalLabel')}</p>
                 <p className="mt-1 font-serif text-3xl font-semibold text-navy">
-                  {money(summary.totalGiven, summary.currency)}
+                  {summary.totals.length === 0 ? money(0, 'eur') : summary.totals.map((total) => (
+                    <span className="block" key={total.currency}>{money(total.amount, total.currency)}</span>
+                  ))}
                 </p>
               </div>
-              {summary.subscriptions
-                .filter((s) => s.status === 'active' || s.status === 'trialing')
-                .slice(0, 2)
-                .map((s) => (
-                  <div key={s.id} className="rounded-2xl border border-navy/10 bg-ivory p-6">
-                    <p className="text-sm text-softgray">{t('subsTitle')}</p>
-                    <p className="mt-1 font-serif text-2xl font-semibold text-navy">
-                      {money(s.amount, s.currency)}
-                      <span className="text-base font-normal text-softgray"> / {s.interval}</span>
-                    </p>
-                  </div>
-                ))}
+              {summary.subscriptions.some((s) => s.status === 'active' || s.status === 'trialing') && (
+                <div className="rounded-2xl border border-navy/10 bg-ivory p-6">
+                  <p className="text-sm text-softgray">{t('subsTitle')}</p>
+                  <p className="mt-1 font-serif text-2xl font-semibold text-navy">
+                    {t('subsCount', { count: summary.subscriptions.filter((s) => s.status === 'active' || s.status === 'trialing').length })}
+                  </p>
+                  <p className="mt-2 text-sm text-softgray">{t('subsDetails')}</p>
+                </div>
+              )}
             </div>
 
             <div className="mt-6">
-              <ManageButtonWrapper label={t('manageBtn')} show={Boolean(summary.customerId)} />
+              {summary.customerIds.map((customerId, index) => (
+                <ManageButton key={customerId} customerId={customerId} label={`${t('manageBtn')}${summary.customerIds.length > 1 ? ` (${index + 1})` : ''}`} />
+              ))}
             </div>
 
             {/* History */}
@@ -141,8 +142,4 @@ export default async function PortalPage({
 // Small wrappers keep the client components isolated.
 function SignOutButtonWrapper({ label }: { label: string }) {
   return <SignOutButton label={label} />;
-}
-function ManageButtonWrapper({ label, show }: { label: string; show: boolean }) {
-  if (!show) return null;
-  return <ManageButton label={label} />;
 }
