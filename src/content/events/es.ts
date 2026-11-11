@@ -1,6 +1,17 @@
 import type { EventContent } from './meta';
 
 const es: EventContent = {
+  'december-benefit-vatican': {
+    dateLabel: '28 de diciembre de 2026',
+    location: 'Roma, Italia',
+    title: 'Nuestro Primer Evento — con las Hermanas del Vaticano',
+    summary:
+      'Nuestro primer encuentro: un evento benéfico en Roma, el 28 de diciembre, realizado en colaboración con las Hermanas del Vaticano, en apoyo a los niños que más lo necesitan.',
+    description: [
+      'Este diciembre marca el primer evento de la Fundación — el comienzo del trabajo que nos propusimos realizar juntos. Presentado a través de la United Youth Orchestra y realizado en colaboración con las Hermanas del Vaticano, el encuentro reúne a nuestra comunidad en Roma en apoyo a los niños que necesitan oportunidades.',
+      'Todos los detalles — lugar, horario y cómo participar — se compartirán aquí pronto. Si quieres ser parte de este primer paso, puedes apoyar la misión hoy o ponerte en contacto para involucrarte.'
+    ]
+  },
   'annual-fundraising-gala': {
     dateLabel: '14 de noviembre de 2026',
     location: 'Evento principal · Sede por anunciar',

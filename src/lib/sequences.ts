@@ -31,6 +31,28 @@ export const SEQUENCES: Record<string, SequenceStep[]> = {
       ]
     }
   ],
+  audition: [
+    {
+      afterDays: 0,
+      subject: 'We received your audition',
+      heading: 'Thank you for auditioning',
+      paragraphs: [
+        'We have received your audition for the United Youth Orchestra. Thank you for sharing your music with us — we are honored to listen.',
+        'Our team reviews every audition with care and will be in touch with next steps. In the meantime, keep playing.'
+      ]
+    }
+  ],
+  studentApplication: [
+    {
+      afterDays: 0,
+      subject: 'We received your application for support',
+      heading: 'Thank you for reaching out',
+      paragraphs: [
+        'We have received your application to the Esposito–Dossantos Foundation. Thank you for trusting us with your story — it is in good hands.',
+        'Our team reads every application personally and with respect. We will reach out to talk about how we can help. You are not alone in this.'
+      ]
+    }
+  ],
   application: [
     {
       afterDays: 0,

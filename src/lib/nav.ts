@@ -6,6 +6,7 @@ export const mainNav = [
   { key: 'programs', href: '/programs' },
   { key: 'impact', href: '/impact' },
   { key: 'events', href: '/events' },
+  { key: 'audition', href: '/audition' },
   { key: 'blog', href: '/blog' },
   { key: 'partners', href: '/partners' },
   { key: 'about', href: '/about' },

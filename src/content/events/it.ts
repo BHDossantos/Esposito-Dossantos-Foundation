@@ -1,6 +1,17 @@
 import type { EventContent } from './meta';
 
 const it: EventContent = {
+  'december-benefit-vatican': {
+    dateLabel: '28 dicembre 2026',
+    location: 'Roma, Italia',
+    title: 'Il Nostro Primo Evento — con le Suore del Vaticano',
+    summary:
+      'Il nostro primo incontro: un evento benefico a Roma, il 28 dicembre, realizzato in collaborazione con le Suore del Vaticano, a sostegno dei bambini che ne hanno più bisogno.',
+    description: [
+      'Questo dicembre segna il primo evento della Fondazione — l’inizio del lavoro che ci siamo proposti di realizzare insieme. Presentato attraverso la United Youth Orchestra e realizzato in collaborazione con le Suore del Vaticano, l’incontro riunisce la nostra comunità a Roma a sostegno dei bambini che hanno bisogno di opportunità.',
+      'Tutti i dettagli — luogo, orario e come partecipare — saranno condivisi qui a breve. Se desideri far parte di questo primo passo, puoi sostenere la missione oggi o contattarci per partecipare.'
+    ]
+  },
   'annual-fundraising-gala': {
     dateLabel: '14 novembre 2026',
     location: 'Evento di punta · Sede da annunciare',

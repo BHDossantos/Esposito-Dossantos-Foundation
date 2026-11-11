@@ -26,6 +26,9 @@ export default async function Footer() {
       title: t('getInvolvedTitle'),
       links: [
         { label: tn('donate'), href: '/donate' },
+        { label: t('sponsorChild'), href: '/sponsor' },
+        { label: tn('audition'), href: '/audition' },
+        { label: t('apply'), href: '/apply' },
         { label: tn('partners'), href: '/partners' },
         { label: t('volunteer'), href: '/volunteer' },
         { label: t('chapters'), href: '/chapters' },
