@@ -2,17 +2,20 @@ import { NextResponse } from 'next/server';
 import { z } from 'zod';
 import { createMagicToken, portalConfigured } from '@/lib/portalAuth';
 import { emailConfigured, sendMagicLink } from '@/lib/email';
+import { siteOrigin, safeInternalPath } from '@/lib/siteOrigin';
+
+import { magicLinkStoreConfigured } from '@/lib/portalTokenStore';
 
 const schema = z.object({
   email: z.string().trim().email().max(200),
-  locale: z.string().trim().max(5).optional(),
+  locale: z.enum(['en', 'pt', 'it', 'es']).optional(),
   // Post-login destination (must be an internal path).
   next: z.string().trim().max(80).optional()
 });
 
 export async function POST(request: Request) {
-  if (!portalConfigured()) {
-    return NextResponse.json({ ok: false, configured: false }, { status: 200 });
+  if (!portalConfigured() || !emailConfigured() || !magicLinkStoreConfigured()) {
+    return NextResponse.json({ ok: false, error: 'Sign-in is temporarily unavailable.' }, { status: 503 });
   }
 
   let body: unknown;
@@ -28,21 +31,17 @@ export async function POST(request: Request) {
   }
 
   const { email, locale } = parsed.data;
-  const dest = parsed.data.next && parsed.data.next.startsWith('/') ? parsed.data.next : '/portal';
-  const token = createMagicToken(email);
-  const origin =
-    request.headers.get('origin') || process.env.NEXT_PUBLIC_SITE_URL || new URL(request.url).origin;
-  const prefix = locale && locale !== 'en' ? `/${locale}` : '';
-  const link = `${origin}/api/portal/verify?token=${encodeURIComponent(token)}&next=${encodeURIComponent(prefix + dest)}`;
-
-  if (emailConfigured()) {
-    await sendMagicLink(email, link);
-  } else {
-    // Dev fallback: surface the link in server logs so it's testable without email.
-    // eslint-disable-next-line no-console
-    console.info('[portal] magic link (email not configured):', link);
+  try {
+    const dest = safeInternalPath(parsed.data.next);
+    const token = createMagicToken(email);
+    const origin = siteOrigin();
+    const prefix = locale && locale !== 'en' ? `/${locale}` : '';
+    const link = `${origin}/api/portal/verify?token=${encodeURIComponent(token)}&next=${encodeURIComponent(prefix + dest)}`;
+    if (!await sendMagicLink(email, link)) throw new Error('Delivery unavailable');
+  } catch {
+    return NextResponse.json({ ok: false, error: 'Sign-in is temporarily unavailable.' }, { status: 503 });
   }
 
-  // Always report success — never reveal whether an email is on file.
-  return NextResponse.json({ ok: true, emailConfigured: emailConfigured() });
+  // Provider acceptance is independent of whether the mailbox has gifts.
+  return NextResponse.json({ ok: true });
 }
