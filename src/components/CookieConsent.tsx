@@ -1,22 +1,29 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useState, useSyncExternalStore } from 'react';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 
 const STORAGE_KEY = 'edf-cookie-consent';
 
+function subscribe(onChange: () => void) {
+  window.addEventListener('storage', onChange);
+  return () => window.removeEventListener('storage', onChange);
+}
+
+function getNeedsConsent() {
+  try {
+    return !localStorage.getItem(STORAGE_KEY);
+  } catch {
+    return false;
+  }
+}
+
 export default function CookieConsent() {
   const t = useTranslations('cookieConsent');
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    try {
-      if (!localStorage.getItem(STORAGE_KEY)) setVisible(true);
-    } catch {
-      // localStorage unavailable — fail closed (don't show banner repeatedly)
-    }
-  }, []);
+  const [dismissed, setDismissed] = useState(false);
+  const needsConsent = useSyncExternalStore(subscribe, getNeedsConsent, () => false);
+  const visible = needsConsent && !dismissed;
 
   function decide(value: 'accepted' | 'rejected') {
     try {
@@ -24,7 +31,7 @@ export default function CookieConsent() {
     } catch {
       /* ignore */
     }
-    setVisible(false);
+    setDismissed(true);
   }
 
   if (!visible) return null;
