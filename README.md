@@ -15,7 +15,7 @@ support** in **English, Portuguese, Italian, and Spanish**.
 
 | Layer | Choice |
 | --- | --- |
-| Framework | [Next.js 15](https://nextjs.org) (App Router) |
+| Framework | [Next.js 16](https://nextjs.org) (App Router) |
 | Language | TypeScript |
 | Styling | Tailwind CSS |
 | i18n | [next-intl](https://next-intl.dev) |

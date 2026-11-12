@@ -27,7 +27,6 @@ export default function Reveal({
 
     // Honor reduced-motion: show content immediately, no reveal transition.
     if (prefersReducedMotion()) {
-      setVisible(true);
       return;
     }
 

@@ -1,29 +1,50 @@
-# Mobile build and release preparation
+# Publishing the mobile apps (iOS + Android)
 
-The app is a Capacitor shell loading the Foundation website, with native back
-navigation and a bundled error page. Push delivery is **not implemented**. The
-error page is not a full offline version of the site, and no store acceptance is
-claimed. See [the current readiness report](docs/MOBILE_READINESS.md) for blockers.
+> Read [mobile validation and release gates](docs/MOBILE_READINESS.md) first.
+> The unsigned validation workflow does not publish. The older release recipes
+> below are not proof that offline behavior, push delivery, signing, or store
+> readiness has been verified.
 
-- App name: Esposito–Dossantos Foundation
-- Proposed bundle ID: `org.espositodossantosfoundation.app` (verify ownership)
-- Remote URL: `https://espositodossantosfoundation.org`
-- `CAP_SERVER_URL` accepts an HTTPS preview URL without embedded credentials.
+The Esposito–Dossantos Foundation mobile apps are a **Capacitor** native shell around the
+live website. The app opens the deployed site (`https://espositodossantosfoundation.org`)
+inside a native container and adds native capabilities (push notifications,
+offline fallback). Because the content is loaded from the live site,
+**content/design updates ship instantly with no app-store resubmission** — you
+only rebuild the app when native code changes.
 
-## Local validation
+- **App name:** Esposito–Dossantos Foundation
+- **Bundle / application ID:** `org.espositodossantosfoundation.app`
+- **Backing URL:** set in `capacitor.config.ts` (override per build with the
+  `CAP_SERVER_URL` env var, e.g. a Vercel preview URL for testing)
 
-Use Node 22+, Java 21 and the Android SDK for Android builds; use macOS and a
-compatible Xcode for iOS compilation. CLI and asset tooling are lockfile dependencies.
+---
 
-```sh
-npm ci
-npm run typecheck
-npm run lint
-npm test
-npm run cap:add:android
-npm run cap:add:ios -- --packagemanager SPM
-npm run cap:assets
-npm run cap:sync
+## 0. Prerequisites
+
+| Need | Status | Notes |
+| --- | --- | --- |
+| Google Play Console account | ✅ you have it | $25 one-time |
+| Apple Developer Program | ✅ you have it | $99/year |
+| Node 20+ | for the build machine | already used for the website |
+| **macOS + Xcode** *or* a cloud-Mac service | ⚠️ needed for iOS | you don't need to own a Mac — see §3 |
+| Android Studio (or CI) | for Android | free |
+
+> **Deploy the website first.** The app loads the live URL, so the site must be
+> live on Vercel before the apps are useful. (See `DEPLOYMENT.md`.)
+
+---
+
+## 1. One-time local setup
+
+From the repo root, on any machine (Mac, Windows, or Linux for Android):
+
+```bash
+npm install
+npm run gen:app-icons        # regenerates assets/ source art (already committed)
+npm run cap:add:android      # creates the android/ project
+npm run cap:add:ios          # creates the ios/ project (macOS only)
+npm run cap:assets           # generates all icon + splash sizes into the projects
+npm run cap:sync             # copies config + web fallback into the native projects
 ```
 
 Add each platform only once in a clean checkout. Generated native projects are

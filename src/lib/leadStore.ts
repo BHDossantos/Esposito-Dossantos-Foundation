@@ -2,8 +2,8 @@ import type { Lead } from './leads';
 
 // Optional persistence layer. When SUPABASE_URL + SUPABASE_SERVICE_ROLE_KEY are
 // set, leads are stored in (and read from) a `leads` table via the Supabase
-// REST API — no SDK dependency required. When unset, persistence is a no-op and
-// the admin dashboard shows a setup state.
+// REST API — no SDK dependency required. Missing configuration returns false;
+// public intake callers must reject submission rather than acknowledge success.
 //
 // Expected table (run once in Supabase SQL editor):
 //   create table leads (

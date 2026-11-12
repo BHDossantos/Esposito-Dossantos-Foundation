@@ -21,9 +21,11 @@ export default function Header() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  useEffect(() => {
+  const [previousPathname, setPreviousPathname] = useState(pathname);
+  if (pathname !== previousPathname) {
+    setPreviousPathname(pathname);
     setMenuOpen(false);
-  }, [pathname]);
+  }
 
   // Every page opens on a dark navy hero, so while the header is transparent
   // at the top its text must be light. Once the ivory bar appears (scrolled or

@@ -97,16 +97,13 @@ export type Lead = {
   receivedAt: string;
 };
 
-// Single funnel for every captured lead. Today it logs to the server; swap the
-// body for your CRM of choice (HubSpot / Salesforce / Airtable / Supabase) or an
-// email provider (Resend) — the shape is already normalized for that handoff.
+// Single funnel for every captured lead: require storage before attempting mail.
 export async function recordLead(lead: Lead): Promise<void> {
-  // eslint-disable-next-line no-console
-  console.info('[lead]', JSON.stringify(lead));
-
-  // Persist to the store when configured (Supabase). No-op otherwise.
+  // Success means the submission is durably stored, not printed to a log.
+  // Missing configuration or storage failure must reach the route's error
+  // response so the form retains the applicant's input.
   const { saveLead } = await import('./leadStore');
-  await saveLead(lead);
+  if (!await saveLead(lead)) throw new Error('Submission storage unavailable');
 
   // Fire the immediate (step 0) email of any sequence for this source.
   await maybeSendWelcome(lead);

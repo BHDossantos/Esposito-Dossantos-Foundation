@@ -56,9 +56,10 @@ describe('portalAuth (magic-link tokens)', () => {
     // A magic token is short-lived; simulate expiry by advancing time past its TTL.
     const realNow = Date.now;
     const token = mod.createMagicToken('a@b.com');
+    expect(mod.verifyToken(token, 'magic')).toBe('a@b.com');
     Date.now = () => realNow() + 16 * 60 * 1000; // +16 min > 15 min TTL
     try {
-      expect(mod.verifyToken(token)).toBeNull();
+      expect(mod.verifyToken(token, 'magic')).toBeNull();
     } finally {
       Date.now = realNow;
     }

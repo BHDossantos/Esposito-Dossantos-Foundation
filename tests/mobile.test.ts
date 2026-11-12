@@ -1,29 +1,85 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
 
-const original = process.env.CAP_SERVER_URL;
+const root = resolve(import.meta.dirname, '..');
+// Load through Vitest so the website typecheck does not require the ephemeral CLI.
+const configPath = resolve(root, 'capacitor.config.ts');
+const read = (path: string) => readFileSync(resolve(root, path));
+
 afterEach(() => {
-  if (original === undefined) delete process.env.CAP_SERVER_URL;
-  else process.env.CAP_SERVER_URL = original;
+  vi.unstubAllEnvs();
   vi.resetModules();
 });
 
-describe('native shell configuration', () => {
-  it('routes remote failures to a bundled page with a real retry destination', async () => {
-    delete process.env.CAP_SERVER_URL;
-    const { default: config } = await import('../capacitor.config');
-    expect(config.server?.errorPath).toBe('index.html');
-    const fallback = readFileSync(`${config.webDir}/${config.server?.errorPath}`, 'utf8');
-    expect(fallback).toContain("location.href='https://espositodossantosfoundation.org'");
-    expect(fallback).not.toContain('location.reload()');
+describe('mobile shell configuration', () => {
+  it('keeps the existing app identity and HTTPS backing website', async () => {
+    vi.stubEnv('CAP_SERVER_URL', '');
+    const { default: config } = await import(configPath);
+    expect(config.appId).toBe('org.espositodossantosfoundation.app');
+    expect(config.appName).toBe('Esposito–Dossantos Foundation');
+    expect(config.webDir).toBe('native/www');
+    expect(config.server?.url).toBe('https://espositodossantosfoundation.org/');
+    expect(config.server?.androidScheme).toBe('https');
+    expect(config.server?.cleartext).not.toBe(true);
   });
-  it.each(['http://example.com', 'https://user:password@example.com', 'invalid'])('rejects unsafe preview URL %s', async (url) => {
-    process.env.CAP_SERVER_URL = url;
-    await expect(import('../capacitor.config')).rejects.toThrow();
+
+  it('can target a preview without changing the production default', async () => {
+    vi.stubEnv('CAP_SERVER_URL', 'https://preview.example.test');
+    const { default: config } = await import(configPath);
+    expect(config.server?.url).toBe('https://preview.example.test/');
+    expect(config.appId).toBe('org.espositodossantosfoundation.app');
   });
-  it('accepts HTTPS previews', async () => {
-    process.env.CAP_SERVER_URL = 'https://preview.example.com';
-    const { default: config } = await import('../capacitor.config');
-    expect(config.server?.url).toBe('https://preview.example.com/');
+
+  it.each(['http://preview.example.test', 'https://user:password@preview.example.test'])(
+    'rejects unsafe backing URL %s',
+    async (url) => {
+      vi.stubEnv('CAP_SERVER_URL', url);
+      await expect(import(configPath)).rejects.toThrow('CAP_SERVER_URL must be an HTTPS URL without credentials');
+    }
+  );
+
+  it('keeps ephemeral native tooling out of the application lockfile', () => {
+    const pkg = JSON.parse(read('package.json').toString());
+    const lock = JSON.parse(read('package-lock.json').toString());
+    for (const tool of ['@capacitor/assets', '@capacitor/cli']) {
+      expect(pkg.dependencies?.[tool]).toBeUndefined();
+      expect(pkg.devDependencies?.[tool]).toBeUndefined();
+      expect(lock.packages[`node_modules/${tool}`]).toBeUndefined();
+    }
+    expect(pkg.scripts['cap:assets']).toContain('npx --yes @capacitor/assets@3.0.5 ');
   });
+
+  it('pins the native CLI to the locked runtime and platform versions', () => {
+    const pkg = JSON.parse(read('package.json').toString());
+    const lock = JSON.parse(read('package-lock.json').toString());
+    const version = lock.packages['node_modules/@capacitor/core'].version;
+    for (const platform of ['android', 'ios']) {
+      expect(lock.packages[`node_modules/@capacitor/${platform}`].version).toBe(version);
+    }
+    for (const name of ['cap:add:android', 'cap:add:ios', 'cap:sync', 'cap:open:ios', 'cap:open:android']) {
+      expect(pkg.scripts[name]).toContain(`@capacitor/cli@${version} `);
+    }
+  });
+});
+
+describe('packaged mobile resources', () => {
+  it('includes a self-contained, mobile-sized offline page', () => {
+    const html = read('native/www/index.html').toString();
+    expect(html).toMatch(/<!doctype html>/i);
+    expect(html).toContain('width=device-width');
+    expect(html).toContain('viewport-fit=cover');
+    expect(html).toContain("You're offline");
+    expect(html).toContain('Try again');
+    expect(html).not.toMatch(/<(?:script|link)\b[^>]*(?:src|href)=["']https?:/i);
+  });
+
+  it.each(['icon-only', 'icon-foreground', 'icon-background', 'splash', 'splash-dark'])(
+    'includes nonempty PNG source art for %s', (name) => {
+      const png = read(`assets/${name}.png`);
+      expect(png.subarray(0, 8).toString('hex')).toBe('89504e470d0a1a0a');
+      expect(png.readUInt32BE(16)).toBeGreaterThanOrEqual(1024);
+      expect(png.readUInt32BE(20)).toBeGreaterThanOrEqual(1024);
+    }
+  );
 });
