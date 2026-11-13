@@ -54,7 +54,7 @@ jobs:
         working-directory: android
         run: ./gradlew --no-daemon assembleDebug lintDebug testDebugUnitTest
       - name: Upload debug APK
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: foundation-android-debug-${{ github.sha }}
           path: android/app/build/outputs/apk/debug/*.apk
@@ -62,7 +62,7 @@ jobs:
           retention-days: 7
       - name: Upload validation reports
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: foundation-android-reports-${{ github.sha }}
           path: android/app/build/reports/
@@ -103,7 +103,7 @@ jobs:
             build/ios-simulator/Build/Products/Debug-iphonesimulator/App.app \
             build/foundation-ios-simulator.zip
       - name: Upload simulator app
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: foundation-ios-simulator-${{ github.sha }}
           path: build/foundation-ios-simulator.zip
