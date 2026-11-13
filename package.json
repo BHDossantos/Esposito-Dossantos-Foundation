@@ -20,7 +20,7 @@
     "test:mobile": "vitest run tests/mobile.test.ts"
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.131.0",
+    "@anthropic-ai/sdk": "^1.7.0",
     "@capacitor/app": "^8.1.2",
     "@capacitor/core": "^8.6.0",
     "@capacitor/push-notifications": "^8.1.3",
