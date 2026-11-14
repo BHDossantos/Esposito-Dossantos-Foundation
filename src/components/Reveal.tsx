@@ -27,6 +27,8 @@ export default function Reveal({
 
     // Honor reduced-motion: show content immediately, no reveal transition.
     if (prefersReducedMotion()) {
+      // The media query is browser-only; reveal immediately after hydration.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setVisible(true);
       return;
     }

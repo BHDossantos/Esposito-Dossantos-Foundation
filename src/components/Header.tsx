@@ -22,6 +22,8 @@ export default function Header() {
   }, []);
 
   useEffect(() => {
+    // Close the mobile menu after navigation, including browser back/forward.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMenuOpen(false);
   }, [pathname]);
 

@@ -11,6 +11,8 @@ export default function PortalLoginForm({ next = '/portal' }: { next?: string })
 
   useEffect(() => {
     if (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('error') === 'link') {
+      // Read the browser URL after hydration without changing the server markup.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setLinkError(true);
     }
   }, []);

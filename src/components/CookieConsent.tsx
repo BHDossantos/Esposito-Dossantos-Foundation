@@ -12,6 +12,8 @@ export default function CookieConsent() {
 
   useEffect(() => {
     try {
+      // Read browser-only consent after hydration so server and client markup agree.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       if (!localStorage.getItem(STORAGE_KEY)) setVisible(true);
     } catch {
       // localStorage unavailable — fail closed (don't show banner repeatedly)
