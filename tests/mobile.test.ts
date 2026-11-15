@@ -21,6 +21,7 @@ describe('mobile shell configuration', () => {
     expect(config.webDir).toBe('native/www');
     expect(config.server?.url).toBe('https://espositodossantosfoundation.org');
     expect(config.server?.androidScheme).toBe('https');
+    expect(config.server?.errorPath).toBe('index.html');
     expect(config.server?.cleartext).not.toBe(true);
   });
 
@@ -51,7 +52,9 @@ describe('packaged mobile resources', () => {
     expect(html).toContain('width=device-width');
     expect(html).toContain('viewport-fit=cover');
     expect(html).toContain("You're offline");
-    expect(html).toContain('Try again');
+    expect(html).toContain('Open foundation website');
+    expect(html).toContain('href="https://espositodossantosfoundation.org"');
+    expect(html).not.toContain('location.reload()');
     expect(html).not.toMatch(/<(?:script|link)\b[^>]*(?:src|href)=["']https?:/i);
   });
 

@@ -9,11 +9,12 @@ const config: CapacitorConfig = {
   appId: 'org.espositodossantosfoundation.app',
   appName: 'Esposito–Dossantos Foundation',
   // Offline fallback bundle. When `server.url` is reachable the live site is
-  // shown; this local copy is what loads if the device is offline.
+  // shown; server.errorPath explicitly selects this page on navigation failure.
   webDir: 'native/www',
   server: {
     url: process.env.CAP_SERVER_URL || PRODUCTION_URL,
-    androidScheme: 'https'
+    androidScheme: 'https',
+    errorPath: 'index.html'
   },
   ios: {
     contentInset: 'always'
