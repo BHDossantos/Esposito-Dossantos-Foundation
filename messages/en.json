@@ -1007,7 +1007,16 @@
     "successTitle": "Thank you — your application is in.",
     "successBody": "We've received your application and a member of our team will be in touch soon.",
     "error": "Something went wrong. Please try again.",
-    "consent": "By submitting, you agree to our Privacy Policy. We will never share your information."
+    "consent": "By submitting, you agree to our Privacy Policy. We will never share your information.",
+    "draftSave": "Save draft on this device",
+    "draftRestore": "Restore saved draft",
+    "draftDelete": "Delete saved draft",
+    "draftSaved": "Draft saved on this device. It has not been submitted.",
+    "draftRestored": "Saved draft restored.",
+    "draftDeleted": "Saved draft deleted.",
+    "draftEmpty": "No saved draft for this application.",
+    "draftError": "Draft storage is unavailable. Your form is still here.",
+    "draftPrivacy": "Save only on a private device: responses remain in this browser until you delete them or submit successfully. Restoring replaces fields with saved responses."
   },
   "volunteer": {
     "hero": {

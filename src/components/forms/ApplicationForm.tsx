@@ -1,7 +1,9 @@
 'use client';
 
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { useTranslations } from 'next-intl';
+
+import { draftFields, draftKey, readDraft } from '@/lib/applicationDraft';
 
 const volunteerInterests = ['music', 'education', 'technology', 'events', 'mentorship', 'admin'] as const;
 const volunteerAvailability = ['weekly', 'monthly', 'events', 'flexible'] as const;
@@ -11,6 +13,28 @@ export default function ApplicationForm({ kind }: { kind: 'volunteer' | 'scholar
   const a = useTranslations('applications');
   const f = useTranslations(kind === 'volunteer' ? 'volunteer.form' : 'scholarships.form');
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+
+  const formRef = useRef<HTMLFormElement>(null);
+  const [draftNotice, setDraftNotice] = useState('');
+  function manageDraft(action: 'save' | 'restore' | 'delete') {
+    const form = formRef.current;
+    if (!form) return;
+    try {
+      if (action === 'save') {
+        localStorage.setItem(draftKey(kind), JSON.stringify(draftFields(kind, Object.fromEntries(new FormData(form).entries()))));
+      } else if (action === 'restore') {
+        const values = readDraft(localStorage, kind);
+        if (!Object.keys(values).length) { setDraftNotice(a('draftEmpty')); return; }
+        for (const [key, value] of Object.entries(values)) {
+          const field = form.elements.namedItem(key);
+          if (field instanceof HTMLInputElement || field instanceof HTMLTextAreaElement || field instanceof HTMLSelectElement) field.value = value;
+        }
+      } else {
+        localStorage.removeItem(draftKey(kind));
+      }
+      setDraftNotice(a(action === 'save' ? 'draftSaved' : action === 'restore' ? 'draftRestored' : 'draftDeleted'));
+    } catch { setDraftNotice(a('draftError')); }
+  }
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -24,6 +48,7 @@ export default function ApplicationForm({ kind }: { kind: 'volunteer' | 'scholar
         body: JSON.stringify({ ...payload, type: kind })
       });
       if (!res.ok) throw new Error('request failed');
+      try { localStorage.removeItem(draftKey(kind)); } catch { /* Submission is already accepted. */ }
       setStatus('success');
     } catch {
       setStatus('error');
@@ -43,7 +68,7 @@ export default function ApplicationForm({ kind }: { kind: 'volunteer' | 'scholar
     'w-full rounded-lg border border-navy/15 bg-white px-4 py-3 text-sm outline-none transition focus:border-champagne focus:ring-2 focus:ring-champagne/30';
 
   return (
-    <form onSubmit={onSubmit} className="grid gap-5 sm:grid-cols-2">
+    <form ref={formRef} onSubmit={onSubmit} className="grid gap-5 sm:grid-cols-2">
       <div>
         <label htmlFor="app-name" className="mb-1.5 block text-sm font-medium text-navy">
           {a('name')} *
@@ -129,6 +154,15 @@ export default function ApplicationForm({ kind }: { kind: 'volunteer' | 'scholar
         <textarea id="app-message" name="message" rows={5} required className={inputClass} />
       </div>
 
+      <div className="sm:col-span-2 rounded-lg border border-navy/15 p-4">
+        <p className="mb-3 text-sm text-softgray">{a('draftPrivacy')}</p>
+        <div className="flex flex-wrap gap-4">
+          <button type="button" disabled={status === 'loading'} onClick={() => manageDraft('save')}>{a('draftSave')}</button>
+          <button type="button" disabled={status === 'loading'} onClick={() => manageDraft('restore')}>{a('draftRestore')}</button>
+          <button type="button" disabled={status === 'loading'} onClick={() => manageDraft('delete')}>{a('draftDelete')}</button>
+        </div>
+        <p role="status" className="mt-2 text-sm">{draftNotice}</p>
+      </div>
       {/* Honeypot */}
       <div className="hidden" aria-hidden="true">
         <label htmlFor="app-company">Company</label>
