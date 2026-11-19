@@ -1,3 +1,4 @@
+import { contactIntent } from '@/lib/contactIntent';
 import type { Metadata } from 'next';
 import { setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
@@ -17,16 +18,17 @@ export async function generateMetadata({
 }
 
 export default async function ContactPage({
-  params
+  params, searchParams
 }: {
   params: Promise<{ locale: string }>;
+  searchParams: Promise<{ type?: string | string[] }>;
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  return <ContactContent />;
+  return <ContactContent initialType={contactIntent((await searchParams).type)} />;
 }
 
-function ContactContent() {
+function ContactContent({ initialType }: { initialType: string }) {
   const t = useTranslations('contact');
 
   return (
@@ -60,7 +62,7 @@ function ContactContent() {
             </dl>
           </Reveal>
           <Reveal delay={120} className="lg:col-span-7">
-            <ContactForm />
+            <ContactForm initialType={initialType} />
           </Reveal>
         </div>
       </Section>
