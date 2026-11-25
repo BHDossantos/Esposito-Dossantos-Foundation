@@ -21,9 +21,13 @@ export default function Header() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  useEffect(() => {
+  // Close the mobile menu on navigation. Adjusting state during render (instead
+  // of in an effect) avoids the extra cascading render React warns about.
+  const [previousPathname, setPreviousPathname] = useState(pathname);
+  if (pathname !== previousPathname) {
+    setPreviousPathname(pathname);
     setMenuOpen(false);
-  }, [pathname]);
+  }
 
   return (
     <header

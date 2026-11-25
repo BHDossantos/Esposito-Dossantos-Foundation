@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import PageHero from '@/components/PageHero';
@@ -28,7 +29,7 @@ export default async function SponsorLoginPage({
       <PageHero eyebrow={t('eyebrow')} title={t('title')} intro={t('intro')} />
       <Section tone="white">
         <div className="mx-auto max-w-md">
-          <PortalLoginForm next="/sponsors" />
+          <Suspense><PortalLoginForm next="/sponsors" /></Suspense>
         </div>
       </Section>
     </>
