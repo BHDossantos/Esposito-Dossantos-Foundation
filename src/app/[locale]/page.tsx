@@ -11,6 +11,9 @@ import EventsPreview from '@/components/sections/EventsPreview';
 import NewsletterSection from '@/components/sections/NewsletterSection';
 import FinalCTA from '@/components/sections/FinalCTA';
 
+// Rebuild daily so events drop off the upcoming list once their date passes.
+export const revalidate = 86400;
+
 export default async function HomePage({
   params
 }: {

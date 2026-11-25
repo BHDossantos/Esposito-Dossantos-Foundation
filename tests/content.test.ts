@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { getAllPosts, getAllSlugs, getPost } from '@/content/posts';
-import { getAllEvents, getEvent } from '@/content/events';
+import { getAllEvents, getEvent, isPastOneOff } from '@/content/events';
 import { getAllChapters, getChapter } from '@/content/chapters';
 import type { Locale } from '@/i18n/routing';
 
@@ -36,6 +36,16 @@ describe('events content', () => {
     expect(en.length).toBeGreaterThan(0);
     expect(en.length).toBe(es.length);
     expect(getEvent(UNKNOWN, en[0].slug)?.title).toBe(en[0].title); // fallback
+  });
+
+  it('hides one-off "coming soon" events once their date has passed', () => {
+    expect(isPastOneOff({ isoDate: '2026-11-14', status: 'soon' }, '2026-11-25')).toBe(true);
+    expect(isPastOneOff({ isoDate: '2026-12-28', status: 'soon' }, '2026-11-25')).toBe(false);
+    expect(isPastOneOff({ isoDate: '2026-09-20', status: 'recurring' }, '2026-11-25')).toBe(false);
+    expect(isPastOneOff({ isoDate: '', status: 'soon' }, '2026-11-25')).toBe(false);
+    const slugs = getAllEvents('en', '2026-11-25').map((e) => e.slug);
+    expect(slugs).not.toContain('annual-fundraising-gala');
+    expect(slugs).toContain('december-benefit-vatican');
   });
 });
 
