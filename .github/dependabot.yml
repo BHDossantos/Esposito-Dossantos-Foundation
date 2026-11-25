@@ -13,6 +13,10 @@ updates:
       # TS 7 breaks `npm run lint`. Lift this once typescript-eslint supports it.
       - dependency-name: "typescript"
         versions: [">=6.1.0"]
+      # Tailwind 4 moved its PostCSS plugin to @tailwindcss/postcss and changed
+      # config; the v3 setup here breaks `next build`. Migrate deliberately.
+      - dependency-name: "tailwindcss"
+        update-types: ["version-update:semver-major"]
     groups:
       # Batch low-risk updates into a single PR to reduce noise.
       minor-and-patch:
