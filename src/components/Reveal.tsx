@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useRef, useState, type ReactNode } from 'react';
-import { prefersReducedMotion } from '@/lib/motion';
 
 type RevealProps = {
   children: ReactNode;
@@ -25,12 +24,10 @@ export default function Reveal({
     const node = ref.current;
     if (!node) return;
 
-    // Honor reduced-motion: show content immediately, no reveal transition.
-    if (prefersReducedMotion()) {
-      setVisible(true);
-      return;
-    }
-
+    // Reduced-motion users still reveal through the observer below; the
+    // global prefers-reduced-motion CSS collapses the transition to ~0ms, so
+    // content appears without animation. (Calling setState synchronously here
+    // trips react-hooks/set-state-in-effect.)
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {

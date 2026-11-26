@@ -1,19 +1,14 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
+import { useSearchParams } from 'next/navigation';
 import { useLocale, useTranslations } from 'next-intl';
 
 export default function PortalLoginForm({ next = '/portal' }: { next?: string }) {
   const t = useTranslations('portal.login');
   const locale = useLocale();
   const [status, setStatus] = useState<'idle' | 'loading' | 'sent' | 'error' | 'notConfigured'>('idle');
-  const [linkError, setLinkError] = useState(false);
-
-  useEffect(() => {
-    if (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('error') === 'link') {
-      setLinkError(true);
-    }
-  }, []);
+  const linkError = useSearchParams().get('error') === 'link';
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
