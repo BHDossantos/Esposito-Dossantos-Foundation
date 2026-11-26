@@ -1,6 +1,17 @@
 import type { EventContent } from './meta';
 
 const en: EventContent = {
+  'december-benefit-vatican': {
+    dateLabel: 'December 28, 2026',
+    location: 'Rome, Italy',
+    title: 'Our First Benefit — with the Sisters of the Vatican',
+    summary:
+      'Our very first gathering: a benefit in Rome on December 28, held in partnership with the Sisters of the Vatican, in support of children in need.',
+    description: [
+      'This December marks the Foundation’s first event — the beginning of the work we set out to do together. Presented through United Youth Orchestra and held in partnership with the Sisters of the Vatican, the evening brings our community together in Rome in support of children who need opportunity.',
+      'Full details — venue, time, and how to take part — will be shared here soon. If you would like to be part of this first step, you can support the mission today or reach out to get involved.'
+    ]
+  },
   'annual-fundraising-gala': {
     dateLabel: 'November 14, 2026',
     location: 'Flagship event · Venue to be announced',

@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
-import { setRequestLocale } from 'next-intl/server';
-import { useTranslations } from 'next-intl';
-import PageHero from '@/components/PageHero';
-import { Section, SectionHeading } from '@/components/Section';
+import type { ReactNode } from 'react';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { Link } from '@/i18n/navigation';
+import { Section } from '@/components/Section';
 import Reveal from '@/components/Reveal';
-import FinalCTA from '@/components/sections/FinalCTA';
+import FoundersGrid, { type Founder } from '@/components/about/FoundersGrid';
 import { buildPageMetadata } from '@/lib/metadata';
 
 export async function generateMetadata({
@@ -16,8 +16,37 @@ export async function generateMetadata({
   return buildPageMetadata(locale, 'about');
 }
 
-const board = ['founder', 'cofounder', 'director', 'treasurer'] as const;
-const governance = ['structure', 'legal', 'accountability', 'ethics'] as const;
+// Rich-text tag handlers shared across the page.
+const rich = {
+  b: (chunks: ReactNode) => <strong className="font-semibold text-navy">{chunks}</strong>,
+  i: (chunks: ReactNode) => <em>{chunks}</em>
+};
+
+// A warm serif pull-quote used to let the story breathe.
+function PullQuote({ children }: { children: ReactNode }) {
+  return (
+    <Reveal as="div" className="my-12">
+      <blockquote className="mx-auto max-w-2xl border-l-2 border-champagne pl-6 font-serif text-2xl leading-snug text-navy sm:text-3xl">
+        {children}
+      </blockquote>
+    </Reveal>
+  );
+}
+
+function Para({ children, lead = false }: { children: ReactNode; lead?: boolean }) {
+  return (
+    <p className={`mt-5 leading-relaxed ${lead ? 'text-xl text-ink' : 'text-lg text-ink/80'}`}>
+      {children}
+    </p>
+  );
+}
+
+const FOUNDER_KEYS = ['bruno', 'caique', 'giulia'] as const;
+const FOUNDER_INITIALS: Record<(typeof FOUNDER_KEYS)[number], string> = {
+  bruno: 'B',
+  caique: 'C',
+  giulia: 'G'
+};
 
 export default async function AboutPage({
   params
@@ -26,66 +55,207 @@ export default async function AboutPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  return <AboutContent />;
-}
 
-function AboutContent() {
-  const t = useTranslations('about');
+  const t = await getTranslations('about');
+  const giuliaBody = t.raw('giulia.body') as string[];
+
+  const founders: Founder[] = FOUNDER_KEYS.map((key) => ({
+    key,
+    initial: FOUNDER_INITIALS[key],
+    name: t(`founders.members.${key}.name`),
+    role: t(`founders.members.${key}.role`),
+    bio: t(`founders.members.${key}.bio`),
+    full: t.raw(`founders.members.${key}.full`) as string[]
+  }));
 
   return (
     <>
-      <PageHero eyebrow={t('hero.eyebrow')} title={t('hero.title')} intro={t('hero.intro')} />
+      {/* ───────────────── Hero ───────────────── */}
+      <section className="relative overflow-hidden bg-navy-900 pt-36 pb-24 sm:pt-44 sm:pb-28">
+        <div className="absolute inset-0">
+          <div className="absolute -left-40 top-0 h-[32rem] w-[32rem] rounded-full bg-champagne/10 blur-[140px]" />
+          <div className="absolute right-0 bottom-0 h-full w-1/2 bg-[radial-gradient(ellipse_at_bottom_right,rgba(21,53,95,0.6),transparent_60%)]" />
+        </div>
+        <div className="container-px relative z-10">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="eyebrow text-champagne-light">{t('hero.eyebrow')}</p>
+            <h1 className="mt-6 font-serif text-4xl font-semibold leading-[1.1] text-ivory sm:text-5xl lg:text-6xl">
+              {t('hero.titleLine1')}
+              <br className="hidden sm:block" /> {t('hero.titleLine2')}
+            </h1>
+            <p className="mx-auto mt-8 max-w-xl text-lg leading-relaxed text-ivory/75">
+              {t('hero.subtitle')}
+            </p>
+          </div>
+        </div>
+      </section>
 
-      {/* Story */}
+      {/* ───────────────── The friendship ───────────────── */}
       <Section tone="white">
-        <div className="grid gap-12 lg:grid-cols-2">
+        <div className="mx-auto max-w-3xl">
           <Reveal>
-            <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-gradient-to-br from-navy-700 to-navy-900 shadow-xl">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(201,168,106,0.25),transparent_60%)]" />
-              <div className="absolute inset-x-0 bottom-0 p-8">
-                <p className="font-serif text-2xl text-ivory">Bruno Dossantos</p>
-                <p className="text-sm text-champagne-light">{t('story.founderRole')}</p>
-              </div>
+            <Para lead>{t('friendship.lead')}</Para>
+          </Reveal>
+          <Reveal>
+            <Para>{t('friendship.p1')}</Para>
+            <Para>{t('friendship.p2')}</Para>
+            <Para>{t('friendship.p3')}</Para>
+          </Reveal>
+
+          <PullQuote>{t('friendship.quote1')}</PullQuote>
+
+          <Reveal>
+            <Para>{t('friendship.p4')}</Para>
+          </Reveal>
+
+          <PullQuote>{t('friendship.quote2')}</PullQuote>
+
+          <Reveal>
+            <Para>{t.rich('friendship.outcome', rich)}</Para>
+          </Reveal>
+        </div>
+      </Section>
+
+      {/* ───────────────── A place to belong ───────────────── */}
+      <Section tone="ivory">
+        <div className="mx-auto max-w-3xl">
+          <Reveal>
+            <p className="eyebrow text-champagne-dark">{t('belong.eyebrow')}</p>
+            <h2 className="mt-4 text-3xl sm:text-4xl">{t('belong.title')}</h2>
+            <Para>{t('belong.p1')}</Para>
+            <Para>{t.rich('belong.p2', rich)}</Para>
+            <Para>{t('belong.p3')}</Para>
+            <Para>{t('belong.p4')}</Para>
+          </Reveal>
+          <PullQuote>{t('belong.quote')}</PullQuote>
+        </div>
+      </Section>
+
+      {/* ───────────────── The founders ───────────────── */}
+      <Section tone="white">
+        <Reveal className="mx-auto max-w-3xl text-center">
+          <p className="eyebrow text-champagne-dark">{t('founders.eyebrow')}</p>
+          <h2 className="mt-4 text-3xl sm:text-4xl">{t('founders.title')}</h2>
+          <p className="mt-6 text-lg leading-relaxed text-softgray">{t('founders.intro')}</p>
+        </Reveal>
+
+        <FoundersGrid
+          founders={founders}
+          readMoreLabel={t('founders.readMore')}
+          closeLabel={t('founders.close')}
+        />
+
+        <Reveal className="mx-auto mt-14 max-w-3xl">
+          <Para>{t('founders.closing')}</Para>
+        </Reveal>
+
+        <PullQuote>{t('founders.quote')}</PullQuote>
+      </Section>
+
+      {/* ───────────────── Donate CTA ───────────────── */}
+      <section className="relative overflow-hidden bg-navy-900 py-24 sm:py-28">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_20%,rgba(201,168,106,0.16),transparent_60%)]" />
+        <div className="container-px relative z-10">
+          <Reveal className="mx-auto max-w-2xl text-center">
+            <p className="eyebrow text-champagne-light">{t('donateCta.eyebrow')}</p>
+            <h2 className="mt-5 font-serif text-3xl font-semibold leading-tight text-ivory sm:text-4xl">
+              {t('donateCta.title')}
+            </h2>
+            <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-ivory/75">
+              {t('donateCta.body')}
+            </p>
+            <div className="mt-9 flex flex-wrap justify-center gap-4">
+              <Link href="/donate" className="btn-primary">
+                {t('donateCta.donate')}
+              </Link>
+              <Link href="/partners" className="btn-ghost-light">
+                {t('donateCta.partner')}
+              </Link>
             </div>
           </Reveal>
-          <Reveal delay={120}>
-            <p className="eyebrow mb-4">{t('story.eyebrow')}</p>
-            <h2 className="text-3xl sm:text-4xl">{t('story.title')}</h2>
-            <p className="mt-6 text-lg leading-relaxed text-softgray">{t('story.body1')}</p>
-            <p className="mt-4 text-lg leading-relaxed text-softgray">{t('story.body2')}</p>
-            <p className="mt-4 text-lg leading-relaxed text-softgray">{t('story.body3')}</p>
-          </Reveal>
         </div>
-      </Section>
+      </section>
 
-      {/* Board */}
+      {/* ───────────────── Bruno's letter ───────────────── */}
       <Section tone="ivory">
-        <SectionHeading eyebrow={t('board.eyebrow')} title={t('board.title')} intro={t('board.intro')} />
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {board.map((key, i) => (
-            <Reveal key={key} delay={i * 70} className="rounded-2xl border border-navy/10 bg-warmwhite p-6 text-center">
-              <div className="mx-auto h-20 w-20 rounded-full bg-gradient-to-br from-navy-600 to-navy-900" />
-              <h3 className="mt-5 text-lg">{t(`board.members.${key}.name`)}</h3>
-              <p className="text-sm text-champagne-dark">{t(`board.members.${key}.role`)}</p>
+        <div className="mx-auto max-w-3xl">
+          <Reveal className="text-center">
+            <p className="eyebrow text-champagne-dark">{t('letter.eyebrow')}</p>
+            <blockquote className="mx-auto mt-6 max-w-2xl font-serif text-2xl leading-snug text-navy sm:text-3xl">
+              &ldquo;{t('letter.quote')}&rdquo;
+            </blockquote>
+          </Reveal>
+
+          <div className="mt-12">
+            <Reveal>
+              <Para lead>{t('letter.lead')}</Para>
+              <Para>{t('letter.p1')}</Para>
             </Reveal>
-          ))}
+
+            <PullQuote>{t('letter.quote2')}</PullQuote>
+
+            <Reveal>
+              <h3 className="mt-10 font-serif text-xl text-navy">{t('letter.h1')}</h3>
+              <Para>{t('letter.p2')}</Para>
+              <Para>{t('letter.p3')}</Para>
+
+              <h3 className="mt-10 font-serif text-xl text-navy">{t('letter.h2')}</h3>
+              <Para>{t('letter.p4')}</Para>
+              <Para>{t('letter.p5')}</Para>
+
+              <h3 className="mt-10 font-serif text-xl text-navy">{t('letter.h3')}</h3>
+              <Para>{t.rich('letter.p6', rich)}</Para>
+              <Para>{t('letter.p7')}</Para>
+            </Reveal>
+
+            <PullQuote>{t('letter.quote3')}</PullQuote>
+
+            <Reveal>
+              <p className="mt-10 font-serif text-lg text-navy">{t('letter.name')}</p>
+              <p className="text-sm text-champagne-dark">{t('letter.role')}</p>
+            </Reveal>
+          </div>
         </div>
       </Section>
 
-      {/* Governance */}
-      <Section tone="navy">
-        <SectionHeading tone="light" eyebrow={t('governance.eyebrow')} title={t('governance.title')} intro={t('governance.intro')} />
-        <div className="mt-14 grid gap-6 sm:grid-cols-2">
-          {governance.map((key, i) => (
-            <Reveal key={key} delay={i * 70} className="rounded-2xl border border-white/10 bg-white/[0.03] p-8">
-              <h3 className="text-xl text-ivory">{t(`governance.items.${key}.title`)}</h3>
-              <p className="mt-3 text-ivory/70">{t(`governance.items.${key}.body`)}</p>
+      {/* ───────────────── Giulia's message ───────────────── */}
+      <Section tone="white">
+        <div className="mx-auto max-w-3xl">
+          <Reveal className="text-center">
+            <p className="eyebrow text-champagne-dark">{t('giulia.eyebrow')}</p>
+            <h2 className="mt-4 font-serif text-3xl leading-tight text-navy sm:text-4xl">
+              {t('giulia.title')}
+            </h2>
+          </Reveal>
+          <div className="mt-10">
+            {giuliaBody.map((para, i) => (
+              <Reveal as="div" key={i}>
+                <Para lead={i === 0}>{para}</Para>
+              </Reveal>
+            ))}
+            <Reveal>
+              <p className="mt-10 font-serif text-lg text-navy">{t('giulia.name')}</p>
+              <p className="text-sm text-champagne-dark">{t('giulia.role')}</p>
             </Reveal>
-          ))}
+          </div>
         </div>
       </Section>
 
-      <FinalCTA />
+      {/* ───────────────── Final invitation ───────────────── */}
+      <Section tone="white">
+        <Reveal className="mx-auto max-w-2xl text-center">
+          <h2 className="text-3xl sm:text-4xl">{t('finalCta.title')}</h2>
+          <p className="mt-5 text-lg leading-relaxed text-softgray">{t('finalCta.body')}</p>
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
+            <Link href="/donate" className="btn-primary">
+              {t('finalCta.donate')}
+            </Link>
+            <Link href="/contact" className="btn-secondary">
+              {t('finalCta.contact')}
+            </Link>
+          </div>
+        </Reveal>
+      </Section>
     </>
   );
 }

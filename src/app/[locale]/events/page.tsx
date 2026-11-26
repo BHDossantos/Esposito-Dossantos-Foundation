@@ -10,6 +10,9 @@ import { buildPageMetadata } from '@/lib/metadata';
 import { getAllEvents } from '@/content/events';
 import type { Locale } from '@/i18n/routing';
 
+// Rebuild daily so events drop off the upcoming list once their date passes.
+export const revalidate = 86400;
+
 export async function generateMetadata({
   params
 }: {

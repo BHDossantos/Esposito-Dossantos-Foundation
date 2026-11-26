@@ -5,14 +5,19 @@ import type { CapacitorConfig } from '@capacitor/cli';
 // Vercel preview URL) when building a test build.
 const PRODUCTION_URL = 'https://espositodossantosfoundation.org';
 
+const serverUrl = new URL(process.env.CAP_SERVER_URL || PRODUCTION_URL);
+if (serverUrl.protocol !== 'https:' || serverUrl.username || serverUrl.password) {
+  throw new Error('CAP_SERVER_URL must be an HTTPS URL without credentials');
+}
+
 const config: CapacitorConfig = {
   appId: 'org.espositodossantosfoundation.app',
   appName: 'Esposito–Dossantos Foundation',
-  // Offline fallback bundle. When `server.url` is reachable the live site is
-  // shown; this local copy is what loads if the device is offline.
+  // Explicit errorPath routes failed remote navigation to the bundled fallback.
   webDir: 'native/www',
   server: {
-    url: process.env.CAP_SERVER_URL || PRODUCTION_URL,
+    url: serverUrl.href,
+    errorPath: 'index.html',
     androidScheme: 'https'
   },
   ios: {

@@ -1,6 +1,7 @@
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import HeroFx from '@/components/interactive/HeroFx';
+import Hero3D from '@/components/interactive/Hero3D';
 import Scrub from '@/components/interactive/Scrub';
 
 export default function Hero() {
@@ -10,6 +11,8 @@ export default function Hero() {
     <section className="relative flex min-h-[92vh] items-center overflow-hidden bg-navy-900">
       {/* Cinematic, mouse-tracking backdrop */}
       <HeroFx />
+      {/* Subtle WebGL 3D centerpiece (desktop only, lazy, reduced-motion aware) */}
+      <Hero3D />
 
       <div className="container-px relative z-10 pt-28 pb-20">
         <Scrub className="max-w-3xl">

@@ -13,9 +13,9 @@ export function generateStaticParams() {
 export default async function BlogOgImage({
   params
 }: {
-  params: { locale: string; slug: string };
+  params: Promise<{ locale: string; slug: string }>;
 }) {
-  const { locale, slug } = params;
+  const { locale, slug } = await params;
   const post = getPost(locale as Locale, slug);
   const title = post?.title ?? 'Esposito–Dossantos Foundation';
   const category = post?.category ?? '';
