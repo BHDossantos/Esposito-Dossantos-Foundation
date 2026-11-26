@@ -22,8 +22,21 @@ function resolve(locale: Locale, slug: string): ResolvedEvent | null {
   return { ...meta, ...content };
 }
 
-export function getAllEvents(locale: Locale): ResolvedEvent[] {
+/**
+ * A one-off event marked "coming soon" whose date has already passed should
+ * not be listed as upcoming. Recurring and undated events always stay. The
+ * event's own page stays reachable by slug.
+ */
+export function isPastOneOff(
+  meta: { isoDate: string; status: ResolvedEvent['status'] },
+  today: string = new Date().toISOString().slice(0, 10)
+): boolean {
+  return meta.status === 'soon' && meta.isoDate !== '' && meta.isoDate < today;
+}
+
+export function getAllEvents(locale: Locale, today?: string): ResolvedEvent[] {
   return eventsMeta
+    .filter((m) => !isPastOneOff(m, today))
     .map((m) => resolve(locale, m.slug))
     .filter((e): e is ResolvedEvent => e !== null);
 }

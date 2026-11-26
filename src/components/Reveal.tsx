@@ -24,10 +24,11 @@ export default function Reveal({
     const node = ref.current;
     if (!node) return;
 
-    // Reduced-motion users still reveal through the observer below; the
-    // global prefers-reduced-motion CSS collapses the transition to ~0ms, so
-    // content appears without animation. (Calling setState synchronously here
-    // trips react-hooks/set-state-in-effect.)
+    // Honor reduced-motion: show content immediately, no reveal transition.
+    if (prefersReducedMotion()) {
+      return;
+    }
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {

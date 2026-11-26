@@ -12,6 +12,12 @@ export type EventMeta = {
 
 export const eventsMeta: EventMeta[] = [
   {
+    slug: 'december-benefit-vatican',
+    isoDate: '2026-12-28',
+    cover: 'from-[#3a2a1e] via-navy-800 to-navy-900',
+    status: 'soon'
+  },
+  {
     slug: 'annual-fundraising-gala',
     isoDate: '2026-11-14',
     cover: 'from-navy-700 via-navy-800 to-navy-900',
