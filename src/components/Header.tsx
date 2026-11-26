@@ -9,17 +9,7 @@ import LocaleSwitcher from './LocaleSwitcher';
 export default function Header() {
   const t = useTranslations('nav');
   const pathname = usePathname();
-  const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-
-  useEffect(() => {
-    function onScroll() {
-      setScrolled(window.scrollY > 16);
-    }
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
 
   // Close the mobile menu on navigation. Adjusting state during render (instead
   // of in an effect) avoids the extra cascading render React warns about.
@@ -75,7 +65,7 @@ export default function Header() {
             className="flex items-center justify-center rounded-md p-2 text-navy lg:hidden"
             aria-label="Toggle menu"
             aria-expanded={menuOpen}
-            onClick={() => setMenu({ path: pathname, open: !menuOpen })}
+            onClick={() => setMenuOpen(!menuOpen)}
           >
             <span className="sr-only">Menu</span>
             <div className="flex h-5 w-6 flex-col justify-between">
