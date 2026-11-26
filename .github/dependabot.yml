@@ -17,6 +17,10 @@ updates:
       # config; the v3 setup here breaks `next build`. Migrate deliberately.
       - dependency-name: "tailwindcss"
         update-types: ["version-update:semver-major"]
+      # eslint-config-next 16's plugins (import, jsx-a11y, react) peer-depend on
+      # eslint <=9; eslint 10 makes `npm ci` fail. Lift once they support 10.
+      - dependency-name: "eslint"
+        update-types: ["version-update:semver-major"]
     groups:
       # Batch low-risk updates into a single PR to reduce noise.
       minor-and-patch:

@@ -10,12 +10,12 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "cap:add:ios": "npx --yes @capacitor/cli@8.6.0 add ios",
-    "cap:add:android": "npx --yes @capacitor/cli@8.6.0 add android",
+    "cap:add:ios": "npx --yes @capacitor/cli@8.6.2 add ios",
+    "cap:add:android": "npx --yes @capacitor/cli@8.6.2 add android",
     "cap:assets": "npx --yes @capacitor/assets@3.0.5 generate --iconBackgroundColor '#0B1F3A' --iconBackgroundColorDark '#0B1F3A' --splashBackgroundColor '#0B1F3A' --splashBackgroundColorDark '#071528'",
-    "cap:sync": "npx --yes @capacitor/cli@8.6.0 sync",
-    "cap:open:ios": "npx --yes @capacitor/cli@8.6.0 open ios",
-    "cap:open:android": "npx --yes @capacitor/cli@8.6.0 open android",
+    "cap:sync": "npx --yes @capacitor/cli@8.6.2 sync",
+    "cap:open:ios": "npx --yes @capacitor/cli@8.6.2 open ios",
+    "cap:open:android": "npx --yes @capacitor/cli@8.6.2 open android",
     "gen:app-icons": "node scripts/gen-app-icons.mjs",
     "test:mobile": "vitest run tests/mobile.test.ts"
   },
@@ -37,14 +37,14 @@
     "@types/node": "26.6.6",
     "@types/react": "19.3.0",
     "@types/react-dom": "19.3.0",
-    "autoprefixer": "10.7.0",
-    "eslint": "10.15.0",
+    "autoprefixer": "10.6.2",
+    "eslint": "9.39.5",
     "eslint-config-next": "16.4.6",
     "postcss": "8.5.32",
     "sharp": "^0.35.5",
     "tailwindcss": "3.4.19",
     "typescript": "6.0.3",
-    "vitest": "^4.1.12"
+    "vitest": "^5.1.0"
   },
   "engines": {
     "node": ">=22"
