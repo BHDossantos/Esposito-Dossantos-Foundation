@@ -1081,7 +1081,16 @@
     "successTitle": "Obrigado — a sua candidatura foi recebida.",
     "successBody": "Recebemos a sua candidatura e um membro da nossa equipa entrará em contacto em breve.",
     "error": "Algo correu mal. Tente novamente.",
-    "consent": "Ao enviar, concorda com a nossa Política de Privacidade. Nunca partilharemos os seus dados."
+    "consent": "Ao enviar, concorda com a nossa Política de Privacidade. Nunca partilharemos os seus dados.",
+    "draftSave": "Salvar rascunho neste dispositivo",
+    "draftRestore": "Restaurar rascunho",
+    "draftDelete": "Excluir rascunho",
+    "draftSaved": "Rascunho salvo neste dispositivo. Não foi enviado.",
+    "draftRestored": "Rascunho restaurado.",
+    "draftDeleted": "Rascunho excluído.",
+    "draftEmpty": "Não há rascunho para esta inscrição.",
+    "draftError": "O armazenamento está indisponível. Seu formulário continua aqui.",
+    "draftPrivacy": "Salve apenas em um dispositivo privado: as respostas ficam neste navegador até serem excluídas ou enviadas com sucesso. Restaurar substitui os campos salvos."
   },
   "volunteer": {
     "hero": {

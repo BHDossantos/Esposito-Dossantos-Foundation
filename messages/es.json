@@ -1081,7 +1081,16 @@
     "successTitle": "Gracias — hemos recibido tu solicitud.",
     "successBody": "Hemos recibido tu solicitud y un miembro de nuestro equipo se pondrá en contacto pronto.",
     "error": "Algo salió mal. Inténtalo de nuevo.",
-    "consent": "Al enviar, aceptas nuestra Política de Privacidad. Nunca compartiremos tu información."
+    "consent": "Al enviar, aceptas nuestra Política de Privacidad. Nunca compartiremos tu información.",
+    "draftSave": "Guardar borrador en este dispositivo",
+    "draftRestore": "Restaurar borrador",
+    "draftDelete": "Eliminar borrador",
+    "draftSaved": "Borrador guardado en este dispositivo. No se ha enviado.",
+    "draftRestored": "Borrador restaurado.",
+    "draftDeleted": "Borrador eliminado.",
+    "draftEmpty": "No hay borrador para esta solicitud.",
+    "draftError": "No se puede acceder al borrador. El formulario sigue aquí.",
+    "draftPrivacy": "Guarda solo en un dispositivo privado: las respuestas permanecen en este navegador hasta que las elimines o envíes la solicitud. Restaurar reemplaza los campos guardados."
   },
   "volunteer": {
     "hero": {

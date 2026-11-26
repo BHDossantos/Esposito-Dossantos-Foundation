@@ -1081,7 +1081,16 @@
     "successTitle": "Grazie — la tua candidatura è stata ricevuta.",
     "successBody": "Abbiamo ricevuto la tua candidatura e un membro del nostro team ti contatterà presto.",
     "error": "Qualcosa è andato storto. Riprova.",
-    "consent": "Inviando, accetti la nostra Informativa sulla privacy. Non condivideremo mai i tuoi dati."
+    "consent": "Inviando, accetti la nostra Informativa sulla privacy. Non condivideremo mai i tuoi dati.",
+    "draftSave": "Salva bozza su questo dispositivo",
+    "draftRestore": "Ripristina bozza",
+    "draftDelete": "Elimina bozza",
+    "draftSaved": "Bozza salvata su questo dispositivo. Non è stata inviata.",
+    "draftRestored": "Bozza ripristinata.",
+    "draftDeleted": "Bozza eliminata.",
+    "draftEmpty": "Nessuna bozza per questa domanda.",
+    "draftError": "Archivio bozze non disponibile. Il modulo è ancora qui.",
+    "draftPrivacy": "Salva solo su un dispositivo privato: le risposte restano in questo browser fino alla cancellazione o all’invio riuscito. Il ripristino sostituisce i campi salvati."
   },
   "volunteer": {
     "hero": {

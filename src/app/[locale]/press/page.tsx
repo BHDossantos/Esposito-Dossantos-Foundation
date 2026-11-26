@@ -129,7 +129,7 @@ export default async function PressPage({
             {pressEmail}
           </a>
           <div className="mt-8">
-            <Link href="/contact" className="btn-primary">
+            <Link href="/contact?type=media" className="btn-primary">
               {t('contact.cta')}
             </Link>
           </div>

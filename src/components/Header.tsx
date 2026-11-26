@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { Link, usePathname } from '@/i18n/navigation';
 import { mainNav } from '@/lib/nav';
@@ -34,11 +34,7 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-40 transition-all duration-300 ${
-        scrolled || menuOpen
-          ? 'border-b border-navy/10 bg-ivory/95 backdrop-blur-md'
-          : 'bg-transparent'
-      }`}
+      className="fixed inset-x-0 top-0 z-40 border-b border-navy/10 bg-ivory/95 backdrop-blur-md"
     >
       <div className="container-px">
         <div className="flex h-20 items-center justify-between gap-4">
@@ -98,7 +94,7 @@ export default function Header() {
             }`}
             aria-label="Toggle menu"
             aria-expanded={menuOpen}
-            onClick={() => setMenuOpen((o) => !o)}
+            onClick={() => setMenu({ path: pathname, open: !menuOpen })}
           >
             <span className="sr-only">Menu</span>
             <div className="flex h-5 w-6 flex-col justify-between">
