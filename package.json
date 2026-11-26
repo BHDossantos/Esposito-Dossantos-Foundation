@@ -42,9 +42,9 @@
     "eslint-config-next": "16.4.6",
     "postcss": "8.5.33",
     "sharp": "^0.35.5",
-    "tailwindcss": "3.4.19",
-    "typescript": "5.9.3",
-    "vitest": "^4.1.12"
+    "tailwindcss": "4.3.5",
+    "typescript": "7.0.2",
+    "vitest": "^5.1.0"
   },
   "engines": {
     "node": ">=18.18.0"
