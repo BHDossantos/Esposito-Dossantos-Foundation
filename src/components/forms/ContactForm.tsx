@@ -3,9 +3,9 @@
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 
-const inquiryTypes = ['general', 'donation', 'partnership', 'volunteer', 'media', 'grant'] as const;
+import { inquiryTypes, contactIntent } from '@/lib/contactIntent';
 
-export default function ContactForm() {
+export default function ContactForm({ initialType = 'general' }: { initialType?: string }) {
   const t = useTranslations('contact.form');
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
@@ -63,7 +63,7 @@ export default function ContactForm() {
         <label htmlFor="c-type" className="mb-1.5 block text-sm font-medium text-navy">
           {t('inquiryType')} *
         </label>
-        <select id="c-type" name="inquiryType" required className={inputClass}>
+        <select id="c-type" name="inquiryType" defaultValue={contactIntent(initialType)} required className={inputClass}>
           {inquiryTypes.map((opt) => (
             <option key={opt} value={opt}>
               {t(`types.${opt}`)}
