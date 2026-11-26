@@ -19,11 +19,6 @@ export default function Header() {
     setMenuOpen(false);
   }
 
-  // Every page opens on a dark navy hero, so while the header is transparent
-  // at the top its text must be light. Once the ivory bar appears (scrolled or
-  // mobile menu open), switch to dark text for contrast.
-  const onDark = !scrolled && !menuOpen;
-
   return (
     <header
       className="fixed inset-x-0 top-0 z-40 border-b border-navy/10 bg-ivory/95 backdrop-blur-md"
@@ -31,18 +26,10 @@ export default function Header() {
       <div className="container-px">
         <div className="flex h-20 items-center justify-between gap-4">
           <Link href="/" className="group flex flex-col leading-none" aria-label={t('home')}>
-            <span
-              className={`font-serif text-xl font-semibold tracking-tight transition-colors sm:text-2xl ${
-                onDark ? 'text-ivory' : 'text-navy'
-              }`}
-            >
+            <span className="font-serif text-xl font-semibold tracking-tight text-navy sm:text-2xl">
               Esposito<span className="text-champagne">–</span>Dossantos
             </span>
-            <span
-              className={`mt-0.5 text-[0.6rem] font-semibold uppercase tracking-widest2 transition-colors ${
-                onDark ? 'text-champagne-light' : 'text-champagne-dark'
-              }`}
-            >
+            <span className="mt-0.5 text-[0.6rem] font-semibold uppercase tracking-widest2 text-champagne-dark">
               {t('foundationLabel')}
             </span>
           </Link>
@@ -56,14 +43,8 @@ export default function Header() {
                   key={item.key}
                   href={item.href}
                   aria-current={active ? 'page' : undefined}
-                  className={`text-sm font-medium transition-colors ${
-                    onDark
-                      ? active
-                        ? 'text-champagne-light'
-                        : 'text-ivory/85 hover:text-white'
-                      : active
-                        ? 'text-champagne-dark'
-                        : 'text-navy hover:text-champagne-dark'
+                  className={`text-sm font-medium transition-colors hover:text-champagne-dark ${
+                    active ? 'text-champagne-dark' : 'text-navy'
                   }`}
                 >
                   {t(item.key)}
@@ -73,7 +54,7 @@ export default function Header() {
           </nav>
 
           <div className="hidden items-center gap-4 lg:flex">
-            <LocaleSwitcher tone={onDark ? 'light' : 'dark'} />
+            <LocaleSwitcher />
             <Link href="/donate" className="btn-primary">
               {t('donate')}
             </Link>
@@ -81,30 +62,16 @@ export default function Header() {
 
           <button
             type="button"
-            className={`flex items-center justify-center rounded-md p-2 transition-colors lg:hidden ${
-              onDark ? 'text-ivory' : 'text-navy'
-            }`}
+            className="flex items-center justify-center rounded-md p-2 text-navy lg:hidden"
             aria-label="Toggle menu"
             aria-expanded={menuOpen}
             onClick={() => setMenuOpen(!menuOpen)}
           >
             <span className="sr-only">Menu</span>
             <div className="flex h-5 w-6 flex-col justify-between">
-              <span
-                className={`h-0.5 w-full transition-all ${onDark ? 'bg-ivory' : 'bg-navy'} ${
-                  menuOpen ? 'translate-y-2 rotate-45' : ''
-                }`}
-              />
-              <span
-                className={`h-0.5 w-full transition-all ${onDark ? 'bg-ivory' : 'bg-navy'} ${
-                  menuOpen ? 'opacity-0' : ''
-                }`}
-              />
-              <span
-                className={`h-0.5 w-full transition-all ${onDark ? 'bg-ivory' : 'bg-navy'} ${
-                  menuOpen ? '-translate-y-2 -rotate-45' : ''
-                }`}
-              />
+              <span className={`h-0.5 w-full bg-navy transition-all ${menuOpen ? 'translate-y-2 rotate-45' : ''}`} />
+              <span className={`h-0.5 w-full bg-navy transition-all ${menuOpen ? 'opacity-0' : ''}`} />
+              <span className={`h-0.5 w-full bg-navy transition-all ${menuOpen ? '-translate-y-2 -rotate-45' : ''}`} />
             </div>
           </button>
         </div>
@@ -130,7 +97,7 @@ export default function Header() {
               );
             })}
             <div className="mt-5 flex items-center justify-between">
-              <LocaleSwitcher tone="dark" />
+              <LocaleSwitcher />
               <Link href="/donate" className="btn-primary">
                 {t('donate')}
               </Link>
