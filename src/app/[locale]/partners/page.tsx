@@ -36,7 +36,7 @@ function PartnersContent() {
   return (
     <>
       <PageHero eyebrow={t('hero.eyebrow')} title={t('hero.title')} intro={t('hero.intro')}>
-        <Link href="/contact" className="btn-primary">
+        <Link href="/contact?type=partnership" className="btn-primary">
           {t('hero.cta')}
         </Link>
       </PageHero>
