@@ -47,141 +47,34 @@ npm run cap:assets           # generates all icon + splash sizes into the projec
 npm run cap:sync             # copies config + web fallback into the native projects
 ```
 
-`assets/icon-only.png`, `icon-foreground.png`, `icon-background.png`, and
-`splash*.png` are the committed brand source art. `npm run cap:assets`
-turns them into every size iOS and Android require.
+Add each platform only once in a clean checkout. Generated native projects are
+ignored. The iOS project uses Swift Package Manager, not a CocoaPods workspace.
+The mobile validation workflow creates Android debug and unsigned iOS simulator
+artifacts without signing or publishing.
 
-> **Why the Capacitor CLI isn't a committed dependency.** The `@capacitor/cli`
-> and `@capacitor/assets` tools pull a transitive `xcode → uuid` chain with a
-> dev-only security advisory and no fix path, and the website never imports
-> them. So the `cap:*` npm scripts invoke them with `npx` (fetched only on the
-> build machine); only the runtime packages the app actually uses
-> (`@capacitor/core`, `/app`, `/push-notifications`) and the platform scaffolds
-> (`@capacitor/ios`, `/android`) are installed. Nothing extra to do — the
-> scripts handle it.
+## Release gates
 
----
+The Codemagic workflows now build artifacts only. The iOS archive requires existing
+owner-approved signing profiles. The Android release bundle is unsigned until an
+upload-key signing configuration is implemented and verified. Neither workflow
+publishes to TestFlight or Play. Do not submit an unsigned artifact.
 
-## 2. Android → Google Play
+Before an explicitly authorized release:
 
-1. `npm run cap:open:android` opens Android Studio.
-2. **Build → Generate Signed Bundle / APK → Android App Bundle (.aab)**. Create
-   an upload keystore when prompted and **store it safely** — you need the same
-   key for every future update.
-3. In the **Play Console**: create the app → upload the `.aab` to the
-   **Internal testing** track first, then promote to Production.
-4. Fill the **Data safety** form (see §5) and the store listing (§4).
+1. Confirm developer-account access, app identifiers and ownership, signing profiles,
+   upload-key custody, build numbers and platform target requirements.
+2. Validate the full application on physical iOS and Android devices, including poor
+   connectivity, recovery, deep links, authentication and donation/payment behavior.
+3. Complete backend push enrollment, consent, token lifecycle and APNs/FCM delivery
+   before describing push as a product feature. The app currently does not request
+   notification permission.
+4. Review functionality and donation/payment eligibility against current store
+   policies. A website shell and offline error screen do not guarantee acceptance.
+5. Prepare branded screenshots/icons, support contacts, privacy disclosures, data
+   safety declarations, account-deletion flows where applicable, review notes and
+   any required demo account. Validate proposed privacy/support URLs on the live site.
+6. After owner approval, build and test signed artifacts, then complete store testing
+   and review. Account configuration, signing, submission and deployment were not
+   performed as part of the code readiness work.
 
-Android accepts web-backed apps without issue.
-
-## 3. iOS → App Store — **without owning a Mac**
-
-iOS binaries can only be built on macOS, but you don't need to buy a Mac.
-Pick one:
-
-- **Codemagic (recommended, has a free tier) — already wired up.** A
-  `codemagic.yaml` is committed at the repo root with ready-to-run **iOS** and
-  **Android** workflows. One-time setup in the Codemagic UI (all documented in
-  the file's header comments): connect the repo, add an App Store Connect API
-  key integration named `EspositoDossantosAppStore`, upload an Android keystore named
-  `espositodossantos_keystore`, and add a Google Play service-account JSON as
-  `GCLOUD_SERVICE_ACCOUNT_CREDENTIALS` in a `google_play` group. Then each run
-  builds, signs, and publishes to **TestFlight** / the **Play internal track**.
-  The native `ios/`/`android/` projects are generated during the build, so runs
-  are clean and reproducible.
-- **Ionic Appflow** or **GitHub Actions `macos-latest` runners** — same idea,
-  cloud macOS.
-- **A borrowed/rented Mac** (e.g. MacinCloud) with Xcode: `npm run cap:open:ios`,
-  set the team/signing, Product → Archive → distribute to App Store Connect.
-
-Then in **App Store Connect**: create the app, submit the build via
-**TestFlight**, complete the listing (§4) and **privacy nutrition labels** (§5),
-and submit for review.
-
-> **App Review guideline 4.2 (minimum functionality).** Apple can reject apps
-> that are "just a website." This app mitigates that with **native push
-> notifications** and an **offline experience**. In the review notes, describe
-> it as the foundation's official app with donation, event RSVP, scholarship
-> applications, and push updates. Enabling push (see §6) before submission is
-> strongly recommended.
-
----
-
-## 4. Store listing content
-
-Reuse the vetted copy from the **Press page** (`/press`) and translations:
-
-- **Name:** Esposito–Dossantos Foundation
-- **Subtitle / short description:** "Empowering lives through education, music,
-  technology, and opportunity."
-- **Description:** the extended boilerplate from `messages/*.json → press.boilerplate.long`.
-- **Keywords:** nonprofit, foundation, scholarships, donate, music education, mentorship.
-- **Category:** Education (primary) / Lifestyle (secondary).
-- **Localizations:** list English, Portuguese, Italian, Spanish — the app is
-  fully translated, which strengthens both listings.
-- **Support URL:** `https://espositodossantosfoundation.org/contact`
-- **Marketing URL:** `https://espositodossantosfoundation.org`
-- **Privacy Policy URL:** `https://espositodossantosfoundation.org/privacy` (required by both stores)
-
-**Screenshots** (capture from the live site in a device / simulator):
-- iPhone 6.7" (1290×2796) and 6.5" (1242×2688) — required.
-- iPad 12.9" (2048×2732) if you enable iPad.
-- Android phone (min 1080px) + a 1024×500 feature graphic.
-
----
-
-## 5. Privacy declarations
-
-Declare what the site collects, based on current features:
-
-- **Contact / newsletter / applications:** name, email, country (contact info).
-- **Donations:** handled by **Stripe** — payment info is processed by Stripe, not
-  stored by the app.
-- **No tracking/ads** unless you later add analytics — if you add GA4, declare
-  "Analytics" and usage data.
-
-Fill **Google Play → Data safety** and **App Store Connect → App Privacy** to
-match. Both link to `https://espositodossantosfoundation.org/privacy`.
-
----
-
-## 6. Push notifications (native value + review-friendly)
-
-`NativeBridge` already requests permission and registers on launch. To actually
-deliver notifications you must set up the provider credentials:
-
-- **iOS:** an **APNs key** (.p8) in App Store Connect → wire it into your push
-  provider (Firebase Cloud Messaging or OneSignal).
-- **Android:** a **Firebase (FCM)** project; add `google-services.json` to
-  `android/app/`.
-
-If you'd rather not run a provider, **OneSignal** has a free tier and a Capacitor
-plugin; say the word and I'll swap `@capacitor/push-notifications` for it and add
-the wiring.
-
----
-
-## 7. Updating the apps later
-
-- **Website content or design change** → just deploy the site. The apps show it
-  immediately; no resubmission.
-- **Native change** (new plugin, icon, permissions, Capacitor upgrade) → rebuild
-  and resubmit the binary.
-
----
-
-## What's already in the repo
-
-- `capacitor.config.ts` — app id, name, backing URL, push config
-- `native/www/index.html` — branded offline fallback
-- `src/components/native/NativeBridge.tsx` — push registration + Android back button
-- `assets/` — brand icon + splash source art (navy + champagne "H")
-- `scripts/gen-app-icons.mjs` — regenerates the source art
-- npm scripts: `cap:add:ios`, `cap:add:android`, `cap:assets`, `cap:sync`, `cap:open:*`
-
-**Still done by you (accounts/signing/submission):** running `cap add` on your
-build machine, signing, store listings, screenshots, privacy forms, and pressing
-**Still done by you (accounts/signing/submission):** running `cap add` on your
-build machine (or letting `codemagic.yaml` do it in the cloud), signing, store
-listings, screenshots, privacy forms, and pressing Submit. The `codemagic.yaml`
-pipeline for hands-off iOS + Android builds is included — see §3.
+Do not commit signing keys, provisioning credentials, service-account JSON or secrets.

@@ -19,7 +19,7 @@ describe('mobile shell configuration', () => {
     expect(config.appId).toBe('org.espositodossantosfoundation.app');
     expect(config.appName).toBe('Esposito–Dossantos Foundation');
     expect(config.webDir).toBe('native/www');
-    expect(config.server?.url).toBe('https://espositodossantosfoundation.org');
+    expect(config.server?.url).toBe('https://espositodossantosfoundation.org/');
     expect(config.server?.androidScheme).toBe('https');
     expect(config.server?.cleartext).not.toBe(true);
   });
@@ -27,8 +27,27 @@ describe('mobile shell configuration', () => {
   it('can target a preview without changing the production default', async () => {
     vi.stubEnv('CAP_SERVER_URL', 'https://preview.example.test');
     const { default: config } = await import(configPath);
-    expect(config.server?.url).toBe('https://preview.example.test');
+    expect(config.server?.url).toBe('https://preview.example.test/');
     expect(config.appId).toBe('org.espositodossantosfoundation.app');
+  });
+
+  it.each(['http://preview.example.test', 'https://user:password@preview.example.test'])(
+    'rejects unsafe backing URL %s',
+    async (url) => {
+      vi.stubEnv('CAP_SERVER_URL', url);
+      await expect(import(configPath)).rejects.toThrow('CAP_SERVER_URL must be an HTTPS URL without credentials');
+    }
+  );
+
+  it('keeps ephemeral native tooling out of the application lockfile', () => {
+    const pkg = JSON.parse(read('package.json').toString());
+    const lock = JSON.parse(read('package-lock.json').toString());
+    for (const tool of ['@capacitor/assets', '@capacitor/cli']) {
+      expect(pkg.dependencies?.[tool]).toBeUndefined();
+      expect(pkg.devDependencies?.[tool]).toBeUndefined();
+      expect(lock.packages[`node_modules/${tool}`]).toBeUndefined();
+    }
+    expect(pkg.scripts['cap:assets']).toContain('npx --yes @capacitor/assets@3.0.5 ');
   });
 
   it('pins the native CLI to the locked runtime and platform versions', () => {
